@@ -39,11 +39,12 @@
 	      .data(this.data)
 	      .enter()
 	      .append('div')
-	      .classed('artistContainer', true) // add a class of artistContainer
 	      .attr('id', function(d) {
-	      	// attach the current div to an Artist object here 
-	      	that.artists.push(Artist.newArtist(d.name));
 	      	return d.name;	
+	      })
+	      .attr('class', function(d) {
+	      	that.artists.push(Artist.newArtist(d.name));
+	      	return 'artistContainer';
 	      })
 	      .style('top', function(d) {
 	      	return that.yScale(d.vocab_len) + "px";	
