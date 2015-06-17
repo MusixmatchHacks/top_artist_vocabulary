@@ -9,10 +9,16 @@
 	// that will handle clicks on the div and other kinds of things like hover and stuff 
 	function Artist(artistName) {
 		this.name = artistName;
+		this.selector = artistName.split(" ").join("_");
 		// plus the url to the image can be grabbed here too base on the name of the artist
 
 		// Points to the DOM element that holds the current artist
-		this.$artist = $('#' + this.name);
+		this.$artist = $('#' + this.selector);
+
+		// We will have to lazy load images for better performace, but lets ignore it for now 
+		// Add artist image 
+		this.$artist.css('background-image', 'url(img/artist_images_small/' + this.selector + '.jpg)');
+
 		this.events.click.call(this);
 	}
 
@@ -23,7 +29,7 @@
 		click : function() {
 			var that = this;
 			this.$artist.on('click', function() {
-				console.log(that.name);
+				console.log("Supp! the name is "  + that.name);
 			});
 		}
 	};

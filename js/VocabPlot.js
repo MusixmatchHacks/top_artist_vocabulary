@@ -40,7 +40,7 @@
 	      .enter()
 	      .append('div')
 	      .attr('id', function(d) {
-	      	return d.name;	
+	      	return d.name.split(" ").join("_");	
 	      })
 	      .attr('class', function(d) {
 	      	that.artists.push(Artist.newArtist(d.name));
