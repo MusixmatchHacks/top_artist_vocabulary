@@ -17,25 +17,35 @@
 		this.width = this.$plot.width();
 		this.height = this.$plot.height();
 
-	    // Initialize the yScale
+		// A collection of artist (Artist Objects) on the plot 
+		this.artists = [];
+
+	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
 	    this.yScale = d3.scale.linear()
 							  .domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
-	    					  .range([0, this.height]);
+	    					  .range([this.height, 0]);
 
-	    // Add the artists to the plot 
+
 	    this.addAritstsToPlot();
 
 	}	
 
 	// Method to add new artist to the plot 
 	VocabPlot.prototype.addAritstsToPlot = function() {
+		// There must be a way to abstract the clicks and stuff on the artist to a different object 
 	    var that = this;
 	    d3.select(this.$plot.selector)
 	      .selectAll('div')
 	      .data(this.data)
 	      .enter()
 	      .append('div')
-	      .classed('artistContainer', true)
+	      .attr('id', function(d) {
+	      	return d.name;	
+	      })
+	      .attr('class', function(d) {
+	      	that.artists.push(Artist.newArtist(d.name));
+	      	return 'artistContainer';
+	      })
 	      .style('top', function(d) {
 	      	return that.yScale(d.vocab_len) + "px";	
 	      });
