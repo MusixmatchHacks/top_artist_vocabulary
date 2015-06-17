@@ -18,6 +18,7 @@
   height: 70px;
   width: 70px;
   border-radius: 70px;
-  background-color: red; }
+  background-color: red;
+  border: 2px solid white; }
 
 /*# sourceMappingURL=styles.css.map */
