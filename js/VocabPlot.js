@@ -43,7 +43,7 @@
 	      	return d.name.split(" ").join("_");	
 	      })
 	      .attr('class', function(d) {
-	      	that.artists.push(Artist.newArtist(d.name));
+	      	that.artists.push(Artist.newArtist(d.name, d));
 	      	return 'artistContainer';
 	      })
 	      .style('top', function(d) {

@@ -2,13 +2,14 @@
 
 	// Exporting the module 
 	window.Artist = {};
-	window.Artist.newArtist = function(artistName) {
-			return new Artist(artistName);	
+	window.Artist.newArtist = function(artistName, artistData) {
+			return new Artist(artistName, artistData);	
 	};
 	// This module is supposed to act like an artist object 
 	// that will handle clicks on the div and other kinds of things like hover and stuff 
-	function Artist(artistName) {
+	function Artist(artistName, artistData) {
 		this.name = artistName;
+		this.data = artistData;
 		this.selector = artistName.split(" ").join("_");
 		// plus the url to the image can be grabbed here too base on the name of the artist
 
@@ -29,7 +30,7 @@
 		click : function() {
 			var that = this;
 			this.$artist.on('click', function() {
-				console.log("Supp! the name is "  + that.name);
+				console.log(that.data);
 			});
 		}
 	};

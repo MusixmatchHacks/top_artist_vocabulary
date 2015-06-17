@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0; }
 
+body {
+	background-color : honeydew;
+}
+
 #plot {
   width: 100%;
   height: 100%; }
@@ -19,8 +23,8 @@
 
 .artistContainer {
   position: absolute;
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   border-radius: 70px;
   background-color: red;
   border: 2px solid white;
