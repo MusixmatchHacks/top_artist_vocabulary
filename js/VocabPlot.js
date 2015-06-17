@@ -19,7 +19,7 @@
 
 	    // Initialize the yScale
 	    this.yScale = d3.scale.linear()
-							  .domain([0, d3.max(this.data, function(d) { return d.vocab; })])
+							  .domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
 	    					  .range([0, this.height]);
 
 	    // Add the artists to the plot 
@@ -37,7 +37,7 @@
 	      .append('div')
 	      .classed('artistContainer', true)
 	      .style('top', function(d) {
-	      	return that.yScale(d.vocab) + "px";	
+	      	return that.yScale(d.vocab_len) + "px";	
 	      });
 	};
 		
