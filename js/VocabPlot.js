@@ -2,28 +2,24 @@
 
 	// Export the module 
 	window.VocabPlot = {};
-	window.VocabPlot.newPlot = function(width, height, cssId, plotData) {
-		return new VocabPlot(width, height, cssId, plotData);
+	window.VocabPlot.newPlot = function(cssId, plotData) {
+		return new VocabPlot(cssId, plotData);
 	};
 
-	function VocabPlot(plotWidth, plotHeight, plotCssId, plotData) {
-		// Width and height for the plot
-		this.width = plotWidth;
-		this.height = plotHeight;
-		this.cssId = plotCssId; // CSS ID to be applied to the svg for positioning in the document
-								// and other styles
+	function VocabPlot(plotCssId, plotData) {
+		this.cssId = plotCssId; // CSS ID of the div that is holding the plot
 		this.data = plotData;
 
-		// Initialize the plot's svg
-	    this.plot = d3.select('body')
-	      			  .append('svg')
-	      			  .attr('width', this.width)
-	      			  .attr('height', this.height)
-	      			  .attr('id', this.cssId);
+		// jQuery object holding the plot
+		this.$plot = $('#' + this.cssId);
+
+		// Height and width of the plot
+		this.width = this.$plot.width();
+		this.height = this.$plot.height();
 
 	    // Initialize the yScale
 	    this.yScale = d3.scale.linear()
-							  .domain([0, d3.max(function(d) { return d.vocab;})])
+							  .domain([0, d3.max(this.data, function(d) { return d.vocab; })])
 	    					  .range([0, this.height]);
 
 	    // Add the artists to the plot 
@@ -33,10 +29,16 @@
 
 	// Method to add new artist to the plot 
 	VocabPlot.prototype.addAritstsToPlot = function() {
-	    this.plot.selectAll('circle')
-	    		 .data(this.data)
-	    		 .enter()
-	    		 .append('circle');
+	    var that = this;
+	    d3.select(this.$plot.selector)
+	      .selectAll('div')
+	      .data(this.data)
+	      .enter()
+	      .append('div')
+	      .classed('artistContainer', true)
+	      .style('top', function(d) {
+	      	return that.yScale(d.vocab) + "px";	
+	      });
 	};
 		
 })();

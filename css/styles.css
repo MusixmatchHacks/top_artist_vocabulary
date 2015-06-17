@@ -1,4 +1,23 @@
-#testPlot {
-	display : block;
-	margin : 0 auto;
-}
+* {
+  margin: 0;
+  padding: 0; }
+
+#plot {
+  width: 100%;
+  height: 500px; }
+
+.wrapper {
+  width: 900px;
+  padding: 20px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: yellow; }
+
+.artistContainer {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  background-color: red; }
+
+/*# sourceMappingURL=styles.css.map */

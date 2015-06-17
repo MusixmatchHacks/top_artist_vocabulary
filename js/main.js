@@ -1,5 +1,6 @@
 (function() {
 
+
 	var testData = [
 					{
 						artist_name : 'The Beatles',
@@ -15,7 +16,7 @@
 					}
 				];
 
-	var plot = VocabPlot.newPlot(900, 400, 'testPlot', testData);
+	var plot = VocabPlot.newPlot('plot', testData);
 
 
 })();
