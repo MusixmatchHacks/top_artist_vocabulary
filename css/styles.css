@@ -1,7 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Roboto"; }
+
+body {
+  background-color: #FBFBFB; }
 
 .container {
   width: 100%;
@@ -22,7 +26,14 @@
   width: 50%;
   height: auto;
   float: right;
-  background-color: #FBFBFB; }
+  background-color: #FBFBFB;
+  padding: 25px; }
+  #article_wrapper h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em; }
+  #article_wrapper #article_body {
+    margin-top: 30px; }
 
 #plot {
   position: relative;
