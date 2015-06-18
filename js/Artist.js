@@ -19,7 +19,9 @@
 		// Add artist image 
 		this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
 
+ 		// Initialize events 
 		this.events.click.call(this);
+		this.events.hover.call(this);
 	}
 
 
@@ -30,6 +32,15 @@
 			var that = this;
 			this.$artist.on('click', function() {
 				console.log(that.data);
+			});
+		},
+
+		// Show a tooltip on hover
+		hover : function() {
+			var that = this;
+			this.$artist.tipsy({
+				gravity : 'w',
+				title : function() { return that.data.name; }
 			});
 		}
 	};
