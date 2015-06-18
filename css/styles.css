@@ -5,7 +5,10 @@
   font-family: "Roboto"; }
 
 body {
-  background-color: #FBFBFB; }
+  background-color: #FBFBFB;
+  width: 100%;
+  height: 100%;
+  overflow: atuo; }
 
 .container {
   width: 100%;
