@@ -86,6 +86,7 @@
     // Style those section by adding elements 
 
 	var plot = VocabPlot.newPlot('plot', testData);
+    console.log(plot);
 
 
 })();

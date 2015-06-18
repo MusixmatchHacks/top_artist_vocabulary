@@ -49,12 +49,14 @@
 	      .style('top', function(d) {
 	      	return that.yScale(d.vocab_len) + "px";	
 	      })
-	      .style('left', calculateLeft() + 'px');
+	      .style('left', calculateLeftOffset.call(this) + 'px');
 	};
 
 	// Function that calculates the left offset for every single artist
-	function calculateLeft() {
-		return 100;
+	// From left end calculate the amount to translate towards right for each artist 
+	// while ensuring that they don't overlap
+	function calculateLeftOffset() {
+		return (this.width/2 - 30);
 	}
 		
 })();
