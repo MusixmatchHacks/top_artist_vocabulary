@@ -79,6 +79,30 @@
     "vocab_len": "3419",
     "name": "Gloria Estefan",
     "sales": "35.4"
+},{
+    "total_nr_songs": "222",
+    "total_words": "28405",
+    "vocab_len": "2829",
+    "name": "Garth Brooks",
+    "sales": "142.8"
+}, {
+    "total_nr_songs": "352",
+    "total_words": "35450",
+    "vocab_len": "2808",
+    "name": "Rod Stewart",
+    "sales": "76.1"
+}, {
+    "total_nr_songs": "157",
+    "total_words": "31141",
+    "vocab_len": "2797",
+    "name": "Metallica",
+    "sales": "90.2"
+}, {
+    "total_nr_songs": "339",
+    "total_words": "32297",
+    "vocab_len": "2794",
+    "name": "The Rolling Stones",
+    "sales": "94.7"
 }];
     
     // TODO : Dynamically divide the plot into equal fragments based on the lower and upper value of 

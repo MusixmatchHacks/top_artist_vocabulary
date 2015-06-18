@@ -22,8 +22,8 @@
 
 	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
 	    this.yScale = d3.scale.linear()
-							  .domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
-	    					  .range([this.height, 0]);
+					    .domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
+	    				.range([this.height, 0]);
 
 
 	    this.addAritstsToPlot();
@@ -49,6 +49,7 @@
 	      .style('top', function(d) {
 	      	return that.yScale(d.vocab_len) + "px";	
 	      })
+	      .transition().duration(100)
 	      .style('left', calculateLeftOffset.call(this) + 'px');
 	};
 
@@ -56,6 +57,8 @@
 	// From left end calculate the amount to translate towards right for each artist 
 	// while ensuring that they don't overlap
 	function calculateLeftOffset() {
+		// Let us start 
+		// Create a quadtree not entirely sure what it does though
 		return (this.width/2 - 30);
 	}
 		
