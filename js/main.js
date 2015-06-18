@@ -571,31 +571,7 @@ var testData = [{
         "vocab_len": "148",
         "name": "The Doors",
         "sales": "46.6"
-    }, {
-        "total_nr_songs": "339",
-        "total_words": "0",
-        "vocab_len": "0",
-        "name": "Bruce Springsteen",
-        "sales": "98.6"
-    }, {
-        "total_nr_songs": "180",
-        "total_words": "0",
-        "vocab_len": "0",
-        "name": "Def Leppard",
-        "sales": "41.4"
-    }, {
-        "total_nr_songs": "371",
-        "total_words": "0",
-        "vocab_len": "0",
-        "name": "The Beach Boys",
-        "sales": "29.7"
-    }, {
-        "total_nr_songs": "178",
-        "total_words": "0",
-        "vocab_len": "0",
-        "name": "Journey",
-        "sales": "60.8"
-}];
+    }];
     
     // TODO : Dynamically divide the plot into equal fragments based on the lower and upper value of 
     // data, like 0 - 1000, 1000 - 2000, 2000 - 3000 and so on

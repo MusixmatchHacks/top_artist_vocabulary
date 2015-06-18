@@ -5,6 +5,7 @@ $color_bg_viz : #303030
 * 
 	margin : 0
 	padding : 0
+	box-sizing : border-box
 
 .container 
 	width : 100%
@@ -16,10 +17,8 @@ $color_bg_viz : #303030
 
 #viz_wrapper
 	position : fixed
-	overflow-y : scroll
 	width : 50%
-	padding : 20px
-	height : 900px 
+	height : 100%
 	float : left
 	background-color : $color_bg_viz
 
@@ -32,9 +31,11 @@ $color_bg_viz : #303030
 
 
 #plot 
+	position : relative
 	width : 100%
 	height : 100%
-	padding : 8px
+	margin-top : 2%	
+	overflow : auto
 
 .artistContainer
 	position : absolute
