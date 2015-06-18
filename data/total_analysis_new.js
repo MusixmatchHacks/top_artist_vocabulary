@@ -116,7 +116,8 @@ var vocab_data = [{
     "total_nr_songs": "306",
     "total_words": "28970",
     "vocab_len": "2974",
-    "name": "R.E.M.",
+    // "name": "R.E.M.",
+    "name": "REM",
     "sales": "41.6"
 }, {
     "total_nr_songs": "221",
@@ -260,7 +261,8 @@ var vocab_data = [{
     "total_nr_songs": "113",
     "total_words": "29844",
     "vocab_len": "2469",
-    "name": "Guns N' Roses",
+    // "name": "Guns N' Roses",
+    "name": "Guns N Roses",
     "sales": "69.2"
 }, {
     "total_nr_songs": "378",
@@ -344,7 +346,8 @@ var vocab_data = [{
     "total_nr_songs": "327",
     "total_words": "30642",
     "vocab_len": "2114",
-    "name": "Earth Wind & Fire",
+    // "name": "Earth Wind & Fire",
+    "name": "Earth Wind Fire",
     "sales": "34.9"
 }, {
     "total_nr_songs": "63",
@@ -494,7 +497,8 @@ var vocab_data = [{
     "total_nr_songs": "184",
     "total_words": "15531",
     "vocab_len": "1788",
-    "name": "AC/DC",
+    // "name": "AC/DC",
+    "name": "ACDC",
     "sales": "111.5"
 }, {
     "total_nr_songs": "250",
@@ -556,43 +560,45 @@ var vocab_data = [{
     "vocab_len": "809",
     "name": "Kenny G",
     "sales": "52"
-}, {
-    "total_nr_songs": "285",
-    "total_words": "3018",
-    "vocab_len": "704",
-    "name": "Chicago",
-    "sales": "48.1"
-}, {
-    "total_nr_songs": "232",
-    "total_words": "372",
-    "vocab_len": "148",
-    "name": "The Doors",
-    "sales": "46.6"
-}, {
-    "total_nr_songs": "339",
-    "total_words": "0",
-    "vocab_len": "0",
-    "name": "Bruce Springsteen",
-    "sales": "98.6"
-}, {
-    "total_nr_songs": "180",
-    "total_words": "0",
-    "vocab_len": "0",
-    "name": "Def Leppard",
-    "sales": "41.4"
-}, {
-    "total_nr_songs": "371",
-    "total_words": "0",
-    "vocab_len": "0",
-    "name": "The Beach Boys",
-    "sales": "29.7"
-}, {
-    "total_nr_songs": "178",
-    "total_words": "0",
-    "vocab_len": "0",
-    "name": "Journey",
-    "sales": "60.8"
-}]
+}, 
+// {
+//     "total_nr_songs": "285",
+//     "total_words": "3018",
+//     "vocab_len": "704",
+//     "name": "Chicago",
+//     "sales": "48.1"
+// }, {
+//     "total_nr_songs": "232",
+//     "total_words": "372",
+//     "vocab_len": "148",
+//     "name": "The Doors",
+//     "sales": "46.6"
+// }, {
+//     "total_nr_songs": "339",
+//     "total_words": "0",
+//     "vocab_len": "0",
+//     "name": "Bruce Springsteen",
+//     "sales": "98.6"
+// }, {
+//     "total_nr_songs": "180",
+//     "total_words": "0",
+//     "vocab_len": "0",
+//     "name": "Def Leppard",
+//     "sales": "41.4"
+// }, {
+//     "total_nr_songs": "371",
+//     "total_words": "0",
+//     "vocab_len": "0",
+//     "name": "The Beach Boys",
+//     "sales": "29.7"
+// }, {
+//     "total_nr_songs": "178",
+//     "total_words": "0",
+//     "vocab_len": "0",
+//     "name": "Journey",
+//     "sales": "60.8"
+// }
+]
 
 var average = {
     "name": "Average",
