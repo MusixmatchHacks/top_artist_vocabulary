@@ -109,7 +109,7 @@
     // data, like 0 - 1000, 1000 - 2000, 2000 - 3000 and so on
     // Style those section by adding elements 
 
-	var plot = VocabPlot.newPlot('plot', testData);
+	var plot = VocabPlot.newPlot('plot', vocab_data);
 
 
 })();
