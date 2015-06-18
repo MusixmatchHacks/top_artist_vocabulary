@@ -11,6 +11,8 @@
 		this.name = artistName;
 		this.data = artistData;
 
+		// Selector is simply name of the artist with whitespace replaced by _ , e.g. 
+		// Red Hot Chilli Peppers becomes Red_Hot_Chilli_Peppers
 		this.selector = artistName.split(" ").join("_");
 		// Points to the DOM element that holds the current artist
 		this.$artist = $('#' + this.selector);

@@ -42,7 +42,7 @@
 	      	return d.name.split(" ").join("_");	
 	      })
 	      .attr('class', function(d) {
-	      	that.artists.push(Artist.newArtist(d.name, d));
+	      	that.artists.push(Artist.newArtist(d.name, d)); // Create and add to collection new Artist object
 	      	return 'artistContainer';
 	      })
 	      .style('top', function(d) {
