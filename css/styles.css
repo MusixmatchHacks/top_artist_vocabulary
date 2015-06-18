@@ -1,20 +1,49 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto"; }
 
-#plot {
+body {
+  background-color: #FBFBFB;
+  width: 100%;
+  height: 100%;
+  overflow: atuo; }
+
+.container {
   width: 100%;
   height: 100%; }
+  .container:after {
+    display: table;
+    content: " ";
+    clear: both; }
 
-.wrapper {
-  width: 900px;
-  padding: 20px;
-  height: 900px;
-  margin: 0 auto; }
+#viz_wrapper {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: #303030; }
+
+#article_wrapper {
+  width: 50%;
+  height: auto;
+  float: right;
+  background-color: #FBFBFB;
+  padding: 25px; }
+  #article_wrapper h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em; }
+  #article_wrapper #article_body {
+    margin-top: 30px; }
 
 #plot {
-  padding: 8px;
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 2%;
+  overflow: auto; }
 
 .artistContainer {
   position: absolute;
@@ -26,10 +55,8 @@
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    box-shadow-transition: all 0.1s; }
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
   .artistContainer:hover {
-    border: 2px solid #4881F6;
-    transition: all 0.2s; }
+    border: 2px solid black; }
 
 /*# sourceMappingURL=styles.css.map */
