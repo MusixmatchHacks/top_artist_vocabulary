@@ -40,7 +40,8 @@
 			var that = this;
 			this.$artist.tipsy({
 				gravity : 'w',
-				title : function() { return that.data.name; }
+				html : true,
+				title : function() { return that.data.name + ' <br/>(' + that.data.vocab_len + ' words)'; }
 			});
 		}
 	};
