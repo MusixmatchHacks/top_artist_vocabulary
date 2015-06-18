@@ -32,7 +32,6 @@
 
 	// Method to add new artist to the plot 
 	VocabPlot.prototype.addAritstsToPlot = function() {
-		// There must be a way to abstract the clicks and stuff on the artist to a different object 
 	    var that = this;
 	    d3.select(this.$plot.selector)
 	      .selectAll('div')
