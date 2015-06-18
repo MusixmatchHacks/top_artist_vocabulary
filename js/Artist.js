@@ -10,11 +10,9 @@
 	function Artist(artistName, artistData) {
 		this.name = artistName;
 		this.data = artistData;
-		this.selector = artistName.split(" ").join("_");
-		// plus the url to the image can be grabbed here too base on the name of the artist
 
+		this.selector = artistName.split(" ").join("_");
 		// Points to the DOM element that holds the current artist
-		console.log(this.selector);
 		this.$artist = $('#' + this.selector);
 
 		// We will have to lazy load images for better performace, but lets ignore it for now 
