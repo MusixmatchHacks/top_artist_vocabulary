@@ -48,7 +48,13 @@
 	      })
 	      .style('top', function(d) {
 	      	return that.yScale(d.vocab_len) + "px";	
-	      });
+	      })
+	      .style('left', calculateLeft() + 'px');
 	};
+
+	// Function that calculates the left offset for every single artist
+	function calculateLeft() {
+		return 100;
+	}
 		
 })();

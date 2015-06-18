@@ -10,8 +10,7 @@
   width: 900px;
   padding: 20px;
   height: 1200px;
-  margin: 0 auto;
-  background-color: teal; }
+  margin: 0 auto; }
 
 #plot {
   padding: 8px;
@@ -28,5 +27,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
+  .artistContainer:hover {
+    border: 2px solid #4881F6;
+    transition: all 0.3s; }
 
 /*# sourceMappingURL=styles.css.map */
