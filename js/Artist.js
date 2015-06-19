@@ -17,6 +17,7 @@
 		// Points to the DOM element that holds the current artist
 		this.$artist = $('#' + this.selector);
 
+
 		// We will have to lazy load images for better performace, but lets ignore it for now 
 		// Add artist image 
 		this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
