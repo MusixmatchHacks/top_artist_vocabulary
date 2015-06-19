@@ -26,7 +26,13 @@
 	    				.range([0.95*this.height, 0]);
 
 
+	    // Draw the sacle on the plot 
+	    drawScales.call(this);
+
+	    // Add all the artists to the plot 
 	    this.addAritstsToPlot();
+
+
 
 	}	
 
@@ -52,13 +58,32 @@
 	      .style('left', calculateLeftOffset.call(this) + 'px');
 	};
 
+
+	// Private methods
+
+	// Draw all the scales on the plot
+	function drawScales() {
+		// Let us first draw a simple line and a piece of text 
+		var scaleData = [{x1 : 20, x2 : 1000, y1 : 10, y2 : 800}];
+		d3.select('#scale')
+		  .selectAll('line')
+		  .data(scaleData)
+		  .enter()
+		  .append('line')
+		  .attr('x1', function(d) { return d.x1;})
+		  .attr('x2', function(d) { return d.x2;})
+		  .attr('y1', function(d) { return d.y1;})
+		  .attr('y2', function(d) { return d.y2;})
+		  .style('stroke', '#fff')
+		  .style('stroke-width' , 2);
+	}
+
 	// Function that calculates the left offset for every single artist
 	// From left end calculate the amount to translate towards right for each artist 
 	// while ensuring that they don't overlap
 	function calculateLeftOffset() {
 		// Let us start 
 		// Create a quadtree not entirely sure what it does though
-		console.log(this)
 		return (this.width/2 - 30);
 	}
 		
