@@ -74,7 +74,7 @@
 		var legendTickSeparation = 10;
 
 		// Divisions on the scale, each number represents number of words
-		var scaleDivisions = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000];
+		var scaleDivisions = [0, 2000, 4000, 6000, 8000];
 
 		// Draw the lines on the scale
 		d3.select('#scale')
@@ -87,7 +87,7 @@
 		  .attr('y1', function(d) { return that.yScale(d);})
 		  .attr('y2', function(d) { return that.yScale(d);})
 		  .style('stroke', 'rgba(255, 255, 255, 0.5)')
-		  .style('stroke-width' , 2);
+		  .style('stroke-width' , 1);
 
 		// Add legend to the scale
   		d3.select('#scale')
@@ -97,11 +97,18 @@
 	      .append('text')	
 	      .attr('x', scaleLeftPadding)
 	      .attr('y', function(d) { return (that.yScale(d) - legendTickSeparation);})
-	      .text(function(d) { return d;})
+	      .text(function(d) { return formatWithCommas(d) + ' words';})
 	      .attr('font-family', 'Roboto')
 	      .attr('fill', 'white')
-	      .attr('font-size', 24);
+	      .attr('font-size', 18);
 
+	}
+
+	// Adds commas to a large number at appropriate places
+	function formatWithCommas(x) {
+	    var parts = x.toString().split(".");
+	    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	    return parts.join(".");
 	}
 
 	// Function that calculates the left offset for every single artist
