@@ -27,7 +27,7 @@
 
 
 	    // Draw the sacle on the plot 
-	    drawScales.call(this);
+	    drawScale.call(this);
 
 	    // Add all the artists to the plot 
 	    this.addAritstsToPlot();
@@ -62,42 +62,46 @@
 	// Private methods
 
 	// Draw all the scales on the plot
-	function drawScales() {
+	function drawScale() {
+
+		var that = this;
 
 		// Length of each tick on the scale ( the white line)
 		var tickLength = 0.96 * this.width;
 		var scaleLeftPadding = 0.04 * this.width;
 
-		var scaleData = [
-			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
-			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
-			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
-			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
-			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
-			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
-			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80}
-		];
+		// The amount of spearation the text and tick
+		var legendTickSeparation = 10;
+
+		// Divisions on the scale, each number represents number of words
+		var scaleDivisions = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000];
+
+		// Draw the lines on the scale
 		d3.select('#scale')
 		  .selectAll('line')
-		  .data(scaleData)
+		  .data(scaleDivisions)
 		  .enter()
 		  .append('line')
-		  .attr('x1', function(d) { return d.x1;})
-		  .attr('x2', function(d) { return d.x2;})
-		  .attr('y1', function(d, i) { return (i + 1) * d.y1;})
-		  .attr('y2', function(d, i) { return (i + 1) * d.y2;})
+		  .attr('x1', scaleLeftPadding)
+		  .attr('x2', tickLength)
+		  .attr('y1', function(d) { return that.yScale(d);})
+		  .attr('y2', function(d) { return that.yScale(d);})
 		  .style('stroke', 'rgba(255, 255, 255, 0.5)')
 		  .style('stroke-width' , 2);
 
-		// Now let us add some dummy text to the scale
-		d3.select('#scale')
+		// Add legend to the scale
+  		d3.select('#scale')
+  		  .selectAll('text')
+  		  .data(scaleDivisions)
+  		  .enter()
 	      .append('text')	
 	      .attr('x', scaleLeftPadding)
-	      .attr('y', 70)
-	      .text('6000')
+	      .attr('y', function(d) { return (that.yScale(d) - legendTickSeparation);})
+	      .text(function(d) { return d;})
 	      .attr('font-family', 'Roboto')
 	      .attr('fill', 'white')
 	      .attr('font-size', 24);
+
 	}
 
 	// Function that calculates the left offset for every single artist
