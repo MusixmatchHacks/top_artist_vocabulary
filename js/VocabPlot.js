@@ -23,7 +23,7 @@
 	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
 	    this.yScale = d3.scale.linear()
 					    .domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
-	    				.range([0.9*this.height, 0]);
+	    				.range([0.95*this.height, 0]);
 
 
 	    this.addAritstsToPlot();

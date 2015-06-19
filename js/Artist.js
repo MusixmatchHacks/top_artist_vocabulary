@@ -20,7 +20,6 @@
 		// We will have to lazy load images for better performace, but lets ignore it for now 
 		// Add artist image 
 		this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
-
  		// Initialize events 
 		this.events.click.call(this);
 		this.events.hover.call(this);
