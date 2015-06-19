@@ -50,7 +50,8 @@ body {
   border: 2px solid white;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
   .artistContainer:hover {
     border: 3px solid #0087FF;
     transition: all 0.2s; }

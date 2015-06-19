@@ -22,12 +22,12 @@
 
 	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
 	    this.yScale = d3.scale.linear()
-					    .domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
-	    				.range([0.95*this.height, 0]);
+						.domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
+						.range([0.95*this.height, 0]);
 
 
 	    // Draw the sacle on the plot 
-	    drawScale.call(this);
+	    drawScale.call(this, [0, 2000, 4000, 6000, 8000]);
 
 	    // Add all the artists to the plot 
 	    this.addAritstsToPlot();
@@ -61,8 +61,12 @@
 
 	// Private methods
 
-	// Draw all the scales on the plot
-	function drawScale() {
+	/*
+	* Funciton : drawScale(array of numbers, each number representing a tick on scale)
+	* ---------------------------------------------------------------------------------
+	* Draws scale on the plot.
+	*/
+	function drawScale(scaleDivisions) {
 
 		var that = this;
 
@@ -72,9 +76,6 @@
 
 		// The amount of spearation the text and tick
 		var legendTickSeparation = 10;
-
-		// Divisions on the scale, each number represents number of words
-		var scaleDivisions = [0, 2000, 4000, 6000, 8000];
 
 		// Draw the lines on the scale
 		d3.select('#scale')
