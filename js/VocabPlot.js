@@ -64,7 +64,15 @@
 	// Draw all the scales on the plot
 	function drawScales() {
 		// Let us first draw a simple line and a piece of text 
-		var scaleData = [{x1 : 20, x2 : 1000, y1 : 10, y2 : 800}];
+		var scaleData = [
+			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
+			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
+			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
+			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
+			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
+			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
+			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80}
+		];
 		d3.select('#scale')
 		  .selectAll('line')
 		  .data(scaleData)
@@ -72,10 +80,20 @@
 		  .append('line')
 		  .attr('x1', function(d) { return d.x1;})
 		  .attr('x2', function(d) { return d.x2;})
-		  .attr('y1', function(d) { return d.y1;})
-		  .attr('y2', function(d) { return d.y2;})
-		  .style('stroke', '#fff')
+		  .attr('y1', function(d, i) { return (i + 1) * d.y1;})
+		  .attr('y2', function(d, i) { return (i + 1) * d.y2;})
+		  .style('stroke', 'rgba(255, 255, 255, 0.5)')
 		  .style('stroke-width' , 2);
+
+		// Now let us add some dummy text to the scale
+		d3.select('#scale')
+	      .append('text')	
+	      .attr('x', 60)
+	      .attr('y', 70)
+	      .text('6000')
+	      .attr('font-family', 'Roboto')
+	      .attr('fill', 'white')
+	      .attr('font-size', 24);
 	}
 
 	// Function that calculates the left offset for every single artist
