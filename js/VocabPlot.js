@@ -63,15 +63,19 @@
 
 	// Draw all the scales on the plot
 	function drawScales() {
-		// Let us first draw a simple line and a piece of text 
+
+		// Length of each tick on the scale ( the white line)
+		var tickLength = 0.96 * this.width;
+		var scaleLeftPadding = 0.04 * this.width;
+
 		var scaleData = [
-			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
-			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
-			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
-			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
-			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
-			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80},
-			{x1 : 60, x2 : 1200, y1 : 80, y2 : 80}
+			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
+			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
+			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
+			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
+			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
+			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80},
+			{x1 : scaleLeftPadding, x2 : tickLength, y1 : 80, y2 : 80}
 		];
 		d3.select('#scale')
 		  .selectAll('line')
@@ -88,7 +92,7 @@
 		// Now let us add some dummy text to the scale
 		d3.select('#scale')
 	      .append('text')	
-	      .attr('x', 60)
+	      .attr('x', scaleLeftPadding)
 	      .attr('y', 70)
 	      .text('6000')
 	      .attr('font-family', 'Roboto')
