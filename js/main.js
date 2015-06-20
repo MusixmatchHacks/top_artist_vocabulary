@@ -24,13 +24,15 @@ var testData = [{
     "total_words": "44625",
     "vocab_len": "4883",
     "name": "Bob Dylan",
-    "sales": "43.6"
+    "sales": "43.6",
+    "x_offset" : -35
 }, {
     "total_nr_songs": "129",
     "total_words": "61531",
     "vocab_len": "4539",
     "name": "The Black Eyed Peas",
-    "sales": "54"
+    "sales": "54",
+    "x_offset" : 33
 }, {
     "total_nr_songs": "423",
     "total_words": "28848",
@@ -48,13 +50,15 @@ var testData = [{
     "total_words": "17090",
     "vocab_len": "3959",
     "name": "Bz",
-    "sales": "72.8"
+    "sales": "72.8",
+    "x_offset" : 38
 }, {
     "total_nr_songs": "335",
     "total_words": "41977",
     "vocab_len": "3954",
     "name": "Celine Dion",
-    "sales": "122"
+    "sales": "122",
+    "x_offset" : -38
 }, {
     "total_nr_songs": "592",
     "total_words": "57771",
@@ -618,12 +622,13 @@ var testData = [{
 
     var plot = VocabPlot.newPlot('plot', testData);
     // Add x and y position data to each one of them
-    var x_offset = $('#plot').width() / 2 - 17.5;
+    var x = $('#plot').width() / 2 - 17.5;
 
     // Let us do something brute force here 
     testData.forEach(function(data) { 
-        data.x = x_offset;
+        data.x = x;
         data.y = plot.yScale(data.vocab_len);
+        data.x_offset =  (data.x_offset) ? data.x_offset : 0;
     });
     plot.addAritstsToPlot();
 

@@ -28,7 +28,7 @@
 
 	    // Draw the sacle on the plot 
 	    drawScale.call(this, [0, 2000, 4000, 6000, 8000]);
-	    
+
 	}	
 
 	// Method to add new artist to the plot 
@@ -50,7 +50,7 @@
 	      })
 	      .style('top', function(d) { return d.y + 'px';})
 	      .transition().duration(100)
-	      .style('left', function(d) { return d.x + 'px';});
+	      .style('left', function(d) {  return (d.x + d.x_offset) + 'px';});
 	};
 
 
