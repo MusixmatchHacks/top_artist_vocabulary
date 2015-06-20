@@ -97,7 +97,8 @@
 		  .attr('x2', tickLength)
 		  .attr('y1', function(d) { return that.yScale(d);})
 		  .attr('y2', function(d) { return that.yScale(d);})
-		  .style('stroke', 'rgba(255, 255, 255, 0.5)')
+		  .attr('stroke-dasharray', '1, 5')
+		  .style('stroke', 'rgba(255, 255, 255, 0.7)')
 		  .style('stroke-width' , 1);
 
 		// Add legend to the scale
