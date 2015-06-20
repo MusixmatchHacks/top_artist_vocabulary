@@ -22,7 +22,8 @@
 
 	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
 	    this.yScale = d3.scale.linear()
-						.domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
+						// .domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
+						.domain([0, 9000])
 						.range([0.95*this.height, 0]);
 
 
@@ -50,7 +51,7 @@
 	      })
 	      .style('top', function(d) { return d.y + 'px';})
 	      .transition().duration(100)
-	      .style('left', function(d) {  return (d.x + d.x_offset) + 'px';});
+	      .style('left', function(d) {  return (d.x + d.x_offset - 17.5) + 'px';});
 	};
 
 
@@ -65,9 +66,11 @@
 
 		var that = this;
 
+		// Color of general numbers and lines
+		var scaleColor = "#FFFFFF";
 		// Length of each tick on the scale ( the white line)
-		var tickLength = 0.96 * this.width;
-		var scaleLeftPadding = 0.04 * this.width;
+		var tickLength = 0.98 * this.width;
+		var scaleLeftPadding = 0.02 * this.width;
 
 		// The amount of spearation the text and tick
 		var legendTickSeparation = 10;

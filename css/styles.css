@@ -43,15 +43,15 @@ body {
 .artistContainer {
   position: absolute;
   margin-top: 20px;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   border-radius: 70px;
   background-color: white;
-  border: 2px solid white;
+  border: 2px solid #f8f8f8;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); }
   .artistContainer:hover {
     border: 3px solid #0087FF;
     transition: all 0.2s; }
