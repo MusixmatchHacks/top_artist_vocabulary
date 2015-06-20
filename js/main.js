@@ -636,11 +636,11 @@ var testData = [{
     // Add x and y position data to each one of them
     var x = $('#plot').width() / 2 - 17.5;
 
-    // Let us do something brute force here 
+    // Add required data to each artist
     testData.forEach(function(data) { 
         data.x = x;
         data.y = plot.yScale(data.vocab_len);
-        data.x_offset =  (data.x_offset) ? data.x_offset : 0;
+        data.x_offset =  (data.x_offset) ? data.x_offset : 0; // this expression can and will be improved later
     });
     plot.addAritstsToPlot();
 
