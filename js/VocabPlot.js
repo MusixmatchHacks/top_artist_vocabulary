@@ -28,15 +28,14 @@
 
 	    // Draw the sacle on the plot 
 	    drawScale.call(this, [0, 2000, 4000, 6000, 8000]);
-
-
-	    // Add all the artists to the plot 
-	    this.addAritstsToPlot();
+	    
 	}	
 
 	// Method to add new artist to the plot 
 	VocabPlot.prototype.addAritstsToPlot = function() {
+
 	    var that = this;
+
 	    d3.select(this.$plot.selector)
 	      .selectAll('div')
 	      .data(this.data)
@@ -49,11 +48,9 @@
 	      	that.artists.push(Artist.newArtist(d.name, d)); // Create and add to collection new Artist object
 	      	return 'artistContainer';
 	      })
-	      .style('top', function(d) {
-	      	return that.yScale(d.vocab_len) + "px";	
-	      })
+	      .style('top', function(d) { return d.y + 'px';})
 	      .transition().duration(100)
-	      .style('left', calculateLeftOffset.call(this) + 'px');
+	      .style('left', function(d) { return d.x + 'px';});
 	};
 
 

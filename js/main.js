@@ -611,21 +611,21 @@ var testData = [{
         "vocab_len": "2445.2727272727"
     };
 
+
+    // TODO : Dynamically divide the plot into equal fragments based on the lower and upper value of 
+    // data, like 0 - 1000, 1000 - 2000, 2000 - 3000 and so on
+    // Style those section by adding elements 
+
+    var plot = VocabPlot.newPlot('plot', testData);
     // Add x and y position data to each one of them
     var x_offset = $('#plot').width() / 2 - 17.5;
 
     // Let us do something brute force here 
     testData.forEach(function(data) { 
         data.x = x_offset;
-        data.y = 0;
-        console.log(data);
+        data.y = plot.yScale(data.vocab_len);
     });
-
-    // TODO : Dynamically divide the plot into equal fragments based on the lower and upper value of 
-    // data, like 0 - 1000, 1000 - 2000, 2000 - 3000 and so on
-    // Style those section by adding elements 
-
-	var plot = VocabPlot.newPlot('plot', testData);
+    plot.addAritstsToPlot();
 
 
 })();
