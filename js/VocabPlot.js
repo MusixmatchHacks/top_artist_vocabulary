@@ -118,7 +118,7 @@
 	function calculateLeftOffset() {
 		// Let us start 
 		// Create a quadtree not entirely sure what it does though
-		return (this.width/2 - 30);
+		return (this.width/2 - 17.5);
 	}
 		
 })();
