@@ -73,7 +73,7 @@ var testData = [{
     "vocab_len": "3636",
     "name": "Red Hot Chili Peppers",
     "sales": "52.3",
-    "x_offset" : 70
+    "x_offset" : -70
 }, {
     "total_nr_songs": "215",
     "total_words": "35652",
