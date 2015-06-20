@@ -29,11 +29,9 @@
 	    // Draw the sacle on the plot 
 	    drawScale.call(this, [0, 2000, 4000, 6000, 8000]);
 
+
 	    // Add all the artists to the plot 
 	    this.addAritstsToPlot();
-
-
-
 	}	
 
 	// Method to add new artist to the plot 
