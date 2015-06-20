@@ -41,8 +41,9 @@
 		hover : function() {
 			var that = this;
 			this.$artist.tipsy({
-				gravity : 's',
+				gravity : (that.data.name === 'Eminem') ? 'w' : 's',
 				html : true,
+				opacity : 1,
 				title : function() { return that.data.name + ' <br/>(' + that.data.vocab_len + ' words)'; }
 			});
 		}

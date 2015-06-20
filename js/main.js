@@ -634,7 +634,7 @@ var testData = [{
 
     var plot = VocabPlot.newPlot('plot', testData);
     // Add x and y position data to each one of them
-    var x = $('#plot').width() / 2 - 17.5;
+    var x = plot.width / 2 - 17.5;
 
     // Add required data to each artist
     testData.forEach(function(data) { 
