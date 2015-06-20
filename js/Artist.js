@@ -42,10 +42,16 @@
 		hover : function() {
 			var that = this;
 			this.$artist.tipsy({
-				gravity : (that.data.name === 'Eminem') ? 'w' : 's',
+				gravity : 's',
 				html : true,
 				opacity : 1,
-				title : function() { return that.data.name + ' <br/>(' + that.data.vocab_len + ' words)'; }
+				title : function() {
+					// Since we need to scale down for Eminem and Jay Z we will do two special cases
+					var vocab = that.data.vocab_len;
+					if(that.data.name === 'Eminem')	 vocab = 8818;
+					else if(that.data.name === 'Jay Z') vocab = 6899;
+					return (that.data.name + '<br/>' + '(' + vocab + ' words)');
+				}
 			});
 		}
 	};

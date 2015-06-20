@@ -2,10 +2,10 @@
   .tipsy-inner { background-color: #0087FF ; color: #fff; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
 
   /* Rounded corners */
-  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+  .tipsy-inner { border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
   
   /* Uncomment for shadow */
-  .tipsy-inner { box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+  .tipsy-inner { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
   
   .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
   

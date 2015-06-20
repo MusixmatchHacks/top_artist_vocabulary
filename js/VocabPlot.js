@@ -12,6 +12,8 @@
 
 		// jQuery object holding the plot
 		this.$plot = $('#' + this.cssId);
+		// jQuery object holding the scale
+		this.$scale = this.$plot.find('#scale');
 
 		// Height and width of the plot
 		this.width = this.$plot.width();
@@ -28,7 +30,16 @@
 
 
 	    // Draw the sacle on the plot 
-	    drawScale.call(this, [0, 2000, 4000, 6000, 8000]);
+	    drawScale.call(this, [0, 2000, 4000]);
+	    // Let us draw the average line 
+	    // d3.select(this.$scale.selector)
+	    //   .append('line')
+	    //   .attr('x1', 0)
+	    //   .attr('x2', this.width)
+	    //   .attr('y1', this.yScale(2445.277))
+	    //   .attr('y2', this.yScale(2445.277))
+	    //   .style('stroke', "#0087ff")
+	    //   .style('stroke-width', 2);
 
 	}	
 
@@ -75,8 +86,9 @@
 		// The amount of spearation the text and tick
 		var legendTickSeparation = 10;
 
+
 		// Draw the lines on the scale
-		d3.select('#scale')
+		d3.select(this.$scale.selector)
 		  .selectAll('line')
 		  .data(scaleDivisions)
 		  .enter()
@@ -89,7 +101,7 @@
 		  .style('stroke-width' , 1);
 
 		// Add legend to the scale
-  		d3.select('#scale')
+  		d3.select(this.$scale.selector)
   		  .selectAll('text')
   		  .data(scaleDivisions)
   		  .enter()

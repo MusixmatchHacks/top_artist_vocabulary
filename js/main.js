@@ -4,13 +4,13 @@
 var testData = [{
     "total_nr_songs": "284",
     "total_words": "101848",
-    "vocab_len": "8000",
+    "vocab_len": "6400",
     "name": "Eminem",
     "sales": "116"
 }, {
     "total_nr_songs": "238",
     "total_words": "82042",
-    "vocab_len": "6899",
+    "vocab_len": "5800",
     "name": "Jay Z",
     "sales": "79.8"
 }, {
