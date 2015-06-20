@@ -70,13 +70,15 @@ var testData = [{
     "total_words": "36166",
     "vocab_len": "3636",
     "name": "Red Hot Chili Peppers",
-    "sales": "52.3"
+    "sales": "52.3",
+    "x_offset" : 70
 }, {
     "total_nr_songs": "215",
     "total_words": "35652",
     "vocab_len": "3497",
     "name": "Genesis",
-    "sales": "39.5"
+    "sales": "39.5",
+    "x_offset" : 35
 }, {
     "total_nr_songs": "239",
     "total_words": "40053",
@@ -88,37 +90,43 @@ var testData = [{
     "total_words": "54044",
     "vocab_len": "3206",
     "name": "Beyonc\u00e9 Knowles",
-    "sales": "66"
+    "sales": "66",
+    "x_offset" : -40
 }, {
     "total_nr_songs": "496",
     "total_words": "33944",
     "vocab_len": "3186",
     "name": "Barbra Streisand",
-    "sales": "97.1"
+    "sales": "97.1",
+    "x_offset" : 63
 }, {
     "total_nr_songs": "220",
     "total_words": "35060",
     "vocab_len": "3168",
     "name": "Robbie Williams",
-    "sales": "48.2"
+    "sales": "48.2",
+    "x_offset" : -78
 }, {
     "total_nr_songs": "192",
     "total_words": "17621",
     "vocab_len": "3077",
     "name": "Pink Floyd",
-    "sales": "116.2"
+    "sales": "116.2",
+    "x_offset" : 103
 }, {
     "total_nr_songs": "213",
     "total_words": "31886",
     "vocab_len": "3061",
     "name": "Billy Joel",
-    "sales": "99.2"
+    "sales": "99.2",
+    "x_offset" : 140
 }, {
     "total_nr_songs": "203",
     "total_words": "50313",
     "vocab_len": "3059",
     "name": "Mariah Carey",
-    "sales": "129.1"
+    "sales": "129.1",
+    "x_offset" : -113
 }, {
     "total_nr_songs": "306",
     "total_words": "28970",
@@ -542,25 +550,29 @@ var testData = [{
     "total_words": "24949",
     "vocab_len": "1497",
     "name": "Spice Girls",
-    "sales": "41.1"
+    "sales": "41.1",
+    "x_offset" : -500
 }, {
     "total_nr_songs": "56",
     "total_words": "18621",
     "vocab_len": "1489",
     "name": "Bruno Mars",
-    "sales": "72.1"
+    "sales": "72.1",
+    "x_offset" : 500
 }, {
     "total_nr_songs": "32",
     "total_words": "4061",
     "vocab_len": "832",
     "name": "The Carpenters",
-    "sales": "45.9"
+    "sales": "45.9",
+    "x_offset" : 38
 }, {
     "total_nr_songs": "89",
     "total_words": "4941",
     "vocab_len": "826",
     "name": "Tom Petty",
-    "sales": "34.4"
+    "sales": "34.4",
+    "x_offset" : -38
 }, {
     "total_nr_songs": "232",
     "total_words": "5016",

@@ -41,7 +41,7 @@
 		hover : function() {
 			var that = this;
 			this.$artist.tipsy({
-				gravity : 'w',
+				gravity : 's',
 				html : true,
 				title : function() { return that.data.name + ' <br/>(' + that.data.vocab_len + ' words)'; }
 			});
