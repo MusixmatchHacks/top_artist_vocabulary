@@ -17,10 +17,10 @@
 		// Points to the DOM element that holds the current artist
 		this.$artist = $('#' + this.selector);
 
+
 		// We will have to lazy load images for better performace, but lets ignore it for now 
 		// Add artist image 
 		this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
-
  		// Initialize events 
 		this.events.click.call(this);
 		this.events.hover.call(this);
@@ -41,8 +41,9 @@
 		hover : function() {
 			var that = this;
 			this.$artist.tipsy({
-				gravity : 'w',
+				gravity : (that.data.name === 'Eminem') ? 'w' : 's',
 				html : true,
+				opacity : 1,
 				title : function() { return that.data.name + ' <br/>(' + that.data.vocab_len + ' words)'; }
 			});
 		}
