@@ -41,7 +41,7 @@
         normalize();
     });
 
-    // Debounce the quick firing function
+    // Debounce the quick firing function for efficiency
     var debounceHighlightArtists = debounce(highlightMatchingArtists, 250);
     locateArtistField.on('input',function(event) {
         debounceHighlightArtists();
