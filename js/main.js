@@ -29,10 +29,19 @@
     // Names of artists on the plot
     var artistNames = Object.keys(plot.artists);
 
+    dimAllArtists();
+
     setTimeout(function() {
         plot.artists['Taylor Swift'].highlight();
+        plot.artists['Kanye West'].highlight();
+        plot.artists['Katy Perry'].highlight();
     }, 2000);
 
 
+    // This will dim all the artists present on the plot
+    function dimAllArtists() {
+        for(var artistName in plot.artists) 
+            plot.artists[artistName].dim();
+    }
 
 })();

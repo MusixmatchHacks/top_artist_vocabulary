@@ -60,6 +60,7 @@ body {
   opacity: 0.25; }
 
 .highlightedArtist {
+  opacity: 1;
   border: 2px solid #0087FF;
   transition: all 0.2s; }
 
