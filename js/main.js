@@ -43,15 +43,19 @@
     });
 
     // Debounce the quick firing function
+    var timeout;
     locateArtistField.on('input', function() {
-        var matchingArtists = artistNames.filter(function(name) {
-            if(locateArtistField.val())
-                return (name.toUpperCase().indexOf(locateArtistField.val().toUpperCase()) === 0);
-            else 
-                return false;
-        });
-        unhighlightAllArtists();
-        highlightArtists(matchingArtists);
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            var matchingArtists = artistNames.filter(function(name) {
+                if(locateArtistField.val())
+                    return (name.toUpperCase().indexOf(locateArtistField.val().toUpperCase()) === 0);
+                else 
+                    return false;
+            });
+            unhighlightAllArtists();
+            highlightArtists(matchingArtists);
+        }, 100);
     });
 
 
