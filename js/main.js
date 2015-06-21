@@ -31,6 +31,7 @@
 
     // Targe the input field to locate the artists
     var locateArtistField = $('#locateArtist');
+    locateArtistField.autocomplete({source : [artistNames]});
     // when the input field is in focus 
     locateArtistField.focus( function() {
         dimAllArtists();
@@ -45,6 +46,9 @@
     var debounceHighlightArtists = debounce(highlightMatchingArtists, 250);
     locateArtistField.on('input',function(event) {
         debounceHighlightArtists();
+    });
+    locateArtistField.change(function() {
+        console.log("A change was reported");    
     });
 
     // Utility functions
@@ -63,6 +67,7 @@
                 return (name.toUpperCase().indexOf(locateArtistField.val().toUpperCase()) === 0);
             return false;
         });
+
         unhighlightAllArtists();
         highlightArtists(matchingArtists);
     }

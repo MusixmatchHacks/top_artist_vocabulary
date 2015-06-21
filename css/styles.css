@@ -53,8 +53,8 @@ input#locateArtist {
   display: block;
   margin: 0;
   appearance: none;
-  width: 250px;
-  font-size: 26px;
+  width: 237px;
+  font-size: 20px;
   font-family: "Roboto";
   background-color: transparent;
   box-shadow: none;
@@ -63,7 +63,7 @@ input#locateArtist {
   outline: none;
   color: white;
   font-weight: lighter;
-  background: url(.././img/icons/icon_search.png) no-repeat center left;
+  background: url(.././img/icons/icon_search.png) no-repeat;
   padding: 0 0 5px 40px; }
   input#locateArtist:focus {
     outline: none; }
