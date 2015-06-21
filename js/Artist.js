@@ -34,7 +34,8 @@
 		click : function() {
 			var that = this;
 			this.$artist.on('click', function() {
-				console.log(that.data);
+				that.$artist.css('opacity', '1');
+				that.$artist.siblings('.artistContainer').css('opacity', '0.25');
 			});
 		},
 
