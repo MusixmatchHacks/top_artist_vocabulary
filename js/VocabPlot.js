@@ -13,7 +13,7 @@
 		// jQuery object holding the plot
 		this.$plot = $('#' + this.cssId);
 		// jQuery object holding the scale
-		this.$scale = this.$plot.find('#scale');
+		this.scale = d3.select('#scale');
 
 		// Height and width of the plot
 		this.width = this.$plot.width();
@@ -24,22 +24,12 @@
 
 	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
 	    this.yScale = d3.scale.linear()
-						// .domain([0, d3.max(this.data, function(d) { return d.vocab_len; })])
-						.domain([0, 9000])
+						.domain([0, 8000])
 						.range([0.95*this.height, 0]);
 
 
 	    // Draw the sacle on the plot 
-	    drawScale.call(this, [0, 2000, 4000]);
-	    // Let us draw the average line 
-	    // d3.select(this.$scale.selector)
-	    //   .append('line')
-	    //   .attr('x1', 0)
-	    //   .attr('x2', this.width)
-	    //   .attr('y1', this.yScale(2445.277))
-	    //   .attr('y2', this.yScale(2445.277))
-	    //   .style('stroke', "#0087ff")
-	    //   .style('stroke-width', 2);
+	    drawScale.call(this, [0, 2000, 4000, 1000, 3000], 2445);
 
 	}	
 
@@ -73,48 +63,75 @@
 	* ---------------------------------------------------------------------------------
 	* Draws scale on the plot.
 	*/
-	function drawScale(scaleDivisions) {
+	function drawScale(scaleDivisions, average) {
 
 		var that = this;
 
 		// Color of general numbers and lines
 		var scaleColor = "#FFFFFF";
 		// Length of each tick on the scale ( the white line)
+		var scaleLeftPadding = 25;
 		var tickLength = 0.98 * this.width;
-		var scaleLeftPadding = 0.02 * this.width;
 
 		// The amount of spearation the text and tick
-		var legendTickSeparation = 10;
-
+		var legendTickSeparation = 12;
 
 		// Draw the lines on the scale
-		d3.select(this.$scale.selector)
-		  .selectAll('line')
-		  .data(scaleDivisions)
-		  .enter()
-		  .append('line')
-		  .attr('x1', scaleLeftPadding)
-		  .attr('x2', tickLength)
-		  .attr('y1', function(d) { return that.yScale(d);})
-		  .attr('y2', function(d) { return that.yScale(d);})
-		  .attr('stroke-dasharray', '1, 5')
-		  .style('stroke', 'rgba(255, 255, 255, 0.7)')
-		  .style('stroke-width' , 1);
+		this.scale
+			.selectAll('line')
+			.data(scaleDivisions)
+			.enter().append('line')
+			.attr('x1', scaleLeftPadding)
+			.attr('x2', tickLength)
+			.attr('y1', function(d) { return that.yScale(d);})
+			.attr('y2', function(d) { return that.yScale(d);})
+			.attr('stroke-dasharray', '1, 5')
+			.style('stroke', 'rgba(255, 255, 255, 0.7)')
+			.style('stroke-width' , 1);
 
 		// Add legend to the scale
-  		d3.select(this.$scale.selector)
-  		  .selectAll('text')
-  		  .data(scaleDivisions)
-  		  .enter()
-	      .append('text')	
-	      .attr('x', scaleLeftPadding)
-	      .attr('y', function(d) { return (that.yScale(d) - legendTickSeparation);})
-	      .text(function(d) { return formatWithCommas(d) + ' words';})
-	      .attr('font-family', 'Roboto')
-	      .attr('fill', 'white')
-	      .attr('font-size', 18);
+		this.scale
+	  		.selectAll('text')
+	  		.data(scaleDivisions)
+	  		.enter()
+		    .append('text')	
+		    .attr('x', scaleLeftPadding)
+		    .attr('y', function(d) { return (that.yScale(d) - legendTickSeparation);})
+		    .text(function(d) { return formatWithCommas(d) + ' words';})
+		    .attr('font-family', 'Roboto')
+		    .attr('fill', 'white')
+		    .attr('font-size', 18);
 
+		// Draw line for average line and other text
+		this.scale
+      		.append('line')
+	      	.attr('x1', scaleLeftPadding)
+	      	.attr('x2', tickLength)
+	      	.attr('y1', this.yScale(average))
+	      	.attr('y2', this.yScale(average))
+	      	.style('stroke', "#0087ff")
+	      	.style('stroke-width', 1);
+
+
+	    this.scale
+	    	.append('text')
+	    	.text(formatWithCommas(average) + ' words')
+	    	.attr('fill', '#0087ff')
+      		.attr('font-family', 'roboto')
+	    	.attr('font-size', 16)
+	    	.attr('x', scaleLeftPadding)
+	    	.attr('y', that.yScale(average) - (legendTickSeparation - 5));
+	    	
+	    // this.scale
+	    // 	.append('text')
+	    // 	.text('Average')
+	    // 	.attr('fill', '#0087ff')
+     //  		.attr('font-family', 'roboto')
+	    // 	.attr('font-size', 16)
+	    // 	.attr('x', scaleLeftPadding)
+	    // 	.attr('y', that.yScale(average) - (2.5*legendTickSeparation));
 	}
+
 
 	// Adds commas to a large number at appropriate places
 	function formatWithCommas(x) {

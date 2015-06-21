@@ -320,35 +320,35 @@ var testData = [{
     "vocab_len": "2433",
     "name": "Kenny Rogers",
     "sales": "58.8",
-    "x_offset" : 417
+    "x_offset" : 285
 }, {
     "total_nr_songs": "244",
     "total_words": "28099",
     "vocab_len": "2432",
     "name": "Alabama",
     "sales": "47.5",
-    "x_offset" : 380
+    "x_offset" : 253
 }, {
     "total_nr_songs": "137",
     "total_words": "46836",
     "vocab_len": "2400",
     "name": "Rihanna",
     "sales": "126.1",
-    "x_offset" : -276
+    "x_offset" : -170
 }, {
     "total_nr_songs": "153",
     "total_words": "24346",
     "vocab_len": "2343",
     "name": "M\u00f6tley Cr\u00fce",
     "sales": "27.6",
-    "x_offset" : 304
+    "x_offset" : 196
 }, {
     "total_nr_songs": "255",
     "total_words": "37276",
     "vocab_len": "2318",
     "name": "Bon Jovi",
     "sales": "80.5",
-    "x_offset" : -312
+    "x_offset" : -202
 }, {
     "total_nr_songs": "325",
     "total_words": "26094",
@@ -362,14 +362,14 @@ var testData = [{
     "vocab_len": "2250",
     "name": "George Strait",
     "sales": "72.8",
-    "x_offset" : 345
+    "x_offset" : 227
 }, {
     "total_nr_songs": "105",
     "total_words": "21625",
     "vocab_len": "2201",
     "name": "Eagles",
     "sales": "127.9",
-    "x_offset" : 450
+    "x_offset" : 310
 }, {
     "total_nr_songs": "393",
     "total_words": "29685",
@@ -383,21 +383,21 @@ var testData = [{
     "vocab_len": "2178",
     "name": "Reba McEntire",
     "sales": "42.2",
-    "x_offset" : -498
+    "x_offset" : -232
 }, {
     "total_nr_songs": "289",
     "total_words": "30633",
     "vocab_len": "2163",
     "name": "Cher",
     "sales": "40.4",
-    "x_offset" : 550
+    "x_offset" : 342
 }, {
     "total_nr_songs": "176",
     "total_words": "44028",
     "vocab_len": "2141",
     "name": "Britney Spears",
     "sales": "77.1",
-    "x_offset" : -530
+    "x_offset" : -263
 }, {
     "total_nr_songs": "327",
     "total_words": "30642",
@@ -405,14 +405,14 @@ var testData = [{
     // "name": "Earth Wind & Fire",
     "name": "Earth Wind Fire",
     "sales": "34.9",
-    "x_offset" : 520
+    "x_offset" : 374
 }, {
     "total_nr_songs": "63",
     "total_words": "14797",
     "vocab_len": "2108",
     "name": "Dire Straits",
     "sales": "42.9",
-    "x_offset" : -562
+    "x_offset" : -295
 }, {
     "total_nr_songs": "169",
     "total_words": "23779",
@@ -426,7 +426,7 @@ var testData = [{
     "vocab_len": "2055",
     "name": "Bryan Adams",
     "sales": "43.1",
-    "x_offset" : 490
+    "x_offset" : 406
 }, {
     "total_nr_songs": "276",
     "total_words": "32826",
@@ -622,14 +622,14 @@ var testData = [{
     "vocab_len": "1497",
     "name": "Spice Girls",
     "sales": "41.1",
-    "x_offset" : -500
+    "x_offset" : -492
 }, {
     "total_nr_songs": "56",
     "total_words": "18621",
     "vocab_len": "1489",
     "name": "Bruno Mars",
     "sales": "72.1",
-    "x_offset" : 500
+    "x_offset" : 490
 }, {
     "total_nr_songs": "32",
     "total_words": "4061",
