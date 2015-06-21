@@ -20,7 +20,7 @@
 		this.height = this.$plot.height();
 
 		// A collection of artist (Artist Objects) on the plot 
-		this.artists = [];
+		this.artists = {};
 
 	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
 	    this.yScale = d3.scale.linear()
@@ -46,9 +46,9 @@
 	      .attr('id', function(d) {
 	      	return d.name.split(" ").join("_");	
 	      })
-	      .attr('class', function(d) {
-	      	that.artists.push(Artist.newArtist(d.name, d)); // Create and add to collection new Artist object
-	      	return 'artistContainer';
+	      .classed('artistContainer', true)
+	      .each(function(d) {
+	      	that.artists[d.name] = Artist.newArtist(d.name, d);
 	      })
 	      .style('top', function(d) { return d.y + 'px';})
 	      .transition().duration(100)

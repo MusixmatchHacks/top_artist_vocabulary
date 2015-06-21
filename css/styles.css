@@ -40,7 +40,7 @@ body {
   width: 100%;
   height: 100%; }
 
-.artistContainer {
+.artistContainer, .dimArtist, .highlightedArtist, .normalArtist {
   position: absolute;
   margin-top: 20px;
   height: 30px;
@@ -51,8 +51,16 @@ body {
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center center;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); }
-  .artistContainer:hover {
-    border: 3px solid #0087FF; }
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  opacity: 1; }
+  .artistContainer:hover, .dimArtist:hover, .highlightedArtist:hover, .normalArtist:hover {
+    border: 2px solid #0087FF; }
+
+.dimArtist {
+  opacity: 0.25; }
+
+.highlightedArtist {
+  border: 2px solid #0087FF;
+  transition: all 0.2s; }
 
 /*# sourceMappingURL=styles.css.map */

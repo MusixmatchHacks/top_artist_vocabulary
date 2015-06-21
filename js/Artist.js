@@ -22,11 +22,34 @@
 		// Add artist image 
 		// this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
 		this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
+
  		// Initialize events 
 		this.events.click.call(this);
 		this.events.hover.call(this);
 	}
 
+
+	/*
+	* Function : dim
+	* ----------------------------------------
+	* Dims the artist in the plot. By setting 
+	* its opacity to a lower value.
+	*/
+	Artist.prototype.dim = function() {
+		this.$artist.addClass('dimArtist');
+	};
+
+	Artist.prototype.undim = function() {
+		this.$artist.removeClass('dimArist');
+	};
+
+	Artist.prototype.highlight = function() {
+		this.$artist.addClass('highlightedArtist');
+	};
+
+	Artist.prototype.normal = function() {
+		this.$artist.addClass('normalArtist');
+	};
 
 
 	// Event handler on artist object
@@ -34,8 +57,7 @@
 		click : function() {
 			var that = this;
 			this.$artist.on('click', function() {
-				that.$artist.css('opacity', '1');
-				that.$artist.siblings('.artistContainer').css('opacity', '0.25');
+				console.log("the artist was clicked");
 			});
 		},
 
