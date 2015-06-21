@@ -30,7 +30,7 @@
     var artistNames = Object.keys(plot.artists);
 
     setTimeout(function() {
-        plot.artists['Eminem'].highlight();
+        plot.artists['Taylor Swift'].highlight();
     }, 2000);
 
 

@@ -45,6 +45,7 @@
 
 	Artist.prototype.highlight = function() {
 		this.$artist.addClass('highlightedArtist');
+		this.$artist.tipsy('show');
 	};
 
 	Artist.prototype.normal = function() {
