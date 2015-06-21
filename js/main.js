@@ -38,26 +38,34 @@
 
     // when the input field is not in focus we don't want the artists to be dimmed
     locateArtistField.blur(function() {
-        undimAllArtists();
-        locateArtistField.val('');
+        normalize();
     });
 
     // Debounce the quick firing function
-    var timeout;
-    locateArtistField.on('input', function() {
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            var matchingArtists = artistNames.filter(function(name) {
-                if(locateArtistField.val())
-                    return (name.toUpperCase().indexOf(locateArtistField.val().toUpperCase()) === 0);
-                else 
-                    return false;
-            });
-            unhighlightAllArtists();
-            highlightArtists(matchingArtists);
-        }, 100);
+    var debounceHighlightArtists = debounce(highlightMatchingArtists, 250);
+    locateArtistField.on('input',function(event) {
+        debounceHighlightArtists();
     });
 
+    // Utility functions
+    function debounce(fn, interval) {
+        var timeout;
+        return function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(fn, interval);
+        };
+    }
+
+    // Highlights the artist on the plot whose name match the input
+    function highlightMatchingArtists() {
+        var matchingArtists = artistNames.filter(function(name) {
+            if(locateArtistField.val())
+                return (name.toUpperCase().indexOf(locateArtistField.val().toUpperCase()) === 0);
+            return false;
+        });
+        unhighlightAllArtists();
+        highlightArtists(matchingArtists);
+    }
 
     // This will dim all the artists present on the plot
     function dimAllArtists() {
@@ -82,6 +90,12 @@
         artists.forEach(function(artist) {
             plot.artists[artist].highlight();
         }); 
+    }
+
+    // Brings the state of the app to the normal conditions
+    function normalize() {
+        undimAllArtists();
+        locateArtistField.val('');
     }
 
 })();

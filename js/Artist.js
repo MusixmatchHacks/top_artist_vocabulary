@@ -29,31 +29,30 @@
 	}
 
 
-	/*
-	* Function : dim
-	* ----------------------------------------
-	* Dims the artist in the plot. By setting 
-	* its opacity to a lower value.
-	*/
+	// Dims the artist on the plot by decreasing opacity
 	Artist.prototype.dim = function() {
 		this.$artist.addClass('dimArtist');
 	};
 
+	// Undims the artist
 	Artist.prototype.undim = function() {
 		this.$artist.removeClass('dimArtist');
 	};
 
+	// Highlights the artist on the plot by adding a colored border
+	// and showing its tooltip
 	Artist.prototype.highlight = function() {
-		this.$artist.addClass('highlightedArtist');
-		this.$artist.tipsy('show');
+		if(!this.$artist.hasClass('highlightedArtist')) {
+			this.$artist.addClass('highlightedArtist');
+			this.$artist.tipsy('show');
+		}
 	};
 
+	//  Removes highlight from the artist
 	Artist.prototype.unhighlight = function() {
 		if(this.$artist.hasClass('highlightedArtist')) {
 			this.$artist.removeClass('highlightedArtist');
 			this.$artist.tipsy('hide');
-		} else {
-			return;
 		}
 	};
 

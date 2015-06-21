@@ -29,7 +29,7 @@
 
 
 	    // Draw the sacle on the plot 
-	    drawScale.call(this, [0, 2000, 4000, 1000, 3000], 2445);
+	    drawScale.call(this, [0, 2000, 4000], 2445);
 
 	}	
 
