@@ -47,8 +47,8 @@
     locateArtistField.on('input',function(event) {
         debounceHighlightArtists();
     });
-    locateArtistField.change(function() {
-        console.log("A change was reported");    
+    locateArtistField.keyup(function() {
+        highlightMatchingArtists();
     });
 
     // Utility functions
