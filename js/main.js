@@ -29,19 +29,55 @@
     // Names of artists on the plot
     var artistNames = Object.keys(plot.artists);
 
-    dimAllArtists();
+    // Targe the input field to locate the artists
+    var locateArtistField = $('#locateArtist');
+    // when the input field is in focus 
+    locateArtistField.focus( function() {
+        dimAllArtists();
+    });
 
-    setTimeout(function() {
-        plot.artists['Taylor Swift'].highlight();
-        plot.artists['Kanye West'].highlight();
-        plot.artists['Katy Perry'].highlight();
-    }, 2000);
+    // when the input field is not in focus we don't want the artists to be dimmed
+    locateArtistField.blur(function() {
+        undimAllArtists();
+        locateArtistField.val('');
+    });
+
+    // Debounce the quick firing function
+    locateArtistField.on('input', function() {
+        var matchingArtists = artistNames.filter(function(name) {
+            if(locateArtistField.val())
+                return (name.toUpperCase().indexOf(locateArtistField.val().toUpperCase()) === 0);
+            else 
+                return false;
+        });
+        unhighlightAllArtists();
+        highlightArtists(matchingArtists);
+    });
 
 
     // This will dim all the artists present on the plot
     function dimAllArtists() {
         for(var artistName in plot.artists) 
             plot.artists[artistName].dim();
+    }
+
+    function undimAllArtists() {
+        for(var artistName in plot.artists) {
+            plot.artists[artistName].undim();
+            plot.artists[artistName].unhighlight();
+        }
+    }
+
+    function unhighlightAllArtists() {
+        for(var artistName in plot.artists) {
+            plot.artists[artistName].unhighlight();
+        }
+    }
+
+    function highlightArtists(artists) {
+        artists.forEach(function(artist) {
+            plot.artists[artist].highlight();
+        }); 
     }
 
 })();

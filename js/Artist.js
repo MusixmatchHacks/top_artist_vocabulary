@@ -40,13 +40,23 @@
 	};
 
 	Artist.prototype.undim = function() {
-		this.$artist.removeClass('dimArist');
+		this.$artist.removeClass('dimArtist');
 	};
 
 	Artist.prototype.highlight = function() {
 		this.$artist.addClass('highlightedArtist');
 		this.$artist.tipsy('show');
 	};
+
+	Artist.prototype.unhighlight = function() {
+		if(this.$artist.hasClass('highlightedArtist')) {
+			this.$artist.removeClass('highlightedArtist');
+			this.$artist.tipsy('hide');
+		} else {
+			return;
+		}
+	};
+
 
 	Artist.prototype.normal = function() {
 		this.$artist.addClass('normalArtist');
