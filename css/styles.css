@@ -10,8 +10,15 @@ body {
   height: 100%;
   overflow: auto; }
 
-#viz_wrapper {
+#container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
   min-width: 1200px;
+  max-width: 1500px; }
+
+#viz_wrapper {
   min-height: 700px;
   max-height: 850px;
   width: 100%;
