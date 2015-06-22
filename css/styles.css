@@ -12,6 +12,7 @@ body {
 
 #viz_wrapper {
   min-width: 1200px;
+  min-height: 800px;
   width: 100%;
   height: 100vh;
   background-color: #303030; }
