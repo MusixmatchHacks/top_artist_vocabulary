@@ -31,7 +31,7 @@
 
     // Targe the input field to locate the artists
     var locateArtistField = $('#locateArtist');
-    locateArtistField.autocomplete({source : [artistNames]});
+    locateArtistField.autocomplete({source : [artistNames], highlight : false});
     // when the input field is in focus 
     locateArtistField.focus( function() {
         dimAllArtists();
@@ -43,12 +43,13 @@
     });
 
     // Debounce the quick firing function for efficiency
-    var debounceHighlightArtists = debounce(highlightMatchingArtists, 250);
-    locateArtistField.on('input',function(event) {
+    // locateArtistField.on('input',function(event) {
+    //     debounceHighlightArtists();
+    // });
+    // listen to selections on the autocomplete dropdown
+    var debounceHighlightArtists = debounce(highlightMatchingArtists, 100);
+    locateArtistField.keyup(function(event) {
         debounceHighlightArtists();
-    });
-    locateArtistField.keyup(function() {
-        highlightMatchingArtists();
     });
 
     // Utility functions
