@@ -14,6 +14,8 @@
 		this.$plot = $('#' + this.cssId);
 		// jQuery object holding the scale
 		this.scale = d3.select('#scale');
+		// Font family for the text that is showon on the graph
+		this.fontFamily = 'Source Sans Pro';
 
 		// Height and width of the plot
 		this.width = this.$plot.width();
@@ -29,7 +31,7 @@
 
 
 	    // Draw the sacle on the plot 
-	    drawScale.call(this, [0, 2000, 4000], 2445);
+	    drawScale.call(this, [0, 2000, 4000, 6000],2445);
 
 	}	
 
@@ -78,9 +80,7 @@
 
 		// Draw the lines on the scale
 		this.scale
-			.selectAll('line')
-			.data(scaleDivisions)
-			.enter().append('line')
+			.selectAll('line').data(scaleDivisions).enter().append('line')
 			.attr('x1', scaleLeftPadding)
 			.attr('x2', tickLength)
 			.attr('y1', function(d) { return that.yScale(d);})
@@ -92,44 +92,48 @@
 		// Add legend to the scale
 		this.scale
 	  		.selectAll('text')
-	  		.data(scaleDivisions)
-	  		.enter()
-		    .append('text')	
+	  		.data(scaleDivisions).enter().append('text')
 		    .attr('x', scaleLeftPadding)
 		    .attr('y', function(d) { return (that.yScale(d) - legendTickSeparation);})
-		    .text(function(d) { return formatWithCommas(d) + ' words';})
-		    .attr('font-family', 'Source Sans Pro')
+		    .text(function(d) {
+		    	// We are messing up with the scale of graph
+		    	if(d === 6000) return '... 8,000 words';
+		    	return (formatWithCommas(d) + ' words');
+		    })
+		    .attr('font-family', that.fontFamily)
 		    .attr('fill', 'white')
 		    .attr('font-size', 18);
 
-		// Draw line for average line and other text
-		this.scale
-      		.append('line')
-	      	.attr('x1', scaleLeftPadding)
-	      	.attr('x2', tickLength)
-	      	.attr('y1', this.yScale(average))
-	      	.attr('y2', this.yScale(average))
-	      	.style('stroke', "#0087ff")
-	      	.style('stroke-width', 1);
+		if(average) {
+			// Draw line for average line and other text
+			this.scale
+	      		.append('line')
+		      	.attr('x1', scaleLeftPadding)
+		      	.attr('x2', tickLength)
+		      	.attr('y1', this.yScale(average))
+		      	.attr('y2', this.yScale(average))
+		      	.style('stroke', "#007CFF")
+		      	.style('stroke-width', 1);
 
 
-	    this.scale
-	    	.append('text')
-	    	.text(formatWithCommas(average) + ' words')
-	    	.attr('fill', '#0087ff')
-      		.attr('font-family', 'Source Sans Pro')
-	    	.attr('font-size', 16)
-	    	.attr('x', scaleLeftPadding)
-	    	.attr('y', that.yScale(average) - (legendTickSeparation - 5));
-	    	
-	    // this.scale
-	    // 	.append('text')
-	    // 	.text('Average')
-	    // 	.attr('fill', '#0087ff')
-     //  		.attr('font-family', 'roboto')
-	    // 	.attr('font-size', 16)
-	    // 	.attr('x', scaleLeftPadding)
-	    // 	.attr('y', that.yScale(average) - (2.5*legendTickSeparation));
+		    this.scale
+		    	.append('text')
+		    	.text(formatWithCommas(average) + ' words')
+		    	.attr('fill', '#007CFF')
+	      		.attr('font-family', that.fontFamily)
+		    	.attr('font-size', 16)
+		    	.attr('x', scaleLeftPadding)
+		    	.attr('y', that.yScale(average) - (legendTickSeparation - 5));
+		    	
+		    this.scale
+		    	.append('text')
+		    	.text('Average')
+		    	.attr('fill', '#007CFF')
+	      		.attr('font-family', 'roboto')
+		    	.attr('font-size', 16)
+		    	.attr('x', scaleLeftPadding)
+		    	.attr('y', that.yScale(average) - (2.5*legendTickSeparation));
+		}
 	}
 
 
