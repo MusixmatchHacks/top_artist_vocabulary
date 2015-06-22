@@ -85,8 +85,8 @@
 			.attr('x2', tickLength)
 			.attr('y1', function(d) { return that.yScale(d);})
 			.attr('y2', function(d) { return that.yScale(d);})
-			.attr('stroke-dasharray', '1, 5')
-			.style('stroke', 'rgba(255, 255, 255, 0.7)')
+			// .attr('stroke-dasharray', '1, 5')
+			.style('stroke', 'rgba(255, 255, 255, 0.4)')
 			.style('stroke-width' , 1);
 
 		// Add legend to the scale
@@ -98,7 +98,7 @@
 		    .attr('x', scaleLeftPadding)
 		    .attr('y', function(d) { return (that.yScale(d) - legendTickSeparation);})
 		    .text(function(d) { return formatWithCommas(d) + ' words';})
-		    .attr('font-family', 'Roboto')
+		    .attr('font-family', 'Source Sans Pro')
 		    .attr('fill', 'white')
 		    .attr('font-size', 18);
 
@@ -117,7 +117,7 @@
 	    	.append('text')
 	    	.text(formatWithCommas(average) + ' words')
 	    	.attr('fill', '#0087ff')
-      		.attr('font-family', 'roboto')
+      		.attr('font-family', 'Source Sans Pro')
 	    	.attr('font-size', 16)
 	    	.attr('x', scaleLeftPadding)
 	    	.attr('y', that.yScale(average) - (legendTickSeparation - 5));

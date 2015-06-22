@@ -7,7 +7,7 @@ $color_blue : #0087FF
 	margin : 0
 	padding : 0
 	box-sizing : border-box
-	font-family : 'Roboto'
+	font-family : 'Source Sans Pro','Roboto'
 
 body 
 	background-color : $color_bg_article
@@ -20,6 +20,19 @@ body
 	width : 100%
 	height : 100vh
 	background-color : $color_bg_viz
+
+h1#main_title
+	position: absolute
+	top : 10px
+	font-family : 'Source Sans Pro'
+	width : 100%
+	text-align : left
+	padding: 15px 15px 15px 300px
+	font-size : 1.5em
+	color : white
+	background-color : transparent
+	font-weight: normal
+
 #article_wrapper
 	width : 100%
 	height : auto
@@ -47,30 +60,46 @@ body
 	width : 100%
 	height : 100%
 
-#plotTools 
-	padding : 25px
+#searchBox 
 	position : absolute
-	top : 0
-	left : 0
+	top : 25px
+	left : 25px
+	&:after
+		content : ''
+		display : block
+		height : 40px
+		width : 50px
+		border-top-left-radius : 2px
+		border-bottom-left-radius : 2px
+		position: absolute
+		top: 0
+		left: 0
+		background-color: #0087FF
+		background-image : url(.././img/icons/icon_search.png)
+		background-position : center center
+		background-repeat : no-repeat
+		z-index : 10
+
 
 input#locateArtist
 	position : relative
-	z-index : 10000
 	display : block
 	margin : 0
 	appearance : none
-	width : 237px
-	font-size : 20px
-	font-family : 'Roboto'
-	background-color : transparent
-	box-shadow : none
-	border : none
-	border-bottom : 1px solid white
-	outline : none
-	color : white
+	width : 250px
+	height : 40px
+	font-size : 18px
 	font-weight : lighter
-	background : url(.././img/icons/icon_search.png) no-repeat
-	padding : 0 0 5px 40px
+	background-color : white
+	border : none
+	border-radius : 2px
+	border-top-left-radius : 5px
+	border-bottom-left-radius : 5px
+	color : black
+	z-index : 9
+	// box-shadow : 0px 2px 4px rgba(0, 0, 0, 0.5)
+	padding : 0px 0px 2px 60px
+	// background : url(.././img/icons/icon_search.png) no-repeat
 	&:focus 
 		outline : none
 
@@ -96,16 +125,16 @@ input#locateArtist
 .dimArtist
 	@extend .artistContainer
 	opacity : 0.25
-	transition : all 0.3s
+	transition : all 0.2s
 
 .highlightedArtist
 	@extend .artistContainer
 	opacity : 1
 	border : 2px solid $color_blue
-	transition : all 0.3s
+	// transition : all 0.3s
 
 .normalArtist	
 	@extend .artistContainer
-	transition : all 0.3s
+	// transition : all 0.3s
 
 

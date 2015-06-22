@@ -32,6 +32,7 @@
     // Targe the input field to locate the artists
     var locateArtistField = $('#locateArtist');
     locateArtistField.autocomplete({source : [artistNames], highlight : false});
+
     // when the input field is in focus 
     locateArtistField.focus( function() {
         dimAllArtists();
@@ -51,6 +52,8 @@
     locateArtistField.keyup(function(event) {
         debounceHighlightArtists();
     });
+
+
 
     // Utility functions
     function debounce(fn, interval) {

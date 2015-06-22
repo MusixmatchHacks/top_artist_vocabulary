@@ -22,10 +22,10 @@ text-align: start;
 .xdsoft_autocomplete .xdsoft_autocomplete_dropdown{
 	position:absolute;
 	/*border: 1px solid #ccc;*/
-	border-top-color: #d9d9d9;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	/*border-top-color: #d9d9d9;*/
+/*	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-	cursor: default;
+*/	cursor: default;
 	display:none;
 	z-index: 1001;
 	margin-top:-1px;
@@ -58,15 +58,20 @@ text-align: start;
 	z-index:1002;
 }
 .xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div{
-	background:#4C4A4A;
+	background:#fff;
 	border : none;
-	color : white;
+	color : #303030;
 	white-space: nowrap;
 	cursor: pointer;
 	line-height: 1.5em;
 	padding: 4px 0px 4px 0px;
 }
+.xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div:last-child{
+	border-bottom-right-radius: 2px; 
+	border-bottom-left-radius: 2px; 
+	padding-bottom : 8px;
+}
 .xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div.active{
-	background: #0097CF;
+	background: #0087FF;
 	color: #FFFFFF;
 }
