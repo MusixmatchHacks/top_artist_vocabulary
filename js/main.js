@@ -12,6 +12,7 @@
     };
 
 
+
     var plot = VocabPlot.newPlot('plot', data);
     // Add x and y position data to each one of them
     var x = plot.width / 2 + 50;

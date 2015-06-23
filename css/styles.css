@@ -14,13 +14,10 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  margin: 0 auto;
-  min-width: 1200px;
-  max-width: 1500px; }
+  margin: 0 auto; }
 
 #viz_wrapper {
   min-height: 700px;
-  max-height: 850px;
   width: 100%;
   height: 100vh;
   background-color: #303030; }
@@ -65,7 +62,7 @@ h1#main_title {
 #searchBox {
   position: absolute;
   top: 25px;
-  left: 80%;
+  right: 2%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); }
   #searchBox:after {
     content: "";
@@ -110,14 +107,13 @@ input#locateArtist {
   width: 9px;
   border-radius: 70px;
   background-color: white;
-  border: 2px solid #f8f8f8;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center center;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   opacity: 1; }
   .artistContainer:hover, .dimArtist:hover, .highlightedArtist:hover, .normalArtist:hover {
-    border: 2px solid #0087FF; }
+    background-color: #0087FF; }
 
 .dimArtist {
   opacity: 0.25;
@@ -126,5 +122,35 @@ input#locateArtist {
 .highlightedArtist {
   opacity: 1;
   background-color: #0087FF; }
+
+.tooltipData {
+  background-color: #0087FF;
+  border-radius: 2px;
+  width: auto;
+  height: auto;
+  margin: 50px auto 0px auto;
+  padding: 10px; }
+  .tooltipData:after {
+    display: table;
+    content: "";
+    clear: both; }
+
+.rankContainer {
+  width: 30%;
+  float: left; }
+
+.detailContainer {
+  width: 70%;
+  float: right;
+  padding-left: 25px; }
+
+.rank {
+  font-size: 2em; }
+
+.number {
+  font-size: 0.5em; }
+
+.artistNameTooltip {
+  font-weight: bolder; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,9 @@
-.tipsy { font-size: 1em; position: absolute; padding: 5px; z-index: 100000; font-family : 'Roboto'; }
-  .tipsy-inner { background-color: #0087FF ; color: #fff; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center;}
+.tipsy { font-size: 1em; position: absolute; padding: 5px; z-index: 100000; }
+  .tipsy-inner { background-color: #0087FF ; color: #fff; padding: 5px 8px 4px 8px;} 
+  .tipsy-inner:after {display : table;  content : ''; clear : both;}
 
   /* Rounded corners */
-  .tipsy-inner { border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
+  .tipsy-inner { border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; }
   
   /* Uncomment for shadow */
   .tipsy-inner { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }

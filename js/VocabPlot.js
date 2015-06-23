@@ -2,6 +2,8 @@
 
 	// Export the module 
 	window.VocabPlot = {};
+	// Export this function for use in Artist.js file
+	window.VocabPlot.formatWithCommas = formatWithCommas;
 	window.VocabPlot.newPlot = function(cssId, plotData) {
 		return new VocabPlot(cssId, plotData);
 	};
@@ -56,7 +58,7 @@
 	      .transition().duration(100)
 	      // .style('left', function(d) {  return (d.x + d.x_offset - 17.5) + 'px';});
 	      .style('left', function(d, i) {
-	      	return 180 + (i * 13) + 'px';
+	      	return 180 + (i * ((that.width - 220) / 93)) + 'px';
 	      });
 	};
 

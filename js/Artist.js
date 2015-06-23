@@ -17,44 +17,15 @@
 		// Points to the DOM element that holds the current artist
 		this.$artist = $('#' + this.selector);
 
+		// Template that renders the content inside the tooltip
+		this.tooltipTemplate = $.trim( $('#tooltipTemplate').html() );
 
-		// We will have to lazy load images for better performace, but lets ignore it for now 
-		// Add artist image 
-		// this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
-		// this.$artist.css('background-image', 'url(img/artist_images_40px/' + this.selector + '.jpg)');
-		// The total number of artists analyzed 
+		// The total number of artists the data has 
 		this.numArtists = 93; // currently hard coded
 
  		// Initialize events 
 		this.events.click.call(this);
 		this.events.hover.call(this);
-
-		// The code below is just temporary will be used to drag and place artists around
-		// var isDragging = false;
-		// var that = this;
-		// this.$artist.on('mousedown', function() {
-		// 	isDragging = true;	
-		// });
-
-		// this.$artist.on('mousemove', function(event) {
-		// 	if(isDragging) {
-		// 		var newX = event.pageX;
-		// 		that.$artist.css('left', (newX - 15)+ 'px');
-		// 	}
-		// });
-
-		// $(document).on('mousemove', function(event) {
-		// 	if(isDragging) {
-		// 		var newX = event.pageX;
-		// 		that.$artist.css('left', (newX - 15)+ 'px');
-		// 	}
-		// });
-
-
-		// $(document).on('mouseup', function() {
-		// 	isDragging = false;	
-		// });
-
 	}
 
 
@@ -107,12 +78,16 @@
 				gravity : 's',
 				html : true,
 				opacity : 1,
+				offset : 2,
 				title : function() {
 					// Since we need to scale down for Eminem and Jay Z we will do two special cases
-					var vocab = that.data.vocab_len;
-					if(that.data.name === 'Eminem')	 vocab = 8818;
-					else if(that.data.name === 'Jay Z') vocab = 6899;
-					return ('#' + that.data.rank + '/' + that.numArtists + ' : ' + that.data.name + '<br/>' + '(' + vocab + ' words)');
+					// return ('#' + that.data.rank + '/' + that.numArtists + ' : ' + that.data.name + '<br/>' + '(' + that.data.vocab_len+ ' words)');
+					// Grab the html
+					var temp = that.tooltipTemplate.replace( /{{rank}}/i, that.data.rank)
+							 					   .replace( /{{artistName}}/i, that.data.name)
+							 					   .replace( /{{vocab}}/i, window.VocabPlot.formatWithCommas(that.data.vocab_len))
+							 					   .replace( /{{total}}/i, that.numArtists);
+					return temp;
 				}
 			});
 		}
