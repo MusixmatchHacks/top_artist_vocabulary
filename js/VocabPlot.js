@@ -26,12 +26,12 @@
 
 	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
 	    this.yScale = d3.scale.linear()
-						.domain([0, 8000])
+						.domain([0, 10000])
 						.range([0.95*this.height, 0]);
 
 
 	    // Draw the sacle on the plot 
-	    drawScale.call(this, [0, 2000, 4000, 6000],2445);
+	    drawScale.call(this, [0, 2000, 4000, 6000, 8000],2445);
 
 	}	
 
@@ -54,7 +54,10 @@
 	      })
 	      .style('top', function(d) { return d.y + 'px';})
 	      .transition().duration(100)
-	      .style('left', function(d) {  return (d.x + d.x_offset - 17.5) + 'px';});
+	      // .style('left', function(d) {  return (d.x + d.x_offset - 17.5) + 'px';});
+	      .style('left', function(d, i) {
+	      	return 180 + (i * 13) + 'px';
+	      });
 	};
 
 
@@ -96,8 +99,6 @@
 		    .attr('x', scaleLeftPadding)
 		    .attr('y', function(d) { return (that.yScale(d) - legendTickSeparation);})
 		    .text(function(d) {
-		    	// We are messing up with the scale of graph
-		    	if(d === 6000) return '... 8,000 words';
 		    	return (formatWithCommas(d) + ' words');
 		    })
 		    .attr('font-family', that.fontFamily)

@@ -72,7 +72,7 @@ h1#main_title
 #searchBox 
 	position : absolute
 	top : 25px
-	left : 25px
+	left : 80%
 	box-shadow : 0px 2px 4px rgba(0, 0, 0, 0.5)
 	&:after
 		content : ''
@@ -118,8 +118,8 @@ input#locateArtist
 .artistContainer
 	position : absolute
 	margin-top : 20px
-	height : 35px
-	width: 35px
+	height : 9px
+	width: 9px
 	border-radius : 70px
 	background-color : white
 	border : 2px solid #f8f8f8
@@ -141,7 +141,7 @@ input#locateArtist
 .highlightedArtist
 	@extend .artistContainer
 	opacity : 1
-	border : 2px solid $color_blue
+	background-color : $color_blue
 	// transition : all 0.3s
 
 .normalArtist	

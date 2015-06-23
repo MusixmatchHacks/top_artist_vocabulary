@@ -21,7 +21,7 @@
 		// We will have to lazy load images for better performace, but lets ignore it for now 
 		// Add artist image 
 		// this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
-		this.$artist.css('background-image', 'url(img/artist_images_40px/' + this.selector + '.jpg)');
+		// this.$artist.css('background-image', 'url(img/artist_images_40px/' + this.selector + '.jpg)');
 		// The total number of artists analyzed 
 		this.numArtists = 93; // currently hard coded
 
