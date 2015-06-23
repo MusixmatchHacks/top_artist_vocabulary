@@ -17,10 +17,11 @@
     var x = plot.width / 2 + 50;
 
     // Add required positioning data to each artist
-    data.forEach(function(data) { 
+    data.forEach(function(data, index) { 
         data.x = x;
         data.y = plot.yScale(data.vocab_len) - 37;
         data.x_offset =  (data.x_offset) ? data.x_offset : 0; // this expression can and will be improved later
+        data.rank = (index + 1);
     });
 
     // Add artists to plot
@@ -29,7 +30,7 @@
     // Names of artists on the plot
     var artistNames = Object.keys(plot.artists);
 
-    // Targe the input field to locate the artists
+    // Target the input field to locate the artists
     var locateArtistField = $('#locateArtist');
     locateArtistField.autocomplete({source : [artistNames], highlight : false});
 
@@ -50,6 +51,7 @@
     // listen to selections on the autocomplete dropdown
     var debounceHighlightArtists = debounce(highlightMatchingArtists, 250);
     locateArtistField.keyup(function(event) {
+        // Detect the esc. key
         if(event.keyCode === 27) {
             normalize();
             locateArtistField.blur();

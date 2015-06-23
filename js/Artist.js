@@ -22,6 +22,8 @@
 		// Add artist image 
 		// this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
 		this.$artist.css('background-image', 'url(img/artist_images_40px/' + this.selector + '.jpg)');
+		// The total number of artists analyzed 
+		this.numArtists = 93; // currently hard coded
 
  		// Initialize events 
 		this.events.click.call(this);
@@ -110,7 +112,7 @@
 					var vocab = that.data.vocab_len;
 					if(that.data.name === 'Eminem')	 vocab = 8818;
 					else if(that.data.name === 'Jay Z') vocab = 6899;
-					return (that.data.name + '<br/>' + '(' + vocab + ' words)');
+					return ('#' + that.data.rank + '/' + that.numArtists + ' : ' + that.data.name + '<br/>' + '(' + vocab + ' words)');
 				}
 			});
 		}
