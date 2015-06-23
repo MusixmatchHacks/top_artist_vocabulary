@@ -23,9 +23,9 @@ text-align: start;
 	position:absolute;
 	/*border: 1px solid #ccc;*/
 	/*border-top-color: #d9d9d9;*/
-/*	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-*/	cursor: default;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+	cursor: default;
 	display:none;
 	z-index: 1001;
 	margin-top:-1px;
