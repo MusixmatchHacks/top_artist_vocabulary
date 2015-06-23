@@ -48,9 +48,15 @@
     //     debounceHighlightArtists();
     // });
     // listen to selections on the autocomplete dropdown
-    var debounceHighlightArtists = debounce(highlightMatchingArtists, 100);
+    var debounceHighlightArtists = debounce(highlightMatchingArtists, 250);
     locateArtistField.keyup(function(event) {
-        debounceHighlightArtists();
+        if(event.keyCode === 27) {
+            normalize();
+            locateArtistField.blur();
+            return;
+        } 
+        // debounceHighlightArtists();
+        highlightMatchingArtists();
     });
 
 

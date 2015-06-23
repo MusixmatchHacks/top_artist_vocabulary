@@ -21,11 +21,38 @@
 		// We will have to lazy load images for better performace, but lets ignore it for now 
 		// Add artist image 
 		// this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
-		this.$artist.css('background-image', 'url(img/artist_images_smaller/' + this.selector + '.jpg)');
+		this.$artist.css('background-image', 'url(img/artist_images_40px/' + this.selector + '.jpg)');
 
  		// Initialize events 
 		this.events.click.call(this);
 		this.events.hover.call(this);
+
+		// The code below is just temporary will be used to drag and place artists around
+		// var isDragging = false;
+		// var that = this;
+		// this.$artist.on('mousedown', function() {
+		// 	isDragging = true;	
+		// });
+
+		// this.$artist.on('mousemove', function(event) {
+		// 	if(isDragging) {
+		// 		var newX = event.pageX;
+		// 		that.$artist.css('left', (newX - 15)+ 'px');
+		// 	}
+		// });
+
+		// $(document).on('mousemove', function(event) {
+		// 	if(isDragging) {
+		// 		var newX = event.pageX;
+		// 		that.$artist.css('left', (newX - 15)+ 'px');
+		// 	}
+		// });
+
+
+		// $(document).on('mouseup', function() {
+		// 	isDragging = false;	
+		// });
+
 	}
 
 

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Helvetica","Source Sans Pro", "Roboto"; }
+  font-family: "Source Sans Pro", "Roboto"; }
 
 body {
   background-color: #FBFBFB;
@@ -28,7 +28,7 @@ body {
 h1#main_title {
   position: absolute;
   top: 10px;
-  font-family: "Source Sans Pro";
+  font-family: "Helvetica", "Source Sans Pro", "sans-serif";
   width: 100%;
   text-align: left;
   padding: 15px 15px 15px 300px;
@@ -76,7 +76,7 @@ h1#main_title {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #0087FF;
+    background-color: #FFFFFF;
     background-image: url(.././img/icons/icon_search.svg);
     background-position: center center;
     background-repeat: no-repeat;

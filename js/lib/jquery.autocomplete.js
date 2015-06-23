@@ -743,11 +743,11 @@
 					}
 				break;
 				case ESC:
-					$input
-						.val(currentValue)
-						.trigger('close.xdsoft');
+					// $input
+						// .val(currentValue);
+					// 	.trigger('close.xdsoft');
 					event.preventDefault();
-					return false;
+					return true;
 				case ARROWDOWN:
 				case ARROWUP:
 					if (!iOpen) {
