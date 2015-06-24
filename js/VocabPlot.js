@@ -62,6 +62,10 @@
 	      });
 	};
 
+	VocabPlot.prototype.evolve = function() {
+
+	};
+
 
 	// Private methods
 
@@ -76,6 +80,7 @@
 
 		// Color of general numbers and lines
 		var scaleColor = "#FFFFFF";
+		var averageColor = "#B1D300";
 		// Length of each tick on the scale ( the white line)
 		var scaleLeftPadding = 25;
 		var tickLength = 0.98 * this.width;
@@ -115,14 +120,14 @@
 		      	.attr('x2', tickLength)
 		      	.attr('y1', this.yScale(average))
 		      	.attr('y2', this.yScale(average))
-		      	.style('stroke', "#007CFF")
+		      	.style('stroke', averageColor)
 		      	.style('stroke-width', 1);
 
 
 		    this.scale
 		    	.append('text')
 		    	.text(formatWithCommas(average) + ' words')
-		    	.attr('fill', '#007CFF')
+		    	.attr('fill', averageColor)
 	      		.attr('font-family', that.fontFamily)
 		    	.attr('font-size', 16)
 		    	.attr('x', scaleLeftPadding)
@@ -131,7 +136,7 @@
 		    this.scale
 		    	.append('text')
 		    	.text('Average')
-		    	.attr('fill', '#007CFF')
+		    	.attr('fill', averageColor)
 	      		.attr('font-family', 'roboto')
 		    	.attr('font-size', 16)
 		    	.attr('x', scaleLeftPadding)
