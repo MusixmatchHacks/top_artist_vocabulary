@@ -135,7 +135,7 @@
 	      		.attr('font-family', 'roboto')
 		    	.attr('font-size', 16)
 		    	.attr('x', scaleLeftPadding)
-		    	.attr('y', that.yScale(average) - (2.5*legendTickSeparation));
+		    	.attr('y', that.yScale(average) - (2.1*legendTickSeparation));
 		}
 	}
 

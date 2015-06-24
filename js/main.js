@@ -20,7 +20,7 @@
     // Add required positioning data to each artist
     data.forEach(function(data, index) { 
         data.x = x;
-        data.y = plot.yScale(data.vocab_len) - 37;
+        data.y = plot.yScale(data.vocab_len) - 9;
         data.x_offset =  (data.x_offset) ? data.x_offset : 0; // this expression can and will be improved later
         data.rank = (index + 1);
     });

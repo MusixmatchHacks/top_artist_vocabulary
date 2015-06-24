@@ -102,10 +102,9 @@ input#locateArtist {
 
 .artistContainer, .dimArtist, .highlightedArtist, .normalArtist {
   position: absolute;
-  margin-top: 20px;
   height: 9px;
   width: 9px;
-  border-radius: 70px;
+  border-radius: 100%;
   background-color: white;
   cursor: pointer;
   background-repeat: no-repeat;
