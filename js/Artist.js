@@ -75,19 +75,16 @@
 		hover : function() {
 			var that = this;
 			this.$artist.tipsy({
-				gravity : 's',
+				gravity : (that.data.rank >= 90) ? 'e' : 's',
 				html : true,
 				opacity : 1,
 				offset : 2,
 				title : function() {
-					// Since we need to scale down for Eminem and Jay Z we will do two special cases
-					// return ('#' + that.data.rank + '/' + that.numArtists + ' : ' + that.data.name + '<br/>' + '(' + that.data.vocab_len+ ' words)');
-					// Grab the html
-					var temp = that.tooltipTemplate.replace( /{{rank}}/i, that.data.rank)
+					return(that.tooltipTemplate.replace( /{{rank}}/i, that.data.rank)
 							 					   .replace( /{{artistName}}/i, that.data.name)
 							 					   .replace( /{{vocab}}/i, window.VocabPlot.formatWithCommas(that.data.vocab_len))
-							 					   .replace( /{{total}}/i, that.numArtists);
-					return temp;
+							 					   .replace( /{{total}}/i, that.numArtists)
+	 					   );
 				}
 			});
 		}
