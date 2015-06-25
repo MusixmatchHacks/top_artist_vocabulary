@@ -79,7 +79,7 @@
             if(locateArtistField.val())
                 return (name.toUpperCase().indexOf(locateArtistField.val().toUpperCase()) === 0);
             return false;
-        });
+        }).slice(0, 8);
 
         unhighlightAllArtists();
         highlightArtists(matchingArtists);
