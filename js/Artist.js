@@ -5,6 +5,7 @@
 	window.Artist.newArtist = function(artistName, artistData) {
 			return new Artist(artistName, artistData);	
 	};
+	
 	// This module is supposed to act like an artist object 
 	// that will handle clicks on the div and other kinds of things like hover and stuff 
 	function Artist(artistName, artistData) {

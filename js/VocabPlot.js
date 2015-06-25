@@ -12,27 +12,19 @@
 		this.cssId = plotCssId; // CSS ID of the div that is holding the plot
 		this.data = plotData;
 
-		// jQuery object holding the plot
 		this.$plot = $('#' + this.cssId);
-		// jQuery object holding the scale
 		this.scale = d3.select('#scale');
 		// Font family for the text that is showon on the graph
 		this.fontFamily = 'Source Sans Pro';
 
-		// Height and width of the plot
 		this.width = this.$plot.width();
 		this.height = this.$plot.height();
 
 		// A collection of artist (Artist Objects) on the plot 
 		this.artists = {};
 
-	    // Initialize the yScale with domain of (0, max vocabulary) and range (height of plot, 0)
-	    this.yScale = d3.scale.linear()
-						.domain([0, 10000])
-						.range([0.95*this.height, 0]);
+	    this.yScale = d3.scale.linear().domain([0, 10000]).range([0.95*this.height, 0]);
 
-
-	    // Draw the sacle on the plot 
 	    drawScale.call(this, [0, 2000, 4000, 6000, 8000],2445);
 
 	}	
@@ -56,23 +48,19 @@
 	      })
 	      .style('top', function(d) { return d.y + 'px';})
 	      .style('left', function(d, i) {
-	      	return 180 + (i * ((that.width - 220) / 93)) + 'px';
+	      	// Computed through trial and error for the position
+	      	return 180 + (i * ((that.width - 220) / that.data.length)) + 'px';
 	      })
+	      // to avoid stutter on load 
 	      .transition().duration(300)
 	      .style('opacity', 1);
 	};
 
-	VocabPlot.prototype.evolve = function() {
-
-	};
-
-
 	// Private methods
 
 	/*
-	* Funciton : drawScale(array of numbers, each number representing a tick on scale)
-	* ---------------------------------------------------------------------------------
-	* Draws scale on the plot.
+	* Funciton : drawScale(array of numbers, each number representing a tick on scale, average value)
+	* ------------------------------------------------------------------------------------------------
 	*/
 	function drawScale(scaleDivisions, average) {
 
@@ -122,7 +110,6 @@
 		      	.attr('y2', this.yScale(average))
 		      	.style('stroke', averageColor)
 		      	.style('stroke-width', 1);
-
 
 		    this.scale
 		    	.append('text')
