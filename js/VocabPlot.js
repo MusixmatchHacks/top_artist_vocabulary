@@ -43,7 +43,7 @@
 	    var that = this;
 
 	    d3.select(this.$plot.selector)
-	      .selectAll('div')
+	      .selectAll('.artistContainer')
 	      .data(this.data)
 	      .enter()
 	      .append('div')
@@ -55,11 +55,11 @@
 	      	that.artists[d.name] = Artist.newArtist(d.name, d);
 	      })
 	      .style('top', function(d) { return d.y + 'px';})
-	      .transition().duration(100)
-	      // .style('left', function(d) {  return (d.x + d.x_offset - 17.5) + 'px';});
 	      .style('left', function(d, i) {
 	      	return 180 + (i * ((that.width - 220) / 93)) + 'px';
-	      });
+	      })
+	      .transition().duration(300)
+	      .style('opacity', 1);
 	};
 
 	VocabPlot.prototype.evolve = function() {

@@ -14,6 +14,8 @@ $color_highlight : #B1D300
 // Size Variables
 $min_height_viz : 700px
 $min_width_viz : 1100px
+$max_height_viz : 1000px
+$max_width_viz : 1440px
 $height_artist_circle : 9px
 $width_artist_circle : 9px
 
@@ -40,16 +42,18 @@ body
 
 #viz_wrapper
 	min-height : $min_height_viz
-	min-width : $min_width_viz
+	max-height : $max_height_viz
 	width : 100%
 	height : 100vh
 	background-color : $color_bg_viz
 
 #plot 
 	position : relative
+	max-width : $max_width_viz
 	width : 100%
 	height : 100%
 	overflow : auto
+	margin : 0 auto
 
 #scale 
 	position : absolute
@@ -194,7 +198,7 @@ h1#main_title
 	font-size : 0.5em
 
 .artistNameTooltip 
-	font-weight : bolder
+	// font-weight : bolder
 	text-align : center
 
 
