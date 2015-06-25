@@ -117,7 +117,7 @@ h1#main_title {
   background-position: center center;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   opacity: 1; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1280px) {
     .artistContainer, .dimArtist, .highlightedArtist, .normalArtist {
       width: 7px;
       height: 7px; } }
