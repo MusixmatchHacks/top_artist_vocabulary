@@ -31,12 +31,14 @@
 
 	// Dims the artist on the plot by decreasing opacity
 	Artist.prototype.dim = function() {
+		this.$artist.removeClass('normalArtist');
 		this.$artist.addClass('dimArtist');
 	};
 
 	// Undims the artist
 	Artist.prototype.undim = function() {
 		this.$artist.removeClass('dimArtist');
+		this.$artist.addClass('normalArtist');
 	};
 
 	// Highlights the artist on the plot by adding a colored border

@@ -122,6 +122,9 @@ input#locateArtist {
   opacity: 1;
   background-color: #B1D300; }
 
+.normalArtist {
+  transition: all 0.3s; }
+
 .tooltipData {
   background-color: #0087FF;
   border-radius: 2px;
