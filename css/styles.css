@@ -26,32 +26,6 @@ body {
   height: 100vh;
   background-color: #171919; }
 
-h1#main_title {
-  position: absolute;
-  top: 10px;
-  font-family: "Helvetica", "Source Sans Pro", "sans-serif";
-  width: 100%;
-  text-align: left;
-  padding: 15px 15px 15px 300px;
-  font-size: 1.5em;
-  color: white;
-  background-color: transparent;
-  font-weight: normal; }
-
-#article_wrapper {
-  width: 100%;
-  height: auto;
-  background-color: #FBFBFB;
-  padding: 25px;
-  margin-top: 30px; }
-  #article_wrapper h1 {
-    text-align: center;
-    padding: 10px;
-    font-size: 2em; }
-  #article_wrapper #article_body {
-    width: 900px;
-    margin: 30px auto 0 auto; }
-
 #plot {
   position: relative;
   width: 100%;
@@ -103,6 +77,32 @@ input#locateArtist {
   padding: 0px 0px 2px 60px; }
   input#locateArtist:focus {
     outline: none; }
+
+h1#main_title {
+  position: absolute;
+  top: 10px;
+  font-family: "Helvetica", "Source Sans Pro", "sans-serif";
+  width: 100%;
+  text-align: left;
+  padding: 15px 15px 15px 300px;
+  font-size: 1.5em;
+  color: white;
+  background-color: transparent;
+  font-weight: normal; }
+
+#article_wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #FBFBFB;
+  padding: 25px;
+  margin-top: 30px; }
+  #article_wrapper h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em; }
+  #article_wrapper #article_body {
+    width: 900px;
+    margin: 30px auto 0 auto; }
 
 .artistContainer, .dimArtist, .highlightedArtist, .normalArtist {
   position: absolute;
