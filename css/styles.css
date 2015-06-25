@@ -1,3 +1,6 @@
+@import url(tipsy.css);
+@import url(jquery.autocomplete.css);
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
 * {
   margin: 0;
   padding: 0;
@@ -102,8 +105,8 @@ input#locateArtist {
 
 .artistContainer, .dimArtist, .highlightedArtist, .normalArtist {
   position: absolute;
-  height: 7px;
-  width: 7px;
+  height: 9px;
+  width: 9px;
   border-radius: 9px;
   background-color: white;
   cursor: pointer;

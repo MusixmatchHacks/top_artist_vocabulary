@@ -1,7 +1,20 @@
 // Include a style reset plugin here
+@import "tipsy.css"
+@import "jquery.autocomplete.css"
+
+// Import the fonts
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
+
+
+// Color Varaibles
 $color_bg_article : #FBFBFB
 $color_bg_viz : #171919
 $color_highlight : #B1D300
+
+// Size Variables
+$min_height_viz : 700px
+$height_artist_circle : 9px
+$width_artist_circle : 9px
 
 * 
 	margin : 0
@@ -22,7 +35,7 @@ body
 	margin : 0 auto
 
 #viz_wrapper
-	min-height : 700px
+	min-height : $min_height_viz
 	width : 100%
 	height : 100vh
 	background-color : $color_bg_viz
@@ -81,7 +94,6 @@ h1#main_title
 		position: absolute
 		top: 0
 		left: 0
-		// background-color: #0087FF
 		background-color : #FFFFFF
 		background-image : url(.././img/icons/icon_search.svg)
 		background-position : center center
@@ -114,9 +126,9 @@ input#locateArtist
 
 .artistContainer
 	position : absolute
-	height : 7px
-	width: 7px
-	border-radius : 9px
+	height : $height_artist_circle
+	width: $width_artist_circle
+	border-radius : $height_artist_circle
 	background-color : white
 	cursor : pointer
 	background-repeat : no-repeat
