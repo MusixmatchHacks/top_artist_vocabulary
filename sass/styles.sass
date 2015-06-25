@@ -1,8 +1,7 @@
 // Include a style reset plugin here
 $color_bg_article : #FBFBFB
 $color_bg_viz : #171919
-// $color_blue : #0087FF
-$color_blue : #B1D300
+$color_highlight : #B1D300
 
 * 
 	margin : 0
@@ -126,7 +125,7 @@ input#locateArtist
 	opacity : 1
 		// transition : all 0.1s
 	&:hover
-		background-color : $color_blue
+		background-color : $color_highlight
 
 // When the artist is dim it has a lower opacity and is not highlighted on the plot
 .dimArtist
@@ -137,7 +136,7 @@ input#locateArtist
 .highlightedArtist
 	@extend .artistContainer
 	opacity : 1
-	background-color : $color_blue
+	background-color : $color_highlight
 	// transition : all 0.3s
 
 .normalArtist	
