@@ -7,8 +7,8 @@
 
     var plot = VocabPlot.newPlot({
         // Css selectors of the elments on the plot
-        cssId : 'plot',
-        scaleCssId : 'scale',
+        cssId : 'vocab_plot',
+        scaleCssId : 'vocab_plot_scale',
         searchFieldCssId : 'locateArtist',
         artistCircleCssClass : 'artistContainer',
         data : vocab_data

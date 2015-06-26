@@ -1,6 +1,7 @@
 // Include a style reset plugin here
 @import "tipsy.css"
 @import "jquery.autocomplete.css"
+@import "vocab_plot_styles.sass"
 
 // Import the fonts
 // @import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
@@ -9,19 +10,7 @@
 // Color Varaibles
 $color_bg_article : #FBFBFB
 $color_bg_viz : #171919
-$color_highlight : #B1D300
 
-// Size Variables
-$min_height_viz : 700px
-$min_width_viz : 1100px
-$max_height_viz : 1000px
-$max_width_viz : 1440px
-
-$height_artist_circle : 9px
-$width_artist_circle : 9px
-
-// Break points
-$break-large : 1280px
 
 * 
 	margin : 0
@@ -41,172 +30,16 @@ body
 	height : auto
 	margin : 0 auto
 
-#viz_wrapper
-	min-height : $min_height_viz
-	max-height : $max_height_viz
-	min-width : $min_width_viz
-	width : 100%
-	height : 100vh
-	background-color : $color_bg_viz
 
-#plot 
-	position : relative
-	max-width : $max_width_viz
-	min-width : $min_width_viz
-	max-height : $max_height_viz
-	width : 100%
-	height : 100%
-	overflow : auto
+.article 
+	width : 900px
 	margin : 0 auto
-
-#scale 
-	position : absolute
-	width : 100%
-	height : 100%
-
-#searchBox 
-	position : absolute
-	top : 25px
-	right : 2%
-	box-shadow : 0px 2px 4px rgba(0, 0, 0, 0.5)
-	&:after
-		content : ''
-		display : block
-		height : 40px
-		width : 50px
-		border-top-left-radius : 2px
-		border-bottom-left-radius : 2px
-		position: absolute
-		top: 0
-		left: 0
-		background-color : #FFFFFF
-		background-image : url(.././img/icons/icon_search.svg)
-		background-position : center center
-		background-repeat : no-repeat
-		z-index : 10
-
-
-input#locateArtist
-	position : relative
-	display : block
-	margin : 0
-	appearance : none
-	width : 250px
-	height : 40px
-	font-size : 18px
-	font-weight : lighter
-	background-color : white
-	border : none
-	border-radius : 2px
-	border-top-left-radius : 5px
-	border-bottom-left-radius : 5px
-	color : black
-	z-index : 9
-	// box-shadow : 0px 2px 4px rgba(0, 0, 0, 0.5)
-	padding : 0px 0px 2px 60px
-	// background : url(.././img/icons/icon_search.png) no-repeat
-	&:focus 
-		outline : none
-
-
-h1#main_title
-	position: absolute
-	top : 10px
-	font-family : 'Helvetica','Source Sans Pro', 'sans-serif'
-	width : 100%
-	text-align : left
-	padding: 15px 15px 15px 300px
-	font-size : 1.5em
-	color : white
-	background-color : transparent
-	font-weight: normal
-
-#article_wrapper
-	width : 100%
-	height : auto
 	background-color : $color_bg_article
-	padding : 25px
-	margin-top : 30px
+	padding: 20px
 	h1
 		text-align : center
 		padding : 10px
 		font-size : 2em
-	#article_body
-		width : 900px
-		margin : 30px auto 0 auto
-
-
-
-
-.artistContainer
-	position : absolute
-	height : $height_artist_circle
-	width: $width_artist_circle
-	border-radius : $height_artist_circle
-	background-color : white
-	cursor : pointer
-	background-repeat : no-repeat
-	background-position : center center
-	box-shadow : 0px 2px 2px rgba(0, 0, 0, 0.2)
-	opacity : 1
-	@media screen and (max-width : $break-large)
-		width : 7px
-		height : 7px
-	&:hover
-		background-color : $color_highlight
-
-// When the artist is dim it has a lower opacity and is not highlighted on the plot
-.dimArtist
-	@extend .artistContainer
-	opacity : 0.25
-	transition : all 0.2s
-
-.highlightedArtist
-	@extend .artistContainer
-	opacity : 1
-	background-color : $color_highlight
-	// transition : all 0.3s
-
-.normalArtist	
-	@extend .artistContainer
-	transition : all 0.3s
-
-// For the data inside the toolitp
-.tooltipData
-	background-color : #0087FF
-	border-radius : 2px
-	width : auto
-	height: auto
-	margin : 50px auto 0px auto
-	padding : 10px
-	&:after 
-		display : table
-		content : ''
-		clear : both
-
-
-.rankContainer 
-	width : 30%
-	float : left
-
-
-.detailContainer 
-	width : 70%
-	float : right
-	padding-left : 23px
-
-.rank 
-	font-size : 2em
-
-.number 
-	font-size : 0.5em
-
-.artistNameTooltip 
-	// font-weight : bolder
-	text-align : center
-
-
-
 
 
 
