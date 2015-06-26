@@ -16,7 +16,7 @@
 
 		this.$plot = $('#' + this.config.cssId);
 		this.scale = d3.select('#' + this.config.scaleCssId);
-		// Font family for the text that is showon on the graph
+		// Font family for the text that is show on on the graph
 		this.fontFamily = 'Source Sans Pro';
 
 		this.width = this.$plot.width();
@@ -29,8 +29,8 @@
 		drawScale.call(this, [0, 2000, 4000, 6000, 8000], 2445);
 
 
-		this.addAritstsToPlot();
-		// Iniitalize the searchField
+		this.addArtistsToPlot();
+		// Initialize the searchField
 		this.search.init(this, this.config.searchFieldCssId);
 
 	}
@@ -38,7 +38,7 @@
 	VocabPlot.prototype = {
 
 		// Method to add new artist to the plot
-		addAritstsToPlot: function() {
+		addArtistsToPlot : function() {
 			var that = this; // VocabPlot
 			d3.select(this.$plot.selector)
 				.selectAll(this.config.artistCircleCssClass)
@@ -161,7 +161,7 @@
 		var scaleLeftPadding = 25;
 		var tickLength = 0.98 * this.width;
 
-		// The amount of spearation the text and tick
+		// The amount of separation the text and tick
 		var legendTickSeparation = 12;
 
 		// Draw the lines on the scale

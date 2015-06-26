@@ -63,7 +63,7 @@
 	// Event handler on artist object
 	Artist.prototype.events = {
 		click: function() {
-			var that = this;
+			// Do something on click on any of the artist circles
 			this.$artist.on('click', function() {
 				console.log("the artist was clicked");
 			});
