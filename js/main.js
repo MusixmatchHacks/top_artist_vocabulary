@@ -1,6 +1,6 @@
 (function() {
 
-    // Add required positioning data to each artist
+    // Add ranks to the data
     vocab_data.forEach(function(data, index) {
         data.rank = (index + 1);
     });
