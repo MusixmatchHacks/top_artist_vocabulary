@@ -75,7 +75,7 @@
 	        }
 	    },
 
-	    // Argument is an array of artist names, this function highlight those artists on the plot
+	    // Highlights the artists whose names are supplied in the artistNames(argument) array
 	    highlightArtists : function(artistNames) {
 	    	var that = this; // VocabPlot
 			artistNames.forEach(function(artistName) {
