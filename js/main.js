@@ -12,108 +12,11 @@
     };
 
 
-
-    var plot = VocabPlot.newPlot('plot', data);
-    // Add x and y position data to each one of them
-    var x = plot.width / 2 + 50;
-
     // Add required positioning data to each artist
     data.forEach(function(data, index) { 
-        data.x = x;
-        data.y = plot.yScale(data.vocab_len) - 9;
-        data.x_offset =  (data.x_offset) ? data.x_offset : 0; // this expression can and will be improved later
         data.rank = (index + 1);
     });
 
-    // Add artists to plot
-    plot.addAritstsToPlot();
-
-    // Names of artists on the plot
-    var artistNames = Object.keys(plot.artists);
-
-    // Target the input field to locate the artists
-    var locateArtistField = $('#locateArtist');
-    locateArtistField.autocomplete({source : [artistNames], highlight : false, limit : 8});
-
-    // when the input field is in focus 
-    locateArtistField.focus( function() {
-        dimAllArtists();
-    });
-
-    // when the input field is not in focus we don't want the artists to be dimmed
-    locateArtistField.blur(function() {
-        normalize();
-    });
-
-    // Debounce the quick firing function for efficiency
-    // locateArtistField.on('input',function(event) {
-    //     debounceHighlightArtists();
-    // });
-    // listen to selections on the autocomplete dropdown
-    var debounceHighlightArtists = debounce(highlightMatchingArtists, 250);
-    locateArtistField.keyup(function(event) {
-        // Detect the esc. key
-        if(event.keyCode === 27) {
-            normalize();
-            locateArtistField.blur();
-            return;
-        } 
-        // debounceHighlightArtists();
-        highlightMatchingArtists();
-    });
-
-
-
-    // Utility functions
-    function debounce(fn, interval) {
-        var timeout;
-        return function() {
-            clearTimeout(timeout);
-            timeout = setTimeout(fn, interval);
-        };
-    }
-
-    // Highlights the artist on the plot whose name match the input
-    function highlightMatchingArtists() {
-        var matchingArtists = artistNames.filter(function(name) {
-            if(locateArtistField.val())
-                return (name.toUpperCase().indexOf(locateArtistField.val().toUpperCase()) === 0);
-            return false;
-        }).slice(0, 8);
-
-        unhighlightAllArtists();
-        highlightArtists(matchingArtists);
-    }
-
-    // This will dim all the artists present on the plot
-    function dimAllArtists() {
-        for(var artistName in plot.artists) 
-            plot.artists[artistName].dim();
-    }
-
-    function undimAllArtists() {
-        for(var artistName in plot.artists) {
-            plot.artists[artistName].undim();
-            plot.artists[artistName].unhighlight();
-        }
-    }
-
-    function unhighlightAllArtists() {
-        for(var artistName in plot.artists) {
-            plot.artists[artistName].unhighlight();
-        }
-    }
-
-    function highlightArtists(artists) {
-        artists.forEach(function(artist) {
-            plot.artists[artist].highlight();
-        }); 
-    }
-
-    // Brings the state of the app to the normal conditions
-    function normalize() {
-        undimAllArtists();
-        locateArtistField.val('');
-    }
+    var plot = VocabPlot.newPlot('plot', data);
 
 })();

@@ -24,37 +24,112 @@
 		this.artists = {};
 
 	    this.yScale = d3.scale.linear().domain([0, 10000]).range([0.95*this.height, 0]);
-
 	    drawScale.call(this, [0, 2000, 4000, 6000, 8000],2445);
+
+
+	    this.addAritstsToPlot();
+	    // Iniitalize the searchField
+	    this.search.init(this);
 
 	}	
 
-	// Method to add new artist to the plot 
-	VocabPlot.prototype.addAritstsToPlot = function() {
+	VocabPlot.prototype = {
 
-	    var that = this;
+		// Method to add new artist to the plot 
+		addAritstsToPlot : function() {
+		    var that = this; // VocabPlot
+		    d3.select(this.$plot.selector)
+		      .selectAll('.artistContainer')
+		      .data(this.data)
+		      .enter()
+		      .append('div')
+		      .attr('id', function(d) {return d.name.split(" ").join("_");})
+		      .classed('artistContainer', true)
+		      .style('top', function(d) { return ((that.yScale(d.vocab_len)) - 9) + 'px';}) // 9 is the height of the cricles will be made dynamic later
+		      .each(function(d) {that.artists[d.name] = Artist.newArtist(d.name, d);})
+		      .style('left', function(d, i) {
+		      	// Computed through trial and error for the position
+		      	return 180 + (i * ((that.width - 220) / that.data.length)) + 'px';
+		      })
+		      // to avoid stutter on load 
+		      .transition().duration(300)
+		      .style('opacity', 1);
+		},
 
-	    d3.select(this.$plot.selector)
-	      .selectAll('.artistContainer')
-	      .data(this.data)
-	      .enter()
-	      .append('div')
-	      .attr('id', function(d) {
-	      	return d.name.split(" ").join("_");	
-	      })
-	      .classed('artistContainer', true)
-	      .each(function(d) {
-	      	that.artists[d.name] = Artist.newArtist(d.name, d);
-	      })
-	      .style('top', function(d) { return d.y + 'px';})
-	      .style('left', function(d, i) {
-	      	// Computed through trial and error for the position
-	      	return 180 + (i * ((that.width - 220) / that.data.length)) + 'px';
-	      })
-	      // to avoid stutter on load 
-	      .transition().duration(300)
-	      .style('opacity', 1);
+		// Operations styles of the artist circles on the plot 
+		dimAllArtists : function() {
+	        for(var artistName in this.artists) 
+				this.artists[artistName].dim();
+		},
+
+        undimAllArtists : function() {
+	        for(var artistName in this.artists) {
+	            this.artists[artistName].undim();
+	            this.artists[artistName].unhighlight();
+	        }
+	    },
+
+	    unhighlightAllArtists : function() {
+	        for(var artistName in this.artists) {
+				this.artists[artistName].unhighlight();
+	        }
+	    },
+
+	    // Argument is an array of artist names, this function highlight those artists on the plot
+	    highlightArtists : function(artistNames) {
+	    	var that = this; // VocabPlot
+			artistNames.forEach(function(artistName) {
+				that.artists[artistName].highlight();
+	        }); 
+	    }
+
 	};
+
+
+	// Handles the implementation and working of the search field on the plot
+	VocabPlot.prototype.search = {
+		searchField : $('#locateArtist'),
+		init : function(plot) {
+			this.plot = plot; // Cache the plot on which this search field is located
+			this.artistNames = Object.keys(this.plot.artists);
+			this.searchField.autocomplete({source : [this.artistNames], highlight : false, limit : 8});
+
+			this.searchField.focus(function() {
+				plot.dimAllArtists();		
+			});
+
+			this.searchField.blur(function() {
+				plot.undimAllArtists();
+				$(this).val('');
+			});
+
+			var that = this; // search oject
+			this.searchField.keyup(function(event) {
+		        // Detect the esc. key
+		        if(event.keyCode === 27) {
+					that.searchField.blur();
+		            return;
+		        } 
+				that.highlightMatchingArtists();
+		    });
+		},
+
+		highlightMatchingArtists : function() {
+			var that = this;
+	        var matchingArtists = this.artistNames.filter(function(name) {
+	            if(that.searchField.val())
+	                return (name.toUpperCase().indexOf(that.searchField.val().toUpperCase()) === 0);
+	            return false;
+	        }).slice(0, 8);
+
+	        this.plot.unhighlightAllArtists();
+	        this.plot.highlightArtists(matchingArtists);
+		}
+
+	};
+
+
+
 
 	// Private methods
 
@@ -100,8 +175,8 @@
 		    .attr('fill', 'white')
 		    .attr('font-size', 18);
 
+		// Drawing the average text and ticks
 		if(average) {
-			// Draw line for average line and other text
 			this.scale
 	      		.append('line')
 		      	.attr('x1', scaleLeftPadding)
@@ -137,15 +212,6 @@
 	    var parts = x.toString().split(".");
 	    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	    return parts.join(".");
-	}
-
-	// Function that calculates the left offset for every single artist
-	// From left end calculate the amount to translate towards right for each artist 
-	// while ensuring that they don't overlap
-	function calculateLeftOffset() {
-		// Let us start 
-		// Create a quadtree not entirely sure what it does though
-		return (this.width/2 - 17.5);
 	}
 		
 })();
