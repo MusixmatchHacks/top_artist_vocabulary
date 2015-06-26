@@ -221,7 +221,7 @@ var vocab_data = [{
     }, {
         "certified_sales": "41.6",
         "vocab_len": "2974",
-        "name": "R.E.M.",
+        "name": "REM",
         "total_nr_songs": "306",
         "country": "United States",
         "age": "1980\u20132011[303]",
@@ -485,7 +485,7 @@ var vocab_data = [{
     }, {
         "certified_sales": "69.2",
         "vocab_len": "2469",
-        "name": "Guns N' Roses",
+        "name": "Guns N Roses",
         "total_nr_songs": "113",
         "country": "United States",
         "age": "1985\u2013present[227]",
@@ -650,7 +650,7 @@ var vocab_data = [{
     }, {
         "certified_sales": "34.9",
         "vocab_len": "2114",
-        "name": "Earth Wind & Fire",
+        "name": "Earth Wind and Fire",
         "total_nr_songs": "327",
         "country": "United States",
         "age": "1969\u2013present[296]",
@@ -947,7 +947,7 @@ var vocab_data = [{
     }, {
         "certified_sales": "111.5",
         "vocab_len": "1788",
-        "name": "AC/DC",
+        "name": "ACDC",
         "total_nr_songs": "184",
         "country": "Australia",
         "age": "1973\u2013present[115]",
