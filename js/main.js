@@ -5,6 +5,13 @@
         data.rank = (index + 1);
     });
 
-    var plot = VocabPlot.newPlot('plot', vocab_data);
+    var plot = VocabPlot.newPlot({
+        // Css selectors of the elments on the plot
+        cssId : 'plot',
+        scaleCssId : 'scale',
+        searchFieldCssId : 'locateArtist',
+        artistCircleCssClass : 'artistContainer',
+        data : vocab_data
+    });
 
 })();

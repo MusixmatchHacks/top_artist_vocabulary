@@ -4,16 +4,18 @@
 	window.VocabPlot = {};
 	// Export this function for use in Artist.js file
 	window.VocabPlot.formatWithCommas = formatWithCommas;
-	window.VocabPlot.newPlot = function(cssId, plotData) {
-		return new VocabPlot(cssId, plotData);
+	window.VocabPlot.newPlot = function(config) {
+		return new VocabPlot(config);
 	};
 
-	function VocabPlot(plotCssId, plotData) {
-		this.cssId = plotCssId; // CSS ID of the div that is holding the plot
-		this.data = plotData;
+	function VocabPlot(config) {
+		this.config = config;
 
-		this.$plot = $('#' + this.cssId);
-		this.scale = d3.select('#scale');
+		// Data for the plot
+		this.data = this.config.data;
+
+		this.$plot = $('#' + this.config.cssId);
+		this.scale = d3.select('#' + this.config.scaleCssId);
 		// Font family for the text that is showon on the graph
 		this.fontFamily = 'Source Sans Pro';
 
@@ -29,7 +31,7 @@
 
 		this.addAritstsToPlot();
 		// Iniitalize the searchField
-		this.search.init(this);
+		this.search.init(this, this.config.searchFieldCssId);
 
 	}
 
@@ -39,14 +41,14 @@
 		addAritstsToPlot: function() {
 			var that = this; // VocabPlot
 			d3.select(this.$plot.selector)
-				.selectAll('.artistContainer')
+				.selectAll(this.config.artistCircleCssClass)
 				.data(this.data)
 				.enter()
 				.append('div')
 				.attr('id', function(d) {
 					return d.name.split(" ").join("_");
 				})
-				.classed('artistContainer', true)
+				.classed(this.config.artistCircleCssClass, true)
 				.style('top', function(d) {
 					return ((that.yScale(d.vocab_len)) - 9) + 'px';
 				}) // 9 is the height of the cricles will be made dynamic later
@@ -94,10 +96,12 @@
 
 	// Handles the implementation and working of the search field on the plot
 	VocabPlot.prototype.search = {
-		searchField: $('#locateArtist'),
-		init: function(plot) {
+		init: function(plot, searchFieldCssId) {
+			// Caching
+			this.searchField = $('#' + searchFieldCssId);
 			this.plot = plot; // Cache the plot on which this search field is located
 			this.artistNames = Object.keys(this.plot.artists);
+
 			this.searchField.autocomplete({
 				source: [this.artistNames],
 				highlight: false,
