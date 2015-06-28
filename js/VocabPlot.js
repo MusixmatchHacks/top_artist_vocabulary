@@ -38,7 +38,7 @@
 	VocabPlot.prototype = {
 
 		// Method to add new artist to the plot
-		addArtistsToPlot : function() {
+		addArtistsToPlot: function() {
 			var that = this; // VocabPlot
 			d3.select(this.$plot.selector)
 				.selectAll(this.config.artistCircleCssClass)
@@ -118,33 +118,42 @@
 			});
 
 			var that = this; // search oject
+			// Debounced the following function for efficiency
+			var timeout;
 			this.searchField.keyup(function(event) {
-				// Detect the esc. key
-				if (event.keyCode === 27) {
-					that.searchField.blur();
-					return;
-				}
-				that.highlightMatchingArtists();
+				clearTimeout(timeout);
+				timeout = setTimeout(function() {
+					// Detect the esc. key
+					if (event.keyCode === 27) {
+						that.searchField.blur();
+						return;
+					}
+					that.highlightMatchingArtists();
+				}, 250);
 			});
 		},
 
+		// TODO : debounce the following function
 		highlightMatchingArtists: function() {
 			var that = this;
 			var matchingArtists = this.artistNames.filter(function(name) {
-				if (that.searchField.val())
-					return (name.toUpperCase().indexOf(that.searchField.val().toUpperCase()) === 0);
-				return false;
+				var searchFieldValue = that.searchField.val();
+				// If the search is a number then highlight the artist by rank
+				if (searchFieldValue) {
+					if ($.isNumeric(searchFieldValue)) {
+						return (that.plot.artists[name].data.rank === Number(searchFieldValue));
+					} else {
+						return (name.toUpperCase().indexOf(searchFieldValue.toUpperCase()) === 0);
+					}
+					return false;
+				}
 			}).slice(0, 8);
 
 			this.plot.unhighlightAllArtists();
 			this.plot.highlightArtists(matchingArtists);
 		}
-
 	};
 
-
-
-	
 	// Funciton : drawScale(array of numbers, each number representing a tick on scale, average value)
 	function drawScale(scaleDivisions, average) {
 
