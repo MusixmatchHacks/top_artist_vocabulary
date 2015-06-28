@@ -17,7 +17,7 @@
 		this.$plot = $('#' + this.config.cssId);
 		this.scale = d3.select('#' + this.config.scaleCssId);
 		// Font family for the text that is show on on the graph
-		this.fontFamily = 'Source Sans Pro';
+		this.fontFamily = 'Oswald';
 
 		this.width = this.$plot.width();
 		this.height = this.$plot.height();
@@ -144,12 +144,8 @@
 
 
 
-	// Private methods
-
-	/*
-	 * Funciton : drawScale(array of numbers, each number representing a tick on scale, average value)
-	 * ------------------------------------------------------------------------------------------------
-	 */
+	
+	// Funciton : drawScale(array of numbers, each number representing a tick on scale, average value)
 	function drawScale(scaleDivisions, average) {
 
 		var that = this;
