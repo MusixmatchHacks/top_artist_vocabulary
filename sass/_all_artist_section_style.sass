@@ -2,15 +2,17 @@ $color_main : #FD4C38
 
 #allArtists 
 	width : 960px
-	padding : 0 20px 0 20px
 	height : auto
 	margin : 0 auto 30px auto
 	background-color: #FFF
 
 .letterSection
-	display : inline-block
 	width : auto
 	height : auto
+	padding : 10px 0px 5px 20px
+	&:hover 
+		background-color: #f8f8f8
+		transition : all 0.3s
 
 .alphaHolder
 	background-color : transparent
@@ -21,7 +23,7 @@ $color_main : #FD4C38
 	width: 65px
 	height: 45px
 	line-height : 45px
-	margin: 5px 0 5px 0
+	margin: 0 0 5px 0
 	border-bottom : 3px solid $color_main
 
 .letterArtistImage 
@@ -32,3 +34,10 @@ $color_main : #FD4C38
 	border : 2px solid #000
 	background-color : #D8D8D8
 	cursor : pointer
+
+.letterArtistName
+	width : auto
+	height : auto
+	position : absolute
+	color : white
+	background-color : red

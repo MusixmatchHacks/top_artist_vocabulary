@@ -22,12 +22,16 @@
         allChartCssId : 'allArtists'
     }, Object.keys(plot.artists));
 
-
-
-    // contract the whole list div
-    // $('#allArtists').();
-    $('.letterArtistImage').on('mouseover', function() {
-           $(this).tipsy({text : 'id'});
+    $('.letterArtistImage').each(function() {
+        var $self = $(this);
+        $self.tipsy({
+            title : function() {
+                return $self.attr('id').split("_").join(" ");
+            },
+            gravity : 's',
+            opacity : 1,
+            offset : 2
+        });
     });
 
 })();
