@@ -127,7 +127,8 @@ input#locateArtist {
   background-color: #FFF; }
 
 .letterSection {
-  width: 100%;
+  display: inline-block;
+  width: auto;
   height: auto; }
 
 .alphaHolder {

@@ -6,7 +6,7 @@
 	};
 
 	function AllArtists(config, artistNames) {
-		// Stores artist's names in the following configuraiton
+		// sortedNames stores artist's names in the following configuraiton
 		/*
 			[
 				{startingLetter : 'A', names : [names of artists starting with A ]},
