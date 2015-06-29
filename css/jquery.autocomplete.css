@@ -72,6 +72,7 @@ text-align: start;
 	padding-bottom : 8px;
 }
 .xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div.active{
-	background: #0087FF;
+	/*background: #0087FF;*/
+	background : #FD847B;
 	color: #FFFFFF;
 }

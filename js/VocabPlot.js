@@ -26,7 +26,7 @@
 		this.artists = {};
 
 		this.yScale = d3.scale.linear().domain([0, 10000]).range([0.95 * this.height, 0]);
-		drawScale.call(this, [0, 2000, 4000, 6000, 8000], 2445);
+		drawScale.call(this, [0, 2000, 4000, 6000, 8000], 2667);
 
 
 		this.addArtistsToPlot();
@@ -194,7 +194,6 @@
 			.text(function(d) {
 				return (formatWithCommas(d) + ' words');
 			})
-			.attr('font-family', that.fontFamily)
 			.attr('fill', 'white')
 			.attr('font-size', 18);
 
@@ -213,7 +212,6 @@
 				.append('text')
 				.text(formatWithCommas(average) + ' words')
 				.attr('fill', averageColor)
-				.attr('font-family', that.fontFamily)
 				.attr('font-size', 16)
 				.attr('x', scaleLeftPadding)
 				.attr('y', that.yScale(average) - (legendTickSeparation - 5));
@@ -222,7 +220,6 @@
 				.append('text')
 				.text('Average')
 				.attr('fill', averageColor)
-				.attr('font-family', 'roboto')
 				.attr('font-size', 16)
 				.attr('x', scaleLeftPadding)
 				.attr('y', that.yScale(average) - (2.1 * legendTickSeparation));
