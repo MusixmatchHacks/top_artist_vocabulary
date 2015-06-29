@@ -1,8 +1,7 @@
 @import url(tipsy.css);
 @import url(jquery.autocomplete.css);
-@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
 @import "http://fonts.googleapis.com/css?family=Lato:400,600";
-@import "http://fonts.googleapis.com/css?family=Oswald:400,600";
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 #vocab_plot_wrapper {
   min-height: 700px;
   max-height: 1000px;
@@ -118,17 +117,42 @@ input#locateArtist {
   font-family: "Helvetica Neue", "Source Sans Pro";
   margin-bottom: 5px; }
 
+.allArtists {
+  width: 100%;
+  height: 250px;
+  background-color: honeydew; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Sans Pro", "Helvetica"; }
+  font-family: "Helvetica"; }
 
 body {
   background-color: #fff;
   width: 100%;
   height: 100%;
   overflow: auto; }
+
+#header {
+  width: 100%;
+  height: 350px;
+  background-color: #FFE5E5; }
+  #header .header_inner {
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 20px 0 20px; }
+    #header .header_inner h1 {
+      font-family: Oswald-DemiBold;
+      font-size: 48px;
+      color: #000000;
+      padding-top: 200px; }
+    #header .header_inner .sub {
+      font-family: HelveticaNeue-Bold;
+      font-size: 18px;
+      color: #000000;
+      line-height: 23px; }
 
 #container {
   position: relative;
@@ -137,18 +161,14 @@ body {
   margin: 0 auto; }
 
 .article {
-  width: 980px;
+  width: 960px;
   margin: 0 auto;
-  background-color: #FBFBFB;
-  padding: 20px;
-  font-family: "Lato";
+  padding: 30px 20px 30px 20px;
+  font-family: "Helvetica Neue", "Lato";
   line-height: 1.5em;
   font-size: 1.1em; }
-  .article h1 {
-    text-align: left;
-    padding: 10px;
-    font-size: 2em;
-    font-family: Oswald;
-    margin-bottom: 20px; }
+  .article a {
+    color: #FD4C38;
+    text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */

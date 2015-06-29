@@ -158,7 +158,6 @@
 	function drawScale(scaleDivisions, average) {
 
 		var that = this;
-
 		// Color of general numbers and lines
 		var scaleColor = "#FFFFFF";
 		var averageColor = "#B1D300";

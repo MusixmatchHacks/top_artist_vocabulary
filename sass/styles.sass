@@ -2,29 +2,55 @@
 @import "tipsy.css"
 @import "jquery.autocomplete.css"
 @import "vocab_plot_styles.sass"
+@import "all_artist_section_style.sass"
 
 // Import the fonts
-@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
+// @import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
 @import "http://fonts.googleapis.com/css?family=Lato:400,600"
-@import "http://fonts.googleapis.com/css?family=Oswald:400,600"
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700)
 
 
 // Color Varaibles
 $color_bg_article : #FBFBFB
 $color_bg_viz : #303030
+$color_main : #FD4C38
+$color_header : #FFE5E5
 
+// Width and height variables
+$article_width : 960px
 
 * 
 	margin : 0
 	padding : 0
 	box-sizing : border-box
-	font-family : 'Source Sans Pro','Helvetica'
+	font-family : 'Helvetica'
 
 body 
 	background-color : #fff
 	width : 100%
 	height : 100%
 	overflow : auto
+
+#header
+	width : 100%
+	height : 350px
+	background-color : $color_header
+	.header_inner
+		width : $article_width
+		margin : 0 auto
+		height : 100%
+		padding : 0 20px 0 20px
+		h1
+			font-family: Oswald-DemiBold
+			font-size: 48px
+			color: #000000
+			padding-top: 200px
+		.sub
+			font-family: HelveticaNeue-Bold
+			font-size: 18px
+			color: #000000
+			line-height: 23px
+
 
 #container 
 	position : relative
@@ -34,19 +60,15 @@ body
 
 
 .article 
-	width : 980px
+	width : $article_width
 	margin : 0 auto
-	background-color : $color_bg_article
-	padding: 20px
-	font-family : 'Lato'
+	padding: 30px 20px 30px 20px
+	font-family : 'Helvetica Neue','Lato'
 	line-height : 1.5em
 	font-size : 1.1em
-	h1
-		text-align : left
-		padding : 10px
-		font-size : 2em
-		font-family : Oswald
-		margin-bottom : 20px
+	& a
+		color : $color_main
+		text-decoration : none
 
 
 
