@@ -52,11 +52,11 @@
 		}
 	};
 
-	// This thing is not a part of the prototype 
-	function addNames(names) {
-		// now all that we have to do here is take the current collection of names 
-		//and the add it to the DOM in some sort of div alright
-		// it looks like we're gonna need a template here right ?  yes 
+
+	// Private methods 
+	// Converts 'A word' to 'A_word'
+	function add_(word) {
+		return word.split(" ").join("_");
 	}
 
 })();

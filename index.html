@@ -18,7 +18,7 @@
 			Ever since I read the excellent <a href = "http://experiments.undercurrent.com/">The largest vocabulary in hip hop</a> I wanted to do a similar analysis across a more generalised list of musicians. I stumbled across this <a href = "https://en.wikipedia.org/wiki/List_of_best-selling_music_artists"
 			>List of best-selling music artists</a> and it seemed to cover a good cross section of popular musicians and genres. 
 
-			These are the 93 artists that will be a part of this analysis. Sorted alphabetically. 
+			These are the 93 artists that will be a part of this analysis.
 		</section>
 
 		<section id ="allArtists">
@@ -29,6 +29,9 @@
 						<div class = "alphaHolder">
 							{{startingLetter}}
 						</div>
+						{{#each names}}
+							{{this}}
+						{{/each}}
 					</div>
 				{{/each}}
 			</script>
