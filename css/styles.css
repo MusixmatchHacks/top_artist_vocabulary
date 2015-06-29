@@ -100,12 +100,12 @@ input#locateArtist {
 .detailContainer {
   width: 70%;
   float: right;
-  font-size: 1.09em;
+  font-size: 16px;
   padding-left: 23px;
   font-family: "Helvetica Neue", "Source Sans Pro"; }
 
 .rank {
-  font-size: 1.8em;
+  font-size: 27px;
   font-family: "Oswald"; }
 
 .number {
@@ -116,10 +116,27 @@ input#locateArtist {
   font-family: "Helvetica Neue", "Source Sans Pro";
   margin-bottom: 5px; }
 
-.allArtists {
+#allArtists {
+  width: 960px;
+  padding: 0 20px 0 20px;
+  height: auto;
+  margin: 0 auto 30px auto;
+  background-color: #FFF; }
+
+.letterSection {
   width: 100%;
-  height: 250px;
-  background-color: honeydew; }
+  height: auto; }
+
+.alphaHolder {
+  background-color: #FD4C38;
+  font-family: Oswald-Medium;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  width: 65px;
+  height: 45px;
+  line-height: 45px;
+  margin: 5px; }
 
 * {
   margin: 0;

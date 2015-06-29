@@ -21,8 +21,17 @@
 			These are the 93 artists that will be a part of this analysis. Sorted alphabetically. 
 		</section>
 
-		<section class="allArtists">
-			
+		<section id ="allArtists">
+			<!-- We can just put the template right over here -->
+			<script id = "template-allArtists" type = "text/x-handlebars-template">
+				{{#each this}}
+					<div class = "letterSection">
+						<div class = "alphaHolder">
+							{{startingLetter}}
+						</div>
+					</div>
+				{{/each}}
+			</script>
 		</section>
 
 
@@ -50,12 +59,14 @@
 		</div>
 	</script>
 	<script type = "text/javascript" src = "data/total_analysis_final.js"></script>
+	<script type = "text/javascript" src = "js/lib/handlebars-v3.0.3.js"></script>
 	<script type = "text/javascript" src = "js/lib/jquery.min.js"></script>
 	<script type = "text/javascript" src = "js/lib/d3.js"></script>	
 	<script type = "text/javascript" src = "js/lib/jquery.tipsy.js"></script>	
 	<script type = "text/javascript" src = "js/lib/jquery.autocomplete.js"></script>	
 	<script type = "text/javascript" src = "js/Artist.js"></script>
 	<script type = "text/javascript" src = "js/VocabPlot.js"></script>
+	<script type = "text/javascript" src = "js/AllArtists.js"></script>
 	<script type = "text/javascript" src = "js/main.js"></script>
 
 </body>
