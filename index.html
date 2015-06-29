@@ -29,9 +29,12 @@
 						<div class = "alphaHolder">
 							{{startingLetter}}
 						</div>
-						{{#each names}}
-							{{this}}
-						{{/each}}
+						<div class = "letterArtists" >
+							{{#each names}}
+								<div class = 'letterArtistImage' id = "{{this}}" alt = "{{this}}"
+								style = "background-image : url(img/artist_images_40px/{{this}}.jpg)"></div>
+							{{/each}}
+						</div>
 					</div>
 				{{/each}}
 			</script>
