@@ -38,7 +38,8 @@
 
     // Add contractability to the all artists div
     var $allArtistContainer = $('#allArtists');
-    $('#btn_expandList').on('click', function() {
+    var $expandButton = $('#btn_expandList');
+    $expandButton.on('click', function() {
         $allArtistContainer.toggleClass('expanded');
         if ($allArtistContainer.hasClass('expanded')) {
             $allArtistContainer.children('.overlay').remove();
