@@ -36,22 +36,74 @@
         });
     });
 
+    var $window = $(window);
     // Add contractability to the all artists div
-    var $allArtistContainer = $('#allArtists');
-    var $expandButton = $('#btn_expandList');
-    $expandButton.on('click', function() {
-        $allArtistContainer.toggleClass('expanded');
-        if ($allArtistContainer.hasClass('expanded')) {
-            $allArtistContainer.children('.overlay').remove();
-            $(this).text('SHOW LESS');
-        } else {
-            $allArtistContainer.prepend($('<div></div>', {
-                class: 'overlay'
-            }));
-            $(this).text('SHOW ALL');
-        }
-    });
+    var expandButton = {
+        button: $('#btn_expandList'),
+        target: $('#allArtists'),
 
+        init: function() {
+            // Variables that'll help in maintaining the positions while scrolling
+            this.initialButtonPos = this.button.offset();
+            this.scrollLimits = this.target.offset();
+
+            // Initialize the click listener 
+            this.button.on('click', this.expandList);
+        },
+
+        expandList: function() {
+            expandButton.target.toggleClass('expanded');
+            if (expandButton.target.hasClass('expanded')) {
+                expandButton.target.children('.overlay').remove();
+                $(this).text('SHOW LESS');
+            } else {
+                expandButton.target.prepend($('<div></div>', {
+                    class: 'overlay'
+                }));
+                $(this).text('SHOW ALL');
+                // Scroll to the next article section
+                $window.scrollTop(950);
+            }
+
+        },
+
+        // Returns the new position for when the window is scrolled
+        getPositionTop: function() {
+            // so you will need the initial and the current position of the button
+            return ($window.scrollTop() - this.scrollLimits.top) + 'px';
+        },
+
+        getPositionLeft: function() {
+            return this.initialButtonPos.left + 'px';
+        },
+
+        getUpperScrollLimit: function() {
+            return this.scrollLimits.top;
+        },
+
+        getLowerScrollLimit: function() {
+            return (this.scrollLimits.top + this.target.height() - this.button.height() - 20);
+        }
+
+
+    };
+
+    expandButton.init();
+
+    // Set up the scroll listener on the window to maintain the position of the button
+    var timeout;
+    $window.on('scroll', function() {
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            var scrollPos = $window.scrollTop();
+            if (scrollPos > expandButton.getUpperScrollLimit() && scrollPos < expandButton.getLowerScrollLimit()) {
+                expandButton.button.addClass('buttonFixedScroll');
+            } else {
+                expandButton.button.removeClass('buttonFixedScroll');
+            }
+        }, 0);
+
+    });
 
 
 })();
