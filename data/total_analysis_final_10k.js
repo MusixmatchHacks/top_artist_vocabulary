@@ -439,7 +439,7 @@ var vocab_data = [{
     "vocab_10k": "2486",
     "genre": "Rock / Hard rock[323]",
     "start_yr": "1977[323]",
-    "vocab_10k_rank": "37"
+    "vocab_10k_rank": "36"
 }, {
     "name": "U2",
     "country": "Ireland",
@@ -478,7 +478,7 @@ var vocab_data = [{
     "vocab_10k": "2416",
     "genre": "Punk rock / Alternative rock[360]",
     "start_yr": "1994[360]",
-    "vocab_10k_rank": "38"
+    "vocab_10k_rank": "37"
 }, {
     "name": "Elvis Presley",
     "country": "United States",
@@ -491,7 +491,7 @@ var vocab_data = [{
     "vocab_10k": "2397",
     "genre": "Rock and roll / Pop / Country[32]",
     "start_yr": "1954[32]",
-    "vocab_10k_rank": "41"
+    "vocab_10k_rank": "40"
 }, {
     "name": "Van Halen",
     "country": "United States",
@@ -504,7 +504,7 @@ var vocab_data = [{
     "vocab_10k": "2406",
     "genre": "Hard rock / Heavy metal[310]",
     "start_yr": "1978[310]",
-    "vocab_10k_rank": "40"
+    "vocab_10k_rank": "39"
 }, {
     "name": "Taylor Swift",
     "country": "United States",
@@ -517,7 +517,7 @@ var vocab_data = [{
     "vocab_10k": "2353",
     "genre": "Country / Country pop / Pop / Pop-rock[175]",
     "start_yr": "2006[175]",
-    "vocab_10k_rank": "42"
+    "vocab_10k_rank": "41"
 }, {
     "name": "Katy Perry",
     "country": "United States",
@@ -530,7 +530,7 @@ var vocab_data = [{
     "vocab_10k": "2414",
     "genre": "Pop / Rock[288]",
     "start_yr": "2008[288]",
-    "vocab_10k_rank": "39"
+    "vocab_10k_rank": "38"
 }, {
     "name": "Michael Jackson",
     "country": "United States",
@@ -543,7 +543,7 @@ var vocab_data = [{
     "vocab_10k": "2251",
     "genre": "Pop / Rock / Dance / Soul / R&B[44]",
     "start_yr": "1971[44]",
-    "vocab_10k_rank": "49"
+    "vocab_10k_rank": "48"
 }, {
     "name": "Lady Gaga",
     "country": "United States",
@@ -556,7 +556,7 @@ var vocab_data = [{
     "vocab_10k": "2314",
     "genre": "Pop / Dance / Electronic/ Rock[312]",
     "start_yr": "2008[312]",
-    "vocab_10k_rank": "47"
+    "vocab_10k_rank": "46"
 }, {
     "name": "Janet Jackson",
     "country": "United States",
@@ -569,7 +569,7 @@ var vocab_data = [{
     "vocab_10k": "2259",
     "genre": "R&B / Pop[244]",
     "start_yr": "1982[244]",
-    "vocab_10k_rank": "48"
+    "vocab_10k_rank": "47"
 }, {
     "name": "Guns N' Roses",
     "country": "United States",
@@ -582,7 +582,7 @@ var vocab_data = [{
     "vocab_10k": "2353",
     "genre": "Hard rock / Heavy metal[227]",
     "start_yr": "1987[227]",
-    "vocab_10k_rank": "43"
+    "vocab_10k_rank": "42"
 }, {
     "name": "Barry Manilow",
     "country": "United States",
@@ -595,7 +595,7 @@ var vocab_data = [{
     "vocab_10k": "2321",
     "genre": "Pop / Soft rock[325]",
     "start_yr": "1973[325]",
-    "vocab_10k_rank": "45"
+    "vocab_10k_rank": "43"
 }, {
     "name": "Kenny Rogers",
     "country": "United States",
@@ -621,7 +621,7 @@ var vocab_data = [{
     "vocab_10k": "2315",
     "genre": "Country / Pop rock[358]",
     "start_yr": "1980[358]",
-    "vocab_10k_rank": "46"
+    "vocab_10k_rank": "45"
 }, {
     "name": "Rihanna",
     "country": "Barbados\nUnited States",
@@ -634,7 +634,7 @@ var vocab_data = [{
     "vocab_10k": "2174",
     "genre": "R&B / Pop / Dance / Hip-hop[154]",
     "start_yr": "2005[154]",
-    "vocab_10k_rank": "53"
+    "vocab_10k_rank": "52"
 }, {
     "name": "M\u00f6tley Cr\u00fce",
     "country": "United States",
@@ -647,7 +647,7 @@ var vocab_data = [{
     "vocab_10k": "2244",
     "genre": "Glam metal[384]",
     "start_yr": "1983[384]",
-    "vocab_10k_rank": "50"
+    "vocab_10k_rank": "49"
 }, {
     "name": "Bon Jovi",
     "country": "United States",
@@ -660,7 +660,7 @@ var vocab_data = [{
     "vocab_10k": "2153",
     "genre": "Hard rock / Glam metal[206]",
     "start_yr": "1983[206]",
-    "vocab_10k_rank": "54"
+    "vocab_10k_rank": "53"
 }, {
     "name": "Tina Turner",
     "country": "United States",
@@ -673,7 +673,7 @@ var vocab_data = [{
     "vocab_10k": "2183",
     "genre": "Rock / Pop[278]",
     "start_yr": "1975[278]",
-    "vocab_10k_rank": "52"
+    "vocab_10k_rank": "51"
 }, {
     "name": "Dire Straits",
     "country": "United Kingdom",
@@ -686,7 +686,7 @@ var vocab_data = [{
     "vocab_10k": "2206",
     "genre": "Rock / Pop[200]",
     "start_yr": "1978[200]",
-    "vocab_10k_rank": "51"
+    "vocab_10k_rank": "50"
 }, {
     "name": "George Strait",
     "country": "United States",
@@ -699,7 +699,7 @@ var vocab_data = [{
     "vocab_10k": "2149",
     "genre": "Country[222]",
     "start_yr": "1984[222]",
-    "vocab_10k_rank": "55"
+    "vocab_10k_rank": "54"
 }, {
     "name": "Eagles",
     "country": "United States",
@@ -712,7 +712,7 @@ var vocab_data = [{
     "vocab_10k": "2136",
     "genre": "Rock[151]",
     "start_yr": "1972[151]",
-    "vocab_10k_rank": "56"
+    "vocab_10k_rank": "55"
 }, {
     "name": "Neil Diamond",
     "country": "United States",
@@ -725,7 +725,7 @@ var vocab_data = [{
     "vocab_10k": "2077",
     "genre": "Pop / Rock[183]",
     "start_yr": "1966[183]",
-    "vocab_10k_rank": "57"
+    "vocab_10k_rank": "56"
 }, {
     "name": "Reba McEntire",
     "country": "United States",
@@ -738,7 +738,7 @@ var vocab_data = [{
     "vocab_10k": "2066",
     "genre": "Country / Country Pop[321]",
     "start_yr": "1987[321]",
-    "vocab_10k_rank": "58"
+    "vocab_10k_rank": "57"
 }, {
     "name": "Cher",
     "country": "United States",
@@ -748,10 +748,10 @@ var vocab_data = [{
     "certified_sales": "40.4",
     "vocab_len": "2163",
     "total_nr_songs": "289",
-    "vocab_10k": "2486",
+    "vocab_10k": "2045",
     "genre": "Pop / Rock / Dance / Folk[264]",
     "start_yr": "1965[264]",
-    "vocab_10k_rank": "36"
+    "vocab_10k_rank": "58"
 }, {
     "name": "Britney Spears",
     "country": "United States",
@@ -1215,5 +1215,5 @@ var average = {
     'total_songs': 245.70967741935485,
     'total_words': 33003.4623655914,
     'vocab_length': 2677.1827956989246,
-    'vocab_10k': 2462.59139784946
+    'vocab_10k': 2457.84946236559
 }
