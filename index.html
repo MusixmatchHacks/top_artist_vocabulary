@@ -20,8 +20,10 @@
 
 			These are the 93 artists that will be a part of this analysis.
 		</section>
-
+	
+		<button id = "btn_expandList">SHOW ALL</button>
 		<section id ="allArtists">
+			<div class="overlay"></div>
 			<!-- We can just put the template right over here -->
 			<script id = "template-allArtists" type = "text/x-handlebars-template">
 				{{#each this}}
@@ -31,7 +33,7 @@
 						</div>
 						<div class = "letterArtists" >
 							{{#each names}}
-								<div class = 'letterArtistImage' id = "{{this}}" alt = "{{this}}"
+								<div class = 'letterArtistImage' id = "{{this}}"
 								style = "background-image : url(img/artist_images_small/{{this}}.jpg)">
 								</div>
 							{{/each}}

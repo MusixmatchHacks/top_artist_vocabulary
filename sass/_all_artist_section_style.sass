@@ -1,18 +1,18 @@
 $color_main : #FD4C38
+$color_button_border : #FEA3A1
 
 #allArtists 
+	position : relative
 	width : 960px
-	height : auto
+	height : 510px
 	margin : 0 auto 30px auto
 	background-color: #FFF
+	overflow-y : hidden
 
 .letterSection
 	width : auto
 	height : auto
 	padding : 10px 0px 5px 20px
-	&:hover 
-		background-color: #f8f8f8
-		transition : all 0.3s
 
 .alphaHolder
 	background-color : transparent
@@ -30,14 +30,44 @@ $color_main : #FD4C38
 	display : inline-block
 	width : 80px 
 	height : 80px
-	margin-right : 2px
 	border : 2px solid #000
 	background-color : #D8D8D8
 	cursor : pointer
 
-.letterArtistName
-	width : auto
-	height : auto
+.expanded
+	height : auto !important
+
+.overlay 
 	position : absolute
-	color : white
-	background-color : red
+	left : 0 
+	top : 70%
+	height : 30%
+	width : 100%
+	z-index : 10
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%)
+
+.button
+	width : 155px
+	height : 35px
+	font-family: Oswald-Regular
+	font-size: 18px
+	color: darken($color_button_border, 8%)
+	line-height: 25px
+	background-color : transparent
+	border: 1px solid darken($color_button_border, 8%)
+	cursor : pointer
+	border-radius : 2px
+	&:focus 
+		outline : none
+	&:hover
+		color : white
+		background-color : $color_main
+		transition : all 0.2s
+
+#btn_expandList
+	@extend .button
+	position : absolute
+	top : 200px
+	left : 80px
+
+

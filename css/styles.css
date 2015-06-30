@@ -1,8 +1,5 @@
 @import url(tipsy.css);
 @import url(jquery.autocomplete.css);
-@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
-@import "http://fonts.googleapis.com/css?family=Lato:400,600";
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 #vocab_plot_wrapper {
   min-height: 700px;
   max-height: 1000px;
@@ -120,18 +117,17 @@ input#locateArtist {
   margin-bottom: 5px; }
 
 #allArtists {
+  position: relative;
   width: 960px;
-  height: auto;
+  height: 510px;
   margin: 0 auto 30px auto;
-  background-color: #FFF; }
+  background-color: #FFF;
+  overflow-y: hidden; }
 
 .letterSection {
   width: auto;
   height: auto;
   padding: 10px 0px 5px 20px; }
-  .letterSection:hover {
-    background-color: #f8f8f8;
-    transition: all 0.3s; }
 
 .alphaHolder {
   background-color: transparent;
@@ -149,17 +145,44 @@ input#locateArtist {
   display: inline-block;
   width: 80px;
   height: 80px;
-  margin-right: 2px;
   border: 2px solid #000;
   background-color: #D8D8D8;
   cursor: pointer; }
 
-.letterArtistName {
-  width: auto;
-  height: auto;
+.expanded {
+  height: auto !important; }
+
+.overlay {
   position: absolute;
-  color: white;
-  background-color: red; }
+  left: 0;
+  top: 70%;
+  height: 30%;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, white 100%); }
+
+.button, #btn_expandList {
+  width: 155px;
+  height: 35px;
+  font-family: Oswald-Regular;
+  font-size: 18px;
+  color: #fe7b79;
+  line-height: 25px;
+  background-color: transparent;
+  border: 1px solid #fe7b79;
+  cursor: pointer;
+  border-radius: 2px; }
+  .button:focus, #btn_expandList:focus {
+    outline: none; }
+  .button:hover, #btn_expandList:hover {
+    color: white;
+    background-color: #FD4C38;
+    transition: all 0.2s; }
+
+#btn_expandList {
+  position: absolute;
+  top: 200px;
+  left: 80px; }
 
 * {
   margin: 0;
