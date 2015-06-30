@@ -262,4 +262,15 @@ body {
   display: block;
   margin: 30px auto; }
 
+#polyglotImages {
+  width: 720px;
+  height: 400px;
+  margin: 30px auto 0 auto;
+  border: 1px solid black; }
+
+.polyglotImage {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 10px; }
+
 /*# sourceMappingURL=styles.css.map */
