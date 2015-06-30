@@ -264,13 +264,18 @@ body {
 
 #polyglotImages {
   width: 720px;
-  height: 400px;
-  margin: 30px auto 0 auto;
-  border: 1px solid black; }
+  height: auto;
+  margin: 30px auto 20px auto;
+  align: center; }
 
 .polyglotImage {
   display: inline-block;
   margin: 0 auto;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-left: 15px;
+  cursor: pointer; }
+
+.polyglotImage:first-child {
+  margin-left: 0; }
 
 /*# sourceMappingURL=styles.css.map */

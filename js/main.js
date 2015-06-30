@@ -69,7 +69,7 @@
         });
     });
 
-    console.log(polyglotLanguages);
-
+    // center the last image :D (even Google's homepage uses <center> so what)
+    $('.polyglotImage:last-child').wrap('<center></center>');
 
 })();
