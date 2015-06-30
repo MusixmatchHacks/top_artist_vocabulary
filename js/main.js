@@ -39,14 +39,12 @@
     var $window = $(window);
     // Add contractability to the all artists div
     var expandButton = {
-        button: $('#btn_expandList'),
-        target: $('#allArtists'),
-
-        init: function() {
+        init: function(config) {
+            this.button = config.button;
+            this.target = config.target;
             // Variables that'll help in maintaining the positions while scrolling
             this.initialButtonPos = this.button.offset();
             this.scrollLimits = this.target.offset();
-
             // Initialize the click listener 
             this.button.on('click', this.expandList);
         },
@@ -62,19 +60,10 @@
                 }));
                 $(this).text('SHOW ALL');
                 // Scroll to the next article section
-                $window.scrollTop(950);
+                if($window.scrollTop() > expandButton.getLowerScrollLimit())
+                    $window.scrollTop(950);
             }
 
-        },
-
-        // Returns the new position for when the window is scrolled
-        getPositionTop: function() {
-            // so you will need the initial and the current position of the button
-            return ($window.scrollTop() - this.scrollLimits.top) + 'px';
-        },
-
-        getPositionLeft: function() {
-            return this.initialButtonPos.left + 'px';
         },
 
         getUpperScrollLimit: function() {
@@ -82,27 +71,31 @@
         },
 
         getLowerScrollLimit: function() {
-            return (this.scrollLimits.top + this.target.height() - this.button.height() - 20);
+            return (this.scrollLimits.top + this.target.height() - this.button.height() - 100);
         }
 
 
     };
 
-    expandButton.init();
+    expandButton.init({
+       button: $('#btn_expandList'),
+       target: $('#allArtistsContainer')
+    });
 
     // Set up the scroll listener on the window to maintain the position of the button
-    var timeout;
+    // Not the best solution but will work for now ...
     $window.on('scroll', function() {
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            var scrollPos = $window.scrollTop();
-            if (scrollPos > expandButton.getUpperScrollLimit() && scrollPos < expandButton.getLowerScrollLimit()) {
-                expandButton.button.addClass('buttonFixedScroll');
-            } else {
-                expandButton.button.removeClass('buttonFixedScroll');
-            }
-        }, 0);
-
+        var scrollPos = $window.scrollTop();
+        if (scrollPos > expandButton.getUpperScrollLimit() && scrollPos < expandButton.getLowerScrollLimit()) {
+            expandButton.button.addClass('buttonFixedScroll');
+            expandButton.button.css({
+                top : (expandButton.initialButtonPos.top - 490) + 'px',
+                left : expandButton.initialButtonPos.left + 'px'
+            });
+        } else {
+            expandButton.button.removeClass('buttonFixedScroll');
+            expandButton.button.offset(expandButton.initialButtonPos);
+        }
     });
 
 

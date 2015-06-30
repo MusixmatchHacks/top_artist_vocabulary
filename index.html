@@ -20,67 +20,69 @@
 
 			These are the 93 artists that will be a part of this analysis.
 		</section>
-	
-		<button id = "btn_expandList">SHOW ALL</button>
+
 		<section id ="allArtists">
-			<div class="overlay"></div>
-			<!-- We can just put the template right over here -->
-			<script id = "template-allArtists" type = "text/x-handlebars-template">
-				{{#each this}}
+			<button id = "btn_expandList">SHOW ALL</button>
+
+			<div id="allArtistsContainer">
+				<div class="overlay"></div>
+				<script id = "template-allArtists" type = "text/x-handlebars-template">
+					{{#each this}}
 					<div class = "letterSection">
 						<div class = "alphaHolder">
 							{{startingLetter}}
 						</div>
 						<div class = "letterArtists" >
 							{{#each names}}
-								<div class = 'letterArtistImage' id = "{{this}}"
-								style = "background-image : url(img/artist_images_small/{{this}}.jpg)">
-								</div>
+							<div class = 'letterArtistImage' id = "{{this}}"
+							style = "background-image : url(img/artist_images_small/{{this}}.jpg)">
+							</div>
 							{{/each}}
 						</div>
 					</div>
-				{{/each}}
-			</script>
-		</section>
-
-		<section class="article">
-			The aim is to compare the vocabulary and the lyrical density of these musicians. Some of them have released a lot more songs than others because of the sheer longevity of their career and how prolific they are.
-		</section>
-
-
-		<!-- Begin Vocabulary Plot from here  -->
-		<section id="vocab_plot_wrapper">
-			<!-- Holds the plot/graph  -->
-			<div id="vocab_plot">
-				<div id="searchBox">
-					<input type="text" id = "locateArtist" placeholder = "Name/Rank">
-				</div>
-				<!-- Holds the scale for the plot/graph -->
-				<svg id="vocab_plot_scale">
-				</svg>
+					{{/each}}
+				</script>
 			</div>
 		</section>
-		<!-- End Vocabulary Plot here -->
-	</div> <!-- End of container div -->
-		
-	<script id = "tooltipTemplate" type = "mxm/template">
-		<div class="rankContainer">
-			<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>	
+
+	<section class="article">
+		The aim is to compare the vocabulary and the lyrical density of these musicians. Some of them have released a lot more songs than others because of the sheer longevity of their career and how prolific they are.
+	</section>
+
+
+	<!-- Begin Vocabulary Plot from here  -->
+	<section id="vocab_plot_wrapper">
+		<!-- Holds the plot/graph  -->
+		<div id="vocab_plot">
+			<div id="searchBox">
+				<input type="text" id = "locateArtist" placeholder = "Name/Rank">
+			</div>
+			<!-- Holds the scale for the plot/graph -->
+			<svg id="vocab_plot_scale">
+			</svg>
 		</div>
-		<div class="detailContainer">
-			<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
-		</div>
-	</script>
-	<script type = "text/javascript" src = "data/total_analysis_final.js"></script>
-	<script type = "text/javascript" src = "js/lib/handlebars-v3.0.3.js"></script>
-	<script type = "text/javascript" src = "js/lib/jquery.min.js"></script>
-	<script type = "text/javascript" src = "js/lib/d3.js"></script>	
-	<script type = "text/javascript" src = "js/lib/jquery.tipsy.js"></script>	
-	<script type = "text/javascript" src = "js/lib/jquery.autocomplete.js"></script>	
-	<script type = "text/javascript" src = "js/Artist.js"></script>
-	<script type = "text/javascript" src = "js/VocabPlot.js"></script>
-	<script type = "text/javascript" src = "js/AllArtists.js"></script>
-	<script type = "text/javascript" src = "js/main.js"></script>
+	</section>
+	<!-- End Vocabulary Plot here -->
+</div> <!-- End of container div -->
+
+<script id = "tooltipTemplate" type = "mxm/template">
+	<div class="rankContainer">
+		<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>	
+	</div>
+	<div class="detailContainer">
+		<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
+	</div>
+</script>
+<script type = "text/javascript" src = "data/total_analysis_final.js"></script>
+<script type = "text/javascript" src = "js/lib/handlebars-v3.0.3.js"></script>
+<script type = "text/javascript" src = "js/lib/jquery.min.js"></script>
+<script type = "text/javascript" src = "js/lib/d3.js"></script>	
+<script type = "text/javascript" src = "js/lib/jquery.tipsy.js"></script>	
+<script type = "text/javascript" src = "js/lib/jquery.autocomplete.js"></script>	
+<script type = "text/javascript" src = "js/Artist.js"></script>
+<script type = "text/javascript" src = "js/VocabPlot.js"></script>
+<script type = "text/javascript" src = "js/AllArtists.js"></script>
+<script type = "text/javascript" src = "js/main.js"></script>
 
 </body>
 </html>

@@ -46,8 +46,8 @@
 
 		// and that is how this is supposed to be done
 		addArtistsToChart: function() {
-			var template = Handlebars.compile(this.$chart.children('#template-allArtists').html());
-			this.$chart.append(template(this.sortedNames));
+			var template = Handlebars.compile(this.$chart.find('#template-allArtists').html());
+			this.$chart.find('#allArtistsContainer').append(template(this.sortedNames));
 		}
 	};
 

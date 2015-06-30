@@ -4,15 +4,21 @@ $color_button_border : #FEA3A1
 #allArtists 
 	position : relative
 	width : 960px
-	height : 510px
+	height : auto
 	margin : 0 auto 30px auto
-	background-color: #FFF
-	overflow-y : hidden
+	background-color: transparent
 
 .letterSection
 	width : auto
 	height : auto
 	padding : 10px 0px 5px 20px
+
+#allArtistsContainer
+	width : 100%
+	overflow : hidden
+	height : 510px
+	border-left : 1px solid #FEC1B8
+	overflow : hidden
 
 .alphaHolder
 	background-color : transparent
@@ -48,7 +54,7 @@ $color_button_border : #FEA3A1
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%)
 
 .button
-	width : 155px
+	width : 135px
 	height : 35px
 	font-family: Oswald-Regular, 'Oswald'
 	font-size: 18px
@@ -68,13 +74,9 @@ $color_button_border : #FEA3A1
 #btn_expandList
 	@extend .button
 	position : absolute
-	top : 200px
-	left : 80px
+	top : 60px
+	left : -150px
 
 .buttonFixedScroll
-	position: fixed !important
-	top : 57px !important
-	left : 80px 
-
-
-
+	position : fixed !important
+	left : 70px
