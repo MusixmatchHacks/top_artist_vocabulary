@@ -84,6 +84,7 @@
 
     // Set up the scroll listener on the window to maintain the position of the button
     // Not the best solution but will work for now ...
+    // TODO : fix this 
     $window.on('scroll', function() {
         var scrollPos = $window.scrollTop();
         if (scrollPos > expandButton.getUpperScrollLimit() && scrollPos < expandButton.getLowerScrollLimit()) {

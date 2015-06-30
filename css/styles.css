@@ -155,9 +155,9 @@ input#locateArtist {
   display: inline-block;
   width: 80px;
   height: 80px;
-  border: 2px solid #000;
   background-color: #D8D8D8;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 2px; }
 
 .expanded {
   height: auto !important; }
@@ -242,17 +242,29 @@ body {
   margin: 0 auto;
   padding: 30px 20px 30px 20px;
   font-family: "Helvetica Neue", "Lato";
-  line-height: 1.5em;
+  line-height: 1.6em;
   font-size: 1.1em; }
   .article a {
     color: #FD4C38;
     text-decoration: none; }
+  .article h1 {
+    font-family: Oswald-DemiBold, "Oswald";
+    font-weight: bolder;
+    font-size: 36px;
+    color: #000000;
+    line-height: 49px;
+    width: 100%;
+    text-align: center; }
 
 #topBottomArtists {
-  width: 960px;
+  width: 1100px;
   height: 600px;
-  margin: 30px 0px 10px -120px;
+  margin: 30px 0px -40px -120px;
   background-image: url(.././img/topBottomArtists.png);
   background-repeat: no-repeat; }
+
+.expImages {
+  display: block;
+  margin: 30px auto; }
 
 /*# sourceMappingURL=styles.css.map */
