@@ -159,8 +159,9 @@
 
 		var that = this;
 		// Color of general numbers and lines
-		var scaleColor = "#FFFFFF";
-		var averageColor = "#B1D300";
+		var scaleColor = "#303030";
+		// var averageColor = "#B1D300";
+		var averageColor = "#FD4C38";
 		// Length of each tick on the scale ( the white line)
 		var scaleLeftPadding = 25;
 		var tickLength = 0.98 * this.width;
@@ -180,7 +181,8 @@
 				return that.yScale(d);
 			})
 			// .attr('stroke-dasharray', '1, 5')
-			.style('stroke', 'rgba(255, 255, 255, 0.4)')
+			.style('stroke', scaleColor)
+			// .style('stroke', 'rgba(255, 255, 255, 0.4)')
 			.style('stroke-width', 1);
 
 		// Add legend to the scale
@@ -194,7 +196,7 @@
 			.text(function(d) {
 				return (formatWithCommas(d) + ' words');
 			})
-			.attr('fill', 'white')
+			.attr('fill', scaleColor)
 			.attr('font-size', 18);
 
 		// Drawing the average text and ticks
