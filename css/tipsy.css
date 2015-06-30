@@ -1,5 +1,12 @@
-.tipsy { font-size: 1em; position: absolute; padding: 5px; z-index: 100000;  height : auto;}
-  .tipsy-inner { /*background-color: #0087FF ;*/ background-color : #FD4C38; color: #fff; padding: 5px 8px 5px 8px; border : 1px solid #E6412F;} 
+.tipsy { font-size: 1em; position: absolute; padding: 5px; z-index: 100000;}
+  .tipsy-inner { /*background-color: #0087FF ;*/ 
+    background-color : #FD4C38;
+       color: #fff;
+        padding: 5px 8px 5px 8px;
+         border : 1px solid #E6412F;
+         width : 110%;
+         text-align : center;
+     } 
   .tipsy-inner:after {display : table;  content : ''; clear : both;}
 
   /* Rounded corners */

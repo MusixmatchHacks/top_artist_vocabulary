@@ -1,8 +1,5 @@
 @import url(tipsy.css);
 @import url(jquery.autocomplete.css);
-@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
-@import "http://fonts.googleapis.com/css?family=Lato:400,600";
-@import "http://fonts.googleapis.com/css?family=Oswald:400,700)";
 #vocab_plot_wrapper {
   min-height: 700px;
   max-height: 1000px;
@@ -98,13 +95,15 @@ input#locateArtist {
 
 .rankContainer {
   width: 30%;
-  float: left; }
+  float: left;
+  text-align: right; }
 
 .detailContainer {
   width: 70%;
   float: right;
   font-size: 16px;
   padding-left: 23px;
+  text-align: left !important;
   font-family: "Helvetica Neue", "Source Sans Pro"; }
 
 .rank {
@@ -115,7 +114,6 @@ input#locateArtist {
   font-size: 0.5em; }
 
 .artistNameTooltip {
-  text-align: center;
   font-family: "Helvetica Neue", "Source Sans Pro";
   margin-bottom: 5px; }
 

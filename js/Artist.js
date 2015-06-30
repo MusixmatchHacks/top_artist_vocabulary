@@ -76,7 +76,7 @@
 				gravity: (that.data.rank >= 90) ? 'e' : 's',
 				html: true,
 				opacity: 1,
-				offset: 2,
+				offset: (that.data.rank >= 90) ? 15 : 3,
 				title: function() {
 					return (that.tooltipTemplate.replace(/{{rank}}/i, that.data.rank)
 						.replace(/{{artistName}}/i, that.data.name)
