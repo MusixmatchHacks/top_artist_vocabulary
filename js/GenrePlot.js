@@ -10,11 +10,13 @@
 			this.container = config.container;
 			this.scaleContainer = d3.select('#' + config.scaleContainerCssId);
 
+			console.log($('#' + config.scaleContainerCssId).width());
 			this.xScale = d3.scale.linear()
 				.domain([0, d3.max(this.data, function(d) {
 					return d.avg_vocab;
 				})])
 				.range([0, $('#' + config.scaleContainerCssId).width()]);
+				// .range([0, 510]);
 
 
 			// Adding all the names of the genres to the plot using templating
@@ -23,8 +25,10 @@
 			// To make the scale take up the whole height of the plot 
 			this.scaleContainer.style('height', this.container.height() + 'px');
 
-			// this.drawScaleLegend([0, 500, 2000, 3500, 5000, 65000]);
-			this.drawScale([0, 500, 2000, 3500, 5000, 6500]);
+			// Because of d3 quirks we will have to create a separate svg container to hold the 
+			// scale lengends sigh!
+
+			this.drawScale([500, 2000, 3500, 5000]);
 			this.drawBars();
 
 
@@ -46,6 +50,8 @@
 				.attr('y2', this.container.height())
 				.style('stroke', '#303030')
 				.style('stroke-width', 1);
+
+				this.drawScaleLegend(divisions);
 		},
 
 		drawScaleLegend: function(divisions) {
@@ -53,16 +59,18 @@
 			var legendRectWidth = 50;
 			var legendRectHeight = 30;
 			var legendFill = '#303030';
+			var leftPadding = 5;
 
 			this.scaleContainer
-				.selectAll('rect').data(divisions).enter().append('rect')
+				.selectAll('text').data(divisions).enter().append('text')
 				.attr('x', function(d) {
-					return that.xScale(d);
+					return (that.xScale(d) + leftPadding);
 				})
-				.attr('y', 0)
-				.attr('width', legendRectWidth)
-				.attr('height', legendRectHeight)
-				.style('fill', legendFill);
+				.attr('y', 20)
+				.text(function(d) {
+					return (d + ' words');
+				})
+				.attr('fill', '#303030');
 		},
 
 		drawBars: function() {

@@ -1,12 +1,12 @@
 var genre_data = [
     {
-        "genre_name" : "Alternative-Rock",
+        "genre_name" : "Alternative Rock",
         "avg_vocab": 2974.0,
         "total_vocab_len": 2974,
         "artists": ["R.E.M."]
     },
     {
-        "genre_name" : "Punk-Rock",
+        "genre_name" : "Punk Rock",
         "avg_vocab": 2535.0,
         "total_vocab_len": 2535,
         "artists": ["Green Day"]
@@ -30,7 +30,7 @@ var genre_data = [
         "artists": ["Nirvana"]
     },
     {
-        "genre_name" : "Smooth-Jazz",
+        "genre_name" : "Smooth Jazz",
         "avg_vocab": 809.0,
         "total_vocab_len": 809,
         "artists": ["Kenny G"]
@@ -42,13 +42,13 @@ var genre_data = [
         "artists": ["Beyonc\u00e9 Knowles", "Mariah Carey", "Janet Jackson", "Rihanna", "Whitney Houston", "Barry White"]
     },
     {
-        "genre_name" : "Hard-Rock",
+        "genre_name" : "Hard Rock",
         "avg_vocab": 2251.875,
         "total_vocab_len": 18015,
         "artists": ["Aerosmith", "Van Halen", "Guns N' Roses", "Bon Jovi", "Led Zeppelin", "Scorpions", "Kiss", "AC/DC"]
     },
     {
-        "genre_name" : "Heavy-Metal",
+        "genre_name" : "Heavy Metal",
         "avg_vocab": 2797.0,
         "total_vocab_len": 2797,
         "artists": ["Metallica"]
@@ -60,7 +60,7 @@ var genre_data = [
         "artists": ["Prince", "Earth Wind & Fire", "Stevie Wonder"]
     },
     {
-        "genre_name" : "Pop-Rock",
+        "genre_name" : "Pop Rock",
         "avg_vocab": 2328.5,
         "total_vocab_len": 4657,
         "artists": ["Robbie Williams", "Bruno Mars"]
@@ -78,7 +78,7 @@ var genre_data = [
         "artists": ["Aretha Franklin"]
     },
     {
-        "genre_name" : "Synth-Rock",
+        "genre_name" : "Synth Rock",
         "avg_vocab": 1884.0,
         "total_vocab_len": 1884,
         "artists": ["Depeche Mode"]
@@ -90,19 +90,19 @@ var genre_data = [
         "artists": ["Bz", "Linda Ronstadt", "Johnny Hallyday", "Rod Stewart", "The Rolling Stones", "Santana", "Meat Loaf", "U2", "Queen", "Tina Turner", "Dire Straits", "Eagles", "Bryan Adams", "Tom Petty", "Paul McCartney", "The Beatles", "Fleetwood Mac", "Phil Collins", "The Who", "Foreigner"]
     },
     {
-        "genre_name" : "Country-Pop",
+        "genre_name" : "Country Pop",
         "avg_vocab": 1801.0,
         "total_vocab_len": 1801,
         "artists": ["Shania Twain"]
     },
     {
-        "genre_name" : "Hip-Hop",
+        "genre_name" : "Hip Hop",
         "avg_vocab": 6378.8,
         "total_vocab_len": 31894,
         "artists": ["Eminem", "Jay Z", "Tupac Shakur", "Kanye West", "The Black Eyed Peas"]
     },
     {
-        "genre_name" : "Funk-Rock",
+        "genre_name" : "Funk Rock",
         "avg_vocab": 3636.0,
         "total_vocab_len": 3636,
         "artists": ["Red Hot Chili Peppers"]
@@ -114,25 +114,25 @@ var genre_data = [
         "artists": ["Andrea Bocelli", "Celine Dion", "Barbra Streisand", "Billy Joel", "Madonna", "Elton John", "ABBA", "Frank Sinatra", "Katy Perry", "Michael Jackson", "Lady Gaga", "Barry Manilow", "Neil Diamond", "Cher", "Britney Spears", "The Carpenters", "Olivia Newton-John", "Donna Summer", "George Michael", "The Police", "Bee Gees", "Backstreet Boys", "Lionel Richie", "Spice Girls"]
     },
     {
-        "genre_name" : "Glam-Metal",
+        "genre_name" : "Glam Metal",
         "avg_vocab": 2343.0,
         "total_vocab_len": 2343,
         "artists": ["M\u00f6tley Cr\u00fce"]
     },
     {
-        "genre_name" : "Rock-and-Roll",
+        "genre_name" : "Rock and Roll",
         "avg_vocab": 2531.0,
         "total_vocab_len": 2531,
         "artists": ["Elvis Presley"]
     },
     {
-        "genre_name" : "Teen-Pop",
+        "genre_name" : "Teen Pop",
         "avg_vocab": 1802.0,
         "total_vocab_len": 1802,
         "artists": ["New Kids on the Block"]
     },
     {
-        "genre_name" : "Progressive-Rock",
+        "genre_name" : "Progressive Rock",
         "avg_vocab": 3287.0,
         "total_vocab_len": 6574,
         "artists": ["Genesis", "Pink Floyd"]
@@ -144,7 +144,7 @@ var genre_data = [
         "artists": ["Bob Dylan"]
     },
     {
-        "genre_name" : "New-Age",
+        "genre_name" : "New Age",
         "avg_vocab": 1869.0,
         "total_vocab_len": 1869,
         "artists": ["Enya"]
