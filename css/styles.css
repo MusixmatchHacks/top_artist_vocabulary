@@ -132,7 +132,7 @@ input#locateArtist {
 #allArtistsContainer {
   width: 100%;
   overflow: hidden;
-  height: 510px;
+  height: 700px;
   border-left: 1px solid #FEC1B8;
   overflow: hidden; }
 
@@ -197,7 +197,8 @@ input#locateArtist {
 #genrePlot {
   width: 920px;
   height: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 150px; }
   #genrePlot:after {
     display: table;
     content: "";
@@ -211,15 +212,17 @@ input#locateArtist {
 #genreNames {
   width: 35%;
   height: 100%;
-  float: left; }
+  float: left;
+  margin-top: 80px; }
 
 .genreName {
   width: 100%;
   height: 45px;
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
   font-family: "Helvetica Neue";
   font-size: 1.2em;
-  border-bottom: 1px solid black; }
+  background: transparent;
+  text-align: left; }
 
 .genreName:first-child {
   margin-top: 150px; }

@@ -26,7 +26,7 @@
 				$(this).text('SHOW ALL');
 				// Scroll to the next article section
 				if ($window.scrollTop() > expandButton.getLowerScrollLimit())
-					$window.scrollTop(950);
+					$window.scrollTop(1100);
 			}
 
 		},
