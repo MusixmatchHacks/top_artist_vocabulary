@@ -1,8 +1,5 @@
 @import url(tipsy.css);
 @import url(jquery.autocomplete.css);
-@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
-@import "http://fonts.googleapis.com/css?family=Lato:400,600";
-@import "http://fonts.googleapis.com/css?family=Oswald:400,700";
 #vocab_plot_wrapper {
   min-height: 700px;
   max-height: 1000px;
@@ -266,6 +263,7 @@ body {
   margin: 30px auto; }
 
 #polyglotImages {
+  position: relative;
   width: 720px;
   height: auto;
   margin: 30px auto 20px auto; }
@@ -279,5 +277,29 @@ body {
 
 .polyglotImage:last-child {
   margin-top: 35px; }
+
+#polyglotLanguages {
+  position: absolute;
+  top: 10px;
+  width: 135px;
+  height: 50px;
+  margin-left: -260px; }
+
+.polyglotLanguage {
+  width: 145px;
+  height: 35px;
+  font-family: Oswald-Regular, "Oswald";
+  font-size: 18px;
+  line-height: 33px;
+  color: #fe7b79;
+  border: 1px solid #fe7b79;
+  text-align: center;
+  margin-bottom: 5px;
+  transition: all 0.3s; }
+
+.languageHighlight {
+  color: white;
+  background-color: #FD4C38;
+  transition: all 0.3s; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -13,14 +13,18 @@
 			<span class="sub">An analysis of vocabularies of top selling musicians of all time</span>
 		</div>
 	</div>
+	<!-- End header -->
 	<div id="container">
+		<!-- Introduction -->
 		<section class="article">
 			Ever since I read the excellent <a href = "http://experiments.undercurrent.com/">The largest vocabulary in hip hop</a> I wanted to do a similar analysis across a more generalised list of musicians. I stumbled across this <a href = "https://en.wikipedia.org/wiki/List_of_best-selling_music_artists"
 			>List of best-selling music artists</a> and it seemed to cover a good cross section of popular musicians and genres. 
 
 			These are the 93 artists that will be a part of this analysis.
 		</section>
+		<!-- End Introduction -->
 
+		<!-- All artists Chart -->
 		<section id ="allArtists">
 			<button id = "btn_expandList">SHOW ALL</button>
 
@@ -44,11 +48,16 @@
 				</script>
 			</div>
 		</section>
+		<!-- End all artists chart -->
 
+	<!-- Comparing number of songs section -->
 	<section class="article">
 		The aim is to compare the vocabulary and the lyrical density of these musicians. Some of them have released a lot more songs than others because of the sheer longevity of their career and how prolific they are.
 		<img src="img/topBottomArtists.png" height="584" width="1039" alt="" id = "topBottomArtists">
 	</section>
+	<!-- End comparing number of songs section -->
+
+
 	<section class="article">
 		To prevent the vocabulary size from being skewed purely by the number of songs released, the vocabularies are compared across the 100 densest songs (by total words) that they have released till date. Only 6 of these musicians have released less than 100 songs so it is a good threshold. Also, 100 songs comprises 8 to 10 albums of music which would span at least 5 to 10 years of work which should truthfully mimic the overall vocabulary and lyrical style of the musician.  
 
@@ -74,22 +83,33 @@
 	</section>
 	<!-- End Vocabulary Plot here -->
 
+	<!-- Mr. Obvious section -->
 	<section class="article">
 		<h1>Mr. OBVIOUS</h1>
 		<img src="img/mrobvious.png" height="364" width="712" alt="Musicians" class = "expImages">
 		There are 4 rappers in the list and they obviously are at the top of the vocabulary chart. Amongst them Eminem leads Jay-z, 2Pac, Kanye West and Black Eyed Peas by a big margin. One reason would be that he tends to use more words in his songs than the others. Eminem also has the overall highest words per song ratio of 1018.5
 	</section>
+	<!-- The freewheelin' section -->
 	<section class="article">
 		<h1>THE FREEWHEELIN'</h1>
 		<img src="img/freewheeling.png" height="160" width="226" alt="Freewheelin'" class = "expImages">
 		Given how articulate and descriptive his songs are, it is no wonder Bob Dylan ranks so highly. He also ranks at the top (#11) of learning rate (a brand new word is used by him after every 9th word).
 	</section>
+	<!-- Polyglots section -->
 	<section class="article">
 		<h1>THE POLYGLOTS</h1>
+
 		<div id="polyglotImages">
+			<div id="polyglotLanguages">
+				<script id = "template-polyglots-languages" type = "text/x-handlebars-template">
+				{{#each this}}
+					<div class = "polyglotLanguage" id = "{{this}}">{{this}}</div>
+				{{/each}}
+				</script>
+			</div>
 			<script id = "template-polyglots" type = "text/x-handlebars-template">
 				{{#each this}}
-					<img src="img/polyglots/{{this.name}}.png" height="160" width="226" class = "polyglotImage">	
+					<img src="img/polyglots/{{this.name}}.png" height="160" width="226" class = "polyglotImage" id = "polyglot_{{this.name}}">	
 				{{/each}}
 			</script>
 		</div>
@@ -116,6 +136,7 @@
 <script type = "text/javascript" src = "js/VocabPlot.js"></script>
 <script type = "text/javascript" src = "js/AllArtists.js"></script>
 <script type = "text/javascript" src = "js/ExpandButton.js"></script>
+<script type = "text/javascript" src = "js/Polyglots.js"></script>
 <script type = "text/javascript" src = "js/main.js"></script>
 
 </body>
