@@ -43,11 +43,11 @@
     // Data for the polyglots
     var polyglots = [
         {
-            name : 'Julio Iglesias',
+            name : 'Julio_Iglesias',
             languages : ['Spanish', 'German', 'English', 'French', 'Italian', 'Portuguese', 'Russian' ]
         },
         {
-            name : 'Andrea Bocelli',
+            name : 'Andrea_Bocelli',
             languages : ['Spanish', 'English', 'French', 'Italian', 'Portuguese']
         },
         {
@@ -55,11 +55,13 @@
             languages : ['Japanese', 'English']
         },
         {
-            name : 'Gloria Estefan',
+            name : 'Gloria_Estefan',
             languages : ['English', 'Spanish', 'French']
         }
 
     ];
+    var template = Handlebars.compile( $('#template-polyglots').html());
+    $('div#polyglotImages').append(template(polyglots));
 
     // Set of all the languages, will be used for creating the buttons 
     var polyglotLanguages = new Set();
@@ -71,5 +73,7 @@
 
     // center the last image :D (even Google's homepage uses <center> so what)
     $('.polyglotImage:last-child').wrap('<center></center>');
+    $('.polyglotImage').eq(0).css('margin-left', '0');
+
 
 })();

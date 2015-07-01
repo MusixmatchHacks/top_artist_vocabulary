@@ -87,10 +87,11 @@
 	<section class="article">
 		<h1>THE POLYGLOTS</h1>
 		<div id="polyglotImages">
-			<img src="img/polyglots/Andrea_Bocelli.png" height="160" width="226" alt="" class = "polyglotImage">	
-			<img src="img/polyglots/Andrea_Bocelli.png" height="160" width="226" alt="" class = "polyglotImage">	
-			<img src="img/polyglots/Andrea_Bocelli.png" height="160" width="226" alt="" class = "polyglotImage">	
-			<img src="img/polyglots/Andrea_Bocelli.png" height="160" width="226" alt="" class = "polyglotImage">
+			<script id = "template-polyglots" type = "text/x-handlebars-template">
+				{{#each this}}
+					<img src="img/polyglots/{{this.name}}.png" height="160" width="226" class = "polyglotImage">	
+				{{/each}}
+			</script>
 		</div>
 		These superstars have an extensive vocabulary spread across multiple popular languages. Mildly interesting - Gloria Estefan worked as an English/Spanish/French translator during her early years and because of her language abilities, was once approached by the CIA as a possible employee. Her high ranking in the vocabulary chart comes as no surprise.
 	</section>
@@ -104,6 +105,7 @@
 		<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
 	</div>
 </script>
+<!-- Don't worry about this, all of them will be concatenated anyways -->
 <script type = "text/javascript" src = "data/total_analysis_final.js"></script>
 <script type = "text/javascript" src = "js/lib/handlebars-v3.0.3.js"></script>
 <script type = "text/javascript" src = "js/lib/jquery.min.js"></script>
