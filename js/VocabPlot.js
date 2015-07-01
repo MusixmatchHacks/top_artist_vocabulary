@@ -110,6 +110,13 @@
 
 			this.searchField.focus(function() {
 				plot.dimAllArtists();
+
+				// Scroll the visualization into view
+				var offset = plot.$plot.offset();
+				$('html, body').animate({
+					scrollTop: offset.top,
+					scrollLeft: offset.left
+				},500);
 			});
 
 			this.searchField.blur(function() {

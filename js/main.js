@@ -66,7 +66,7 @@
         languagesContainer : $('#polyglotLanguages'),
         template: $('#template-polyglots'),
         languagesTemplate : $('#template-polyglots-languages'),
-        artistContainer : $('.polyglotImage')
+        artistContainer : $('.polyglotImage') // TODO :  this thing is not getting exported properly, fix this
     }, polyglotData);
 
 
