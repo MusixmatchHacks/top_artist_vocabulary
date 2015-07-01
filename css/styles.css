@@ -156,9 +156,7 @@ input#locateArtist {
   display: inline-block;
   width: 80px;
   height: 80px;
-  background-color: #D8D8D8;
-  cursor: pointer;
-  border-radius: 2px; }
+  cursor: pointer; }
 
 .expanded {
   height: auto !important; }

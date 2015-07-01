@@ -115,8 +115,7 @@
 				var offset = plot.$plot.offset();
 				$('html, body').animate({
 					scrollTop: offset.top,
-					scrollLeft: offset.left
-				},500);
+				},200);
 			});
 
 			this.searchField.blur(function() {

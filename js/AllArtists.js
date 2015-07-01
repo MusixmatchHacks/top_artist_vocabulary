@@ -23,7 +23,7 @@
 	}
 
 	AllArtists.prototype = {
-		// Sorts and returns the names(array) of artists in the mentioned configuration in constructor
+		// Sorts and returns the param(array) names of artists in the mentioned configuration in constructor
 		sortNames: function(names) {
 			names.sort(); // [all the names sorted in ascending order]
 			var sortedNames = [];
