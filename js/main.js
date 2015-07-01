@@ -64,8 +64,8 @@
         container: $('#polyglotImages'),
         languageContainer: $('#polyglotLanguages'),
         languagesContainer : $('#polyglotLanguages'),
-        template: $('#template-polyglots'),
-        languagesTemplate : $('#template-polyglots-languages'),
+        template: $('#template-polyglots').html(),
+        languagesTemplate : $('#template-polyglots-languages').html(),
         artistContainer : $('.polyglotImage') // TODO :  this thing is not getting exported properly, fix this
     }, polyglotData);
 
@@ -74,6 +74,13 @@
     // center the last image :D (even Google's homepage uses <center> so what)
     $('.polyglotImage:last-child').wrap('<center></center>');
     $('.polyglotImage').eq(0).css('margin-left', '0');
+
+    GenrePlot.init({
+        container : $('#genrePlot'),
+        scaleContainerCssId : 'genrePlotScale',
+        namesContainer : $('#genreNames'),
+        genreNameTemplate : $('#genre-names-template').html()
+    });
 
 
 })();

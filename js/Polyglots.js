@@ -13,11 +13,11 @@
 			this.config = config;
 
 			// Add the artists to the div 
-			var polyglotTemplate = Handlebars.compile(config.template.html());
+			var polyglotTemplate = Handlebars.compile(config.template);
 			config.container.append(polyglotTemplate(data));
 
 			// Add the languages
-			var languageTemplate = Handlebars.compile(config.languagesTemplate.html());
+			var languageTemplate = Handlebars.compile(config.languagesTemplate);
 			config.languagesContainer.append(languageTemplate(this.uniqueLanguages));
 
 

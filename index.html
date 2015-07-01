@@ -116,6 +116,8 @@
 		These superstars have an extensive vocabulary spread across multiple popular languages. Mildly interesting - Gloria Estefan worked as an English/Spanish/French translator during her early years and because of her language abilities, was once approached by the CIA as a possible employee. Her high ranking in the vocabulary chart comes as no surprise.
 	</section>
 
+
+
 	<!-- Suprprise section talking about Celine Dion -->
 	<section class="article">
 		<h1>SURPRISE!</h1>
@@ -137,6 +139,22 @@
 		Even though he is the only instrumental artist in this list but some of his songs still have lyrics. Whoever said you need words to sell records.
 	</section>
 
+	<!-- Begin Genre plot here -->
+	<section id="genrePlot">
+			<div id="genreNames">
+			<script id = "genre-names-template" type = "text/x-handlebars-template">
+				{{#each this}}	
+					<div class = "genreName">{{this.genre_name}}</div>
+				{{/each}}
+			</script>
+			</div>
+			<svg id="genrePlotScale">
+				
+			</svg>
+	</section>
+	<!-- End genre plot -->
+
+
 </div> <!-- End of container div -->
 
 <script id = "tooltipTemplate" type = "mxm/template">
@@ -157,6 +175,7 @@
 <script type = "text/javascript" src = "js/lib/jquery.autocomplete.js"></script>	
 <script type = "text/javascript" src = "js/Artist.js"></script>
 <script type = "text/javascript" src = "js/VocabPlot.js"></script>
+<script type = "text/javascript" src = "js/GenrePlot.js"></script>
 <script type = "text/javascript" src = "js/AllArtists.js"></script>
 <script type = "text/javascript" src = "js/ExpandButton.js"></script>
 <script type = "text/javascript" src = "js/Polyglots.js"></script>
