@@ -206,7 +206,6 @@ input#locateArtist {
 #genrePlotScale {
   width: 65%;
   height: 100%;
-  background-color: honeydew;
   float: right; }
 
 #genreNames {

@@ -1,4 +1,6 @@
 (function() {
+    'use strict';
+    
     // Add ranks to the data, data will be already loaded in the browser rest assured
     // data is presorted by the length of vocabulary
     // Some day I won't have to do this, rank will already be in the data #acchedin

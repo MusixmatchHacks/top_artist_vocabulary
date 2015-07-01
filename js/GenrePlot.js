@@ -20,7 +20,9 @@
 			// To make the scale take up the whole height of the plot 
 			this.scaleContainer.style('height', this.container.height() + 'px');
 
-			this.drawScale([0, 500, 2000, 3500, 5000, 6500]);
+			this.drawScale([500, 2000, 3500, 5000, 6500]);
+
+			this.drawPlots();
 
 
 		},
@@ -41,7 +43,21 @@
 				.attr('y2', this.container.height())
 				.style('stroke', '#303030')
 				.style('stroke-width', 1);
+		},
+
+		drawPlots: function() {
+			var that = this;
+			var marginBetween = 10;
+			this.scaleContainer
+				.selectAll('rect').data(this.data).enter().append('rect')
+				.attr('x', 0)
+				.attr('y', function(d, i) { return i * (50 + marginBetween);})
+				.attr('width', function(d) { return that.xScale(d.avg_vocab);})
+				.attr('height', 50)
+				.style('fill', '#000000');
 		}
+
+
 	};
 
 })();
