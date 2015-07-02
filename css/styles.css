@@ -143,10 +143,10 @@ input#locateArtist {
 .alphaHolder {
   background-color: transparent;
   font-family: Oswald-Medium, "Oswald";
-  text-align: center;
+  text-align: left;
   color: #303030;
   font-size: 1.6em;
-  width: 65px;
+  width: 20%;
   height: 45px;
   line-height: 45px;
   margin: 0 0 5px 0;

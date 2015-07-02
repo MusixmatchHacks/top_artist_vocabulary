@@ -1,5 +1,5 @@
 var genre_data = [{
-    "artists": ["R.E.M."],
+    "artists": ["REM"],
     "genre_name": "Alternative Rock",
     "avg_vocab": 2974.0,
     "num_artists": 1,
@@ -41,7 +41,7 @@ var genre_data = [{
     "num_artists": 6,
     "total_vocab_len": 14769
 }, {
-    "artists": ["Aerosmith", "Van Halen", "Guns N' Roses", "Bon Jovi", "Led Zeppelin", "Scorpions", "Kiss", "AC/DC"],
+    "artists": ["Aerosmith", "Van Halen", "Guns N Roses", "Bon Jovi", "Led Zeppelin", "Scorpions", "Kiss", "ACDC"],
     "genre_name": "Hard Rock",
     "avg_vocab": 2251.875,
     "num_artists": 8,
@@ -53,7 +53,7 @@ var genre_data = [{
     "num_artists": 1,
     "total_vocab_len": 2797
 }, {
-    "artists": ["Prince", "Earth Wind & Fire", "Stevie Wonder"],
+    "artists": ["Prince", "Earth Wind and Fire", "Stevie Wonder"],
     "genre_name": "Funk",
     "avg_vocab": 2627.6666666666665,
     "num_artists": 3,

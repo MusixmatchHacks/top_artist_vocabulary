@@ -34,12 +34,12 @@
 					{{#each this}}
 					<div class = "letterSection">
 						<div class = "alphaHolder">
-							{{startingLetter}}
+							{{genre_name}}
 						</div>
 						<div class = "letterArtists" >
-							{{#each names}}
+							{{#each artists}}
 							<div class = 'letterArtistImage' id = "{{this}}"
-							style = "background-image : url(img/artist_images_small/{{this}}.jpg)">
+							style = "background-image : url(img/artist_images_small/{{undy this}}.jpg)">
 							</div>
 							{{/each}}
 						</div>

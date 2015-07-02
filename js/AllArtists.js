@@ -31,12 +31,18 @@
 			var currentIndex = 0;
 			names.forEach(function(name) {
 				if (name[0] === currentLetter) {
-					if (sortedNames.length === 0) sortedNames.push({ startingLetter : currentLetter, names : [add_(name)]});
+					if (sortedNames.length === 0) sortedNames.push({
+						startingLetter: currentLetter,
+						names: [add_(name)]
+					});
 					else sortedNames[currentIndex].names.push(add_(name));
 				} else {
 					currentLetter = name[0];
 					currentIndex++;
-					sortedNames[currentIndex] = { startingLetter : currentLetter, names : [add_(name)]};
+					sortedNames[currentIndex] = {
+						startingLetter: currentLetter,
+						names: [add_(name)]
+					};
 				}
 			});
 
@@ -46,8 +52,9 @@
 
 		// and that is how this is supposed to be done
 		addArtistsToChart: function() {
+			genre_data.sort(descBy('num_artists'));
 			var template = Handlebars.compile(this.$chart.children('#template-allArtists').html());
-			this.$chart.append(template(this.sortedNames));
+			this.$chart.append(template(genre_data));
 		}
 	};
 
@@ -57,5 +64,35 @@
 	function add_(word) {
 		return word.split(" ").join("_");
 	}
+
+	/*
+	 * Function : descBy(one of the property name of objects present in an array)
+	 * Usage    : arrayHoldingNames.sort(descBy(firstName));
+	 * ----------------------------------------------------------------------
+	 * Used to sort any array of objects in descending order by a property name 
+	 * of the obejcts inside that array.
+	 */
+	function descBy(propertyName) {
+		return function(m, n) {
+			if (typeof m === 'object' && typeof n === 'object') {
+				var propertyValueM = m[propertyName];
+				var propertyValueN = n[propertyName];
+
+				if (propertyValueM === propertyValueN) return 0;
+				if (typeof propetyValueM === typeof propertyVaueN) {
+					return (propertyValueM < propertyValueN ? 1 : -1);
+				} else {
+					return (typeof propertyValueM < propertyValueN ? 1 : -1);
+				}
+
+			} else {
+				throw {
+					type: 'Error',
+					message: 'Expected objects got something else'
+				};
+			}
+		};
+	}
+
 
 })();

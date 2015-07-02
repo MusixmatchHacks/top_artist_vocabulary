@@ -26,7 +26,7 @@
 		this.artists = {};
 
 		this.yScale = d3.scale.linear().domain([0, 10000]).range([0.95 * this.height, 0]);
-		drawScale.call(this, [0, 2000, 4000, 6000, 8000], 2667);
+		drawScale.call(this, [809, 2000, 4000, 6000, 8000], 2667);
 
 
 		this.addArtistsToPlot();
@@ -50,7 +50,7 @@
 				})
 				.classed(this.config.artistCircleCssClass, true)
 				.style('top', function(d) {
-					return ((that.yScale(d.vocab_len)) - 9) + 'px';
+					return ((that.yScale(d.vocab_len)) - 20) + 'px';
 				}) // 9 is the height of the cricles will be made dynamic later
 				.each(function(d) {
 					that.artists[d.name] = Artist.newArtist(d.name, d);
