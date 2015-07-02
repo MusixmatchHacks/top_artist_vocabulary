@@ -18,6 +18,9 @@
 		// Points to the DOM element that holds the current artist
 		this.$artist = $('#' + this.selector);
 
+		// Set the background of the artist circle 
+		this.$artist.css('background-image', 'url(img/artist_images_40px/' + this.selector + '.jpg)');
+
 		// Template that renders the content inside the tooltip
 		this.tooltipTemplate = $.trim($('#tooltipTemplate').html());
 
@@ -73,10 +76,10 @@
 		hover: function() {
 			var that = this;
 			this.$artist.tipsy({
-				gravity: (that.data.rank >= 90) ? 'e' : 's',
+				gravity: 's',
 				html: true,
 				opacity: 1,
-				offset: (that.data.rank >= 90) ? 15 : 3,
+				offset: 3,
 				title: function() {
 					return (that.tooltipTemplate.replace(/{{rank}}/i, that.data.rank)
 						.replace(/{{artistName}}/i, that.data.name)

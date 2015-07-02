@@ -55,12 +55,15 @@
 				.each(function(d) {
 					that.artists[d.name] = Artist.newArtist(d.name, d);
 				})
-				.style('left', function(d, i) {
-					// Computed through trial and error for the position
-					return 180 + (i * ((that.width - 220) / that.data.length)) + 'px';
+				// .style('left', function(d, i) {
+				// 	// Computed through trial and error for the position
+				// 	return 180 + (i * ((that.width - 220) / that.data.length)) + 'px';
+				// })
+				.style('left', function(d) {
+					return (d.x + d.x_offset - 17.5) + 'px';
 				})
-				// to avoid stutter on load
-				.transition().duration(300)
+			// to avoid stutter on load
+			.transition().duration(300)
 				.style('opacity', 1);
 		},
 
@@ -115,7 +118,7 @@
 				var offset = plot.$plot.offset();
 				$('html, body').animate({
 					scrollTop: offset.top,
-				},200);
+				}, 200);
 			});
 
 			this.searchField.blur(function() {
