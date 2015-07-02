@@ -776,7 +776,7 @@ var vocab_data = [{
         "genre": "Rock[327]",
         "start_yr": "1977[327]",
         "total_sales": "80 million[328]",
-        "x_offset" : -38
+        "x_offset" : 500
     }, {
         "certified_sales": "34.7",
         "vocab_len": "2015",
