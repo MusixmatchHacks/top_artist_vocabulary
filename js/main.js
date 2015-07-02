@@ -6,7 +6,7 @@
     Handlebars.registerHelper("inc", function(value, options) {
         return parseInt(value) + 1;
     });
-    
+
     // Add ranks to the data, data will be already loaded in the browser rest assured
     // data is presorted by the length of vocabulary
     // Some day I won't have to do this, rank will already be in the data #acchedin
@@ -67,14 +67,14 @@
 
     ];
 
-    
+
     polyglotArtists.init({
         container: $('#polyglotImages'),
         languageContainer: $('#polyglotLanguages'),
-        languagesContainer : $('#polyglotLanguages'),
+        languagesContainer: $('#polyglotLanguages'),
         template: $('#template-polyglots').html(),
-        languagesTemplate : $('#template-polyglots-languages').html(),
-        artistContainer : $('.polyglotImage') // TODO :  this thing is not getting exported properly, fix this
+        languagesTemplate: $('#template-polyglots-languages').html(),
+        artistContainer: $('.polyglotImage') // TODO :  this thing is not getting exported properly, fix this
     }, polyglotData);
 
 
@@ -84,12 +84,14 @@
     $('.polyglotImage').eq(0).css('margin-left', '0');
 
     GenrePlot.init({
-        container : $('#genrePlot'),
-        scaleContainerCssId : 'genrePlotScale',
-        legendContainerCssId : 'genreLegend',
-        namesContainer : $('#genreNames'),
-        genreNameTemplate : $('#genre-names-template').html()
+        container: $('#genrePlot'),
+        scaleContainerCssId: 'genrePlotScale',
+        legendContainerCssId: 'genreLegend',
+        namesContainer: $('#genreNames'),
+        genreNameTemplate: $('#genre-names-template').html()
     });
+
+
 
 
 })();

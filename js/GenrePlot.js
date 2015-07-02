@@ -32,8 +32,31 @@
 
 			this.drawPlot([500, 2000, 3500, 5000]);
 
+			// Very hacky solution for making the legend sticky, will integrate with the expand button
+			// TODO : fix this
+			var $window = $(window);
+			var $legendHolder = $('#' + config.legendContainerCssId);
+			var pos = $legendHolder.offset();
+			var containerPos = this.container.offset();
+			var upperLimit = containerPos.top;
+			var lowerLimit = upperLimit + this.container.height() - 30;
+			$window.on('scroll', function() {
+				var scrollPos = $window.scrollTop();
+				if (scrollPos > upperLimit && scrollPos < lowerLimit) { 
+					$legendHolder.css({
+						position: 'fixed',
+						top: '30px',
+						left: pos.left
+					});
+				} else {
 
+					$legendHolder.css({
+						position: 'absolute',
+						top : pos.top - 320
+					});
+				}
 
+			});
 		},
 
 		drawPlot: function(divisions) {
