@@ -148,4 +148,4 @@ var genre_data = [{
     "avg_vocab": 1869.0,
     "num_artists": 1,
     "total_vocab_len": 1869
-}]
+}];
