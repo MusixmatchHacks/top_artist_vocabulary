@@ -197,14 +197,21 @@ input#locateArtist {
 #genrePlot {
   width: 920px;
   height: auto;
-  margin: 0 auto;
-  margin-bottom: 150px;
+  margin: 35px auto 150px auto;
   padding: 0px 10px 0px 0px;
   border: 1px solid #BABABA; }
   #genrePlot:after {
     display: table;
     content: "";
     clear: both; }
+
+#genreLegend {
+  position: absolute;
+  width: 601px;
+  height: 30px;
+  float: right;
+  background-color: transparent;
+  margin-top: -30px; }
 
 #genrePlotScale {
   width: 65%;

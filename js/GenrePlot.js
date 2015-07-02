@@ -9,6 +9,9 @@
 
 			this.container = config.container;
 			this.scaleContainer = d3.select('#' + config.scaleContainerCssId);
+			// If I am not wrong the scale legend is the numbers written around ticks 
+			// like |200   |300 e.t.c may be I am wrong who knows?
+			this.legendContainer = d3.select('#' + config.legendContainerCssId);
 
 			this.xScale = d3.scale.linear()
 				.domain([0, d3.max(this.data, function(d) {
@@ -37,6 +40,7 @@
 			this.drawBars();
 			this.drawScale(divisions);
 			this.drawSeparators();
+			this.drawScaleLegend(divisions);
 		},
 
 		drawScale: function(divisions) {
@@ -62,21 +66,34 @@
 
 		drawScaleLegend: function(divisions) {
 			var that = this;
-			var legendRectWidth = 50;
+			var legendRectWidth = 100;
 			var legendRectHeight = 30;
 			var legendFill = '#303030';
-			var leftPadding = 5;
+			var legendTextFill = '#FFFFFF';
+			var leftPadding = 8;
 
-			this.scaleContainer
+			this.legendContainer
+				.selectAll('rect').data(divisions).enter().append('rect')
+				.attr('x', function(d) {
+					// The original x position is adjusted for aesthetic purposed using trial and error	
+					return that.xScale(d) - 0.5;
+				})
+				.attr('y', 0)
+				.attr('width', legendRectWidth)
+				.attr('height', legendRectHeight)
+				.style('fill', legendFill);
+
+			this.legendContainer
 				.selectAll('text').data(divisions).enter().append('text')
 				.attr('x', function(d) {
 					return (that.xScale(d) + leftPadding);
 				})
-				.attr('y', 20)
+				.attr('y', 21)
 				.text(function(d) {
-					return (d + ' words');
+					return (d + ' WORDS');
 				})
-				.attr('fill', '#303030');
+				.attr('fill', legendTextFill)
+				.style('font-family', 'Oswald');
 		},
 
 		drawBars: function() {
@@ -122,10 +139,10 @@
 			this.scaleContainer
 				.selectAll('line').data(sampleData).enter().append('line')
 				.attr('y1', function(d, i) {
-					return ((i-4) * spacing) + marginTop;
+					return ((i - 4) * spacing) + marginTop;
 				})
 				.attr('y2', function(d, i) {
-					return ((i-4) * spacing) + marginTop;
+					return ((i - 4) * spacing) + marginTop;
 				})
 				.attr('x1', 0)
 				.attr('x2', function(d) {

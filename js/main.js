@@ -86,6 +86,7 @@
     GenrePlot.init({
         container : $('#genrePlot'),
         scaleContainerCssId : 'genrePlotScale',
+        legendContainerCssId : 'genreLegend',
         namesContainer : $('#genreNames'),
         genreNameTemplate : $('#genre-names-template').html()
     });
