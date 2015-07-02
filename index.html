@@ -144,7 +144,7 @@
 			<div id="genreNames">
 				<script id = "genre-names-template" type = "text/x-handlebars-template">
 					{{#each this}}	
-						<div class = "genreName">{{this.genre_name}}</div>
+						<div class = "genreName"><span class = "genre_rank">{{inc @index}}</span>{{this.genre_name}}</div>
 					{{/each}}
 				</script>
 			</div>

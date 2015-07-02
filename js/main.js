@@ -1,5 +1,11 @@
 (function() {
     'use strict';
+
+    // Handlebar helper to increment int by 1
+    // Used in displaying ranks starting from 1 instead of 0
+    Handlebars.registerHelper("inc", function(value, options) {
+        return parseInt(value) + 1;
+    });
     
     // Add ranks to the data, data will be already loaded in the browser rest assured
     // data is presorted by the length of vocabulary
