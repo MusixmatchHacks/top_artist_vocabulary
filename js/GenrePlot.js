@@ -137,6 +137,8 @@
 				})
 				.attr('height', barHeight)
 				.style('fill', barColor);
+			// we will also show text inside the bars 
+			
 		},
 
 		drawSeparators: function() {
