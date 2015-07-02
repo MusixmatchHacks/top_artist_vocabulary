@@ -31,12 +31,18 @@
 			var currentIndex = 0;
 			names.forEach(function(name) {
 				if (name[0] === currentLetter) {
-					if (sortedNames.length === 0) sortedNames.push({ startingLetter : currentLetter, names : [add_(name)]});
+					if (sortedNames.length === 0) sortedNames.push({
+						startingLetter: currentLetter,
+						names: [add_(name)]
+					});
 					else sortedNames[currentIndex].names.push(add_(name));
 				} else {
 					currentLetter = name[0];
 					currentIndex++;
-					sortedNames[currentIndex] = { startingLetter : currentLetter, names : [add_(name)]};
+					sortedNames[currentIndex] = {
+						startingLetter: currentLetter,
+						names: [add_(name)]
+					};
 				}
 			});
 
@@ -47,7 +53,7 @@
 		// and that is how this is supposed to be done
 		addArtistsToChart: function() {
 			var template = Handlebars.compile(this.$chart.children('#template-allArtists').html());
-			this.$chart.append(template(this.sortedNames));
+			this.$chart.append(template(genre_data));
 		}
 	};
 
@@ -57,5 +63,6 @@
 	function add_(word) {
 		return word.split(" ").join("_");
 	}
+
 
 })();

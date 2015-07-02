@@ -3,7 +3,7 @@ var genre_data = [
         "genre_name" : "Alternative Rock",
         "avg_vocab": 2974.0,
         "total_vocab_len": 2974,
-        "artists": ["R.E.M."]
+        "artists": ["REM"]
     },
     {
         "genre_name" : "Punk Rock",
@@ -45,7 +45,7 @@ var genre_data = [
         "genre_name" : "Hard Rock",
         "avg_vocab": 2251.875,
         "total_vocab_len": 18015,
-        "artists": ["Aerosmith", "Van Halen", "Guns N' Roses", "Bon Jovi", "Led Zeppelin", "Scorpions", "Kiss", "AC/DC"]
+        "artists": ["Aerosmith", "Van Halen", "Guns N Roses", "Bon Jovi", "Led Zeppelin", "Scorpions", "Kiss", "ACDC"]
     },
     {
         "genre_name" : "Heavy Metal",
@@ -57,7 +57,7 @@ var genre_data = [
         "genre_name" : "Funk",
         "avg_vocab": 2627.6666666666665,
         "total_vocab_len": 7883,
-        "artists": ["Prince", "Earth Wind & Fire", "Stevie Wonder"]
+        "artists": ["Prince", "Earth Wind and Fire", "Stevie Wonder"]
     },
     {
         "genre_name" : "Pop Rock",
