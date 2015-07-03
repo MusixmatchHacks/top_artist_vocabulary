@@ -18,12 +18,12 @@
 			expandButton.target.toggleClass('expanded');
 			if (expandButton.target.hasClass('expanded')) {
 				expandButton.target.children('.overlay').remove();
-				$(this).text('SHOW LESS');
+				$(this).text('Show less');
 			} else {
 				expandButton.target.prepend($('<div></div>', {
 					class: 'overlay'
 				}));
-				$(this).text('SHOW ALL');
+				$(this).text('Show all');
 				// Scroll to the next article section
 				if ($window.scrollTop() > expandButton.getLowerScrollLimit())
 					$window.scrollTop(1100);

@@ -26,7 +26,7 @@
 		this.artists = {};
 
 		this.yScale = d3.scale.linear().domain([0, 10000]).range([0.95 * this.height, 0]);
-		drawScale.call(this, [809, 2000, 4000, 6000, 8000], 2667);
+		drawScale.call(this, [809, 2000, 4000, 6000, 8000], 2677);
 
 
 		this.addArtistsToPlot();

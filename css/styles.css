@@ -81,7 +81,8 @@ input#locateArtist {
       width: 30px;
       height: 30px; } }
   .artistContainer:hover, .dimArtist:hover, .highlightedArtist:hover, .normalArtist:hover {
-    border: 2px solid #ffffff; }
+    border: 2px solid #ffffff;
+    transition: all 0.2s; }
 
 .dimArtist {
   opacity: 0.25;
@@ -140,7 +141,7 @@ input#locateArtist {
 
 .alphaHolder {
   background-color: transparent;
-  font-family: Oswald-Medium, "Oswald";
+  font-family: Karla;
   text-align: left;
   color: #303030;
   font-size: 1.6em;
@@ -148,14 +149,19 @@ input#locateArtist {
   height: 45px;
   line-height: 45px;
   margin: 0 0 5px 0;
-  font-weight: bold;
-  border-bottom: 3px solid #FD4C38; }
+  font-weight: bold; }
 
 .letterArtistImage {
   display: inline-block;
   width: 80px;
   height: 80px;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 2px solid #303030; }
+  .letterArtistImage:hover {
+    border: 2px solid #D6C06D; }
+    .letterArtistImage:hover img {
+      height: 120%;
+      width: 120%; }
 
 .expanded {
   height: auto !important; }
@@ -172,19 +178,19 @@ input#locateArtist {
 .button, #btn_expandList {
   width: 135px;
   height: 35px;
-  font-family: Oswald-Regular, "Oswald";
+  font-family: Karla, sans-serif;
   font-size: 18px;
-  color: #fe7b79;
+  color: #A99755;
   line-height: 25px;
   background-color: transparent;
-  border: 1px solid #fe7b79;
+  border: 1px solid #A99755;
   cursor: pointer;
   border-radius: 2px; }
   .button:focus, #btn_expandList:focus {
     outline: none; }
   .button:hover, #btn_expandList:hover {
     color: white;
-    background-color: #FD4C38;
+    background-color: #A99755;
     transition: all 0.2s; }
 
 #btn_expandList {

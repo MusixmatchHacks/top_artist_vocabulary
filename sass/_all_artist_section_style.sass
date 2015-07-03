@@ -1,5 +1,8 @@
-$color_main : #FD4C38
-$color_button_border : #FEA3A1
+// New Color palette
+$color_dark_grey : #303030
+$color_light_green : #D6C06D
+$color_dark_green : #A99755
+
 
 #allArtists 
 	position : relative
@@ -22,7 +25,7 @@ $color_button_border : #FEA3A1
 
 .alphaHolder
 	background-color : transparent
-	font-family: Oswald-Medium, 'Oswald'
+	font-family: Karla
 	text-align : left
 	color: #303030
 	font-size: 1.6em
@@ -31,13 +34,21 @@ $color_button_border : #FEA3A1
 	line-height : 45px
 	margin: 0 0 5px 0
 	font-weight : bold
-	border-bottom : 3px solid $color_main
+	// border-bottom : 3px solid $color_dark_green
 
 .letterArtistImage 
 	display : inline-block
 	width : 80px 
 	height : 80px
 	cursor : pointer
+	border : 2px solid $color_dark_grey
+	&:hover 
+		border : 2px solid $color_light_green
+		img	
+			height : 120%
+			width : 120%
+
+
 
 .expanded
 	height : auto !important
@@ -54,19 +65,19 @@ $color_button_border : #FEA3A1
 .button
 	width : 135px
 	height : 35px
-	font-family: Oswald-Regular, 'Oswald'
+	font-family: Karla, sans-serif
 	font-size: 18px
-	color: darken($color_button_border, 8%)
+	color: $color_dark_green
 	line-height: 25px
 	background-color : transparent
-	border: 1px solid darken($color_button_border, 8%)
+	border: 1px solid $color_dark_green
 	cursor : pointer
 	border-radius : 2px
 	&:focus 
 		outline : none
 	&:hover
 		color : white
-		background-color : $color_main
+		background-color : $color_dark_green
 		transition : all 0.2s
 
 #btn_expandList
