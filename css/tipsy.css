@@ -1,9 +1,10 @@
 .tipsy { font-size: 1em; position: absolute; padding: 5px; z-index: 100000;}
   .tipsy-inner { /*background-color: #0087FF ;*/ 
-    background-color : #FD4C38;
+    /*background-color : #A99755;*/
+    background-color : #303030;
        color: #fff;
         padding: 5px 8px 5px 8px;
-         border : 1px solid #E6412F;
+         border : 1px solid #000000;
          width : 110%;
          text-align : center;
      } 
@@ -19,9 +20,9 @@
   
   /* Rules to colour arrows */
   .tipsy-arrow-n { border-bottom-color: #000; }
-  .tipsy-arrow-s { border-top-color: #FD4C38;  }
-  .tipsy-arrow-e { border-left-color: #FD4C38; }
-  .tipsy-arrow-w { border-right-color: #FD4C38; }
+  .tipsy-arrow-s { border-top-color: #303030;  }
+  .tipsy-arrow-e { border-left-color: #303030; }
+  .tipsy-arrow-w { border-right-color: #303030; }
   
 	.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
     .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}

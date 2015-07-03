@@ -168,9 +168,8 @@
 
 		var that = this;
 		// Color of general numbers and lines
-		var scaleColor = "#303030";
-		// var averageColor = "#B1D300";
-		var averageColor = "#FD4C38";
+		var scaleColor = "#FFFFFF";
+		var averageColor = "#303030";
 		// Length of each tick on the scale ( the white line)
 		var scaleLeftPadding = 25;
 		var tickLength = 0.98 * this.width;

@@ -6,9 +6,9 @@
 @import "genrePlotStyles.sass"
 
 // Import the fonts
-@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
-@import "http://fonts.googleapis.com/css?family=Lato:400,600"
-@import "http://fonts.googleapis.com/css?family=Oswald:400,700"
+// @import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
+// @import "http://fonts.googleapis.com/css?family=Lato:400,600"
+// @import "http://fonts.googleapis.com/css?family=Oswald:400,700"
 
 
 // Color Varaibles
@@ -21,11 +21,17 @@ $color_button_border : #FEA3A1
 // Width and height variables
 $article_width : 960px
 
+
+// New Color palette
+$color_dark_grey : #303030
+$color_light_green : #D6C06D
+$color_dark_green : #A99755
+
 * 
 	margin : 0
 	padding : 0
 	box-sizing : border-box
-	font-family : 'Helvetica', 'Lato'
+	font-family : Karla, 'sans-serif'
 
 body 
 	background-color : transparent
@@ -66,20 +72,70 @@ body
 	width : $article_width
 	margin : 0 auto
 	padding: 30px 20px 30px 20px
-	font-family : 'Helvetica Neue','Lato'
-	line-height : 1.6em
-	font-size : 1.1em
+	font-family : Karla
+	font-size: 20px
+	color: $color_dark_grey
+	line-height: 25px
+	font-size : 1.2em
+	text-align : justify
+	margin-bottom : 20px
 	& a
 		color : $color_main
 		text-decoration : none
-	h1
-		font-family: Oswald-DemiBold,'Oswald'
-		font-weight: bolder
+	.sectionHeading 
+		position : relative
+		width : auto
+		font-family: 'Karla', sans-serif
+		font-weight: bold
 		font-size: 36px
-		color: #000000
+		color: $color_dark_grey
 		line-height: 49px
 		width : 100%
 		text-align : center
+		&:after 
+			display : block 
+			position : absolute 
+			top : 50%
+			right : 110%
+			content : ''
+			width : 90%
+			height : 2px 
+			background-color : $color_dark_grey
+		&:before 
+			display : block 
+			position : absolute 
+			bottom : 50%
+			left : 110%
+			content : ''
+			width : 90%
+			height : 2px 
+			background-color : $color_dark_grey
+
+// These are style overrides for the section headings whose sidelines are too long 
+
+#kiss
+	&:after
+		width : 60%
+	&:before
+		width : 60%
+
+#genreHeading 
+	&:after
+		width : 50%
+	&:before
+		width : 50%
+
+// end of that thing 
+
+.genreChartExp
+	display : block
+	text-align : center
+	margin-top : 25px
+	font-family : Karla, 'sans-serif'
+
+
+
+
 
 #topBottomArtists
 	margin : 30px 0px -40px -120px
@@ -115,18 +171,18 @@ body
 .polyglotLanguage 
 	width : 145px 
 	height: 35px
-	font-family : Oswald-Regular, 'Oswald'
+	font-family : Karla
 	font-size : 18px
 	line-height : 33px
-	color : darken($color_button_border, 8%)
-	border: 1px solid darken($color_button_border, 8%)
+	color : $color_dark_green
+	border: 1px solid $color_dark_green
 	text-align : center
 	margin-bottom : 5px
 	transition : all 0.3s 
 
 .languageHighlight
-	color : white
-	background-color : $color_main
+	color : #FFFFFF
+	background-color : $color_dark_green
 	transition : all 0.3s 
 
 

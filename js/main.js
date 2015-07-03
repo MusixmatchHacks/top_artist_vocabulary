@@ -1,14 +1,21 @@
 (function() {
     'use strict';
 
+    // Hnadlebar helpers
+
     // Handlebar helper to increment int by 1
     // Used in displaying ranks starting from 1 instead of 0
     Handlebars.registerHelper("inc", function(value, options) {
         return parseInt(value) + 1;
     });
 
+    // Replaces spaces with underscores in a word
     Handlebars.registerHelper("undy", function(value, options) {
         return (value.split(" ").join("_"));
+    });
+
+    Handlebars.registerHelper("upperCase", function(value, options) {
+        return (value.toUpperCase());
     });
 
 
