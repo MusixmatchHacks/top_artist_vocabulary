@@ -151,14 +151,14 @@
 	<!-- Begin comparing genre section -->
 	<section class="article">
 		<center><span class = "sectionHeading" id = "genreHeading">COMPARING GENRES</span></center>
-		<span class="genreChartExp">This chart shows the average vocabulary size of artists* in different genres.</span>
+		<span class="genreChartExp">The following chart shows the average vocabulary size of artists in different genres. In the parantheses is the number of artists in the list that sing in that genre.</span>
 	</section>
 	<!-- Begin Genre plot here -->
 	<section id="genrePlot">
 			<div id="genreNames">
 				<script id = "genre-names-template" type = "text/x-handlebars-template">
 					{{#each this}}	
-						<div class = "genreName"><span class = "genre_rank">{{inc @index}}</span>{{this.genre_name}}</div>
+						<div class = "genreName"><span class = "genre_rank">{{inc @index}}</span>{{this.genre_name}} ({{this.num_artists}})</div>
 					{{/each}}
 				</script>
 			</div>
