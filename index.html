@@ -175,7 +175,7 @@
 	<!-- Begin conclusion section -->
 	<section class="article">
 		<center><span class = "sectionHeading">TO SUM UP</span></center>
-		<div id="conclusionSection">
+		<div class="innerSection">
 			There is a large variation of vocabulary size in the 93 top selling artists and there is no overall correlation between popularity of an artist and their vocabulary size. 
 			<br/><br/>
 			This analysis should not be interpreted as saying that one musician is better than the other, it is just another insight into the work of these amazing artists. It gives us a peek into the minds of different songwriters, some tear your heart with just a few words while others paint an intricate picture with a thousand words. 
@@ -184,6 +184,18 @@
 			 but I say it just to reach you” 
 			<a href = "https://www.musixmatch.com/lyrics/The-Beatles/Julia" target = "blank">- Julia, White Album</a></div>
 		</div>
+	</section>
+
+	<section class="article">
+		<center><span class = "sectionHeading">ANALYSIS DETAILS</span></center>
+		<div class="innerSection">
+			All the lyrics data and other metadata (images, album lists, track lists, etc) is extracted using the <a href = "developer.musixmatch.com" target = "blank">Musixmatch api</a>. Python is used for fetching the data and analysing the lyrics. The analysis could be improved to remove coincidental sounds (ooh, aah, etc) and other such words which are not part of a dictionary. The data and the code will be released if anyone is interested.
+			<br/><br/>
+			<a href = "http://experiments.undercurrent.com" target = "blank">The largest vocabulary in hip hop</a> compares the vocabulary of various artist across the first 35000 words written by them. Instead of constraining by the number of words we used the <b>100 densest</b> songs. Just out of curiosity (and for completeness) we used the same methodology by considering <b>10000 words</b> written by each artist. The results of the two approaches don’t differ too much, the top 5 ranked artists remain the same. The top 10 ranked artists are the same with a slight shuffling of the ranks. Andrea Bocelli moves from #8 to #6, while Black Eyed Peas move from rank #6 to #7 and Julio Iglesias from #7 to #8. No significant changes are observed on the whole (<a href = "http://i.imgur.com/z2H9T6i.png" target = "blank">more details</a>). Thus we decided to use with choosing 100 songs as it makes more sense intuitively and musically.
+			<br/> <br/>
+			- <a href = "http://twitter.com/neotheoen" target = "blank">@neotheoen</a> and <a href = "http://twitter.com/NashVail" target = "blank">@NashVail</a>
+		</div>
+		
 	</section>
 
 </div> <!-- End of container div -->

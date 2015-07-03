@@ -349,7 +349,7 @@ body {
 #genreHeading:before {
   width: 50%; }
 
-#conclusionSection {
+.innerSection {
   margin-top: 30px; }
 
 .genreChartExp {
