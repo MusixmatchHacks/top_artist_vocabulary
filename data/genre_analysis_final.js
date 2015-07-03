@@ -83,7 +83,7 @@ var genre_data = [{
     "num_artists": 1,
     "total_vocab_len": 1884
 }, {
-    "artists": ["Bz", "Linda Ronstadt", "Johnny Hallyday", "Rod Stewart", "The Rolling Stones", "Santana", "Meat Loaf", "U2", "Queen", "Tina Turner", "Dire Straits", "Eagles", "Bryan Adams", "Tom Petty", "Paul McCartney", "The Beatles", "Fleetwood Mac", "Phil Collins", "The Who", "Foreigner"],
+    "artists": ["The Beatles", "The Rolling Stones", "U2", "Queen", "Eagles",  "The Who", "Bz", "Linda Ronstadt", "Johnny Hallyday", "Rod Stewart", "Santana", "Meat Loaf", "Tina Turner", "Dire Straits", "Bryan Adams", "Tom Petty", "Paul McCartney", "Fleetwood Mac", "Phil Collins", "Foreigner"],
     "genre_name": "Rock",
     "avg_vocab": 2402.7,
     "num_artists": 20,
@@ -107,7 +107,7 @@ var genre_data = [{
     "num_artists": 1,
     "total_vocab_len": 3636
 }, {
-    "artists": ["Andrea Bocelli", "Celine Dion", "Barbra Streisand", "Billy Joel", "Madonna", "Elton John", "ABBA", "Frank Sinatra", "Katy Perry", "Michael Jackson", "Lady Gaga", "Barry Manilow", "Neil Diamond", "Cher", "Britney Spears", "The Carpenters", "Olivia Newton-John", "Donna Summer", "George Michael", "The Police", "Bee Gees", "Backstreet Boys", "Lionel Richie", "Spice Girls"],
+    "artists": ["Katy Perry", "Michael Jackson", "Lady Gaga", "Britney Spears", "Madonna", "Elton John", "ABBA", "Celine Dion", "Andrea Bocelli", "Barbra Streisand", "Billy Joel",  "Frank Sinatra", "Barry Manilow", "Neil Diamond", "Cher", "The Carpenters", "Olivia Newton-John", "Donna Summer", "George Michael", "The Police", "Bee Gees", "Backstreet Boys", "Lionel Richie", "Spice Girls"],
     "genre_name": "Pop",
     "avg_vocab": 2464.2083333333335,
     "num_artists": 24,
