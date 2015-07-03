@@ -17,12 +17,10 @@
 	<div id="container">
 		<!-- Introduction -->
 		<section class="article">
-			Inspired by the excellent <a href = "http://experiments.undercurrent.com/" target = "blank">The largest vocabulary in hip hop</a> I wanted to do a similar analysis across a more generalised list of musicians. I stumbled across this <a href = "https://en.wikipedia.org/wiki/List_of_best-selling_music_artists" target = "blank"
-			>List of best-selling music artists</a> and it seemed to cover a good cross section of popular musicians and genres. 
+			Inspired by (the excellent) <a href = "http://experiments.undercurrent.com/" target = "blank">The largest vocabulary in hip hop</a> I wanted to do a similar analysis across a more generalised list of musicians. I stumbled across this <a href = "https://en.wikipedia.org/wiki/List_of_best-selling_music_artists" target = "blank"
+			>List of best-selling music artists</a> The list is large enough (99 musicians and 25 genres) for the analysis to be interesting and small enough to not require complicated analysis techniques.
 			<br/> <br/>
-			These are the 93 top selling musicians who will be a part of this analysis, sorted by genre.
-			
-			
+			These are 93 musicians<sup>1</sup> from that list sorted by genre :
 		</section>
 		<!-- End Introduction -->
 
@@ -52,21 +50,23 @@
 		</section>
 		<!-- End all artists chart -->
 
+
 	<section class="article">
+		<div class="titles">TOP SELLING MUSICIANS OF ALL TIME</div>
 		<div class = "note"><sup>1</sup> Bruce Springsteen, Chicago, Def Leppard, Journey, The Beach Boys and The Doors from the original list of 99 musicians don’t grant permission to Musixmatch to use their lyrics. Therefore, they couldn't be included in the analysis.</div>
 	</section>
 
 	<!-- Comparing number of songs section -->
 	<section class="article">
-		The aim is to compare the vocabulary and the lyrical density of these musicians. Some of them have released a lot more songs than others because of the sheer longevity of their career and how prolific they are. There are musicians in the list with over 400 songs along with the ones with less than a 100.
+		The aim is to compare the vocabulary size of these musicians. Some of them have released a lot more songs than the others because of the sheer longevity of their career and how prolific they are.
 		<img src="img/topBottomArtists.png" height="265" width="714" alt="Top Bottom Artists" id = "topBottomArtists">
+		<div class="titles" id = "topBottomArtistTitle">WHAT SHOULD BE THE TITLE FOR THIS ONE?</div>
 	</section>
 	<!-- End comparing number of songs section -->
 
 
 	<section class="article">
-		To prevent the vocabulary size from being skewed purely by the number of songs released, the vocabularies are compared across the 100 densest songs (by total words) that they have released till date. Only 6 of these musicians have released less than 100 songs so it is a good threshold. Also, 100 songs comprises 8 to 10 albums of music which would span at least 5 to 10 years of work which should truthfully mimic the overall vocabulary and lyrical style of the musician.
-		<br/>Here are some definitions you should be acquanited with
+To prevent the analysis from being skewed purely by the number of songs released, the vocabularies are compared across the 100 densest songs (by total number of words) that they have released. Only 6 of these musicians have released less than 100 songs, so it is a good threshold. Also, 100 songs comprises 8 to 10 albums of music which would span at least 5 to 10 years of work which should give a fair idea of the overall vocabulary of these musicians. 		<br/>Here are some definitions you should be acquanited with
 	<br/><br/>
 	&#8226; <span class = "defHighlight"><em>VOCABULARY</em></span> The number of unique words (across any language) used by a musician in their 100 (or less) densest songs.
 	<br/><br/>
@@ -89,20 +89,21 @@
 			</svg>
 		</div>
 	</section>
+	<div class="titles" id = "mainVizTitle">VOCABULARY SIZE OF TOP SELLING ARTISTS</div>
 	<!-- End Vocabulary Plot here -->
 
 	<!-- Mr. Obvious section -->
 	<section class="article">
 		<center><span class = "sectionHeading">MR. OBVIOUS</span></center>
 		<img src="img/mrobvious.png" height="364" width="712" alt="Musicians" class = "expImages">
-		There are 4 rappers in the list and they obviously are at the top of the vocabulary chart. Amongst them Eminem leads Jay-z, 2Pac, Kanye West and The Black Eyed Peas by a big margin. One reason would be that he tends to use more words in his songs than the others. Eminem also has the overall highest words per song ratio of 1018.5
+		There are 4 rappers in the list and they are at the top of the vocabulary chart. Amongst them Eminem leads Jay-z, 2Pac, Kanye West and The Black Eyed Peas by a big margin. Eminem also has the overall highest words per song ratio of 1018.5
 	</section>
 	<!-- The freewheelin' section -->
 	<section class="article">
 		<center><span class = "sectionHeading">THE FREEWHEELIN'</span></center>
 
 		<img src="img/freewheeling.png" height="160" width="226" alt="Freewheelin'" class = "expImages">
-		Given how articulate and descriptive his songs are, it is no wonder Bob Dylan ranks so highly. He also ranks at the top (#11) of learning rate (a brand new word is used by him after every 9th word).
+		Given how articulate and descriptive his songs are, it is no wonder Bob Dylan ranks so highly. He also ranks at the top (#11) of the learning rate ranking (on average he uses a new word after writing 9 words).
 	</section>
 	<!-- Polyglots section -->
 	<section class="article">
@@ -122,7 +123,7 @@
 				{{/each}}
 			</script>
 		</div>
-		These superstars have an extensive vocabulary spread across multiple popular languages. Mildly interesting - Gloria Estefan worked as an English/Spanish/French translator during her early years and because of her language abilities, was once approached by the CIA as a possible employee. Her high ranking in the vocabulary chart comes as no surprise.
+		These superstars have released songs in multiple popular languages. Their vocabularies in different languages are getting summed up leading to a high overall vocabulary size. This was a result I was not expecting when I started the analysis. 
 	</section>
 	
 
@@ -132,16 +133,15 @@
 		<center><span class = "sectionHeading">SURPRISE!</span></center>
 
 		<img src="img/surprise.png" height="160" width="226" alt="Celine Dion" class = "expImages">	
-		I had not expected a pop sensation like her to rank so high since they rely on simplicity to emote and capture the listener’s heart. Also, she is the only one who ranks in the top 15 by vocabulary as well as the total sales of her album.
+		I had not expected a pop sensation like her to rank high since they rely on simplicity to get their message across. It lays bare my ignorance of her music. Also, she is the only one who ranks in the top 15 by vocabulary size as well as the total certified album sales.
 	</section>
 
 	<!-- #93 Kenny G Section -->
 	<section class="article">
-		<center><span class = "sectionHeading">#93</span></center>
+		<center><span class = "sectionHeading">Not the least</span></center>
 
 		<img src="img/kennyg.png" height="160" width="226" alt="Kenny G" class = "expImages">
-		Even though he is the only instrumental artist in this list but some of his songs still have lyrics. Whoever said you need words to sell records.
-		Following is the graph showing average vocabulary per artist in each genre.
+		<center>Whoever said songs can’t sell without lyrics.</center>
 	</section>
 	
 	<!-- Keep it simple silly, section -->
@@ -149,13 +149,14 @@
 		<center><span class = "sectionHeading" id = "kiss">KEEP IT SIMPLE, SILLY!</span></center>
 
 		<img src="img/kissGroup.png" height="366" width="712" alt="Keep it simple" class = "expImages">
-		The three top selling artists of all time rank low in the vocabulary chart. No wonder their music breaks the barriers of geography, age, language and it is admired globally. Conversely, Mariah Carey ranks high in both the charts (#9 in the sales chart and #20 in the vocabulary chart).
+		The three top selling musicians of all time rank low in the vocabulary chart. No wonder the simplicity of their lyrics breaks the barriers of geography, age, language and they are admired globally. Conversely, Mariah Carey ranks high in both the charts (#9 in the sales chart and #20 in the vocabulary chart).
 	</section>
 
 	<!-- Begin comparing genre section -->
 	<section class="article">
 		<center><span class = "sectionHeading" id = "genreHeading">COMPARING GENRES</span></center>
-		<span class="genreChartExp">The following chart shows the average vocabulary size of artists in different genres. In the parantheses is the number of artists in the list that sing in that genre.</span>
+		<span class="genreChartExp">The following chart shows the average vocabulary size of artists in different genres. In the parantheses is the number of artists in the list that sing in that genre. Since our list includes only 93 artists, it is not a very good generalization. </span>
+		
 	</section>
 	<!-- Begin Genre plot here -->
 	<section id="genrePlot">
@@ -171,10 +172,10 @@
 			</svg>
 	</section>
 	<!-- End genre plot -->
+	<div class="titles">AVERAGE VOCABULARY SIZE FOR EACH GENRE</div>
 
 	<section class="article">
-		Since it includes only 93 artists, it is not a good generalization. Some simple insights can still be taken. Hip-Hop is way ahead of the other genres. Folk comes in second but since there is only one folk artist (Bob Dylan) in the analysis it is not insightful. Latin comes in 3rd because of the artists writing in many languages but since only two artists fall in this genre it may not be true for the whole genre. 
-		Pop is the genre with the most number of artists and its average vocabulary size (2464 words)  is close to the global average vocabulary size (2677 words). 
+		Some simple insights can still be taken. Hip-Hop is way ahead of the other genres (d’oh). Folk comes in second but since there is only one folk artist (Bob Dylan) in the analysis it is not representative at all. Pop is the genre with the most number of musicians and its average vocabulary size (2464 words) is close to the average vocabulary size across all artists (2677 words). Same thing applies the Rock genre as well.
 	</section>
 	<!-- End Comparing genre section -->
 
@@ -182,10 +183,10 @@
 	<section class="article">
 		<center><span class = "sectionHeading">TO SUM UP</span></center>
 		<div class="innerSection">
-			There is a large variation of vocabulary size in the 93 top selling artists and there is no overall correlation between popularity of an artist and their vocabulary size. 
+			There is a large variation of vocabulary size in the 93 top selling musicians and there is no overall correlation between the commercial success of a musician and their vocabulary size. 
 			<br/><br/>
 			This analysis should not be interpreted as saying that one musician is better than the other, it is just another insight into the work of these amazing artists. It gives us a peek into the minds of different songwriters, some tear your heart with just a few words while others paint an intricate picture with a thousand words. 
-			 John Lennon succinctly explains a songwriter's dilemma with these lines - 
+			 Quoting John Lennon out of context explains this songwriter dilemma quite well - 
 			<div id = "finalQuote">“Half of what i say is meaningless,
 			 but I say it just to reach you” 
 			<a href = "https://www.musixmatch.com/lyrics/The-Beatles/Julia" target = "blank">- Julia, White Album</a></div>
@@ -197,7 +198,8 @@
 		<div class="innerSection">
 			All the lyrics data and other metadata (images, album lists, track lists, etc) is extracted using the <a href = "developer.musixmatch.com" target = "blank">Musixmatch api</a>. Python is used for fetching the data and analysing the lyrics. The analysis could be improved to remove coincidental sounds (ooh, aah, etc) and other such words which are not part of a dictionary. The data and the code will be released if anyone is interested.
 			<br/><br/>
-			<a href = "http://experiments.undercurrent.com" target = "blank">The largest vocabulary in hip hop</a> compares the vocabulary of various artist across the first 35000 words written by them. Instead of constraining by the number of words we used the <b>100 densest</b> songs. Just out of curiosity (and for completeness) we used the same methodology by considering <b>10000 words</b> written by each artist. The results of the two approaches don’t differ too much, the top 5 ranked artists remain the same. The top 10 ranked artists are the same with a slight shuffling of the ranks. Andrea Bocelli moves from #8 to #6, while Black Eyed Peas move from rank #6 to #7 and Julio Iglesias from #7 to #8. No significant changes are observed on the whole (<a href = "http://i.imgur.com/z2H9T6i.png" target = "blank">more details</a>). Thus we decided to use with choosing 100 songs as it makes more sense intuitively and musically.
+			<a href = "http://experiments.undercurrent.com" target = "blank">The largest vocabulary in hip hop</a> compares the vocabulary of various musicians across the first 35000 words written by them. Instead of constraining by the number of words we used the <b>100 densest</b> songs. Just out of curiosity (and for the sake of completeness) we used the same methodology by considering <b>10000 words</b> written by each artist. The results of the two approaches don’t differ too much, the top 5 ranked musicians remain the same. The top 10 ranked musicians are the same with a slight shuffling of the ranks. Andrea Bocelli moves from #8 to #6, while Black Eyed Peas move from rank #6 to #7 and Julio Iglesias from #7 to #8. No significant changes are observed on the whole (<a href = "http://i.imgur.com/z2H9T6i.png" target = "blank">more details</a>). Thus, we used 100 songs as the constraint since it makes more sense intuitively and musically.
+
 			<br/> <br/>
 			- <a href = "http://twitter.com/neotheoen" target = "blank">@neotheoen</a> and <a href = "http://twitter.com/NashVail" target = "blank">@NashVail</a>
 		</div>

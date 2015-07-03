@@ -360,7 +360,8 @@ body {
   display: block;
   text-align: center;
   margin-top: 25px;
-  font-family: Karla, "sans-serif"; }
+  font-family: Karla, "sans-serif";
+  font-style: italic; }
 
 #topBottomArtists {
   display: block;
@@ -430,5 +431,20 @@ body {
     text-align: right;
     margin: 12px 70px 0px 0px;
     font-weight: 400; }
+
+.titles {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  color: #8b8b8b;
+  font-style: italic; }
+
+#topBottomArtistTitle {
+  margin-top: 30px;
+  margin-bottom: -20px; }
+
+#mainVizTitle {
+  padding: 0;
+  margin-top: 15px; }
 
 /*# sourceMappingURL=styles.css.map */
