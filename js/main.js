@@ -14,17 +14,18 @@
         return (value.split(" ").join("_"));
     });
 
+    // Transform string to uppercase
     Handlebars.registerHelper("upperCase", function(value, options) {
         return (value.toUpperCase());
     });
 
+    // Not Handlebar helpers, everything else 
 
     vocab_data.forEach(function(artist, index) {
         artist.rank = (index + 1);
         artist.x = $('#vocab_plot').width() / 2; // was supposed to be pulled from plot but circular dependency is a bitch
-        artist.x_offset =  (artist.x_offset) ? artist.x_offset : 0;
+        artist.x_offset = (artist.x_offset) ? artist.x_offset : 0;
     });
-
 
     // Initialize the plot for the main visulaization
     var plot = VocabPlot.newPlot({
@@ -101,7 +102,6 @@
         namesContainer: $('#genreNames'),
         genreNameTemplate: $('#genre-names-template').html()
     });
-
 
 
 
