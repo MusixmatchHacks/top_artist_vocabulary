@@ -296,6 +296,10 @@ body {
   margin: 0 auto;
   background-color: white; }
 
+.note {
+  font-size: 0.8em;
+  margin-top: 10px; }
+
 .article {
   width: 960px;
   margin: 0 auto;
