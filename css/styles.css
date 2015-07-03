@@ -1,7 +1,5 @@
 @import url(tipsy.css);
 @import url(jquery.autocomplete.css);
-@import "http://fonts.googleapis.com/css?family=Oswald:400,700";
-@import "http://fonts.googleapis.com/css?family=Karla:700,400,400italic";
 #vocab_plot_wrapper {
   min-height: 700px;
   max-height: 1000px;
@@ -349,6 +347,9 @@ body {
 #genreHeading:before {
   width: 50%; }
 
+#conclusionSection {
+  margin-top: 30px; }
+
 .genreChartExp {
   display: block;
   text-align: center;
@@ -407,5 +408,21 @@ body {
   margin-right: 5px;
   text-decoration: italic;
   background-color: #e7daa9; }
+
+#finalQuote {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-top: 30px;
+  color: #FD4C38; }
+  #finalQuote a {
+    font-size: 0.9em !important;
+    display: block;
+    text-align: right;
+    margin: 12px 70px 0px 0px;
+    font-weight: 400; }
 
 /*# sourceMappingURL=styles.css.map */
