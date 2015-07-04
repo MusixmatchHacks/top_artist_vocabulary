@@ -445,6 +445,10 @@ body {
   color: #8b8b8b;
   font-style: italic; }
 
+#vocabVariation {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
 #topBottomArtistTitle {
   margin-top: 30px;
   margin-bottom: -20px; }

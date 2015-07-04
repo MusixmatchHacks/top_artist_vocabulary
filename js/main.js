@@ -1,6 +1,8 @@
 (function() {
     'use strict';
 
+    // TODO : Make a list of all the absolutely positioned elements and adjust their position on resize
+
     // Hnadlebar helpers
 
     // Handlebar helper to increment int by 1
