@@ -11,10 +11,10 @@
 			this.initialButtonPos = this.button.offset();
 			this.scrollLimits = this.target.offset();
 			// Initialize the click listener 
-			this.button.on('click', this.expandList);
+			this.button.on('click', this.expandListToggle);
 		},
 
-		expandList: function() {
+		expandListToggle: function() {
 			expandButton.target.toggleClass('expanded');
 			if (expandButton.target.hasClass('expanded')) {
 				expandButton.target.children('.overlay').remove();

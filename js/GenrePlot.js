@@ -37,10 +37,11 @@
 			var $window = $(window);
 			var $legendHolder = $('#' + config.legendContainerCssId);
 			var pos = $legendHolder.offset();
-			var containerPos = this.container.offset();
-			var upperLimit = containerPos.top;
-			var lowerLimit = upperLimit + this.container.height() - 30;
+			var that = this;
 			$window.on('scroll', function() {
+				var containerPos = that.container.offset();
+				var upperLimit = containerPos.top;
+				var lowerLimit = upperLimit + that.container.height() - 30;
 				var scrollPos = $window.scrollTop();
 				if (scrollPos > upperLimit && scrollPos < lowerLimit) { 
 					$legendHolder.css({
@@ -52,7 +53,7 @@
 
 					$legendHolder.css({
 						position: 'absolute',
-						top : pos.top - 320
+						top : containerPos.top - 350
 					});
 				}
 
