@@ -17,7 +17,7 @@
 	<div id="container">
 		<!-- Introduction -->
 		<section class="article">
-			Inspired by (the excellent) <a href = "http://experiments.undercurrent.com/" target = "blank">The largest vocabulary in hip hop</a> I wanted to do a similar analysis across a more generalised list of musicians. I stumbled across this <a href = "https://en.wikipedia.org/wiki/List_of_best-selling_music_artists" target = "blank"
+			Inspired by <a href = "http://experiments.undercurrent.com/" target = "blank">The largest vocabulary in hip hop</a> I wanted to do a similar analysis across a more generalised list of musicians. I stumbled across this <a href = "https://en.wikipedia.org/wiki/List_of_best-selling_music_artists" target = "blank"
 			>List of best-selling music artists</a> . The list is large enough (99 musicians and 25 genres) for the analysis to be interesting and small enough to not require complicated analysis techniques.
 			<br/> <br/>
 			These are 93 musicians<sup>1</sup> from that list sorted by genre :
@@ -68,11 +68,11 @@
 	<section class="article">
 To prevent the analysis from being skewed purely by the number of songs released, the vocabularies are compared across the 100 densest songs (by total number of words) that they have released. Only 6 of these musicians have released less than 100 songs, so it is a good threshold. Also, 100 songs comprises 8 to 10 albums of music which would span at least 5 to 10 years of work which should give a fair idea of the overall vocabulary of these musicians. 		<br/>Here are some definitions you should be acquanited with
 	<br/><br/>
-	&#8226; <span class = "defHighlight"><em>VOCABULARY</em></span> The number of unique words (across any language) used by a musician in their 100 (or less) densest songs.
+	&#8226; <span class = "defHighlight"><em>VOCABULARY</em></span> The number of unique words (across any language) used by a musician in 100 (or less) densest songs across their career.
 	<br/><br/>
-	&#8226; <span class = "defHighlight"><em>LYRICAL DENSITY</em></span> The total number of words (across any language) used by a musician in their 100 (or less) densest songs.
+	&#8226; <span class = "defHighlight"><em>LYRICAL DENSITY</em></span> The total number of words (across any language) used by a musician 100 (or less) densest songs across their career.
 	<br/><br/>
-	&#8226; <span class = "defHighlight"><em>LEARNING RATE</em></span> On average, the number of words after which a new word is used by the musician. This is the ratio of Lyrical density/Vocabulary. If it is low it means new words are learnt faster.
+	&#8226; <span class = "defHighlight"><em>LEARNING RATE</em></span> On average, the number of words after which a new word is used by the musician. This is the ratio of Lyrical density/Vocabulary. A low learning rate means new words are used frequently.
 	</section>
 
 
@@ -152,7 +152,7 @@ To prevent the analysis from being skewed purely by the number of songs released
 	<section class="article">
 		<center><span class = "sectionHeading" id = "kiss">THE BIG PLATEAU</span></center>
 		<img src="img/bigPleateau.png" height="300" width="597" alt="" class = "expImages" id = "vocabVariation">
-		The average vocabulary size across all the musicians is 2677 words. Around 40 musicians have a vocabulary size within 400 words of the average (2677+-400). Get your song-writing vocabulary size in this range to be a top selling artist.
+		The average vocabulary size across all the musicians is 2677 words. Around 40 musicians have a vocabulary size within 400 words of the average . Get your song-writing vocabulary size in this range to be a top selling artist.
 
 	</section>
 
@@ -167,10 +167,9 @@ To prevent the analysis from being skewed purely by the number of songs released
 	<!-- Begin comparing genre section -->
 	<section class="article">
 		<center><span class = "sectionHeading" id = "genreHeading">COMPARING GENRES</span></center>
-		<span class="genreChartExp">The following chart shows the average vocabulary size of artists in different genres. In the parantheses is the number of artists in the list that sing in that genre. </span>
-		<br/>
-		<center>Since our list includes only 93 artists, it is not a very good generalization. </center>
-		
+		<div class="innerSection">
+		The following chart shows the average vocabulary size of artists in different genres. In the parantheses is the number of artists in the list that sing in that genre. Since our list includes only 93 artists, it is not a very good generalization.
+		</div>
 	</section>
 	<!-- Begin Genre plot here -->
 	<section id="genrePlot">
@@ -195,7 +194,7 @@ To prevent the analysis from being skewed purely by the number of songs released
 
 	<!-- Begin conclusion section -->
 	<section class="article">
-		<center><span class = "sectionHeading">TO SUM UP</span></center>
+		<center><span class = "sectionHeading">TO SUM IT UP</span></center>
 		<div class="innerSection">
 			There is a large variation of vocabulary size in the 93 top selling musicians and there is no overall correlation between the commercial success of a musician and their vocabulary size. 
 			<br/><br/>

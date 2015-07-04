@@ -1,7 +1,5 @@
 @import url(tipsy.css);
 @import url(jquery.autocomplete.css);
-@import "http://fonts.googleapis.com/css?family=Oswald:400,700";
-@import "http://fonts.googleapis.com/css?family=Karla:700,400,400italic,700italic";
 #vocab_plot_wrapper {
   min-height: 700px;
   max-height: 1000px;
@@ -202,7 +200,7 @@ input#locateArtist {
 #btn_expandList {
   position: absolute;
   top: 60px;
-  left: -150px; }
+  left: -145px; }
 
 .buttonFixedScroll {
   position: fixed !important;
