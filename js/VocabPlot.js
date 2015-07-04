@@ -40,7 +40,7 @@
 		// Method to add new artist to the plot
 		addArtistsToPlot: function() {
 			var that = this; // VocabPlot
-			d3.select(this.$plot.selector)
+			d3.select('#artistCircleContainer')
 				.selectAll(this.config.artistCircleCssClass)
 				.data(this.data)
 				.enter()

@@ -320,7 +320,7 @@ var vocab_data = [{
         "genre": "Country[149]",
         "start_yr": "1989[149]",
         "total_sales": "150 million[150]",
-        "x_offset" : -338
+        "x_offset" : -330
     }, {
         "certified_sales": "76.1",
         "vocab_len": "2808",

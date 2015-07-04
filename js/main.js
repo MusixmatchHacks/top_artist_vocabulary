@@ -23,7 +23,7 @@
 
     vocab_data.forEach(function(artist, index) {
         artist.rank = (index + 1);
-        artist.x = $('#vocab_plot').width() / 2; // was supposed to be pulled from plot but circular dependency is a bitch
+        artist.x = $('#artistCircleContainer').width() / 2; // was supposed to be pulled from plot but circular dependency is a bitch
         artist.x_offset = (artist.x_offset) ? artist.x_offset : 0;
     });
 

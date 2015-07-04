@@ -122,6 +122,12 @@ input#locateArtist {
   font-family: "Helvetica Neue", "Source Sans Pro";
   margin-bottom: 5px; }
 
+#artistCircleContainer {
+  position: relative;
+  width: 1000px;
+  height: auto;
+  margin: 0 auto; }
+
 #allArtists {
   position: relative;
   width: 960px;
