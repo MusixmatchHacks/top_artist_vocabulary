@@ -43,7 +43,7 @@
     // Initializing the list that shows all the artists
     var allArtistsChart = AllArtists.createChart({
         allChartCssId: 'allArtistsContainer'
-    }, Object.keys(plot.artists));
+    }, genre_data);
 
     // Add tooltips to the artists in the AllArtist chart
     $('.letterArtistImage').each(function() {

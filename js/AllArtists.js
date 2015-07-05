@@ -1,20 +1,26 @@
 (function() {
 	// Export the module
 	window.AllArtists = {};
-	window.AllArtists.createChart = function(config, artistNames) {
-		return new AllArtists(config, artistNames);
+	window.AllArtists.createChart = function(config, data) {
+		return new AllArtists(config, data);
 	};
 
-	function AllArtists(config, artistNames) {
-		// sortedNames stores artist's names in the following configuraiton
+	function AllArtists(config, data) {
+
 		/*
-			[
-				{startingLetter : 'A', names : [names of artists starting with A ]},
-				{startingLetter : 'B', names : [names of artists starting with B ]}...
-				...
-			]
+			Data holds the data about genre, here is a sample genre data 
+			{
+			    "genre_name": "Punk Rock",
+			    "artists": ["Green Day"],
+			    "avg_vocab": 2535.0,
+			    "num_artists": 1,
+			    "total_vocab_len": 2535
+			}
 		*/
-		this.sortedNames = this.sortNames(artistNames);
+		this.data = data;
+
+		// Data should sorted in descending order by the number of artists in that genre 
+		data.sort(descBy('num_artists'));
 
 		this.$chart = $('#' + config.allChartCssId);
 
@@ -52,9 +58,8 @@
 
 		// and that is how this is supposed to be done
 		addArtistsToChart: function() {
-			genre_data.sort(descBy('num_artists'));
 			var template = Handlebars.compile(this.$chart.children('#template-allArtists').html());
-			this.$chart.append(template(genre_data));
+			this.$chart.append(template(this.data));
 		}
 	};
 
