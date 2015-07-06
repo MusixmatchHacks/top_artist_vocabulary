@@ -25,14 +25,9 @@
 		// A collection of artist (Artist Objects) on the plot
 		this.artists = {};
 
-		this.yScale = d3.scale.linear().domain([0, 10000]).range([0.95 * this.height, 0]);
-		drawScale.call(this, [809, 2000, 4000, 6000, 8000], 2677);
-
-
 		this.addArtistsToPlot();
 		// Initialize the searchField
 		this.search.init(this, this.config.searchFieldCssId);
-
 	}
 
 	VocabPlot.prototype = {
@@ -49,22 +44,48 @@
 					return d.name.split(" ").join("_");
 				})
 				.classed(this.config.artistCircleCssClass, true)
-				.style('top', function(d) {
-					return ((that.yScale(d.vocab_len)) - 20) + 'px';
-				}) // 9 is the height of the cricles will be made dynamic later
 				.each(function(d) {
 					that.artists[d.name] = Artist.newArtist(d.name, d);
-				})
-				// .style('left', function(d, i) {
-				// 	// Computed through trial and error for the position
-				// 	return 180 + (i * ((that.width - 220) / that.data.length)) + 'px';
-				// })
-				.style('left', function(d) {
-					return (d.x + d.x_offset - 17.5) + 'px';
 				})
 			// to avoid stutter on load
 			.transition().duration(300)
 				.style('opacity', 1);
+
+			this.arrangeBySales();
+		},
+
+		arrangeByVocabulary: function() {
+			var that = this;
+
+			var vocabScale = d3.scale.linear().domain([0, 10000]).range([this.height, 0]);
+			drawScale.call(this, vocabScale, 'words', [809, 2000, 4000, 6000, 8000], 2677);
+
+			d3.select('#artistCircleContainer').selectAll('.' + this.config.artistCircleCssClass)
+				.data(this.data)
+				.style('top', function(d) {
+					return ((that.yScale(d.vocab_len)) - 20) + 'px';
+				})
+				.style('left', function(d) {
+					return (d.x + d.x_offset - 17.5) + 'px';
+				});
+
+		},
+		arrangeBySales: function() {
+			var that = this;
+
+			var salesScale = d3.scale.linear().domain([0, 300])
+				.range([this.height, 0]);
+			drawScale.call(this, salesScale, 'M', [19, 50, 100, 150,200, 250 ]);
+
+			d3.select('#artistCircleContainer').selectAll('.' + this.config.artistCircleCssClass)
+				.data(this.data)
+				.style('top', function(d) {
+					return ((salesScale(d.certified_sales))) + 'px';
+				})
+				.style('left', function(d, i) {
+					return (i * 30);
+				});
+
 		},
 
 		// Operations styles of the artist circles on the plot
@@ -150,7 +171,7 @@
 				// If the search is a number then highlight the artist by rank
 				if (searchFieldValue) {
 					if ($.isNumeric(searchFieldValue)) {
-						return (that.plot.artists[name].data.rank === Number(searchFieldValue));
+						return (that.plot.artists[name].data.rank_vocab === Number(searchFieldValue));
 					} else {
 						return (name.toUpperCase().indexOf(searchFieldValue.toUpperCase()) === 0);
 					}
@@ -164,7 +185,7 @@
 	};
 
 	// Funciton : drawScale(array of numbers, each number representing a tick on scale, average value)
-	function drawScale(scaleDivisions, average) {
+	function drawScale(scale, suffix, scaleDivisions, average) {
 
 		var that = this;
 		// Color of general numbers and lines
@@ -183,10 +204,10 @@
 			.attr('x1', scaleLeftPadding)
 			.attr('x2', tickLength)
 			.attr('y1', function(d) {
-				return that.yScale(d);
+				return scale(d);
 			})
 			.attr('y2', function(d) {
-				return that.yScale(d);
+				return scale(d);
 			})
 			// .attr('stroke-dasharray', '1, 5')
 			.style('stroke', scaleColor)
@@ -199,10 +220,10 @@
 			.data(scaleDivisions).enter().append('text')
 			.attr('x', scaleLeftPadding)
 			.attr('y', function(d) {
-				return (that.yScale(d) - legendTickSeparation);
+				return (scale(d) - legendTickSeparation);
 			})
 			.text(function(d) {
-				return (formatWithCommas(d) + ' words');
+				return (formatWithCommas(d) + suffix);
 			})
 			.attr('fill', scaleColor)
 			.attr('font-size', 18);
@@ -213,18 +234,18 @@
 				.append('line')
 				.attr('x1', scaleLeftPadding)
 				.attr('x2', tickLength)
-				.attr('y1', this.yScale(average))
-				.attr('y2', this.yScale(average))
+				.attr('y1', scale(average))
+				.attr('y2', scale(average))
 				.style('stroke', averageColor)
 				.style('stroke-width', 1);
 
 			this.scale
 				.append('text')
-				.text(formatWithCommas(average) + ' words')
+				.text(formatWithCommas(average) + suffix)
 				.attr('fill', averageColor)
 				.attr('font-size', 16)
 				.attr('x', scaleLeftPadding)
-				.attr('y', that.yScale(average) - (legendTickSeparation - 5));
+				.attr('y', scale(average) - (legendTickSeparation - 5));
 
 			this.scale
 				.append('text')
@@ -232,7 +253,7 @@
 				.attr('fill', averageColor)
 				.attr('font-size', 16)
 				.attr('x', scaleLeftPadding)
-				.attr('y', that.yScale(average) - (2.1 * legendTickSeparation));
+				.attr('y', scale(average) - (2.1 * legendTickSeparation));
 		}
 	}
 
