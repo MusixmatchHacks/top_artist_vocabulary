@@ -95,7 +95,7 @@
 					that.toolTipStatus = 'EXPANDED';
 				} else { // Tooltip status is expanded
 					$('.tipsy-inner').html(that.tooltipOriginalContent);
-					$('.tipsy').animate({top : '+=55'}, 200, 'easeInOutQuint');
+					$('.tipsy').animate({top : '+=55'}, 200, 'easeOutBack');
 					that.toolTipStatus = 'COMPACT';
 				}
 			});
