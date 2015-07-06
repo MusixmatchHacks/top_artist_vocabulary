@@ -27,9 +27,24 @@
 		// The total number of artists the data has 
 		this.numArtists = 93; // currently hard coded
 
+		// Variables that hold the configuration of the tooltip that is used 
+		// when interating with the artist like clicking it 
+		this.toolTipStatus = 'COMPACT'; // can be COMPACT or EXPANDED
+		this.tooltipOriginalContent = $('#tooltipTemplate').html()
+			.replace(/{{rank}}/i, this.data.rank_vocab)
+			.replace(/{{artistName}}/i, this.data.name)
+			.replace(/{{vocab}}/i, window.VocabPlot.formatWithCommas(this.data.vocab_len))
+			.replace(/{{total}}/i, this.numArtists);
+
+		this.tooltipExpandedContent = $('#tooltipTemplateExpanded').html()
+			.replace(/{{rank}}/i, this.data.rank_vocab)
+			.replace(/{{artistName}}/i, this.data.name)
+			.replace(/{{vocab}}/i, window.VocabPlot.formatWithCommas(this.data.vocab_len))
+			.replace(/{{total}}/i, this.numArtists);
+
 		// Initialize events 
-		this.events.click.call(this);
 		this.events.hover.call(this);
+		this.events.click.call(this);
 	}
 
 	Artist.prototype = {
@@ -66,9 +81,16 @@
 	// Event handler on artist object
 	Artist.prototype.events = {
 		click: function() {
-			// Do something on click on any of the artist circles
+			var that = this;
+
 			this.$artist.on('click', function() {
-				console.log("the artist was clicked");
+				if (that.toolTipStatus === 'COMPACT') {
+					$('.tipsy-inner').html(that.tooltipExpandedContent);
+					that.toolTipStatus = 'EXPANDED';
+				} else { // Tooltip status is expanded
+					$('.tipsy-inner').html(that.tooltipOriginalContent);
+					that.toolTipStatus = 'COMPACT';
+				}
 			});
 		},
 
@@ -81,14 +103,16 @@
 				opacity: 1,
 				offset: 3,
 				title: function() {
-					return (that.tooltipTemplate.replace(/{{rank}}/i, that.data.rank_vocab)
-						.replace(/{{artistName}}/i, that.data.name)
-						.replace(/{{vocab}}/i, window.VocabPlot.formatWithCommas(that.data.vocab_len))
-						.replace(/{{total}}/i, that.numArtists)
-					);
+					return that.tooltipOriginalContent;
 				}
 			});
+
+			// On mouseout revert to original content
+			this.$artist.on('mouseout', function() {
+				that.toolTipStatus = 'COMPACT';
+			});
 		}
+
 	};
 
 })();

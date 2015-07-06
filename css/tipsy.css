@@ -1,12 +1,11 @@
 .tipsy { font-size: 1em; position: absolute; padding: 5px; z-index: 100000;}
-  .tipsy-inner { /*background-color: #0087FF ;*/ 
-    /*background-color : #A99755;*/
-    background-color : #303030;
-       color: #fff;
-        padding: 5px 8px 5px 8px;
-         border : 1px solid #000000;
-         width : 110%;
-         text-align : center;
+  .tipsy-inner { 
+      background-color : #303030;
+      color: #fff;
+      padding: 5px 8px 5px 8px;
+      border : 1px solid #000000;
+      width : 110%;
+      text-align : center;
      } 
   .tipsy-inner:after {display : table;  content : ''; clear : both;}
 

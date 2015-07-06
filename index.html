@@ -221,6 +221,7 @@ To prevent the analysis from being skewed purely by the number of songs released
 
 </div> <!-- End of container div -->
 
+
 <script id = "tooltipTemplate" type = "mxm/template">
 	<div class="rankContainer">
 		<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>	
@@ -229,7 +230,19 @@ To prevent the analysis from being skewed purely by the number of songs released
 		<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
 	</div>
 </script>
-<!-- Don't worry about this, all of them will be concatenated anyways -->
+
+<script id = "tooltipTemplateExpanded" type = "mxm/template">
+	<div class="rankContainer">
+		<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>	
+	</div>
+	<div class="detailContainer">
+		<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
+	</div>
+	<div class = "extraInfo">
+		this is just some extra info
+	</div>
+</script>
+
 <script type = "text/javascript" src = "data/total_analysis_final.js"></script>
 <script type = "text/javascript" src = "data/genre_analysis_final.js"></script>
 <script type = "text/javascript" src = "js/lib/handlebars-v3.0.3.js"></script>
