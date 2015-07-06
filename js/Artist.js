@@ -81,7 +81,7 @@
 				opacity: 1,
 				offset: 3,
 				title: function() {
-					return (that.tooltipTemplate.replace(/{{rank}}/i, that.data.rank)
+					return (that.tooltipTemplate.replace(/{{rank}}/i, that.data.rank_vocab)
 						.replace(/{{artistName}}/i, that.data.name)
 						.replace(/{{vocab}}/i, window.VocabPlot.formatWithCommas(that.data.vocab_len))
 						.replace(/{{total}}/i, that.numArtists)

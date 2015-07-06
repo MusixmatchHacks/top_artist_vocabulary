@@ -24,12 +24,12 @@
     // Not Handlebar helpers, everything else 
 
     vocab_data.forEach(function(artist, index) {
-        artist.rank = (index + 1);
         artist.x = $('#artistCircleContainer').width() / 2; // was supposed to be pulled from plot but circular dependency is a bitch
         artist.x_offset = (artist.x_offset) ? artist.x_offset : 0;
     });
 
     // Initialize the plot for the main visulaization
+    // We will need a lot more options and stuff here and for changing the scales and stuff like that too 
     var plot = VocabPlot.newPlot({
         // Css selectors for the elments on the plot
         cssId: 'vocab_plot',
