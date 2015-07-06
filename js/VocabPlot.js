@@ -52,7 +52,7 @@
 				.style('opacity', 1);
 
 			// Mode by which the artist should be arranged in the plot
-			this.arrangeBySales();
+			this.arrangeByVocabulary();
 		},
 
 		arrangeByVocabulary: function() {

@@ -12,7 +12,7 @@ var vocab_data = [{
 	"vocab_x_offset": 0,
 	"rank_sales": 14,
 	"rank_vocab": 1,
-	"sales_x_offset": 0
+	"sales_x_offset": 66
 }, {
 	"certified_sales": 79.8,
 	"vocab_len": 6899,
@@ -147,7 +147,7 @@ var vocab_data = [{
 	"vocab_x_offset": -38,
 	"rank_sales": 12,
 	"rank_vocab": 10,
-	"sales_x_offset": 0
+	"sales_x_offset": 98
 }, {
 	"certified_sales": 61.9,
 	"vocab_len": 3906,
@@ -267,7 +267,7 @@ var vocab_data = [{
 	"vocab_x_offset": 103,
 	"rank_sales": 13,
 	"rank_vocab": 18,
-	"sales_x_offset": 0
+	"sales_x_offset": -95
 }, {
 	"certified_sales": 99.2,
 	"vocab_len": 3061,
@@ -297,7 +297,7 @@ var vocab_data = [{
 	"vocab_x_offset": -113,
 	"rank_sales": 9,
 	"rank_vocab": 20,
-	"sales_x_offset": 0
+	"sales_x_offset": 65
 }, {
 	"certified_sales": 41.6,
 	"vocab_len": 2974,
@@ -357,7 +357,7 @@ var vocab_data = [{
 	"vocab_x_offset": 428,
 	"rank_sales": 4,
 	"rank_vocab": 24,
-	"sales_x_offset": 32
+	"sales_x_offset": 35
 }, {
 	"certified_sales": 24.3,
 	"vocab_len": 2891,
@@ -597,7 +597,7 @@ var vocab_data = [{
 	"vocab_x_offset": 167,
 	"rank_sales": 8,
 	"rank_vocab": 40,
-	"sales_x_offset": 0
+	"sales_x_offset": -37
 }, {
 	"certified_sales": 106.9,
 	"vocab_len": 2519,
@@ -822,7 +822,7 @@ var vocab_data = [{
 	"vocab_x_offset": 310,
 	"rank_sales": 10,
 	"rank_vocab": 55,
-	"sales_x_offset": 0
+	"sales_x_offset": -72
 }, {
 	"certified_sales": 67.1,
 	"vocab_len": 2193,
@@ -927,7 +927,7 @@ var vocab_data = [{
 	"vocab_x_offset": -460,
 	"rank_sales": 7,
 	"rank_vocab": 62,
-	"sales_x_offset": 0
+	"sales_x_offset": 35
 }, {
 	"certified_sales": 43.1,
 	"vocab_len": 2055,
@@ -1302,7 +1302,7 @@ var vocab_data = [{
 	"vocab_x_offset": -390,
 	"rank_sales": 15,
 	"rank_vocab": 87,
-	"sales_x_offset": 0
+	"sales_x_offset": -62
 }, {
 	"certified_sales": 21.7,
 	"vocab_len": 1731,
