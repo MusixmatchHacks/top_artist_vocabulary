@@ -223,23 +223,29 @@ To prevent the analysis from being skewed purely by the number of songs released
 
 
 <script id = "tooltipTemplate" type = "mxm/template">
-	<div class="rankContainer">
-		<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>	
-	</div>
-	<div class="detailContainer">
-		<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
+	<div class = "tooltipTop">
+		<div class="rankContainer">
+			<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>	
+		</div>
+		<div class="detailContainer">
+			<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
+		</div>
 	</div>
 </script>
 
 <script id = "tooltipTemplateExpanded" type = "mxm/template">
-	<div class="rankContainer">
-		<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>	
-	</div>
-	<div class="detailContainer">
-		<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
+	<div class = "tooltipTop">
+		<div class="rankContainer">
+			<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>	
+		</div>
+		<div class="detailContainer">
+			<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words		
+		</div>
 	</div>
 	<div class = "extraInfo">
-		this is just some extra info
+		Sales : {{sales}}
+		<br/>
+		Sales rank : {{rank_sales}}
 	</div>
 </script>
 
@@ -247,6 +253,7 @@ To prevent the analysis from being skewed purely by the number of songs released
 <script type = "text/javascript" src = "data/genre_analysis_final.js"></script>
 <script type = "text/javascript" src = "js/lib/handlebars-v3.0.3.js"></script>
 <script type = "text/javascript" src = "js/lib/jquery.min.js"></script>
+<script type = "text/javascript" src = "js/lib/easings.js"></script>
 <script type = "text/javascript" src = "js/lib/d3.js"></script>	
 <script type = "text/javascript" src = "js/lib/jquery.tipsy.js"></script>	
 <script type = "text/javascript" src = "js/lib/jquery.autocomplete.js"></script>	

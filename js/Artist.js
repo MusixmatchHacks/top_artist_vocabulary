@@ -40,7 +40,10 @@
 			.replace(/{{rank}}/i, this.data.rank_vocab)
 			.replace(/{{artistName}}/i, this.data.name)
 			.replace(/{{vocab}}/i, window.VocabPlot.formatWithCommas(this.data.vocab_len))
-			.replace(/{{total}}/i, this.numArtists);
+			.replace(/{{total}}/i, this.numArtists)
+			.replace(/{{sales}}/i, this.data.certified_sales)
+			.replace(/{{rank_sales}}/i, this.data.rank_sales);
+
 
 		// Initialize events 
 		this.events.hover.call(this);
@@ -81,14 +84,18 @@
 	// Event handler on artist object
 	Artist.prototype.events = {
 		click: function() {
-			var that = this;
-
+			var that = this,
+				initialPos = $('#' + this.selector).css('top');
+				console.log(initialPos);
 			this.$artist.on('click', function() {
 				if (that.toolTipStatus === 'COMPACT') {
-					$('.tipsy-inner').html(that.tooltipExpandedContent);
+					$('.tipsy').animate({top : '-=55'}, 400, 'easeOutBack', function() {
+						$('.tipsy-inner').html(that.tooltipExpandedContent);
+					});
 					that.toolTipStatus = 'EXPANDED';
 				} else { // Tooltip status is expanded
 					$('.tipsy-inner').html(that.tooltipOriginalContent);
+					$('.tipsy').animate({top : '+=55'}, 200, 'easeInOutQuint');
 					that.toolTipStatus = 'COMPACT';
 				}
 			});

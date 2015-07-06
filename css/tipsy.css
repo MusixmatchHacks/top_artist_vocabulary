@@ -7,7 +7,7 @@
       width : 110%;
       text-align : center;
      } 
-  .tipsy-inner:after {display : table;  content : ''; clear : both;}
+  /*.tipsy-inner:after {display : table;  content : ''; clear : both;}*/
 
   /* Rounded corners */
   .tipsy-inner { border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; }
