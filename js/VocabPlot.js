@@ -51,6 +51,7 @@
 			.transition().duration(300)
 				.style('opacity', 1);
 
+			// Mode by which the artist should be arranged in the plot
 			this.arrangeBySales();
 		},
 
@@ -58,15 +59,15 @@
 			var that = this;
 
 			var vocabScale = d3.scale.linear().domain([0, 10000]).range([this.height, 0]);
-			drawScale.call(this, vocabScale, 'words', [809, 2000, 4000, 6000, 8000], 2677);
+			drawScale.call(this, vocabScale, ' words', [809, 2000, 4000, 6000, 8000], 2677);
 
 			d3.select('#artistCircleContainer').selectAll('.' + this.config.artistCircleCssClass)
 				.data(this.data)
 				.style('top', function(d) {
-					return ((that.yScale(d.vocab_len)) - 20) + 'px';
+					return ((vocabScale(d.vocab_len)) - 20) + 'px';
 				})
 				.style('left', function(d) {
-					return (d.x + d.x_offset - 17.5) + 'px';
+					return (d.x + d.vocab_x_offset - 17.5) + 'px';
 				});
 
 		},
@@ -75,15 +76,15 @@
 
 			var salesScale = d3.scale.linear().domain([0, 300])
 				.range([this.height, 0]);
-			drawScale.call(this, salesScale, 'M', [19, 50, 100, 150,200, 250 ]);
+			drawScale.call(this, salesScale, 'M', [18.9, 50, 100, 150,200, 250 ]);
 
 			d3.select('#artistCircleContainer').selectAll('.' + this.config.artistCircleCssClass)
 				.data(this.data)
 				.style('top', function(d) {
-					return ((salesScale(d.certified_sales))) + 'px';
+					return ((salesScale(d.certified_sales)) - 20) + 'px';
 				})
 				.style('left', function(d, i) {
-					return (i * 30);
+					return (d.x + d.sales_x_offset - 17.5) + 'px';
 				});
 
 		},
@@ -186,6 +187,9 @@
 
 	// Funciton : drawScale(array of numbers, each number representing a tick on scale, average value)
 	function drawScale(scale, suffix, scaleDivisions, average) {
+
+		// Just empty the scale before drawing anything on it 
+		$('#' + this.config.scaleCssId).children().remove();
 
 		var that = this;
 		// Color of general numbers and lines

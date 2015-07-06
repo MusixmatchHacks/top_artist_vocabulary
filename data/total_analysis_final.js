@@ -9,8 +9,10 @@ var vocab_data = [{
 	"genre": "Hip hop[142]",
 	"start_yr": "1999[142]",
 	"total_sales": "155 million[148]",
+	"vocab_x_offset": 0,
 	"rank_sales": 14,
-	"rank_vocab": 1
+	"rank_vocab": 1,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 79.8,
 	"vocab_len": 6899,
@@ -22,8 +24,10 @@ var vocab_data = [{
 	"genre": "Hip-hop[210]",
 	"start_yr": "1996[210]",
 	"total_sales": "100 million[211]",
+	"vocab_x_offset": 0,
 	"rank_sales": 28,
-	"rank_vocab": 2
+	"rank_vocab": 2,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 46.2,
 	"vocab_len": 6569,
@@ -35,9 +39,10 @@ var vocab_data = [{
 	"genre": "Hip hop[363]",
 	"start_yr": "1991[363]",
 	"total_sales": "75 million[364]",
-	"x_offset": 35,
+	"vocab_x_offset": 35,
 	"rank_sales": 58,
-	"rank_vocab": 3
+	"rank_vocab": 3,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 94.1,
 	"vocab_len": 5069,
@@ -49,8 +54,10 @@ var vocab_data = [{
 	"genre": "Rap / Electronic / Pop rock[185]",
 	"start_yr": "2004[185]",
 	"total_sales": "121 million[188]",
+	"vocab_x_offset": 0,
 	"rank_sales": 23,
-	"rank_vocab": 4
+	"rank_vocab": 4,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 43.6,
 	"vocab_len": 4883,
@@ -62,9 +69,10 @@ var vocab_data = [{
 	"genre": "Folk / Rock[253]",
 	"start_yr": "1963[253]",
 	"total_sales": "100 million[254]",
-	"x_offset": -35,
+	"vocab_x_offset": -35,
 	"rank_sales": 61,
-	"rank_vocab": 5
+	"rank_vocab": 5,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 54,
 	"vocab_len": 4539,
@@ -76,9 +84,10 @@ var vocab_data = [{
 	"genre": "Hip-hop / R&B / Dance[336]",
 	"start_yr": "1998[336]",
 	"total_sales": "76 million[339]",
-	"x_offset": 17,
+	"vocab_x_offset": 17,
 	"rank_sales": 48,
-	"rank_vocab": 6
+	"rank_vocab": 6,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 51,
 	"vocab_len": 4323,
@@ -90,9 +99,10 @@ var vocab_data = [{
 	"genre": "Latin[197]",
 	"start_yr": "1968[197]",
 	"total_sales": "120 million[199]",
-	"x_offset": -55,
+	"vocab_x_offset": -55,
 	"rank_sales": 51,
-	"rank_vocab": 7
+	"rank_vocab": 7,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 37.4,
 	"vocab_len": 4306,
@@ -104,9 +114,10 @@ var vocab_data = [{
 	"genre": "Pop / Classical / Opera[377]",
 	"start_yr": "1994[377]",
 	"total_sales": "75 million[378]",
-	"x_offset": -15,
+	"vocab_x_offset": -15,
 	"rank_sales": 73,
-	"rank_vocab": 8
+	"rank_vocab": 8,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 72.8,
 	"vocab_len": 3959,
@@ -118,9 +129,10 @@ var vocab_data = [{
 	"genre": "Rock / Pop rock / Hard rock[305]",
 	"start_yr": "1988[305]",
 	"total_sales": "80 million[306]",
-	"x_offset": 38,
+	"vocab_x_offset": 38,
 	"rank_sales": 34,
-	"rank_vocab": 9
+	"rank_vocab": 9,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 122,
 	"vocab_len": 3954,
@@ -132,9 +144,10 @@ var vocab_data = [{
 	"genre": "Pop[99]",
 	"start_yr": "1981[99]",
 	"total_sales": "200 million[104][105]",
-	"x_offset": -38,
+	"vocab_x_offset": -38,
 	"rank_sales": 12,
-	"rank_vocab": 10
+	"rank_vocab": 10,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 61.9,
 	"vocab_len": 3906,
@@ -146,8 +159,10 @@ var vocab_data = [{
 	"genre": "Funk / R&B / Pop / Soul / Rock[230]",
 	"start_yr": "1978[230]",
 	"total_sales": "100 million[233]",
+	"vocab_x_offset": 0,
 	"rank_sales": 43,
-	"rank_vocab": 11
+	"rank_vocab": 11,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 52.3,
 	"vocab_len": 3636,
@@ -159,9 +174,10 @@ var vocab_data = [{
 	"genre": "Funk rock / Alternative rock[314]",
 	"start_yr": "1987[314]",
 	"total_sales": "80 million[316]",
-	"x_offset": -70,
+	"vocab_x_offset": -70,
 	"rank_sales": 49,
-	"rank_vocab": 12
+	"rank_vocab": 12,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 39.5,
 	"vocab_len": 3497,
@@ -173,9 +189,10 @@ var vocab_data = [{
 	"genre": "Progressive rock / Pop rock[181]",
 	"start_yr": "1969[181]",
 	"total_sales": "130 million[182]",
-	"x_offset": 35,
+	"vocab_x_offset": 35,
 	"rank_sales": 71,
-	"rank_vocab": 13
+	"rank_vocab": 13,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 35.4,
 	"vocab_len": 3419,
@@ -187,8 +204,10 @@ var vocab_data = [{
 	"genre": "Latin / Dance / Pop[294]",
 	"start_yr": "1984[294]",
 	"total_sales": "90 million[295]",
+	"vocab_x_offset": 0,
 	"rank_sales": 77,
-	"rank_vocab": 14
+	"rank_vocab": 14,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 66,
 	"vocab_len": 3206,
@@ -200,9 +219,10 @@ var vocab_data = [{
 	"genre": "R&B / Pop[340]",
 	"start_yr": "2002[340][341]",
 	"total_sales": "75 million[345]",
-	"x_offset": -40,
+	"vocab_x_offset": -40,
 	"rank_sales": 41,
-	"rank_vocab": 15
+	"rank_vocab": 15,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 97.1,
 	"vocab_len": 3186,
@@ -214,9 +234,10 @@ var vocab_data = [{
 	"genre": "Pop / Adult contemporary[173]",
 	"start_yr": "1963[173]",
 	"total_sales": "145 million[174]",
-	"x_offset": 63,
+	"vocab_x_offset": 63,
 	"rank_sales": 21,
-	"rank_vocab": 16
+	"rank_vocab": 16,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 48.2,
 	"vocab_len": 3168,
@@ -228,9 +249,10 @@ var vocab_data = [{
 	"genre": "Pop rock[334]",
 	"start_yr": "1996[334]",
 	"total_sales": "77 million[335]",
-	"x_offset": -78,
+	"vocab_x_offset": -78,
 	"rank_sales": 55,
-	"rank_vocab": 17
+	"rank_vocab": 17,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 116.2,
 	"vocab_len": 3077,
@@ -242,9 +264,10 @@ var vocab_data = [{
 	"genre": "Progressive rock / Psychedelic rock[85]",
 	"start_yr": "1967[85]",
 	"total_sales": "250 million[88][89]",
-	"x_offset": 103,
+	"vocab_x_offset": 103,
 	"rank_sales": 13,
-	"rank_vocab": 18
+	"rank_vocab": 18,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 99.2,
 	"vocab_len": 3061,
@@ -256,9 +279,10 @@ var vocab_data = [{
 	"genre": "Pop / Rock[163]",
 	"start_yr": "1971[163]",
 	"total_sales": "150 million[165]",
-	"x_offset": 140,
+	"vocab_x_offset": 140,
 	"rank_sales": 20,
-	"rank_vocab": 19
+	"rank_vocab": 19,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 129.1,
 	"vocab_len": 3059,
@@ -270,9 +294,10 @@ var vocab_data = [{
 	"genre": "R&B / Pop / Soul / Hip-hop[92]",
 	"start_yr": "1990[92]",
 	"total_sales": "200 million[95][96]",
-	"x_offset": -113,
+	"vocab_x_offset": -113,
 	"rank_sales": 9,
-	"rank_vocab": 20
+	"rank_vocab": 20,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 41.6,
 	"vocab_len": 2974,
@@ -284,9 +309,10 @@ var vocab_data = [{
 	"genre": "Alternative rock[303]",
 	"start_yr": "1983[303]",
 	"total_sales": "85 million[304]",
-	"x_offset": -150,
+	"vocab_x_offset": -150,
 	"rank_sales": 66,
-	"rank_vocab": 21
+	"rank_vocab": 21,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 83,
 	"vocab_len": 2958,
@@ -298,9 +324,10 @@ var vocab_data = [{
 	"genre": "Hard rock[169]",
 	"start_yr": "1973[169]",
 	"total_sales": "150 million[170]",
-	"x_offset": 177,
+	"vocab_x_offset": 177,
 	"rank_sales": 26,
-	"rank_vocab": 22
+	"rank_vocab": 22,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 32.5,
 	"vocab_len": 2927,
@@ -312,9 +339,10 @@ var vocab_data = [{
 	"genre": "Rock / Folk / Country[276]",
 	"start_yr": "1968[276]",
 	"total_sales": "100 million[277]",
-	"x_offset": -403,
+	"vocab_x_offset": -403,
 	"rank_sales": 82,
-	"rank_vocab": 23
+	"rank_vocab": 23,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 166.6,
 	"vocab_len": 2918,
@@ -326,9 +354,10 @@ var vocab_data = [{
 	"genre": "Pop / Rock / Dance / Electronica[62]",
 	"start_yr": "1982[62]",
 	"total_sales": "300 million[66][67]",
-	"x_offset": 428,
+	"vocab_x_offset": 428,
 	"rank_sales": 4,
-	"rank_vocab": 24
+	"rank_vocab": 24,
+	"sales_x_offset": 32
 }, {
 	"certified_sales": 24.3,
 	"vocab_len": 2891,
@@ -340,9 +369,10 @@ var vocab_data = [{
 	"genre": "Rock / Pop[331]",
 	"start_yr": "1960[331]",
 	"total_sales": "80 million[333]",
-	"x_offset": -366,
+	"vocab_x_offset": -366,
 	"rank_sales": 91,
-	"rank_vocab": 25
+	"rank_vocab": 25,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 161.8,
 	"vocab_len": 2865,
@@ -354,9 +384,10 @@ var vocab_data = [{
 	"genre": "Pop / Rock[70]",
 	"start_yr": "1969[70]",
 	"total_sales": "300 million[72][73]",
-	"x_offset": 392,
+	"vocab_x_offset": 392,
 	"rank_sales": 5,
-	"rank_vocab": 26
+	"rank_vocab": 26,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 142.8,
 	"vocab_len": 2829,
@@ -368,9 +399,10 @@ var vocab_data = [{
 	"genre": "Country[149]",
 	"start_yr": "1989[149]",
 	"total_sales": "150 million[150]",
-	"x_offset": -330,
+	"vocab_x_offset": -330,
 	"rank_sales": 6,
-	"rank_vocab": 27
+	"rank_vocab": 27,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 76.1,
 	"vocab_len": 2808,
@@ -382,9 +414,10 @@ var vocab_data = [{
 	"genre": "Rock / Pop[216]",
 	"start_yr": "1969[216]",
 	"total_sales": "100 million[217]",
-	"x_offset": 355,
+	"vocab_x_offset": 355,
 	"rank_sales": 30,
-	"rank_vocab": 28
+	"rank_vocab": 28,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 90.2,
 	"vocab_len": 2797,
@@ -396,9 +429,10 @@ var vocab_data = [{
 	"genre": "Heavy metal / Thrash metal[202]",
 	"start_yr": "1983[202]",
 	"total_sales": "110 million[205]",
-	"x_offset": -293,
+	"vocab_x_offset": -293,
 	"rank_sales": 24,
-	"rank_vocab": 29
+	"rank_vocab": 29,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 94.7,
 	"vocab_len": 2794,
@@ -410,9 +444,10 @@ var vocab_data = [{
 	"genre": "Rock / Blues rock / Pop [126]",
 	"start_yr": "1963[126]",
 	"total_sales": "200 million[127][128]",
-	"x_offset": 318,
+	"vocab_x_offset": 318,
 	"rank_sales": 22,
-	"rank_vocab": 30
+	"rank_vocab": 30,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 61.2,
 	"vocab_len": 2755,
@@ -424,9 +459,10 @@ var vocab_data = [{
 	"genre": "Rock[290]",
 	"start_yr": "1969[290]",
 	"total_sales": "90 million[293]",
-	"x_offset": -255,
+	"vocab_x_offset": -255,
 	"rank_sales": 44,
-	"rank_vocab": 31
+	"rank_vocab": 31,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 57.8,
 	"vocab_len": 2742,
@@ -438,9 +474,10 @@ var vocab_data = [{
 	"genre": "Pop / Disco[129]",
 	"start_yr": "1972[129]",
 	"total_sales": "200 million[138][139]",
-	"x_offset": 280,
+	"vocab_x_offset": 280,
 	"rank_sales": 47,
-	"rank_vocab": 32
+	"rank_vocab": 32,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 37.1,
 	"vocab_len": 2725,
@@ -452,9 +489,10 @@ var vocab_data = [{
 	"genre": "Pop / Swing[171]",
 	"start_yr": "1939[171]",
 	"total_sales": "150 million[172]",
-	"x_offset": -218,
+	"vocab_x_offset": -218,
 	"rank_sales": 74,
-	"rank_vocab": 33
+	"rank_vocab": 33,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 39.9,
 	"vocab_len": 2716,
@@ -466,9 +504,10 @@ var vocab_data = [{
 	"genre": "Rock / Hard rock[323]",
 	"start_yr": "1977[323]",
 	"total_sales": "80 million[324]",
-	"x_offset": 243,
+	"vocab_x_offset": 243,
 	"rank_sales": 70,
-	"rank_vocab": 34
+	"rank_vocab": 34,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 102.6,
 	"vocab_len": 2708,
@@ -480,9 +519,10 @@ var vocab_data = [{
 	"genre": "Rock[159]",
 	"start_yr": "1980[159]",
 	"total_sales": "150 million[162]",
-	"x_offset": -180,
+	"vocab_x_offset": -180,
 	"rank_sales": 19,
-	"rank_vocab": 35
+	"rank_vocab": 35,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 103.9,
 	"vocab_len": 2668,
@@ -494,9 +534,10 @@ var vocab_data = [{
 	"genre": "Rock[120]",
 	"start_yr": "1973[120]",
 	"total_sales": "200 million[122][123]",
-	"x_offset": 205,
+	"vocab_x_offset": 205,
 	"rank_sales": 18,
-	"rank_vocab": 36
+	"rank_vocab": 36,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 46.3,
 	"vocab_len": 2535,
@@ -508,9 +549,10 @@ var vocab_data = [{
 	"genre": "Punk rock / Alternative rock[360]",
 	"start_yr": "1994[360]",
 	"total_sales": "75 million[362]",
-	"x_offset": -140,
+	"vocab_x_offset": -140,
 	"rank_sales": 57,
-	"rank_vocab": 37
+	"rank_vocab": 37,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 208.4,
 	"vocab_len": 2531,
@@ -522,9 +564,10 @@ var vocab_data = [{
 	"genre": "Rock and roll / Pop / Country[32]",
 	"start_yr": "1954[32]",
 	"total_sales": "600 million[41][42]\n",
-	"x_offset": 128,
+	"vocab_x_offset": 128,
 	"rank_sales": 2,
-	"rank_vocab": 38
+	"rank_vocab": 38,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 63.8,
 	"vocab_len": 2530,
@@ -536,9 +579,10 @@ var vocab_data = [{
 	"genre": "Hard rock / Heavy metal[310]",
 	"start_yr": "1978[310]",
 	"total_sales": "80 million[311]",
-	"x_offset": -102,
+	"vocab_x_offset": -102,
 	"rank_sales": 42,
-	"rank_vocab": 39
+	"rank_vocab": 39,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 130.4,
 	"vocab_len": 2524,
@@ -550,9 +594,10 @@ var vocab_data = [{
 	"genre": "Country / Country pop / Pop / Pop-rock[175]",
 	"start_yr": "2006[175]",
 	"total_sales": "140 million[180]",
-	"x_offset": 167,
+	"vocab_x_offset": 167,
 	"rank_sales": 8,
-	"rank_vocab": 40
+	"rank_vocab": 40,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 106.9,
 	"vocab_len": 2519,
@@ -564,9 +609,10 @@ var vocab_data = [{
 	"genre": "Pop / Rock[288]",
 	"start_yr": "2008[288]",
 	"total_sales": "92 million[289]",
-	"x_offset": -65,
+	"vocab_x_offset": -65,
 	"rank_sales": 17,
-	"rank_vocab": 41
+	"rank_vocab": 41,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 175.4,
 	"vocab_len": 2503,
@@ -578,9 +624,10 @@ var vocab_data = [{
 	"genre": "Pop / Rock / Dance / Soul / R&B[44]",
 	"start_yr": "1971[44]",
 	"total_sales": "400 million[57][58]",
-	"x_offset": 90,
+	"vocab_x_offset": 90,
 	"rank_sales": 3,
-	"rank_vocab": 42
+	"rank_vocab": 42,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 74.4,
 	"vocab_len": 2498,
@@ -592,9 +639,10 @@ var vocab_data = [{
 	"genre": "Pop / Dance / Electronic/ Rock[312]",
 	"start_yr": "2008[312]",
 	"total_sales": "80 million[313]",
-	"x_offset": 52,
+	"vocab_x_offset": 52,
 	"rank_sales": 31,
-	"rank_vocab": 43
+	"rank_vocab": 43,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 51,
 	"vocab_len": 2483,
@@ -606,9 +654,10 @@ var vocab_data = [{
 	"genre": "R&B / Pop[244]",
 	"start_yr": "1982[244]",
 	"total_sales": "100 million[245]",
-	"x_offset": 15,
+	"vocab_x_offset": 15,
 	"rank_sales": 52,
-	"rank_vocab": 44
+	"rank_vocab": 44,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 69.2,
 	"vocab_len": 2469,
@@ -620,9 +669,10 @@ var vocab_data = [{
 	"genre": "Hard rock / Heavy metal[227]",
 	"start_yr": "1987[227]",
 	"total_sales": "100 million[229]",
-	"x_offset": -27,
+	"vocab_x_offset": -27,
 	"rank_sales": 38,
-	"rank_vocab": 45
+	"rank_vocab": 45,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 36.5,
 	"vocab_len": 2451,
@@ -634,9 +684,10 @@ var vocab_data = [{
 	"genre": "Pop / Soft rock[325]",
 	"start_yr": "1973[325]",
 	"total_sales": "80 million[326]",
-	"x_offset": -350,
+	"vocab_x_offset": -350,
 	"rank_sales": 75,
-	"rank_vocab": 46
+	"rank_vocab": 46,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 58.8,
 	"vocab_len": 2433,
@@ -648,9 +699,10 @@ var vocab_data = [{
 	"genre": "Country / Pop[234]",
 	"start_yr": "1975[234]",
 	"total_sales": "100 million[236]",
-	"x_offset": 285,
+	"vocab_x_offset": 285,
 	"rank_sales": 45,
-	"rank_vocab": 47
+	"rank_vocab": 47,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 47.5,
 	"vocab_len": 2432,
@@ -662,9 +714,10 @@ var vocab_data = [{
 	"genre": "Country / Pop rock[358]",
 	"start_yr": "1980[358]",
 	"total_sales": "75 million[359]",
-	"x_offset": 253,
+	"vocab_x_offset": 253,
 	"rank_sales": 56,
-	"rank_vocab": 48
+	"rank_vocab": 48,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 126.1,
 	"vocab_len": 2400,
@@ -676,9 +729,10 @@ var vocab_data = [{
 	"genre": "R&B / Pop / Dance / Hip-hop[154]",
 	"start_yr": "2005[154]",
 	"total_sales": "150 million[158]",
-	"x_offset": -170,
+	"vocab_x_offset": -170,
 	"rank_sales": 11,
-	"rank_vocab": 49
+	"rank_vocab": 49,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 27.6,
 	"vocab_len": 2343,
@@ -690,9 +744,10 @@ var vocab_data = [{
 	"genre": "Glam metal[384]",
 	"start_yr": "1983[384]",
 	"total_sales": "75 million[385]",
-	"x_offset": 196,
+	"vocab_x_offset": 196,
 	"rank_sales": 86,
-	"rank_vocab": 50
+	"rank_vocab": 50,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 80.5,
 	"vocab_len": 2318,
@@ -704,9 +759,10 @@ var vocab_data = [{
 	"genre": "Hard rock / Glam metal[206]",
 	"start_yr": "1983[206]",
 	"total_sales": "100 million[209]",
-	"x_offset": -202,
+	"vocab_x_offset": -202,
 	"rank_sales": 27,
-	"rank_vocab": 51
+	"rank_vocab": 51,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 32.1,
 	"vocab_len": 2280,
@@ -718,9 +774,10 @@ var vocab_data = [{
 	"genre": "Rock / Pop[278]",
 	"start_yr": "1975[278]",
 	"total_sales": "100 million[279]",
-	"x_offset": -385,
+	"vocab_x_offset": -385,
 	"rank_sales": 83,
-	"rank_vocab": 52
+	"rank_vocab": 52,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 42.9,
 	"vocab_len": 2272,
@@ -732,9 +789,10 @@ var vocab_data = [{
 	"genre": "Rock / Pop[200]",
 	"start_yr": "1978[200]",
 	"total_sales": "120 million[201]",
-	"x_offset": -295,
+	"vocab_x_offset": -295,
 	"rank_sales": 64,
-	"rank_vocab": 53
+	"rank_vocab": 53,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 72.8,
 	"vocab_len": 2250,
@@ -746,9 +804,10 @@ var vocab_data = [{
 	"genre": "Country[222]",
 	"start_yr": "1984[222]",
 	"total_sales": "100 million[223]",
-	"x_offset": 227,
+	"vocab_x_offset": 227,
 	"rank_sales": 33,
-	"rank_vocab": 54
+	"rank_vocab": 54,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 127.9,
 	"vocab_len": 2201,
@@ -760,9 +819,10 @@ var vocab_data = [{
 	"genre": "Rock[151]",
 	"start_yr": "1972[151]",
 	"total_sales": "150 million[153]",
-	"x_offset": 310,
+	"vocab_x_offset": 310,
 	"rank_sales": 10,
-	"rank_vocab": 55
+	"rank_vocab": 55,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 67.1,
 	"vocab_len": 2193,
@@ -774,9 +834,10 @@ var vocab_data = [{
 	"genre": "Pop / Rock[183]",
 	"start_yr": "1966[183]",
 	"total_sales": "125 million[184]",
-	"x_offset": -422,
+	"vocab_x_offset": -422,
 	"rank_sales": 40,
-	"rank_vocab": 56
+	"rank_vocab": 56,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 42.2,
 	"vocab_len": 2178,
@@ -788,9 +849,10 @@ var vocab_data = [{
 	"genre": "Country / Country Pop[321]",
 	"start_yr": "1987[321]",
 	"total_sales": "80 million[322]",
-	"x_offset": -232,
+	"vocab_x_offset": -232,
 	"rank_sales": 65,
-	"rank_vocab": 57
+	"rank_vocab": 57,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 40.4,
 	"vocab_len": 2163,
@@ -802,9 +864,10 @@ var vocab_data = [{
 	"genre": "Pop / Rock / Dance / Folk[264]",
 	"start_yr": "1965[264]",
 	"total_sales": "100 million[268]",
-	"x_offset": 342,
+	"vocab_x_offset": 342,
 	"rank_sales": 68,
-	"rank_vocab": 58
+	"rank_vocab": 58,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 77.1,
 	"vocab_len": 2141,
@@ -816,9 +879,10 @@ var vocab_data = [{
 	"genre": "Pop / Dance / Dance-pop[212]",
 	"start_yr": "1998[212]",
 	"total_sales": "100 million[215]",
-	"x_offset": -263,
+	"vocab_x_offset": -263,
 	"rank_sales": 29,
-	"rank_vocab": 59
+	"rank_vocab": 59,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 34.9,
 	"vocab_len": 2114,
@@ -830,9 +894,10 @@ var vocab_data = [{
 	"genre": "Funk / R&B / Soul[296]",
 	"start_yr": "1971[296]",
 	"total_sales": "90 million[299]",
-	"x_offset": 374,
+	"vocab_x_offset": 374,
 	"rank_sales": 78,
-	"rank_vocab": 60
+	"rank_vocab": 60,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 45.9,
 	"vocab_len": 2109,
@@ -844,9 +909,10 @@ var vocab_data = [{
 	"genre": "Pop[250]",
 	"start_yr": "1969[250]",
 	"total_sales": "100 million[252]",
-	"x_offset": 38,
+	"vocab_x_offset": 38,
 	"rank_sales": 59,
-	"rank_vocab": 61
+	"rank_vocab": 61,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 138.5,
 	"vocab_len": 2077,
@@ -858,9 +924,10 @@ var vocab_data = [{
 	"genre": "Hard rock / Heavy metal[76]",
 	"start_yr": "1969[76]",
 	"total_sales": "300 million[81][82]",
-	"x_offset": -460,
+	"vocab_x_offset": -460,
 	"rank_sales": 7,
-	"rank_vocab": 62
+	"rank_vocab": 62,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 43.1,
 	"vocab_len": 2055,
@@ -872,9 +939,10 @@ var vocab_data = [{
 	"genre": "Rock[257]",
 	"start_yr": "1979[257]",
 	"total_sales": "100 million[258]",
-	"x_offset": 406,
+	"vocab_x_offset": 406,
 	"rank_sales": 63,
-	"rank_vocab": 63
+	"rank_vocab": 63,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 24.5,
 	"vocab_len": 2037,
@@ -886,9 +954,10 @@ var vocab_data = [{
 	"genre": "Soul / Jazz / Blues / R&B[390]",
 	"start_yr": "1961[390]",
 	"total_sales": "75 million[391]",
-	"x_offset": 5,
+	"vocab_x_offset": 5,
 	"rank_sales": 90,
-	"rank_vocab": 64
+	"rank_vocab": 64,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 34.4,
 	"vocab_len": 2030,
@@ -900,9 +969,10 @@ var vocab_data = [{
 	"genre": "Rock[327]",
 	"start_yr": "1977[327]",
 	"total_sales": "80 million[328]",
-	"x_offset": 500,
+	"vocab_x_offset": 500,
 	"rank_sales": 80,
-	"rank_vocab": 65
+	"rank_vocab": 65,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 34.7,
 	"vocab_len": 2015,
@@ -914,9 +984,10 @@ var vocab_data = [{
 	"genre": "Pop[272]",
 	"start_yr": "1966[272]",
 	"total_sales": "100 million[273]",
-	"x_offset": -27,
+	"vocab_x_offset": -27,
 	"rank_sales": 79,
-	"rank_vocab": 66
+	"rank_vocab": 66,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 30.8,
 	"vocab_len": 1999,
@@ -928,9 +999,10 @@ var vocab_data = [{
 	"genre": "Pop / Disco / R&B[280]",
 	"start_yr": "1974[280]",
 	"total_sales": "100 million[281]",
-	"x_offset": 70,
+	"vocab_x_offset": 70,
 	"rank_sales": 84,
-	"rank_vocab": 67
+	"rank_vocab": 67,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 43.5,
 	"vocab_len": 1975,
@@ -942,9 +1014,10 @@ var vocab_data = [{
 	"genre": "Pop[255]",
 	"start_yr": "1984[255]",
 	"total_sales": "100 million[256]",
-	"x_offset": -60,
+	"vocab_x_offset": -60,
 	"rank_sales": 62,
-	"rank_vocab": 68
+	"rank_vocab": 68,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 18.9,
 	"vocab_len": 1954,
@@ -956,9 +1029,10 @@ var vocab_data = [{
 	"genre": "Hard rock[392]",
 	"start_yr": "1978[392]",
 	"total_sales": "75 million[393]",
-	"x_offset": 97,
+	"vocab_x_offset": 97,
 	"rank_sales": 93,
-	"rank_vocab": 69
+	"rank_vocab": 69,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 26.8,
 	"vocab_len": 1921,
@@ -970,9 +1044,10 @@ var vocab_data = [{
 	"genre": "Hard rock / Heavy metal[386]",
 	"start_yr": "1974[386]",
 	"total_sales": "75 million[387]",
-	"x_offset": -96,
+	"vocab_x_offset": -96,
 	"rank_sales": 87,
-	"rank_vocab": 70
+	"rank_vocab": 70,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 57.9,
 	"vocab_len": 1903,
@@ -984,9 +1059,10 @@ var vocab_data = [{
 	"genre": "Rock[237]",
 	"start_yr": "1970[237]",
 	"total_sales": "100 million[243]",
-	"x_offset": 130,
+	"vocab_x_offset": 130,
 	"rank_sales": 46,
-	"rank_vocab": 71
+	"rank_vocab": 71,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 111.3,
 	"vocab_len": 1890,
@@ -998,9 +1074,10 @@ var vocab_data = [{
 	"genre": "R&B / Soul / Pop[108]",
 	"start_yr": "1984[108]",
 	"total_sales": "200 million[111][112]",
-	"x_offset": -133,
+	"vocab_x_offset": -133,
 	"rank_sales": 16,
-	"rank_vocab": 72
+	"rank_vocab": 72,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 38.2,
 	"vocab_len": 1885,
@@ -1012,9 +1089,10 @@ var vocab_data = [{
 	"genre": "Pop / Rock[372]",
 	"start_yr": "1978[372]",
 	"total_sales": "75 million[376]",
-	"x_offset": 465,
+	"vocab_x_offset": 465,
 	"rank_sales": 72,
-	"rank_vocab": 73
+	"rank_vocab": 73,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 26.3,
 	"vocab_len": 1884,
@@ -1026,9 +1104,10 @@ var vocab_data = [{
 	"genre": "Synth rock / Electronic[388]",
 	"start_yr": "1981[388]",
 	"total_sales": "75 million[389]",
-	"x_offset": 167,
+	"vocab_x_offset": 167,
 	"rank_sales": 88,
-	"rank_vocab": 74
+	"rank_vocab": 74,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 67.3,
 	"vocab_len": 1882,
@@ -1040,9 +1119,10 @@ var vocab_data = [{
 	"genre": "Pop / Disco[193]",
 	"start_yr": "1963[193]",
 	"total_sales": "120 million[196]",
-	"x_offset": -170,
+	"vocab_x_offset": -170,
 	"rank_sales": 39,
-	"rank_vocab": 75
+	"rank_vocab": 75,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 264.9,
 	"vocab_len": 1872,
@@ -1054,9 +1134,10 @@ var vocab_data = [{
 	"genre": "Rock / Pop[5]",
 	"start_yr": "1962[5]",
 	"total_sales": "600 million[30][31]",
-	"x_offset": 204,
+	"vocab_x_offset": 204,
 	"rank_sales": 1,
-	"rank_vocab": 76
+	"rank_vocab": 76,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 48.7,
 	"vocab_len": 1869,
@@ -1068,9 +1149,10 @@ var vocab_data = [{
 	"genre": "New-age / Celtic[353]",
 	"start_yr": "1987[353]",
 	"total_sales": "75 million[357]",
-	"x_offset": -206,
+	"vocab_x_offset": -206,
 	"rank_sales": 54,
-	"rank_vocab": 77
+	"rank_vocab": 77,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 36,
 	"vocab_len": 1867,
@@ -1082,9 +1164,10 @@ var vocab_data = [{
 	"genre": "Reggae[379]",
 	"start_yr": "1975[379]",
 	"total_sales": "75 million[383]",
-	"x_offset": 240,
+	"vocab_x_offset": 240,
 	"rank_sales": 76,
-	"rank_vocab": 78
+	"rank_vocab": 78,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 33.8,
 	"vocab_len": 1863,
@@ -1096,9 +1179,10 @@ var vocab_data = [{
 	"genre": "Funk / R&B / Soul[274]",
 	"start_yr": "1962[274]",
 	"total_sales": "100 million[275]",
-	"x_offset": -243,
+	"vocab_x_offset": -243,
 	"rank_sales": 81,
-	"rank_vocab": 79
+	"rank_vocab": 79,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 70.9,
 	"vocab_len": 1855,
@@ -1110,9 +1194,10 @@ var vocab_data = [{
 	"genre": "Pop[224]",
 	"start_yr": "1995[224]",
 	"total_sales": "100 million[226]",
-	"x_offset": 278,
+	"vocab_x_offset": 278,
 	"rank_sales": 37,
-	"rank_vocab": 80
+	"rank_vocab": 80,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 73.7,
 	"vocab_len": 1850,
@@ -1124,9 +1209,10 @@ var vocab_data = [{
 	"genre": "Rock / Pop[218]",
 	"start_yr": "1968[218]",
 	"total_sales": "100 million[221]",
-	"x_offset": -280,
+	"vocab_x_offset": -280,
 	"rank_sales": 32,
-	"rank_vocab": 81
+	"rank_vocab": 81,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 85.5,
 	"vocab_len": 1848,
@@ -1138,9 +1224,10 @@ var vocab_data = [{
 	"genre": "Rock / Progressive rock / Adult contemporary[166]",
 	"start_yr": "1981[166]",
 	"total_sales": "150 million[168]",
-	"x_offset": 314,
+	"vocab_x_offset": 314,
 	"rank_sales": 25,
-	"rank_vocab": 82
+	"rank_vocab": 82,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 43.9,
 	"vocab_len": 1835,
@@ -1152,9 +1239,10 @@ var vocab_data = [{
 	"genre": "Grunge / Alternative rock[365]",
 	"start_yr": "1989[365]",
 	"total_sales": "75 million[368]",
-	"x_offset": -316,
+	"vocab_x_offset": -316,
 	"rank_sales": 60,
-	"rank_vocab": 83
+	"rank_vocab": 83,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 30.2,
 	"vocab_len": 1802,
@@ -1166,9 +1254,10 @@ var vocab_data = [{
 	"genre": "Teen pop[329]",
 	"start_yr": "1986[329]",
 	"total_sales": "80 million[330]",
-	"x_offset": 350,
+	"vocab_x_offset": 350,
 	"rank_sales": 85,
-	"rank_vocab": 84
+	"rank_vocab": 84,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 72.6,
 	"vocab_len": 1801,
@@ -1180,9 +1269,10 @@ var vocab_data = [{
 	"genre": "Country pop[300]",
 	"start_yr": "1993[300]",
 	"total_sales": "85 million[302]",
-	"x_offset": -352,
+	"vocab_x_offset": -352,
 	"rank_sales": 35,
-	"rank_vocab": 85
+	"rank_vocab": 85,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 25.3,
 	"vocab_len": 1794,
@@ -1194,9 +1284,10 @@ var vocab_data = [{
 	"genre": "Rock / Hard rock[284]",
 	"start_yr": "1965[284]",
 	"total_sales": "100 million[285]",
-	"x_offset": 388,
+	"vocab_x_offset": 388,
 	"rank_sales": 89,
-	"rank_vocab": 86
+	"rank_vocab": 86,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 111.5,
 	"vocab_len": 1788,
@@ -1208,9 +1299,10 @@ var vocab_data = [{
 	"genre": "Hard rock / Blues rock / Rock and roll[115]",
 	"start_yr": "1975[115]",
 	"total_sales": "200 million[116][117]",
-	"x_offset": -390,
+	"vocab_x_offset": -390,
 	"rank_sales": 15,
-	"rank_vocab": 87
+	"rank_vocab": 87,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 21.7,
 	"vocab_len": 1731,
@@ -1222,9 +1314,10 @@ var vocab_data = [{
 	"genre": "R&B / Soul[286]",
 	"start_yr": "1973[286]",
 	"total_sales": "100 million[287]",
-	"x_offset": 426,
+	"vocab_x_offset": 426,
 	"rank_sales": 92,
-	"rank_vocab": 88
+	"rank_vocab": 88,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 49.1,
 	"vocab_len": 1723,
@@ -1236,9 +1329,10 @@ var vocab_data = [{
 	"genre": "Rock / Hard Rock[317]",
 	"start_yr": "1977[317]",
 	"total_sales": "80 million[318]",
-	"x_offset": -428,
+	"vocab_x_offset": -428,
 	"rank_sales": 53,
-	"rank_vocab": 89
+	"rank_vocab": 89,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 40,
 	"vocab_len": 1699,
@@ -1250,9 +1344,10 @@ var vocab_data = [{
 	"genre": "Pop / R&B[269]",
 	"start_yr": "1981[269]",
 	"total_sales": "100 million[271]",
-	"x_offset": -465,
+	"vocab_x_offset": -465,
 	"rank_sales": 69,
-	"rank_vocab": 90
+	"rank_vocab": 90,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 41.1,
 	"vocab_len": 1497,
@@ -1264,9 +1359,10 @@ var vocab_data = [{
 	"genre": "Pop / Dance-pop[369]",
 	"start_yr": "1996[369]",
 	"total_sales": "75 million[371]",
-	"x_offset": -492,
+	"vocab_x_offset": -492,
 	"rank_sales": 67,
-	"rank_vocab": 91
+	"rank_vocab": 91,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 72.1,
 	"vocab_len": 1489,
@@ -1278,9 +1374,10 @@ var vocab_data = [{
 	"genre": "Pop rock / R&B[307]",
 	"start_yr": "2010[307]",
 	"total_sales": "80 million[309]",
-	"x_offset": 490,
+	"vocab_x_offset": 490,
 	"rank_sales": 36,
-	"rank_vocab": 92
+	"rank_vocab": 92,
+	"sales_x_offset": 0
 }, {
 	"certified_sales": 52,
 	"vocab_len": 809,
@@ -1292,6 +1389,8 @@ var vocab_data = [{
 	"genre": "Smooth jazz[351]",
 	"start_yr": "1984[351]",
 	"total_sales": "75 million[352]",
+	"vocab_x_offset": 0,
 	"rank_sales": 50,
-	"rank_vocab": 93
+	"rank_vocab": 93,
+	"sales_x_offset": 0
 }];
