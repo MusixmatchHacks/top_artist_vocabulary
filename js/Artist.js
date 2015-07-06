@@ -89,13 +89,13 @@
 				console.log(initialPos);
 			this.$artist.on('click', function() {
 				if (that.toolTipStatus === 'COMPACT') {
-					$('.tipsy').animate({top : '-=55'}, 400, 'easeOutBack', function() {
+					$('.tipsy').animate({top : '-=67'}, 400, 'easeOutQuint', function() {
 						$('.tipsy-inner').html(that.tooltipExpandedContent);
 					});
 					that.toolTipStatus = 'EXPANDED';
 				} else { // Tooltip status is expanded
 					$('.tipsy-inner').html(that.tooltipOriginalContent);
-					$('.tipsy').animate({top : '+=55'}, 200, 'easeOutBack');
+					$('.tipsy').animate({top : '+=67'}, 200, 'easeOutBack');
 					that.toolTipStatus = 'COMPACT';
 				}
 			});

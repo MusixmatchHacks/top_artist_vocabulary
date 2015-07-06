@@ -109,9 +109,26 @@ input#locateArtist {
   clear: both; }
 
 .extraInfo {
-  margin-top: 10px;
   text-align: left;
-  padding: 5px; }
+  margin: 10px -5px 0px -5px; }
+
+.ttInfoSection {
+  height: auto;
+  width: auto;
+  padding: 3px;
+  text-align: center;
+  color: white;
+  border-radius: 1px;
+  margin-bottom: 5px; }
+
+.ttInfoSection:last-child {
+  margin-bottom: 0px; }
+
+#ttSales {
+  background-color: #2A61FF; }
+
+#ttLearningRate {
+  background-color: #42A146; }
 
 .rankContainer {
   width: 30%;

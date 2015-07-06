@@ -10,7 +10,7 @@
   /*.tipsy-inner:after {display : table;  content : ''; clear : both;}*/
 
   /* Rounded corners */
-  .tipsy-inner { border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; }
+  .tipsy-inner { border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
   
   /* Uncomment for shadow */
   .tipsy-inner { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
