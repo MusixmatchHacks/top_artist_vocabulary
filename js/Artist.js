@@ -49,7 +49,8 @@
 			.replace(/{{vocab}}/i, window.VocabPlot.formatWithCommas(this.data.vocab_len))
 			.replace(/{{total}}/i, this.numArtists)
 			.replace(/{{sales}}/i, this.data.certified_sales)
-			.replace(/{{rank_sales}}/i, this.data.rank_sales);
+			.replace(/{{rank_sales}}/i, this.data.rank_sales)
+			.replace(/{{learning_rate}}/i, Math.ceil(this.data.learning_rate));
 
 
 		// Initialize events 

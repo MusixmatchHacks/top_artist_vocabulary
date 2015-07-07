@@ -12,7 +12,8 @@ var vocab_data = [{
 	"vocab_x_offset": 0,
 	"rank_sales": 14,
 	"rank_vocab": 1,
-	"sales_x_offset": 66
+	"sales_x_offset": 66,
+	"learning_rate": 11.550011340440008
 }, {
 	"certified_sales": 79.8,
 	"vocab_len": 6899,
@@ -27,7 +28,8 @@ var vocab_data = [{
 	"vocab_x_offset": 0,
 	"rank_sales": 28,
 	"rank_vocab": 2,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.891868386722713
 }, {
 	"certified_sales": 46.2,
 	"vocab_len": 6569,
@@ -42,7 +44,8 @@ var vocab_data = [{
 	"vocab_x_offset": 35,
 	"rank_sales": 58,
 	"rank_vocab": 3,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.298980057847466
 }, {
 	"certified_sales": 94.1,
 	"vocab_len": 5069,
@@ -57,7 +60,8 @@ var vocab_data = [{
 	"vocab_x_offset": 0,
 	"rank_sales": 23,
 	"rank_vocab": 4,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.403827184849083
 }, {
 	"certified_sales": 43.6,
 	"vocab_len": 4883,
@@ -72,7 +76,8 @@ var vocab_data = [{
 	"vocab_x_offset": -35,
 	"rank_sales": 61,
 	"rank_vocab": 5,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 9.138849068195782
 }, {
 	"certified_sales": 54,
 	"vocab_len": 4539,
@@ -87,7 +92,8 @@ var vocab_data = [{
 	"vocab_x_offset": 17,
 	"rank_sales": 48,
 	"rank_vocab": 6,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 13.55606961885878
 }, {
 	"certified_sales": 51,
 	"vocab_len": 4323,
@@ -102,7 +108,8 @@ var vocab_data = [{
 	"vocab_x_offset": -55,
 	"rank_sales": 51,
 	"rank_vocab": 7,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 6.673143650242887
 }, {
 	"certified_sales": 37.4,
 	"vocab_len": 4306,
@@ -117,7 +124,8 @@ var vocab_data = [{
 	"vocab_x_offset": -15,
 	"rank_sales": 73,
 	"rank_vocab": 8,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 5.7152810032512775
 }, {
 	"certified_sales": 72.8,
 	"vocab_len": 3959,
@@ -132,7 +140,8 @@ var vocab_data = [{
 	"vocab_x_offset": 38,
 	"rank_sales": 34,
 	"rank_vocab": 9,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 4.316746653195251
 }, {
 	"certified_sales": 122,
 	"vocab_len": 3954,
@@ -147,7 +156,8 @@ var vocab_data = [{
 	"vocab_x_offset": -38,
 	"rank_sales": 12,
 	"rank_vocab": 10,
-	"sales_x_offset": 98
+	"sales_x_offset": 98,
+	"learning_rate": 10.616337885685383
 }, {
 	"certified_sales": 61.9,
 	"vocab_len": 3906,
@@ -162,7 +172,8 @@ var vocab_data = [{
 	"vocab_x_offset": 0,
 	"rank_sales": 43,
 	"rank_vocab": 11,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.790322580645162
 }, {
 	"certified_sales": 52.3,
 	"vocab_len": 3636,
@@ -177,7 +188,8 @@ var vocab_data = [{
 	"vocab_x_offset": -70,
 	"rank_sales": 49,
 	"rank_vocab": 12,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 9.946644664466447
 }, {
 	"certified_sales": 39.5,
 	"vocab_len": 3497,
@@ -192,7 +204,8 @@ var vocab_data = [{
 	"vocab_x_offset": 35,
 	"rank_sales": 71,
 	"rank_vocab": 13,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.19502430654847
 }, {
 	"certified_sales": 35.4,
 	"vocab_len": 3419,
@@ -207,7 +220,8 @@ var vocab_data = [{
 	"vocab_x_offset": 0,
 	"rank_sales": 77,
 	"rank_vocab": 14,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.714828897338403
 }, {
 	"certified_sales": 66,
 	"vocab_len": 3206,
@@ -222,7 +236,8 @@ var vocab_data = [{
 	"vocab_x_offset": -40,
 	"rank_sales": 41,
 	"rank_vocab": 15,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 16.857142857142858
 }, {
 	"certified_sales": 97.1,
 	"vocab_len": 3186,
@@ -237,7 +252,8 @@ var vocab_data = [{
 	"vocab_x_offset": 63,
 	"rank_sales": 21,
 	"rank_vocab": 16,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.654111738857502
 }, {
 	"certified_sales": 48.2,
 	"vocab_len": 3168,
@@ -252,7 +268,8 @@ var vocab_data = [{
 	"vocab_x_offset": -78,
 	"rank_sales": 55,
 	"rank_vocab": 17,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.066919191919192
 }, {
 	"certified_sales": 116.2,
 	"vocab_len": 3077,
@@ -267,7 +284,8 @@ var vocab_data = [{
 	"vocab_x_offset": 103,
 	"rank_sales": 13,
 	"rank_vocab": 18,
-	"sales_x_offset": -95
+	"sales_x_offset": -95,
+	"learning_rate": 5.726681832954176
 }, {
 	"certified_sales": 99.2,
 	"vocab_len": 3061,
@@ -282,7 +300,8 @@ var vocab_data = [{
 	"vocab_x_offset": 140,
 	"rank_sales": 20,
 	"rank_vocab": 19,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.416857236197322
 }, {
 	"certified_sales": 129.1,
 	"vocab_len": 3059,
@@ -297,7 +316,8 @@ var vocab_data = [{
 	"vocab_x_offset": -113,
 	"rank_sales": 9,
 	"rank_vocab": 20,
-	"sales_x_offset": 65
+	"sales_x_offset": 65,
+	"learning_rate": 16.447531873161164
 }, {
 	"certified_sales": 41.6,
 	"vocab_len": 2974,
@@ -312,7 +332,8 @@ var vocab_data = [{
 	"vocab_x_offset": -150,
 	"rank_sales": 66,
 	"rank_vocab": 21,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 9.741089441829187
 }, {
 	"certified_sales": 83,
 	"vocab_len": 2958,
@@ -327,7 +348,8 @@ var vocab_data = [{
 	"vocab_x_offset": 177,
 	"rank_sales": 26,
 	"rank_vocab": 22,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.510480054090602
 }, {
 	"certified_sales": 32.5,
 	"vocab_len": 2927,
@@ -342,7 +364,8 @@ var vocab_data = [{
 	"vocab_x_offset": -403,
 	"rank_sales": 82,
 	"rank_vocab": 23,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 8.400751622822002
 }, {
 	"certified_sales": 166.6,
 	"vocab_len": 2918,
@@ -357,7 +380,8 @@ var vocab_data = [{
 	"vocab_x_offset": 428,
 	"rank_sales": 4,
 	"rank_vocab": 24,
-	"sales_x_offset": 35
+	"sales_x_offset": 35,
+	"learning_rate": 16.09561343385881
 }, {
 	"certified_sales": 24.3,
 	"vocab_len": 2891,
@@ -372,7 +396,8 @@ var vocab_data = [{
 	"vocab_x_offset": -366,
 	"rank_sales": 91,
 	"rank_vocab": 25,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.103078519543411
 }, {
 	"certified_sales": 161.8,
 	"vocab_len": 2865,
@@ -387,7 +412,8 @@ var vocab_data = [{
 	"vocab_x_offset": 392,
 	"rank_sales": 5,
 	"rank_vocab": 26,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.222687609075043
 }, {
 	"certified_sales": 142.8,
 	"vocab_len": 2829,
@@ -402,7 +428,8 @@ var vocab_data = [{
 	"vocab_x_offset": -330,
 	"rank_sales": 6,
 	"rank_vocab": 27,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.040650406504065
 }, {
 	"certified_sales": 76.1,
 	"vocab_len": 2808,
@@ -417,7 +444,8 @@ var vocab_data = [{
 	"vocab_x_offset": 355,
 	"rank_sales": 30,
 	"rank_vocab": 28,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.624643874643874
 }, {
 	"certified_sales": 90.2,
 	"vocab_len": 2797,
@@ -432,7 +460,8 @@ var vocab_data = [{
 	"vocab_x_offset": -293,
 	"rank_sales": 24,
 	"rank_vocab": 29,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.133714694315337
 }, {
 	"certified_sales": 94.7,
 	"vocab_len": 2794,
@@ -447,7 +476,8 @@ var vocab_data = [{
 	"vocab_x_offset": 318,
 	"rank_sales": 22,
 	"rank_vocab": 30,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.559413027916966
 }, {
 	"certified_sales": 61.2,
 	"vocab_len": 2755,
@@ -462,7 +492,8 @@ var vocab_data = [{
 	"vocab_x_offset": -255,
 	"rank_sales": 44,
 	"rank_vocab": 31,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 8.680943738656987
 }, {
 	"certified_sales": 57.8,
 	"vocab_len": 2742,
@@ -477,7 +508,8 @@ var vocab_data = [{
 	"vocab_x_offset": 280,
 	"rank_sales": 47,
 	"rank_vocab": 32,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.966812545587162
 }, {
 	"certified_sales": 37.1,
 	"vocab_len": 2725,
@@ -492,7 +524,8 @@ var vocab_data = [{
 	"vocab_x_offset": -218,
 	"rank_sales": 74,
 	"rank_vocab": 33,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 8.748256880733946
 }, {
 	"certified_sales": 39.9,
 	"vocab_len": 2716,
@@ -507,7 +540,8 @@ var vocab_data = [{
 	"vocab_x_offset": 243,
 	"rank_sales": 70,
 	"rank_vocab": 34,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 16.123711340206185
 }, {
 	"certified_sales": 102.6,
 	"vocab_len": 2708,
@@ -522,7 +556,8 @@ var vocab_data = [{
 	"vocab_x_offset": -180,
 	"rank_sales": 19,
 	"rank_vocab": 35,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.926883308714919
 }, {
 	"certified_sales": 103.9,
 	"vocab_len": 2668,
@@ -537,7 +572,8 @@ var vocab_data = [{
 	"vocab_x_offset": 205,
 	"rank_sales": 18,
 	"rank_vocab": 36,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.896176911544227
 }, {
 	"certified_sales": 46.3,
 	"vocab_len": 2535,
@@ -552,7 +588,8 @@ var vocab_data = [{
 	"vocab_x_offset": -140,
 	"rank_sales": 57,
 	"rank_vocab": 37,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.850887573964497
 }, {
 	"certified_sales": 208.4,
 	"vocab_len": 2531,
@@ -567,7 +604,8 @@ var vocab_data = [{
 	"vocab_x_offset": 128,
 	"rank_sales": 2,
 	"rank_vocab": 38,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.255630185697353
 }, {
 	"certified_sales": 63.8,
 	"vocab_len": 2530,
@@ -582,7 +620,8 @@ var vocab_data = [{
 	"vocab_x_offset": -102,
 	"rank_sales": 42,
 	"rank_vocab": 39,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.315415019762845
 }, {
 	"certified_sales": 130.4,
 	"vocab_len": 2524,
@@ -597,7 +636,8 @@ var vocab_data = [{
 	"vocab_x_offset": 167,
 	"rank_sales": 8,
 	"rank_vocab": 40,
-	"sales_x_offset": -37
+	"sales_x_offset": -37,
+	"learning_rate": 14.670364500792394
 }, {
 	"certified_sales": 106.9,
 	"vocab_len": 2519,
@@ -612,7 +652,8 @@ var vocab_data = [{
 	"vocab_x_offset": -65,
 	"rank_sales": 17,
 	"rank_vocab": 41,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.908296943231441
 }, {
 	"certified_sales": 175.4,
 	"vocab_len": 2503,
@@ -627,7 +668,8 @@ var vocab_data = [{
 	"vocab_x_offset": 90,
 	"rank_sales": 3,
 	"rank_vocab": 42,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 20.58210147822613
 }, {
 	"certified_sales": 74.4,
 	"vocab_len": 2498,
@@ -642,7 +684,8 @@ var vocab_data = [{
 	"vocab_x_offset": 52,
 	"rank_sales": 31,
 	"rank_vocab": 43,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.927141713370697
 }, {
 	"certified_sales": 51,
 	"vocab_len": 2483,
@@ -657,7 +700,8 @@ var vocab_data = [{
 	"vocab_x_offset": 15,
 	"rank_sales": 52,
 	"rank_vocab": 44,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 19.283527990334274
 }, {
 	"certified_sales": 69.2,
 	"vocab_len": 2469,
@@ -672,7 +716,8 @@ var vocab_data = [{
 	"vocab_x_offset": -27,
 	"rank_sales": 38,
 	"rank_vocab": 45,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.087484811664641
 }, {
 	"certified_sales": 36.5,
 	"vocab_len": 2451,
@@ -687,7 +732,8 @@ var vocab_data = [{
 	"vocab_x_offset": -350,
 	"rank_sales": 75,
 	"rank_vocab": 46,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.24765401876785
 }, {
 	"certified_sales": 58.8,
 	"vocab_len": 2433,
@@ -702,7 +748,8 @@ var vocab_data = [{
 	"vocab_x_offset": 285,
 	"rank_sales": 45,
 	"rank_vocab": 47,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.353062063296342
 }, {
 	"certified_sales": 47.5,
 	"vocab_len": 2432,
@@ -717,7 +764,8 @@ var vocab_data = [{
 	"vocab_x_offset": 253,
 	"rank_sales": 56,
 	"rank_vocab": 48,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.553865131578947
 }, {
 	"certified_sales": 126.1,
 	"vocab_len": 2400,
@@ -732,7 +780,8 @@ var vocab_data = [{
 	"vocab_x_offset": -170,
 	"rank_sales": 11,
 	"rank_vocab": 49,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 19.515
 }, {
 	"certified_sales": 27.6,
 	"vocab_len": 2343,
@@ -747,7 +796,8 @@ var vocab_data = [{
 	"vocab_x_offset": 196,
 	"rank_sales": 86,
 	"rank_vocab": 50,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.390951771233462
 }, {
 	"certified_sales": 80.5,
 	"vocab_len": 2318,
@@ -762,7 +812,8 @@ var vocab_data = [{
 	"vocab_x_offset": -202,
 	"rank_sales": 27,
 	"rank_vocab": 51,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 16.081104400345126
 }, {
 	"certified_sales": 32.1,
 	"vocab_len": 2280,
@@ -777,7 +828,8 @@ var vocab_data = [{
 	"vocab_x_offset": -385,
 	"rank_sales": 83,
 	"rank_vocab": 52,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.444736842105263
 }, {
 	"certified_sales": 42.9,
 	"vocab_len": 2272,
@@ -792,7 +844,8 @@ var vocab_data = [{
 	"vocab_x_offset": -295,
 	"rank_sales": 64,
 	"rank_vocab": 53,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 9.595070422535212
 }, {
 	"certified_sales": 72.8,
 	"vocab_len": 2250,
@@ -807,7 +860,8 @@ var vocab_data = [{
 	"vocab_x_offset": 227,
 	"rank_sales": 33,
 	"rank_vocab": 54,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.010222222222222
 }, {
 	"certified_sales": 127.9,
 	"vocab_len": 2201,
@@ -822,7 +876,8 @@ var vocab_data = [{
 	"vocab_x_offset": 310,
 	"rank_sales": 10,
 	"rank_vocab": 55,
-	"sales_x_offset": -72
+	"sales_x_offset": -72,
+	"learning_rate": 9.825079509313948
 }, {
 	"certified_sales": 67.1,
 	"vocab_len": 2193,
@@ -837,7 +892,8 @@ var vocab_data = [{
 	"vocab_x_offset": -422,
 	"rank_sales": 40,
 	"rank_vocab": 56,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 13.53625170998632
 }, {
 	"certified_sales": 42.2,
 	"vocab_len": 2178,
@@ -852,7 +908,8 @@ var vocab_data = [{
 	"vocab_x_offset": -232,
 	"rank_sales": 65,
 	"rank_vocab": 57,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 13.527089072543617
 }, {
 	"certified_sales": 40.4,
 	"vocab_len": 2163,
@@ -867,7 +924,8 @@ var vocab_data = [{
 	"vocab_x_offset": 342,
 	"rank_sales": 68,
 	"rank_vocab": 58,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.162274618585299
 }, {
 	"certified_sales": 77.1,
 	"vocab_len": 2141,
@@ -882,7 +940,8 @@ var vocab_data = [{
 	"vocab_x_offset": -263,
 	"rank_sales": 29,
 	"rank_vocab": 59,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 20.56422232601588
 }, {
 	"certified_sales": 34.9,
 	"vocab_len": 2114,
@@ -897,7 +956,8 @@ var vocab_data = [{
 	"vocab_x_offset": 374,
 	"rank_sales": 78,
 	"rank_vocab": 60,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.494796594134343
 }, {
 	"certified_sales": 45.9,
 	"vocab_len": 2109,
@@ -912,7 +972,8 @@ var vocab_data = [{
 	"vocab_x_offset": 38,
 	"rank_sales": 59,
 	"rank_vocab": 61,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.700806069227122
 }, {
 	"certified_sales": 138.5,
 	"vocab_len": 2077,
@@ -927,7 +988,8 @@ var vocab_data = [{
 	"vocab_x_offset": -460,
 	"rank_sales": 7,
 	"rank_vocab": 62,
-	"sales_x_offset": 35
+	"sales_x_offset": 35,
+	"learning_rate": 11.448724121328839
 }, {
 	"certified_sales": 43.1,
 	"vocab_len": 2055,
@@ -942,7 +1004,8 @@ var vocab_data = [{
 	"vocab_x_offset": 406,
 	"rank_sales": 63,
 	"rank_vocab": 63,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.017518248175183
 }, {
 	"certified_sales": 24.5,
 	"vocab_len": 2037,
@@ -957,7 +1020,8 @@ var vocab_data = [{
 	"vocab_x_offset": 5,
 	"rank_sales": 90,
 	"rank_vocab": 64,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 16.114874815905743
 }, {
 	"certified_sales": 34.4,
 	"vocab_len": 2030,
@@ -972,7 +1036,8 @@ var vocab_data = [{
 	"vocab_x_offset": 500,
 	"rank_sales": 80,
 	"rank_vocab": 65,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.13448275862069
 }, {
 	"certified_sales": 34.7,
 	"vocab_len": 2015,
@@ -987,7 +1052,8 @@ var vocab_data = [{
 	"vocab_x_offset": -27,
 	"rank_sales": 79,
 	"rank_vocab": 66,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 13.500248138957817
 }, {
 	"certified_sales": 30.8,
 	"vocab_len": 1999,
@@ -1002,7 +1068,8 @@ var vocab_data = [{
 	"vocab_x_offset": 70,
 	"rank_sales": 84,
 	"rank_vocab": 67,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 15.467733866933466
 }, {
 	"certified_sales": 43.5,
 	"vocab_len": 1975,
@@ -1017,7 +1084,8 @@ var vocab_data = [{
 	"vocab_x_offset": -60,
 	"rank_sales": 62,
 	"rank_vocab": 68,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.095189873417722
 }, {
 	"certified_sales": 18.9,
 	"vocab_len": 1954,
@@ -1032,7 +1100,8 @@ var vocab_data = [{
 	"vocab_x_offset": 97,
 	"rank_sales": 93,
 	"rank_vocab": 69,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.759467758444217
 }, {
 	"certified_sales": 26.8,
 	"vocab_len": 1921,
@@ -1047,7 +1116,8 @@ var vocab_data = [{
 	"vocab_x_offset": -96,
 	"rank_sales": 87,
 	"rank_vocab": 70,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 16.706923477355545
 }, {
 	"certified_sales": 57.9,
 	"vocab_len": 1903,
@@ -1062,7 +1132,8 @@ var vocab_data = [{
 	"vocab_x_offset": 130,
 	"rank_sales": 46,
 	"rank_vocab": 71,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.733578560168155
 }, {
 	"certified_sales": 111.3,
 	"vocab_len": 1890,
@@ -1077,7 +1148,8 @@ var vocab_data = [{
 	"vocab_x_offset": -133,
 	"rank_sales": 16,
 	"rank_vocab": 72,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 19.21851851851852
 }, {
 	"certified_sales": 38.2,
 	"vocab_len": 1885,
@@ -1092,7 +1164,8 @@ var vocab_data = [{
 	"vocab_x_offset": 465,
 	"rank_sales": 72,
 	"rank_vocab": 73,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 13.300795755968169
 }, {
 	"certified_sales": 26.3,
 	"vocab_len": 1884,
@@ -1107,7 +1180,8 @@ var vocab_data = [{
 	"vocab_x_offset": 167,
 	"rank_sales": 88,
 	"rank_vocab": 74,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.865180467091296
 }, {
 	"certified_sales": 67.3,
 	"vocab_len": 1882,
@@ -1122,7 +1196,8 @@ var vocab_data = [{
 	"vocab_x_offset": -170,
 	"rank_sales": 39,
 	"rank_vocab": 75,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 18.863974495217853
 }, {
 	"certified_sales": 264.9,
 	"vocab_len": 1872,
@@ -1137,7 +1212,8 @@ var vocab_data = [{
 	"vocab_x_offset": 204,
 	"rank_sales": 1,
 	"rank_vocab": 76,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.12232905982906
 }, {
 	"certified_sales": 48.7,
 	"vocab_len": 1869,
@@ -1152,7 +1228,8 @@ var vocab_data = [{
 	"vocab_x_offset": -206,
 	"rank_sales": 54,
 	"rank_vocab": 77,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 7.154093097913322
 }, {
 	"certified_sales": 36,
 	"vocab_len": 1867,
@@ -1167,7 +1244,8 @@ var vocab_data = [{
 	"vocab_x_offset": 240,
 	"rank_sales": 76,
 	"rank_vocab": 78,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.20728441349759
 }, {
 	"certified_sales": 33.8,
 	"vocab_len": 1863,
@@ -1182,7 +1260,8 @@ var vocab_data = [{
 	"vocab_x_offset": -243,
 	"rank_sales": 81,
 	"rank_vocab": 79,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 10.143317230273752
 }, {
 	"certified_sales": 70.9,
 	"vocab_len": 1855,
@@ -1197,7 +1276,8 @@ var vocab_data = [{
 	"vocab_x_offset": 278,
 	"rank_sales": 37,
 	"rank_vocab": 80,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 21.097035040431265
 }, {
 	"certified_sales": 73.7,
 	"vocab_len": 1850,
@@ -1212,7 +1292,8 @@ var vocab_data = [{
 	"vocab_x_offset": -280,
 	"rank_sales": 32,
 	"rank_vocab": 81,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 14.934594594594595
 }, {
 	"certified_sales": 85.5,
 	"vocab_len": 1848,
@@ -1227,7 +1308,8 @@ var vocab_data = [{
 	"vocab_x_offset": 314,
 	"rank_sales": 25,
 	"rank_vocab": 82,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 16.786796536796537
 }, {
 	"certified_sales": 43.9,
 	"vocab_len": 1835,
@@ -1242,7 +1324,8 @@ var vocab_data = [{
 	"vocab_x_offset": -316,
 	"rank_sales": 60,
 	"rank_vocab": 83,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 11.588555858310627
 }, {
 	"certified_sales": 30.2,
 	"vocab_len": 1802,
@@ -1257,7 +1340,8 @@ var vocab_data = [{
 	"vocab_x_offset": 350,
 	"rank_sales": 85,
 	"rank_vocab": 84,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 15.326859045504994
 }, {
 	"certified_sales": 72.6,
 	"vocab_len": 1801,
@@ -1272,7 +1356,8 @@ var vocab_data = [{
 	"vocab_x_offset": -352,
 	"rank_sales": 35,
 	"rank_vocab": 85,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.672404219877846
 }, {
 	"certified_sales": 25.3,
 	"vocab_len": 1794,
@@ -1287,7 +1372,8 @@ var vocab_data = [{
 	"vocab_x_offset": 388,
 	"rank_sales": 89,
 	"rank_vocab": 86,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 9.933667781493869
 }, {
 	"certified_sales": 111.5,
 	"vocab_len": 1788,
@@ -1302,7 +1388,8 @@ var vocab_data = [{
 	"vocab_x_offset": -390,
 	"rank_sales": 15,
 	"rank_vocab": 87,
-	"sales_x_offset": -62
+	"sales_x_offset": -62,
+	"learning_rate": 8.686241610738255
 }, {
 	"certified_sales": 21.7,
 	"vocab_len": 1731,
@@ -1317,7 +1404,8 @@ var vocab_data = [{
 	"vocab_x_offset": 426,
 	"rank_sales": 92,
 	"rank_vocab": 88,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 13.447140381282496
 }, {
 	"certified_sales": 49.1,
 	"vocab_len": 1723,
@@ -1332,7 +1420,8 @@ var vocab_data = [{
 	"vocab_x_offset": -428,
 	"rank_sales": 53,
 	"rank_vocab": 89,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 17.18514219384794
 }, {
 	"certified_sales": 40,
 	"vocab_len": 1699,
@@ -1347,7 +1436,8 @@ var vocab_data = [{
 	"vocab_x_offset": -465,
 	"rank_sales": 69,
 	"rank_vocab": 90,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 19.273690406121247
 }, {
 	"certified_sales": 41.1,
 	"vocab_len": 1497,
@@ -1362,7 +1452,8 @@ var vocab_data = [{
 	"vocab_x_offset": -492,
 	"rank_sales": 67,
 	"rank_vocab": 91,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 16.665998663994657
 }, {
 	"certified_sales": 72.1,
 	"vocab_len": 1489,
@@ -1377,7 +1468,8 @@ var vocab_data = [{
 	"vocab_x_offset": 490,
 	"rank_sales": 36,
 	"rank_vocab": 92,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 12.505708529214237
 }, {
 	"certified_sales": 52,
 	"vocab_len": 809,
@@ -1392,5 +1484,6 @@ var vocab_data = [{
 	"vocab_x_offset": 0,
 	"rank_sales": 50,
 	"rank_vocab": 93,
-	"sales_x_offset": 0
+	"sales_x_offset": 0,
+	"learning_rate": 6.200247218788628
 }];
