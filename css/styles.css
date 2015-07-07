@@ -506,7 +506,7 @@ body {
   margin-top: 15px; }
 
 #disqus_thread {
-  width: 960px;
-  margin: 0 auto; }
+  width: 960px !important;
+  margin: 0 auto !important; }
 
 /*# sourceMappingURL=styles.css.map */
