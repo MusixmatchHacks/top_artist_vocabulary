@@ -92,46 +92,43 @@
 	// Event handler on artist object
 	Artist.prototype.events = {
 		click: function() {
-			var that = this,
-				easingIn= 'easeInOutCubic',
-				easingOut = 'easeInOutCubic',
-				durationIn = 300,
-				durationOut = 150;
+			// var that = this,
+			// 	easingIn= 'easeInOutCubic',
+			// 	easingOut = 'easeInOutCubic',
+			// 	durationIn = 300,
+			// 	durationOut = 150;
 
-			// Since tipsy tooltips are dynamically created we cannot cache them before hand
-			this.$artist.on('click', function() {
-				if (that.currentTooltipState === that.tooltipStates.COMPACT) {
-					$('.tipsy-inner').animate({height : '+=67'}, durationIn, easingIn);
-					$('.tipsy').animate({top : '-=67'}, durationIn, easingIn, function() {
-						$('.tipsy-inner').html(that.tooltipExpandedContent);
-					});
+			// // Since tipsy tooltips are dynamically created we cannot cache them before hand
+			// this.$artist.on('click', function() {
+			// 	if (that.currentTooltipState === that.tooltipStates.COMPACT) {
+			// 		$('.tipsy-inner').animate({height : '+=67'}, durationIn, easingIn);
+			// 		$('.tipsy').animate({top : '-=67'}, durationIn, easingIn, function() {
+			// 			$('.tipsy-inner').html(that.tooltipExpandedContent);
+			// 		});
 
-					that.currentTooltipState = that.tooltipStates.EXPANDED;
+			// 		that.currentTooltipState = that.tooltipStates.EXPANDED;
 
-				} else { // Tooltip status is expanded
+			// 	} else { // Tooltip status is expanded
 
-					$('.tipsy-inner').animate({height : '-=67'}, durationOut, easingOut);
-					$('.tipsy-inner').html(that.tooltipOriginalContent);
-					$('.tipsy').animate({top : '+=67'}, durationOut, easingOut);
+			// 		$('.tipsy-inner').animate({height : '-=67'}, durationOut, easingOut);
+			// 		$('.tipsy-inner').html(that.tooltipOriginalContent);
+			// 		$('.tipsy').animate({top : '+=67'}, durationOut, easingOut);
 
-					that.currentTooltipState = that.tooltipStates.COMPACT;
-				}
-			});
+			// 		that.currentTooltipState = that.tooltipStates.COMPACT;
+			// 	}
+			// });
 		},
 
 		// Show a tooltip on hover
 		hover: function() {
 			var that = this;
 			this.$artist.tipsy({
-				gravity: 's',
+				gravity: (that.data.name === 'Eminem') ? 'n' : 's',
 				html: true,
 				opacity: 1,
 				offset: 3,
 				title: function() {
-					if(that.currentTooltipState === that.tooltipStates.EXPANDED)
-						return that.tooltipExpandedContent;
-					else 
-						return that.tooltipOriginalContent;
+					return that.tooltipExpandedContent;
 				}
 			});
 		}

@@ -19,7 +19,7 @@
   .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
   
   /* Rules to colour arrows */
-  .tipsy-arrow-n { border-bottom-color: #000; }
+  .tipsy-arrow-n { border-bottom-color: #ffffff; }
   .tipsy-arrow-s { border-top-color: #ffffff;  }
   .tipsy-arrow-e { border-left-color: #ffffff; }
   .tipsy-arrow-w { border-right-color: #ffffff; }
