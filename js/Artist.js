@@ -27,18 +27,25 @@
 		// The total number of artists the data has 
 		this.numArtists = 93; // currently hard coded
 
+		// Enum that holds the state of the tooltip
+		this.tooltipStates = {
+			COMPACT: 1,
+			EXPANDED: 2
+		};
+
 		// Variables that hold the configuration of the tooltip that is used 
 		// when interating with the artist like clicking it 
-		this.toolTipStatus = 'COMPACT'; // can be COMPACT or EXPANDED
+		this.currentTooltipState= this.tooltipStates.COMPACT;
+
 		this.tooltipOriginalContent = $('#tooltipTemplate').html()
 			.replace(/{{rank}}/i, this.data.rank_vocab)
-			.replace(/{{artistName}}/i, this.data.name)
+			.replace(/{{artistName}}/i, (this.data.name === "The Black Eyed Peas") ? "T.B.E.P" : this.data.name)
 			.replace(/{{vocab}}/i, window.VocabPlot.formatWithCommas(this.data.vocab_len))
 			.replace(/{{total}}/i, this.numArtists);
 
 		this.tooltipExpandedContent = $('#tooltipTemplateExpanded').html()
 			.replace(/{{rank}}/i, this.data.rank_vocab)
-			.replace(/{{artistName}}/i, this.data.name)
+			.replace(/{{artistName}}/i, (this.data.name === "The Black Eyed Peas") ? "T.B.E.P" : this.data.name)
 			.replace(/{{vocab}}/i, window.VocabPlot.formatWithCommas(this.data.vocab_len))
 			.replace(/{{total}}/i, this.numArtists)
 			.replace(/{{sales}}/i, this.data.certified_sales)
@@ -85,18 +92,28 @@
 	Artist.prototype.events = {
 		click: function() {
 			var that = this,
-				initialPos = $('#' + this.selector).css('top');
-				console.log(initialPos);
+				easingIn= 'easeInOutCubic',
+				easingOut = 'easeInOutCubic',
+				durationIn = 300,
+				durationOut = 150;
+
+			// Since tipsy tooltips are dynamically created we cannot cache them before hand
 			this.$artist.on('click', function() {
-				if (that.toolTipStatus === 'COMPACT') {
-					$('.tipsy').animate({top : '-=67'}, 400, 'easeOutQuint', function() {
+				if (that.currentTooltipState === that.tooltipStates.COMPACT) {
+					$('.tipsy-inner').animate({height : '+=67'}, durationIn, easingIn);
+					$('.tipsy').animate({top : '-=67'}, durationIn, easingIn, function() {
 						$('.tipsy-inner').html(that.tooltipExpandedContent);
 					});
-					that.toolTipStatus = 'EXPANDED';
+
+					that.currentTooltipState = that.tooltipStates.EXPANDED;
+
 				} else { // Tooltip status is expanded
+
+					$('.tipsy-inner').animate({height : '-=67'}, durationOut, easingOut);
 					$('.tipsy-inner').html(that.tooltipOriginalContent);
-					$('.tipsy').animate({top : '+=67'}, 200, 'easeOutBack');
-					that.toolTipStatus = 'COMPACT';
+					$('.tipsy').animate({top : '+=67'}, durationOut, easingOut);
+
+					that.currentTooltipState = that.tooltipStates.COMPACT;
 				}
 			});
 		},
@@ -110,13 +127,11 @@
 				opacity: 1,
 				offset: 3,
 				title: function() {
-					return that.tooltipOriginalContent;
+					if(that.currentTooltipState === that.tooltipStates.EXPANDED)
+						return that.tooltipExpandedContent;
+					else 
+						return that.tooltipOriginalContent;
 				}
-			});
-
-			// On mouseout revert to original content
-			this.$artist.on('mouseout', function() {
-				that.toolTipStatus = 'COMPACT';
 			});
 		}
 

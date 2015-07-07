@@ -53,7 +53,7 @@
             },
             gravity: 's',
             opacity: 1,
-            offset: 2
+            offset: 0
         });
     });
 

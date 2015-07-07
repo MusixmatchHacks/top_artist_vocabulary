@@ -117,18 +117,13 @@ input#locateArtist {
   width: auto;
   padding: 3px;
   text-align: center;
-  color: white;
+  color: #303030;
   border-radius: 1px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  border-top: 1px dotted #303030; }
 
 .ttInfoSection:last-child {
   margin-bottom: 0px; }
-
-#ttSales {
-  background-color: #2A61FF; }
-
-#ttLearningRate {
-  background-color: #42A146; }
 
 .rankContainer {
   width: 30%;
