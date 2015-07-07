@@ -505,4 +505,8 @@ body {
   padding: 0;
   margin-top: 15px; }
 
+#disqusBox {
+  width: 960px;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=styles.css.map */
