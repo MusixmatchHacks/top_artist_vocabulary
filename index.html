@@ -3,9 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/styles.css">
-		<title>Vocabulary</title>
+		<title>Largest Vocabulary in Music</title>
 	</head>
 	<body>
+	<!-- for the facebook share button javascript sdk -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 		
 		<div id ="header">
 			<div class="header_inner">
@@ -187,14 +196,17 @@ Some simple insights can still be taken. Hip-Hop is way ahead of the other genre
 		<br/><br/>
 		<a href = "http://experiments.undercurrent.com" target = "blank">The largest vocabulary in hip hop</a> compares the vocabulary of various musicians across the first 35000 words written by them. Instead of constraining by the number of words we used the <b>100 densest</b> songs. Just out of curiosity (and for the sake of completeness) we used the same methodology by considering <b>10000 words</b> written by each artist. The results of the two approaches don’t differ too much, the top 5 ranked musicians remain the same. The top 10 ranked musicians are the same with a slight shuffling of the ranks. Andrea Bocelli moves from #8 to #6, while Black Eyed Peas move from rank #6 to #7 and Julio Iglesias from #7 to #8. No significant changes are observed on the whole (<a href = "http://i.imgur.com/z2H9T6i.png" target = "blank">more details</a>). Thus, we used 100 songs as the constraint since it makes more sense intuitively and musically.
 		<br/> <br/>
-		- <a href = "http://twitter.com/neotheoen" target = "blank">@neotheoen</a> and <a href = "http://twitter.com/NashVail" target = "blank">@NashVail</a>
+		- <a href = "http://twitter.com/neotheoen" target = "blank">Varun Jewalikar</a> and <a href = "http://twitter.com/NashVail" target = "blank">Nash Vail</a>
 	</div>
 
 	
 </section>
 
 <div id = "disqusBox">
-<div id="disqus_thread"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="An analysis of vocabularies of top selling musicians." data-via="Musixmatch" data-size="large" data-hashtags="music,lyrics,largest_vocabulary,musixmatch" data-dnt="true">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<div class="fb-share-button" data-href="http://lab.musixmatch.com/top_artist_vocabulary" data-layout="button_count"></div>
+	<div id="disqus_thread"></div>
 
 </div>
 
