@@ -92,7 +92,8 @@ input#locateArtist {
 
 .highlightedArtist {
   opacity: 1;
-  background-color: #FD4C38; }
+  background-color: #FD4C38;
+  border: 2px solid #FFF; }
 
 .normalArtist {
   transition: all 0.3s; }
