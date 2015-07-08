@@ -510,4 +510,8 @@ body {
   margin: 0 auto;
   padding: 20px; }
 
+.fb-iframe_widget {
+  display: inline-flex !important;
+  position: relative; }
+
 /*# sourceMappingURL=styles.css.map */
