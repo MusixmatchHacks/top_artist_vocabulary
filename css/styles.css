@@ -468,7 +468,8 @@ body {
 .defHighlight {
   margin-right: 5px;
   text-decoration: italic;
-  background-color: #e7daa9; }
+  background-color: #C1B153;
+  color: #FFFFFF; }
 
 #finalQuote {
   width: 100%;

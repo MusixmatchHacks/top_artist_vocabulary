@@ -1,30 +1,30 @@
 (function() {
 
-	// Exporting the module 
+	// Exporting the module
 	window.Artist = {};
 	window.Artist.newArtist = function(artistName, artistData) {
 		return new Artist(artistName, artistData);
 	};
 
-	// This module acts like an artist object 
+	// This module acts like an artist object
 	// that will handle events on each artist object on the plot
 	function Artist(artistName, artistData) {
 		this.name = artistName;
 		this.data = artistData;
 
-		// Selector is simply name of the artist with whitespace replaced by _ , e.g. 
+		// Selector is simply name of the artist with whitespace replaced by _ , e.g.
 		// Red Hot Chilli Peppers becomes Red_Hot_Chilli_Peppers
 		this.selector = artistName.split(" ").join("_");
 		// Points to the DOM element that holds the current artist
 		this.$artist = $('#' + this.selector);
 
-		// Set the background of the artist circle 
+		// Set the background of the artist circle
 		this.$artist.css('background-image', 'url(img/artist_images_40px/' + this.selector + '.jpg)');
 
 		// Template that renders the content inside the tooltip
 		this.tooltipTemplate = $.trim($('#tooltipTemplate').html());
 
-		// The total number of artists the data has 
+		// The total number of artists the data has
 		this.numArtists = 93; // currently hard coded
 
 		// Enum that holds the state of the tooltip
@@ -33,8 +33,8 @@
 			EXPANDED: 2
 		};
 
-		// Variables that hold the configuration of the tooltip that is used 
-		// when interating with the artist like clicking it 
+		// Variables that hold the configuration of the tooltip that is used
+		// when interating with the artist like clicking it
 		this.currentTooltipState= this.tooltipStates.COMPACT;
 
 		this.tooltipOriginalContent = $('#tooltipTemplate').html()
@@ -50,10 +50,10 @@
 			.replace(/{{total}}/i, this.numArtists)
 			.replace(/{{sales}}/i, this.data.certified_sales)
 			.replace(/{{rank_sales}}/i, this.data.rank_sales)
-			.replace(/{{learning_rate}}/i, Math.ceil(this.data.learning_rate));
+			.replace(/{{learning_rate}}/i, Math.floor(this.data.learning_rate));
 
 
-		// Initialize events 
+		// Initialize events
 		this.events.hover.call(this);
 		this.events.click.call(this);
 	}

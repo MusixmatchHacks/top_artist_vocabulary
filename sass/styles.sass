@@ -26,13 +26,13 @@ $color_dark_grey : #303030
 $color_light_green : #D6C06D
 $color_dark_green : #A99755
 
-* 
+*
 	margin : 0
 	padding : 0
 	box-sizing : border-box
 	font-family : Karla, 'sans-serif'
 
-body 
+body
 	background-color : transparent
 	width : 100%
 	height : 100%
@@ -72,7 +72,7 @@ body
 			z-index : 10
 
 #headerBgOverlay
-	position : absolute 
+	position : absolute
 	top: 0
 	left : 0
 	height : 100%
@@ -82,7 +82,7 @@ body
 
 
 
-#container 
+#container
 	position : relative
 	width : 100%
 	height : auto
@@ -90,11 +90,11 @@ body
 	background-color : white
 
 
-.note 
+.note
 	font-size : 0.8em
 	margin-top : 10px
 
-.article 
+.article
 	width : $article_width
 	margin : 0 auto
 	padding: 30px 20px 30px 20px
@@ -108,7 +108,7 @@ body
 	& a
 		color : $color_main
 		text-decoration : none
-	.sectionHeading 
+	.sectionHeading
 		position : relative
 		width : auto
 		font-family: 'Karla', sans-serif
@@ -118,26 +118,26 @@ body
 		line-height: 49px
 		width : 100%
 		text-align : center
-		&:after 
-			display : block 
-			position : absolute 
+		&:after
+			display : block
+			position : absolute
 			top : 50%
 			right : 110%
 			content : ''
 			width : 90%
-			height : 2px 
+			height : 2px
 			background-color : $color_dark_grey
-		&:before 
-			display : block 
-			position : absolute 
+		&:before
+			display : block
+			position : absolute
 			bottom : 50%
 			left : 110%
 			content : ''
 			width : 90%
-			height : 2px 
+			height : 2px
 			background-color : $color_dark_grey
 
-// These are style overrides for the section headings whose sidelines are too long 
+// These are style overrides for the section headings whose sidelines are too long
 
 #kiss
 	&:after
@@ -145,12 +145,12 @@ body
 	&:before
 		width : 60%
 
-#genreHeading 
+#genreHeading
 	&:after
 		width : 50%
 	&:before
 		width : 50%
-// end of that thing 
+// end of that thing
 
 .innerSection
 	margin-top : 30px
@@ -193,8 +193,8 @@ body
 	height : 50px
 	margin-left : -260px
 
-.polyglotLanguage 
-	width : 145px 
+.polyglotLanguage
+	width : 145px
 	height: 35px
 	font-family : Karla
 	font-size : 18px
@@ -203,17 +203,18 @@ body
 	border: 1px solid $color_dark_green
 	text-align : center
 	margin-bottom : 5px
-	transition : all 0.3s 
+	transition : all 0.3s
 
 .languageHighlight
 	color : #FFFFFF
 	background-color : $color_dark_green
-	transition : all 0.3s 
+	transition : all 0.3s
 
-.defHighlight 
+.defHighlight
 	margin-right : 5px
 	text-decoration : italic
-	background-color : lighten($color_light_green, 15%)
+	background-color : #C1B153
+	color: #FFFFFF
 
 #finalQuote
 	width : 100%
@@ -232,7 +233,7 @@ body
 		font-weight : 400
 
 
-.titles 
+.titles
 	width : 100%
 	text-align : center
 	padding-top : 15px
@@ -251,7 +252,7 @@ body
 	padding : 0
 	margin-top : 15px
 
-#disqusBox 
+#disqusBox
 	width : $article_width
 	margin: 0 auto
 	padding : 20px
@@ -259,5 +260,3 @@ body
 #share_fb
 	display : inline-flex !important
 	position : relative
-
-

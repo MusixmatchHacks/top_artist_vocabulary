@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/styles.css">
-		<title>Largest Vocabulary in Music</title>
-	</head>
-	<body>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Largest Vocabulary in Music</title>
+</head>
+
+<body>
 	<!-- for the facebook share button javascript sdk -->
 	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-		
-		<div id ="header">
-			<div class="header_inner">
-				<div id="headerBgOverlay"></div>
-				<img src="img/mxm_logo.png" height="38" width="186" alt="Musixmatch logo" id = "main_logo">
-				<h1>LARGEST VOCABULARY IN MUSIC</h1>
-				<span class="sub">An analysis of vocabularies of top selling musicians</span>
-			</div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div id="header">
+		<div class="header_inner">
+			<div id="headerBgOverlay"></div>
+			<img src="img/mxm_logo.png" height="38" width="186" alt="Musixmatch logo" id="main_logo">
+			<h1>LARGEST VOCABULARY IN MUSIC</h1>
+			<span class="sub">An analysis of vocabularies of top selling musicians</span>
 		</div>
-		<!-- End header -->
-		<div id="container">
-			<!-- Introduction -->
-			<section class="article">
-				Inspired by <a href = "http://experiments.undercurrent.com/" target = "blank">The largest vocabulary in hip hop</a> I wanted to do a similar analysis across a more generalised list of musicians. I stumbled across this <a href = "https://en.wikipedia.org/wiki/List_of_best-selling_music_artists" target = "blank"
-			>List of best-selling music artists</a> . The list is large enough (99 musicians and 25 genres) for the analysis to be interesting and small enough to not require complicated analysis techniques.
-			<br/> <br/>
-			These are 93 musicians<sup>1</sup> from that list sorted by genre :
+	</div>
+	<!-- End header -->
+	<div id="container">
+		<!-- Introduction -->
+		<section class="article">
+			Inspired by <a href="http://experiments.undercurrent.com/" target="blank">The largest vocabulary in hip hop</a>, I wanted to do a similar analysis across a more generalised list of musicians. I stumbled across this <a href="https://en.wikipedia.org/wiki/List_of_best-selling_music_artists"
+			target="blank">List of best-selling music artists</a>. The list is large enough (99 musicians and 25 genres) for the analysis to be interesting and small enough to not require complicated analysis techniques.
+			<br/>
+			<br/> These are the 93 musicians<sup>1</sup> from that list sorted by genre :
 		</section>
 		<!-- End Introduction -->
 		<!-- All artists Chart -->
-		<section id ="allArtists">
-			<button id = "btn_expandList">Show All</button>
+		<section id="allArtists">
+			<button id="btn_expandList">Show All</button>
 			<div id="allArtistsContainer">
 				<div class="overlay"></div>
-				<script id = "template-allArtists" type = "text/x-handlebars-template">
+				<script id="template-allArtists" type="text/x-handlebars-template">
 					{{#each this}}
-					<div class = "letterSection">
-							<div class = "alphaHolder">
-									{{genre_name}}
+					<div class="letterSection">
+						<div class="alphaHolder">
+							{{genre_name}}
+						</div>
+						<div class="letterArtists">
+							{{#each artists}}
+							<div class='letterArtistImage' id="{{this}}">
+								<img src='img/artist_images_small/{{undy this}}.jpg' height="80px" width="80px" />
 							</div>
-							<div class = "letterArtists" >
-									{{#each artists}}
-									<div class = 'letterArtistImage' id = "{{this}}">
-										<img src = 'img/artist_images_small/{{undy this}}.jpg' height = "80px" width = "80px"/>
-									</div>
-									{{/each}}
-							</div>
+							{{/each}}
+						</div>
 					</div>
 					{{/each}}
 				</script>
@@ -60,208 +65,265 @@
 		<!-- End all artists chart -->
 		<section class="article">
 			<div class="titles">TOP SELLING MUSICIANS OF ALL TIME</div>
-			<div class = "note"><sup>1</sup> Bruce Springsteen, Chicago, Def Leppard, Journey, The Beach Boys and The Doors from the original list of 99 musicians don’t grant permission to Musixmatch to use their lyrics. Therefore, they couldn't be included in the analysis.</div>
+			<div class="note"><sup>1</sup> Bruce Springsteen, Chicago, Def Leppard, Journey, The Beach Boys and The Doors from the original list of 99 musicians don’t grant permission to Musixmatch to use their lyrics. Therefore, they couldn't be included in the analysis.</div>
 		</section>
 		<!-- Comparing number of songs section -->
 		<section class="article">
 			The aim is to compare the vocabulary size of these musicians. Some of them have released a lot more songs than the others because of the sheer longevity of their career and how prolific they are.
-			<img src="img/topBottomArtists.png" height="265" width="714" alt="Top Bottom Artists" id = "topBottomArtists">
-			<div class="titles" id = "topBottomArtistTitle">MOST AND LEAST PROLIFIC OF THE 93 MUSICIANS</div>
+			<img src="img/topBottomArtists.png" height="265" width="714" alt="Top Bottom Artists" id="topBottomArtists">
+			<div class="titles" id="topBottomArtistTitle">MOST AND LEAST PROLIFIC OF THE 93 MUSICIANS</div>
 		</section>
 		<!-- End comparing number of songs section -->
 		<section class="article">
-			To prevent the analysis from being skewed purely by the number of songs released, the vocabularies are compared across the 100 densest songs (by total number of words) that they have released. Only 6 of these musicians have released less than 100 songs, so it is a good threshold. Also, 100 songs comprises 8 to 10 albums of music which would span at least 5 to 10 years of work which should give a fair idea of the overall vocabulary of these musicians. 		<br/>Here are some definitions you should be acquanited with
-			<br/><br/>
-			&#8226; <span class = "defHighlight"><em>VOCABULARY SIZE</em></span> The number of unique words (across any language) used by a musician in 100 (or less) densest songs across their career.
-			<br/><br/>
-			&#8226; <span class = "defHighlight"><em>LYRICAL DENSITY</em></span> The total number of words (across any language) used by a musician in 100 (or less) densest songs across their career.
-			<br/><br/>
-			&#8226; <span class = "defHighlight"><em>LEARNING RATE</em></span> On average, the number of words after which a new word is used by the musician. This is the ratio of Lyrical density/Vocabulary. A low learning rate means new words are used frequently.
+			To prevent the analysis from being skewed purely by the number of songs released, the vocabularies are compared across the <b>100 densest</b> songs (by total number of words) that they have released. Only 6 of these musicians have released less than 100 songs,
+			so it is a good threshold. Also, 100 songs comprises 8 to 10 albums of music which would span at least 5 to 10 years of work. This should give a fair idea of the overall vocabulary of these musicians.
+			<br/><br/>Here are some definitions you should be acquanited with
+			<br/>
+			<br/> &#8226;
+			<span class="defHighlight">
+				<em>VOCABULARY SIZE</em>
+			</span> The number of unique words (across any language) used by a musician in 100 (or less) densest songs across their career.
+			<br/>
+			<br/> &#8226;
+			<span class="defHighlight">
+				<em>LYRICAL DENSITY</em>
+			</span> The total number of words (across any language) used by a musician in 100 (or less) densest songs across their career.
+			<br/>
+			<br/> &#8226;
+			<span class="defHighlight">
+				<em>NEW WORD INTERVAL <b>(N.W.I)</b></em>
+			</span> On average, the number of words after which a new word is used by the musician. This is the ratio of (Lyrical density / Vocabulary Size). An N.W.I of X means every X<sup>th</sup> word in the lyrics of the artist is a new word, that is, a word he/she
+			has never used before in any of his songs.
+
+			<br/>
+
 		</section>
 		<!-- Begin Vocabulary Plot from here  -->
 		<section id="vocab_plot_wrapper">
 			<!-- Holds the plot/graph  -->
 			<div id="vocab_plot">
 				<div id="searchBox">
-					<input type="text" id = "locateArtist" placeholder = "Name/Rank">
+					<input type="text" id="locateArtist" placeholder="Name/Rank">
 				</div>
 				<!-- Holds the scale for the plot/graph -->
-			<svg id="vocab_plot_scale"></svg>
-			<div id="artistCircleContainer">
-				
+				<svg id="vocab_plot_scale"></svg>
+				<div id="artistCircleContainer">
+
+				</div>
 			</div>
-		</div>
-	</section>
-	<div class="titles" id = "mainVizTitle">VOCABULARY SIZE OF TOP SELLING ARTISTS</div>
-	<div class="titles" id = "mainVizTitle">Calculated over the 100 (or less) lengthiest songs</div>
-	<!-- End Vocabulary Plot here -->
-	<!-- Mr. Obvious section -->
-	<section class="article">
-		<center><span class = "sectionHeading">MR. OBVIOUS</span></center>
-		<img src="img/mrobvious.png" height="364" width="712" alt="Musicians" class = "expImages">
-		There are 4 rappers in the list and they are at the top of the vocabulary chart. Amongst them Eminem leads Jay-z, 2Pac, Kanye West and The Black Eyed Peas by a big margin. Eminem also has the overall highest words per song ratio of 1018.5
-	</section>
-	<!-- The freewheelin' section -->
-	<section class="article">
-		<center><span class = "sectionHeading">THE FREEWHEELIN'</span></center>
-		<img src="img/freewheeling.png" height="160" width="226" alt="Freewheelin'" class = "expImages">
-		Given how articulate and descriptive his songs are, it is no wonder Bob Dylan ranks so highly. He also ranks at the top (#11) of the learning rate ranking (on average he uses a new word after writing 9 words).
-	</section>
-	<!-- Polyglots section -->
-	<section class="article">
-		<center><span class = "sectionHeading">THE POLYGLOTS</span></center>
-		<div id="polyglotImages">
-			<div id="polyglotLanguages">
-				<script id = "template-polyglots-languages" type = "text/x-handlebars-template">
-				{{#each this}}
-					<div class = "polyglotLanguage" id = "{{this}}">{{this}}</div>
-				{{/each}}
+		</section>
+		<div class="titles" id="mainVizTitle">VOCABULARY SIZE OF TOP SELLING ARTISTS</div>
+		<div class="titles" id="mainVizTitle">Calculated over the 100 (or less) lengthiest songs</div>
+		<!-- End Vocabulary Plot here -->
+		<!-- Mr. Obvious section -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading">MR. OBVIOUS</span>
+			</center>
+			<img src="img/mrobvious.png" height="364" width="712" alt="Musicians" class="expImages"> There are 4 rappers in the list and they are at the top of the vocabulary chart. Amongst them, Eminem leads Jay-z, 2Pac, Kanye West and The Black Eyed Peas by a big margin. Eminem also has the overall highest words per song ratio of 1018.5.
+		</section>
+		<!-- The freewheelin' section -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading">THE FREEWHEELIN'</span>
+			</center>
+			<img src="img/freewheeling.png" height="160" width="226" alt="Freewheelin'" class="expImages"> Given how articulate and descriptive his songs are, it is no wonder Bob Dylan ranks so highly. He also ranks at the top (#11) of the N.W.I ranking (on average he uses a new word after writing 9 words).
+		</section>
+		<!-- Polyglots section -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading">THE POLYGLOTS</span>
+			</center>
+			<div id="polyglotImages">
+				<div id="polyglotLanguages">
+					<script id="template-polyglots-languages" type="text/x-handlebars-template">
+						{{#each this}}
+						<div class="polyglotLanguage" id="{{this}}">{{this}}</div>
+						{{/each}}
+					</script>
+				</div>
+				<script id="template-polyglots" type="text/x-handlebars-template">
+					{{#each this}}
+					<img src="img/polyglots/{{this.name}}.png" height="160" width="226" class="polyglotImage" id="polyglot_{{this.name}}"> {{/each}}
 				</script>
 			</div>
-			<script id = "template-polyglots" type = "text/x-handlebars-template">
-				{{#each this}}
-						<img src="img/polyglots/{{this.name}}.png" height="160" width="226" class = "polyglotImage" id = "polyglot_{{this.name}}">
-				{{/each}}
-			</script>
-		</div>
-		These superstars have released songs in multiple popular languages. Their vocabularies in different languages are getting summed up leading to a high overall vocabulary size. This was a result I was not expecting when I started the analysis.
-	</section>
-	
-	<!-- Suprprise section talking about Celine Dion -->
-	<section class="article">
-		<center><span class = "sectionHeading">SURPRISE!</span></center>
-		<img src="img/surprise.png" height="160" width="226" alt="Celine Dion" class = "expImages">
-		I had not expected a pop sensation like her to rank high since they rely on simplicity to get their message across. It lays bare my ignorance of her music. Also, she is the only one who ranks in the top 15 by vocabulary size as well as the total certified album sales.
-	</section>
-	<!-- #93 Kenny G Section -->
-	<section class="article">
-		<center><span class = "sectionHeading">Not the least</span></center>
-		<img src="img/kennyg.png" height="160" width="226" alt="Kenny G" class = "expImages"><center>Whoever said songs can’t sell without lyrics.</center>
-	</section>
-	<!-- The Bit Pleateau Section -->
-	<section class="article">
-		<center><span class = "sectionHeading" id = "kiss">THE BIG PLATEAU</span></center>
-		<img src="img/bigPleateau.png" height="300" width="597" alt="" class = "expImages" id = "vocabVariation">
-		The average vocabulary size across all the musicians is 2677 words. Around 40 musicians have a vocabulary size within 400 words of the average . Get your song-writing vocabulary size in this range to be a top selling artist.
-	</section>
-	<!-- Keep it simple silly, section -->
-	<section class="article">
-		<center><span class = "sectionHeading" id = "kiss">KEEP IT SIMPLE, SILLY!</span></center>
-		<img src="img/kissGroup.png" height="366" width="712" alt="Keep it simple" class = "expImages">
-		The three top selling musicians of all time rank low in the vocabulary chart. No wonder the simplicity of their lyrics breaks the barriers of geography, age, language and they are admired globally. Conversely, Mariah Carey ranks high in both the charts (#9 in the sales chart and #20 in the vocabulary chart).
-	</section>
-	<!-- Begin comparing genre section -->
-	<section class="article">
-		<center><span class = "sectionHeading" id = "genreHeading">COMPARING GENRES</span></center>
-		<div class="innerSection">
-			The following chart shows the average vocabulary size of artists in different genres. In the parantheses is the number of artists in the list that sing in that genre. Since our list includes only 93 artists, it is not a very good generalization.
-		</div>
-	</section>
-	<!-- Begin Genre plot here -->
-	<section id="genrePlot">
-		<div id="genreNames">
-			<script id = "genre-names-template" type = "text/x-handlebars-template">
+			These superstars have released songs in multiple popular languages. Their vocabularies in different languages are getting summed up leading to a high overall vocabulary size. This was a result I was not expecting when I started the analysis.
+		</section>
+
+		<!-- Suprprise section talking about Celine Dion -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading">SURPRISE!</span>
+			</center>
+			<img src="img/surprise.png" height="160" width="226" alt="Celine Dion" class="expImages"> I had not expected a pop sensation like her to rank high since they rely on simplicity to get their message across. It lays bare my ignorance of her music. Also, she is the only one who ranks in the top 15 by vocabulary size as well as the total certified
+			album sales.
+		</section>
+		<!-- #93 Kenny G Section -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading">Not the least</span>
+			</center>
+			<img src="img/kennyg.png" height="160" width="226" alt="Kenny G" class="expImages">
+			<center>Whoever said songs can’t sell without lyrics.</center>
+		</section>
+		<!-- The Bit Pleateau Section -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading" id="kiss">THE BIG PLATEAU</span>
+			</center>
+			<img src="img/bigPleateau.png" height="300" width="597" alt="" class="expImages" id="vocabVariation"> The average vocabulary size across all the musicians is 2677 words. Around 40 musicians have a vocabulary size within 400 words of the average . Get your song-writing vocabulary size in this range to be a top selling artist.
+		</section>
+		<!-- Keep it simple silly, section -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading" id="kiss">KEEP IT SIMPLE, SILLY!</span>
+			</center>
+			<img src="img/kissGroup.png" height="366" width="712" alt="Keep it simple" class="expImages"> The three top selling musicians of all time rank low in the vocabulary chart. No wonder the simplicity of their lyrics breaks the barriers of geography, age, language and they are admired globally. Conversely, Mariah Carey ranks high in both the charts
+			(#9 in the sales chart and #20 in the vocabulary chart).
+		</section>
+		<!-- Begin comparing genre section -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading" id="genreHeading">COMPARING GENRES</span>
+			</center>
+			<div class="innerSection">
+				The following chart shows the average vocabulary size of artists in different genres. In the parantheses is the number of artists in the list that sing in that genre. Since our list includes only 93 artists, it is not a very good generalization.
+			</div>
+		</section>
+		<!-- Begin Genre plot here -->
+		<section id="genrePlot">
+			<div id="genreNames">
+				<script id="genre-names-template" type="text/x-handlebars-template">
 					{{#each this}}
-					<div class = "genreName"><span class = "genre_rank">{{inc @index}}</span>{{this.genre_name}} ({{this.num_artists}})</div>
-				{{/each}}
+					<div class="genreName">
+						<span class="genre_rank">{{inc @index}}</span>{{this.genre_name}} ({{this.num_artists}})</div>
+					{{/each}}
+				</script>
+			</div>
+			<svg id="genreLegend"></svg>
+			<svg id="genrePlotScale"></svg>
+		</section>
+		<!-- End genre plot -->
+		<div class="titles">AVERAGE VOCABULARY SIZE FOR EACH GENRE</div>
+		<div class="titles">Calculated for the top selling artists as per the Wikipedia article. ( ) denotes number of artists analysed in that genre</div>
+		<section class="article">
+			Some simple insights can still be taken. Hip-Hop is way ahead of the other genres (d’oh). Folk comes in second but since there is only one folk artist (Bob Dylan) in the analysis it is not representative at all. Pop is the genre with the most number of
+			musicians and its average vocabulary size (2464 words) is close to the average vocabulary size across all artists (2677 words). Same thing applies to the Rock genre as well.
+		</section>
+		<!-- End Comparing genre section -->
+		<!-- Begin conclusion section -->
+		<section class="article">
+			<center>
+				<span class="sectionHeading">TO SUM IT UP</span>
+			</center>
+			<div class="innerSection">
+				There is a large variation of vocabulary size in the 93 top selling musicians and there is no overall correlation between the commercial success of a musician and their vocabulary size.
+				<br/>
+				<br/> This analysis should not be interpreted as saying that one musician is better than the other, it is just another insight into the work of these amazing artists. It gives us a peek into the minds of different songwriters, some tear your heart with
+				just a few words while others paint an intricate picture with a thousand words. Quoting John Lennon out of context explains this songwriter dilemma quite well -
+				<div id="finalQuote">“Half of what i say is meaningless, but I say it just to reach you”
+					<a href="https://www.musixmatch.com/lyrics/The-Beatles/Julia" target="blank">- Julia, White Album</a></div>
+			</div>
+		</section>
+		<section class="article">
+			<center>
+				<span class="sectionHeading">ANALYSIS DETAILS</span>
+			</center>
+			<div class="innerSection">
+				All the lyrics data and other metadata (images, album lists, track lists, etc) is extracted using the <a href="http://developer.musixmatch.com" target="blank">Musixmatch api</a>. Python is used for fetching the data and analysing the lyrics. The analysis
+				could be improved to remove coincidental sounds (ooh, aah, etc) and other such words which are not part of a dictionary. The data and the code will be released if anyone is interested.
+				<br/>
+				<br/>
+				<a href="http://experiments.undercurrent.com" target="blank">The largest vocabulary in hip hop</a> compares the vocabulary of various musicians across the first 35000 words written by them. Instead of constraining by the number of words we used the
+				<b>100 densest</b> songs. Just out of curiosity (and for the sake of completeness) we used the same methodology by considering <b>10000 words</b> written by each artist. The results of the two approaches don’t differ too much, the top 5 ranked musicians
+				remain the same. The top 10 ranked musicians are the same with a slight shuffling of the ranks. Andrea Bocelli moves from #8 to #6, while Black Eyed Peas move from rank #6 to #7 and Julio Iglesias from #7 to #8. No significant changes are observed
+				on the whole (<a href="http://i.imgur.com/z2H9T6i.png" target="blank">more details</a>). Thus, we used 100 songs as the constraint since it makes more sense intuitively and musically.
+				<br/>
+				<br/> - <a href="http://twitter.com/neotheoen" target="blank">Varun Jewalikar</a> and <a href="http://twitter.com/NashVail" target="blank">Nash Vail</a>
+			</div>
+
+
+		</section>
+
+		<div id="disqusBox">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="An analysis of vocabularies of top selling musicians" data-via="Musixmatch" data-hashtags="music,lyrics,largest_vocabulary,musixmatch">Tweet</a>
+			<script>
+				! function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0],
+						p = /^http:/.test(d.location) ? 'http' : 'https';
+					if (!d.getElementById(id)) {
+						js = d.createElement(s);
+						js.id = id;
+						js.src = p + '://platform.twitter.com/widgets.js';
+						fjs.parentNode.insertBefore(js, fjs);
+					}
+				}(document, 'script', 'twitter-wjs');
 			</script>
+
+			<div class="fb-share-button" id="share_fb" data-href="http://lab.musixmatch.com/top_artist_vocabulary" data-layout="button_count"></div>
+			<div id="disqus_thread"></div>
+
 		</div>
-	<svg id="genreLegend"></svg>
-<svg id="genrePlotScale"></svg>
-</section>
-<!-- End genre plot -->
-<div class="titles">AVERAGE VOCABULARY SIZE FOR EACH GENRE</div>
-<div class="titles">Calculated for the top selling artists as per the Wikipedia article. ( ) denotes number of artists analysed in that genre</div>
-<section class="article">
-Some simple insights can still be taken. Hip-Hop is way ahead of the other genres (d’oh). Folk comes in second but since there is only one folk artist (Bob Dylan) in the analysis it is not representative at all. Pop is the genre with the most number of musicians and its average vocabulary size (2464 words) is close to the average vocabulary size across all artists (2677 words). Same thing applies to the Rock genre as well.
-</section>
-<!-- End Comparing genre section -->
-<!-- Begin conclusion section -->
-<section class="article">
-<center><span class = "sectionHeading">TO SUM IT UP</span></center>
-<div class="innerSection">
-	There is a large variation of vocabulary size in the 93 top selling musicians and there is no overall correlation between the commercial success of a musician and their vocabulary size.
-	<br/><br/>
-	This analysis should not be interpreted as saying that one musician is better than the other, it is just another insight into the work of these amazing artists. It gives us a peek into the minds of different songwriters, some tear your heart with just a few words while others paint an intricate picture with a thousand words.
-	Quoting John Lennon out of context explains this songwriter dilemma quite well -
-	<div id = "finalQuote">“Half of what i say is meaningless,
-		but I say it just to reach you”
-		<a href = "https://www.musixmatch.com/lyrics/The-Beatles/Julia" target = "blank">- Julia, White Album</a></div>
+
+
 	</div>
-</section>
-<section class="article">
-	<center><span class = "sectionHeading">ANALYSIS DETAILS</span></center>
-	<div class="innerSection">
-		All the lyrics data and other metadata (images, album lists, track lists, etc) is extracted using the <a href = "http://developer.musixmatch.com" target = "blank">Musixmatch api</a>. Python is used for fetching the data and analysing the lyrics. The analysis could be improved to remove coincidental sounds (ooh, aah, etc) and other such words which are not part of a dictionary. The data and the code will be released if anyone is interested.
-		<br/><br/>
-		<a href = "http://experiments.undercurrent.com" target = "blank">The largest vocabulary in hip hop</a> compares the vocabulary of various musicians across the first 35000 words written by them. Instead of constraining by the number of words we used the <b>100 densest</b> songs. Just out of curiosity (and for the sake of completeness) we used the same methodology by considering <b>10000 words</b> written by each artist. The results of the two approaches don’t differ too much, the top 5 ranked musicians remain the same. The top 10 ranked musicians are the same with a slight shuffling of the ranks. Andrea Bocelli moves from #8 to #6, while Black Eyed Peas move from rank #6 to #7 and Julio Iglesias from #7 to #8. No significant changes are observed on the whole (<a href = "http://i.imgur.com/z2H9T6i.png" target = "blank">more details</a>). Thus, we used 100 songs as the constraint since it makes more sense intuitively and musically.
-		<br/> <br/>
-		- <a href = "http://twitter.com/neotheoen" target = "blank">Varun Jewalikar</a> and <a href = "http://twitter.com/NashVail" target = "blank">Nash Vail</a>
-	</div>
-
-	
-</section>
-
-<div id = "disqusBox">
-	<a href="https://twitter.com/share" class="twitter-share-button" data-text="An analysis of vocabularies of top selling musicians" data-via="Musixmatch" data-hashtags="music,lyrics,largest_vocabulary,musixmatch">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
-
-<div class="fb-share-button" id = "share_fb" data-href="http://lab.musixmatch.com/top_artist_vocabulary" data-layout="button_count"></div>
-	<div id="disqus_thread"></div>
-
-</div>
-
-
-</div> <!-- End of container div -->
-<script id = "tooltipTemplate" type = "mxm/template">
-	<div class = "tooltipTop">
+	<!-- End of container div -->
+	<script id="tooltipTemplate" type="mxm/template">
+		<div class="tooltipTop">
 			<div class="rankContainer">
-						<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>
+				<span class="rank"><sup class="number">#</sup>{{rank}}<span class="number">/{{total}}</span>
+				</span>
 			</div>
 			<div class="detailContainer">
-							<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words
+				<span class="artistNameTooltip">{{artistName}}</span>
+				<br/>{{vocab}} words
 			</div>
-	</div>
-</script>
-<script id = "tooltipTemplateExpanded" type = "mxm/template">
-	<div class = "tooltipTop">
+		</div>
+	</script>
+	<script id="tooltipTemplateExpanded" type="mxm/template">
+		<div class="tooltipTop">
 			<div class="rankContainer">
-						<span class = "rank"><sup class = "number">#</sup>{{rank}}<span class = "number">/{{total}}</span></span>
+				<span class="rank"><sup class="number">#</sup>{{rank}}<span class="number">/{{total}}</span>
+				</span>
 			</div>
 			<div class="detailContainer">
-							<span class = "artistNameTooltip">{{artistName}}</span><br/>{{vocab}} words
+				<span class="artistNameTooltip">{{artistName}}</span>
+				<br/>{{vocab}} words
 			</div>
-	</div>
-	<div class = "extraInfo">
-			<div class = "ttInfoSection" id = "ttSales">Sales - {{sales}}M (#{{rank_sales}})</div>
-			<div class = "ttInfoSection" id = "ttLearningRate">Learning Rate - {{learning_rate}}</div>
-	</div>
-</script>
-<script type = "text/javascript" src = "data/total_analysis_final.js"></script>
-<script type = "text/javascript" src = "data/genre_analysis_final.js"></script>
-<script type = "text/javascript" src = "js/lib/handlebars-v3.0.3.js"></script>
-<script type = "text/javascript" src = "js/lib/jquery.min.js"></script>
-<script type = "text/javascript" src = "js/lib/easings.js"></script>
-<script type = "text/javascript" src = "js/lib/d3.js"></script>
-<script type = "text/javascript" src = "js/lib/jquery.tipsy.js"></script>
-<script type = "text/javascript" src = "js/lib/jquery.autocomplete.js"></script>
-<script type = "text/javascript" src = "js/Artist.js"></script>
-<script type = "text/javascript" src = "js/VocabPlot.js"></script>
-<script type = "text/javascript" src = "js/GenrePlot.js"></script>
-<script type = "text/javascript" src = "js/AllArtists.js"></script>
-<script type = "text/javascript" src = "js/ExpandButton.js"></script>
-<script type = "text/javascript" src = "js/Polyglots.js"></script>
-<script type = "text/javascript" src = "js/main.js"></script>
-<script type="text/javascript">
-	/* * * CONFIGURATION VARIABLES * * */
-	var disqus_shortname = 'musixmatchlab';
+		</div>
+		<div class="extraInfo">
+			<div class="ttInfoSection" id="ttSales">Sales - {{sales}}M (#{{rank_sales}})</div>
+			<div class="ttInfoSection" id="ttLearningRate">N.W.I - {{learning_rate}}</div>
+		</div>
+	</script>
+	<script type="text/javascript" src="data/total_analysis_final.js"></script>
+	<script type="text/javascript" src="data/genre_analysis_final.js"></script>
+	<script type="text/javascript" src="js/lib/handlebars-v3.0.3.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/easings.js"></script>
+	<script type="text/javascript" src="js/lib/d3.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.tipsy.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.autocomplete.js"></script>
+	<script type="text/javascript" src="js/Artist.js"></script>
+	<script type="text/javascript" src="js/VocabPlot.js"></script>
+	<script type="text/javascript" src="js/GenrePlot.js"></script>
+	<script type="text/javascript" src="js/AllArtists.js"></script>
+	<script type="text/javascript" src="js/ExpandButton.js"></script>
+	<script type="text/javascript" src="js/Polyglots.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES * * */
+		var disqus_shortname = 'musixmatchlab';
 
-	/* * * DON'T EDIT BELOW THIS LINE * * */
-	(function() {
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	})();
-</script>
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+			var dsq = document.createElement('script');
+			dsq.type = 'text/javascript';
+			dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
 </body>
+
 </html>
