@@ -510,7 +510,7 @@ body {
   margin: 0 auto;
   padding: 20px; }
 
-.fb_iframe_widget {
+#share_fb {
   display: inline-flex !important;
   position: relative; }
 
