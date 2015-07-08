@@ -1,5 +1,5 @@
 (function() {
-	
+
 	// Add contractability to the allArtists chart
 	var $window = $(window);
 
@@ -10,7 +10,7 @@
 			// Variables that'll help in maintaining the positions while scrolling
 			this.initialButtonPos = this.button.offset();
 			this.scrollLimits = this.target.offset();
-			// Initialize the click listener 
+			// Initialize the click listener
 			this.button.on('click', this.expandListToggle);
 		},
 
@@ -45,13 +45,13 @@
 
 	// Set up the scroll listener on the window to maintain the position of the button
 	// Not the best solution but will work for now ...
-	// TODO : fix this 
+	// TODO : fix this
 	$window.on('scroll', function() {
 		var scrollPos = $window.scrollTop();
 		if (scrollPos > expandButton.getUpperScrollLimit() && scrollPos < expandButton.getLowerScrollLimit()) {
 			expandButton.button.addClass('buttonFixedScroll');
 			expandButton.button.css({
-				top: (expandButton.initialButtonPos.top - 582) + 'px',
+				top: (expandButton.initialButtonPos.top - 452) + 'px',
 				left: expandButton.initialButtonPos.left + 'px'
 			});
 		} else {
