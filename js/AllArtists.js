@@ -8,7 +8,7 @@
 	function AllArtists(config, data) {
 
 		/*
-			Data holds the data about genre, here is a sample genre data 
+			Data holds the data about genre, here is a sample genre data
 			{
 			    "genre_name": "Punk Rock",
 			    "artists": ["Green Day"],
@@ -19,7 +19,7 @@
 		*/
 		this.data = data;
 
-		// Data should sorted in descending order by the number of artists in that genre 
+		// Data should sorted in descending order by the number of artists in that genre
 		data.sort(descBy('num_artists'));
 
 		this.$chart = $('#' + config.allChartCssId);
@@ -30,6 +30,7 @@
 
 	AllArtists.prototype = {
 		// Sorts and returns the param(array) names of artists in the mentioned configuration in constructor
+		// No longer needed
 		sortNames: function(names) {
 			names.sort(); // [all the names sorted in ascending order]
 			var sortedNames = [];
@@ -51,7 +52,6 @@
 					};
 				}
 			});
-
 			return sortedNames;
 		},
 
@@ -64,7 +64,7 @@
 	};
 
 
-	// Private methods 
+	// Private methods
 	// Converts 'A word' to 'A_word'
 	function add_(word) {
 		return word.split(" ").join("_");
@@ -74,7 +74,7 @@
 	 * Function : descBy(one of the property name of objects present in an array)
 	 * Usage    : arrayHoldingNames.sort(descBy(firstName));
 	 * ----------------------------------------------------------------------
-	 * Used to sort any array of objects in descending order by a property name 
+	 * Used to sort any array of objects in descending order by a property name
 	 * of the obejcts inside that array.
 	 */
 	function descBy(propertyName) {
