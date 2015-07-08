@@ -9,7 +9,7 @@
 
 			this.container = config.container;
 			this.scaleContainer = d3.select('#' + config.scaleContainerCssId);
-			// If I am not wrong the scale legend is the numbers written around ticks 
+			// If I am not wrong the scale legend is the numbers written around ticks
 			// like |200   |300 e.t.c may be I am wrong who knows?
 			this.legendContainer = d3.select('#' + config.legendContainerCssId);
 
@@ -24,10 +24,10 @@
 			// Adding all the names of the genres to the plot using templating
 			config.namesContainer.append(Handlebars.compile(config.genreNameTemplate)(this.data));
 
-			// To make the scale take up the whole height of the plot 
+			// To make the scale take up the whole height of the plot
 			this.scaleContainer.style('height', this.container.height() + 'px');
 
-			// Because of d3 quirks we will have to create a separate svg container to hold the 
+			// Because of d3 quirks we will have to create a separate svg container to hold the
 			// scale lengends sigh!
 
 			this.drawPlot([500, 2000, 3500, 5000]);
@@ -43,7 +43,7 @@
 				var upperLimit = containerPos.top;
 				var lowerLimit = upperLimit + that.container.height() - 30;
 				var scrollPos = $window.scrollTop();
-				if (scrollPos > upperLimit && scrollPos < lowerLimit) { 
+				if (scrollPos > upperLimit && scrollPos < lowerLimit) {
 					$legendHolder.css({
 						position: 'fixed',
 						top: '30px',
@@ -53,7 +53,7 @@
 
 					$legendHolder.css({
 						position: 'absolute',
-						top : containerPos.top - 350
+						top : containerPos.top - 220
 					});
 				}
 
@@ -68,7 +68,7 @@
 		},
 
 		drawScale: function(divisions) {
-			// let us fucking put the divisions in 
+			// let us fucking put the divisions in
 			var that = this;
 			var scaleColor = '#303030';
 
@@ -99,7 +99,7 @@
 			this.legendContainer
 				.selectAll('rect').data(divisions).enter().append('rect')
 				.attr('x', function(d) {
-					// The original x position is adjusted for aesthetic purposed using trial and error	
+					// The original x position is adjusted for aesthetic purposed using trial and error
 					return that.xScale(d) - 0.5;
 				})
 				.attr('y', 0)
@@ -138,23 +138,23 @@
 				})
 				.attr('height', barHeight)
 				.style('fill', barColor);
-			// we will also show text inside the bars 
-			
+			// we will also show text inside the bars
+
 		},
 
 		drawSeparators: function() {
 			var that = this;
 
 			// D3 doesn't like same svg shapes drawn on the same container
-			// through different loops, so when we come to this method after 
+			// through different loops, so when we come to this method after
 			// drawing the scales (which are lines too) we're 4(in curent situation) short of data,
 			// that is the index for us will not go from 0 - data.length but from 4 - data.length
 			// we won't be able to draw required number of separators in that condition.
 			// Since we're not using anything inside the data here, we will create a sample data
 			// holding required number of virtual elements
-			// the -1 is because we don't want the last separator as our container already has 
+			// the -1 is because we don't want the last separator as our container already has
 			// a border-bottom
-			// NOTE: If you change the number of scale lines in drawScale(), you might have 
+			// NOTE: If you change the number of scale lines in drawScale(), you might have
 			// to make adjustments here too via Trial and Error.
 			var sampleData = new Array(this.data.length + 4 - 1);
 
@@ -186,7 +186,7 @@
 	 * Function : descBy(one of the property name of objects present in an array)
 	 * Usage    : arrayHoldingNames.sort(descBy(firstName));
 	 * ----------------------------------------------------------------------
-	 * Used to sort any array of objects in descending order by a property name 
+	 * Used to sort any array of objects in descending order by a property name
 	 * of the obejcts inside that array.
 	 */
 	function descBy(propertyName) {
