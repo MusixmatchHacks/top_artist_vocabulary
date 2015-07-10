@@ -53,7 +53,7 @@
 
 					$legendHolder.css({
 						position: 'absolute',
-						top : containerPos.top - 220
+						top : containerPos.top - 300
 					});
 				}
 

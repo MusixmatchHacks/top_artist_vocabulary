@@ -51,7 +51,7 @@
 		if (scrollPos > expandButton.getUpperScrollLimit() && scrollPos < expandButton.getLowerScrollLimit()) {
 			expandButton.button.addClass('buttonFixedScroll');
 			expandButton.button.css({
-				top: (expandButton.initialButtonPos.top - 452) + 'px',
+				top: (expandButton.initialButtonPos.top - 532) + 'px',
 				left: expandButton.initialButtonPos.left + 'px'
 			});
 		} else {
