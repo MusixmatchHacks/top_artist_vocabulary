@@ -1,6 +1,8 @@
 (function() {
     'use strict';
 
+    console.log(densest_tracks_data);
+
     // TODO : Make a list of all the absolutely positioned elements and adjust their position on resize
 
     // Hnadlebar helpers

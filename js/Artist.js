@@ -12,11 +12,16 @@
 		this.name = artistName;
 		this.data = artistData;
 
+
 		// Selector is simply name of the artist with whitespace replaced by _ , e.g.
 		// Red Hot Chilli Peppers becomes Red_Hot_Chilli_Peppers
 		this.selector = artistName.split(" ").join("_");
 		// Points to the DOM element that holds the current artist
 		this.$artist = $('#' + this.selector);
+
+		// Track preview url
+		this.previewUrl = densest_tracks_data[this.selector] || "none";
+
 
 		// Set the background of the artist circle
 		this.$artist.css('background-image', 'url(img/artist_images_40px/' + this.selector + '.jpg)');
@@ -92,31 +97,11 @@
 	// Event handler on artist object
 	Artist.prototype.events = {
 		click: function() {
-			// var that = this,
-			// 	easingIn= 'easeInOutCubic',
-			// 	easingOut = 'easeInOutCubic',
-			// 	durationIn = 300,
-			// 	durationOut = 150;
-
-			// // Since tipsy tooltips are dynamically created we cannot cache them before hand
-			// this.$artist.on('click', function() {
-			// 	if (that.currentTooltipState === that.tooltipStates.COMPACT) {
-			// 		$('.tipsy-inner').animate({height : '+=67'}, durationIn, easingIn);
-			// 		$('.tipsy').animate({top : '-=67'}, durationIn, easingIn, function() {
-			// 			$('.tipsy-inner').html(that.tooltipExpandedContent);
-			// 		});
-
-			// 		that.currentTooltipState = that.tooltipStates.EXPANDED;
-
-			// 	} else { // Tooltip status is expanded
-
-			// 		$('.tipsy-inner').animate({height : '-=67'}, durationOut, easingOut);
-			// 		$('.tipsy-inner').html(that.tooltipOriginalContent);
-			// 		$('.tipsy').animate({top : '+=67'}, durationOut, easingOut);
-
-			// 		that.currentTooltipState = that.tooltipStates.COMPACT;
-			// 	}
-			// });
+			var that = this;
+			this.$artist.on('click', function() {
+				console.log(that.previewUrl);
+				// Play the preview thing
+			});
 		},
 
 		// Show a tooltip on hover
