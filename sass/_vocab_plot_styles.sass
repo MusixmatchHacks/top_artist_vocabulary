@@ -122,6 +122,7 @@ input#locateArtist
 		border : 2px solid #ffffff
 		transition : all 0.2s
 
+
 // When the artist is dim it has a lower opacity and is not highlighted on the plot
 .dimArtist
 	@extend .artistContainer
@@ -201,5 +202,14 @@ input#locateArtist
 	height: 100vh
 	margin : 0 auto
 
-
+.playIconOverlay
+	position : absolute
+	top : 0px
+	left: 0px
+	width : $width_artist_circle
+	height : $height_artist_circle
+	background-color : transparent
+	background-image : url(../img/icons/icon_play.svg)
+	background-repeat : no-repeat
+	background-position : 50% 30%
 

@@ -131,6 +131,15 @@
 					return that.tooltipExpandedContent;
 				}
 			});
+
+			// We will add a play button as an overlay over the artist image on hover 
+			this.$artist.on('mouseenter', function() {
+				$(this).append('<div class = "playIconOverlay"></div>');
+			});
+
+			this.$artist.on('mouseleave', function() {
+				$(this).children().remove();
+			});
 		}
 
 	};
