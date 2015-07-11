@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="17px" height="23px" viewBox="0 0 17 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
-    <title>icon_play</title>
+    <title>ic_play_circle_filled_white_24px</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="icon_play" sketch:type="MSLayerGroup" transform="translate(-11.000000, -6.000000)">
-            <path d="M11.6666667,7.29166667 L11.6666667,27.7083333 L27.7083333,17.5 L11.6666667,7.29166667 Z" id="Shape" stroke="#000000" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
-            <path d="M0,0 L35,0 L35,35 L0,35 L0,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        <g id="ic_play_circle_filled_white_24px" sketch:type="MSLayerGroup" transform="translate(-1.000000, -1.000000)">
+            <path d="M0,0 L28,0 L28,28 L0,28 L0,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M14,2.33333333 C7.56,2.33333333 2.33333333,7.56 2.33333333,14 C2.33333333,20.44 7.56,25.6666667 14,25.6666667 C20.44,25.6666667 25.6666667,20.44 25.6666667,14 C25.6666667,7.56 20.44,2.33333333 14,2.33333333 L14,2.33333333 Z M11.6666667,19.25 L11.6666667,8.75 L18.6666667,14 L11.6666667,19.25 L11.6666667,19.25 Z" id="Shape" stroke="#000000" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
