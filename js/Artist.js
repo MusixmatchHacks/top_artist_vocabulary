@@ -99,8 +99,7 @@
 		click: function() {
 			var that = this;
 			this.$artist.on('click', function() {
-				console.log(that.previewUrl);
-				// Play the preview thing
+				$(this).append('<embed id="embed_player" src="' + that.previewUrl + '" autostart="true" hidden="true"></embed>');				
 			});
 		},
 
