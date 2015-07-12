@@ -103,10 +103,10 @@
 				// Start playing the music if it isn't already playing otherwise get rid of it 
 				if(musicAlreadyPlaying){ // stop the music
 					$(this).children('#embed_player').remove();
-					$(this).children('.playIconOverlay').children('.arrow').toggle();
+					$(this).children('.playIconOverlay').children('.audio_control_icon').toggle();
 				}else{
 					$(this).append('<embed id="embed_player" src="' + that.previewUrl + '" autostart="true" hidden="true"></embed>');				
-					$(this).children('.playIconOverlay').children('.arrow').toggle();
+					$(this).children('.playIconOverlay').children('.audio_control_icon').toggle();
 				}
 			});
 		},
@@ -126,7 +126,7 @@
 
 			// We will add a play button as an overlay over the artist image on hover 
 			this.$artist.on('mouseenter', function() {
-				$(this).append('<div class = "playIconOverlay"><span class="arrow"><img src="img/icons/icon_play.png" alt="Play" /> </span> <span class="arrow" style="display: none;"> <img src="img/icons/icon_stop.png" alt="Stop" /> </span> </div> ');
+				$(this).append('<div class = "playIconOverlay"><span class="audio_control_icon"><img src="img/icons/icon_play.png" alt="Play" /> </span> <span class="audio_control_icon" style="display: none;"> <img src="img/icons/icon_stop.png" alt="Stop" /> </span> </div> ');
 			});
 
 			this.$artist.on('mouseleave', function() {
