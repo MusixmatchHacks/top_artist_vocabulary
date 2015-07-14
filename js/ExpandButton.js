@@ -72,7 +72,7 @@
 	// TODO : fix this
 	$window.on('scroll', function() {
 		var scrollPos = $window.scrollTop();
-		if (scrollPos > (expandButton.getLowerScrollLimit() - 700)) {
+		if (scrollPos > (expandButton.getLowerScrollLimit() - $window.height() + 100)) {
 			if(expandButton.button.hasClass('attachedToBottom')){
 				expandButton.button.removeClass('attachedToBottom');
 				expandButton.button.css({
@@ -80,7 +80,7 @@
 					top: expandButton.getLowerScrollLimit() - 480 + 'px'
 				});
 			}
-		}else if(scrollPos < (expandButton.getLowerScrollLimit() - 700) && $('.overlay').length === 0) {
+		}else if(scrollPos < (expandButton.getLowerScrollLimit() - $window.height() + 100) && $('.overlay').length === 0) {
 			expandButton.attachButtonToBottom(expandButton.button);
 		}
 	});
