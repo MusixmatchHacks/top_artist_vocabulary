@@ -1,0 +1,23 @@
+var gulp = require('gulp');
+
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var sass = require('gulp-ruby-sass');
+
+gulp.task('process-js', function() {
+    gulp.src('js/**/*.*')
+    	.pipe(concat('dist.js'))
+    	.pipe(uglify())
+    	.pipe(gulp.dest('public'));
+});
+
+gulp.task('compile-sass', function() {
+    return sass('sass/', {style: 'expanded'})
+	      .pipe(gulp.dest('public/'));
+});
+
+gulp.task('watch', function() {
+	gulp.watch('./**/*.*', ['default']);
+});
+
+gulp.task('default', ['process-js', 'compile-sass']);
