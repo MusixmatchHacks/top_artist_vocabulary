@@ -80,7 +80,7 @@
 		<section class="article">
 			To prevent the analysis from being skewed purely by the number of songs released, the vocabularies are compared across the <b>100 densest</b> songs (by total number of words) that they have released. Only 6 of these musicians have released less than 100 songs,
 			so it is a good threshold. Also, 100 songs comprises 8 to 10 albums of music which would span at least 5 to 10 years of work. This should give a fair idea of the overall vocabulary of these musicians.
-			<br/><br/>Here are some definitions you should be acquanited with
+			<br/><br/>Here are some definitions you should be acquainted with
 			<br/>
 			<br/> &#8226;
 			<span class="defHighlight">
@@ -105,11 +105,13 @@
 		<section id="vocab_plot_wrapper">
 			<!-- Holds the plot/graph  -->
 			<div id="vocab_plot">
-				<img src="img/mxmCompactLogo_vocab.png" height="37" width="43" id = "mxm_compact_vocab">
+				<img src="img/mxmCompactLogo_vocab.png" height="55" width="43" id = "mxm_compact_vocab">
 				<div id = "vocabTitle">
 					<b>VOCABULARY SIZE OF TOP SELLING MUSICIANS</b>
 					<br/>
 					Calculated over the 100 (or less) of their lengthiest songs
+					<br/>
+					Clicking an artist plays the Spotify&reg; preview of their most popular song
 				</div>
 				<div id="searchBox">
 					<input type="text" id="locateArtist" placeholder="Enter Name or Rank">
@@ -212,7 +214,7 @@
 		</section>
 		<!-- End genre plot -->
 		<div class="titles">AVERAGE VOCABULARY SIZE FOR EACH GENRE</div>
-		<div class="titles">Calculated for the top selling artists as per the Wikipedia article. ( ) denotes number of artists analysed in that genre</div>
+		<div class="titles">Calculated for the top selling artists as per the Wikipedia article. ( ) denotes number of artists analyzed in that genre</div>
 		<section class="article">
 			Some simple insights can still be taken. Hip-Hop is way ahead of the other genres (d’oh). Folk comes in second but since there is only one folk artist (Bob Dylan) in the analysis it is not representative at all. Pop is the genre with the most number of
 			musicians and its average vocabulary size (2464 words) is close to the average vocabulary size across all artists (2677 words). Same thing applies to the Rock genre as well.
@@ -237,7 +239,7 @@
 				<span class="sectionHeading">ANALYSIS DETAILS</span>
 			</center>
 			<div class="innerSection">
-				All the lyrics data and other metadata (images, album lists, track lists, etc) is extracted using the <a href="http://developer.musixmatch.com" target="blank">Musixmatch api</a>. Python is used for fetching the data and analysing the lyrics. The analysis
+				All the lyrics data and other metadata (images, album lists, track lists, etc) is extracted using the <a href="http://developer.musixmatch.com" target="blank">Musixmatch API</a>. Python is used for fetching the data and analyzing the lyrics. The analysis
 				could be improved to remove coincidental sounds (ooh, aah, etc) and other such words which are not part of a dictionary. The data and the code will be released if anyone is interested.
 				<br/>
 				<br/>
