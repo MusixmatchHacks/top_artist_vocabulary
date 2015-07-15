@@ -13,7 +13,8 @@ var vocab_data = [{
 	"rank_sales": 14,
 	"rank_vocab": 1,
 	"sales_x_offset": 66,
-	"learning_rate": 11.550011340440008
+	"learning_rate": 11.550011340440008,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/95b23bb39d4afd0155a0d70e6feac5b78e69d2f0"
 }, {
 	"certified_sales": 79.8,
 	"vocab_len": 6899,
@@ -29,7 +30,8 @@ var vocab_data = [{
 	"rank_sales": 28,
 	"rank_vocab": 2,
 	"sales_x_offset": 0,
-	"learning_rate": 11.891868386722713
+	"learning_rate": 11.891868386722713,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/34a42a7e3f598dec3e8e89bcafac7cd239091a62"
 }, {
 	"certified_sales": 46.2,
 	"vocab_len": 6569,
@@ -45,7 +47,8 @@ var vocab_data = [{
 	"rank_sales": 58,
 	"rank_vocab": 3,
 	"sales_x_offset": 0,
-	"learning_rate": 14.298980057847466
+	"learning_rate": 14.298980057847466,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/9be5fc446d674be4a980ce36ecc2a88c724e0471"
 }, {
 	"certified_sales": 94.1,
 	"vocab_len": 5069,
@@ -61,7 +64,8 @@ var vocab_data = [{
 	"rank_sales": 23,
 	"rank_vocab": 4,
 	"sales_x_offset": 0,
-	"learning_rate": 11.403827184849083
+	"learning_rate": 11.403827184849083,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/f890183ccfd5f46ce172da78066231d952b9024d"
 }, {
 	"certified_sales": 43.6,
 	"vocab_len": 4883,
@@ -77,7 +81,8 @@ var vocab_data = [{
 	"rank_sales": 61,
 	"rank_vocab": 5,
 	"sales_x_offset": 0,
-	"learning_rate": 9.138849068195782
+	"learning_rate": 9.138849068195782,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/582a3cca28e1932109560ccdcad7d55f3dc12a70"
 }, {
 	"certified_sales": 54,
 	"vocab_len": 4539,
@@ -93,7 +98,8 @@ var vocab_data = [{
 	"rank_sales": 48,
 	"rank_vocab": 6,
 	"sales_x_offset": 0,
-	"learning_rate": 13.55606961885878
+	"learning_rate": 13.55606961885878,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/e8facb52c44ea0affa9b939e9b9af19d65f3c3f9"
 }, {
 	"certified_sales": 51,
 	"vocab_len": 4323,
@@ -109,7 +115,8 @@ var vocab_data = [{
 	"rank_sales": 51,
 	"rank_vocab": 7,
 	"sales_x_offset": 0,
-	"learning_rate": 6.673143650242887
+	"learning_rate": 6.673143650242887,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/3d2e7acb6920a0d012b15b8542cc6a3802c0b272"
 }, {
 	"certified_sales": 37.4,
 	"vocab_len": 4306,
@@ -125,7 +132,8 @@ var vocab_data = [{
 	"rank_sales": 73,
 	"rank_vocab": 8,
 	"sales_x_offset": 0,
-	"learning_rate": 5.7152810032512775
+	"learning_rate": 5.7152810032512775,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/c9cdac62458533c14a392a6184e39adeb23afa59"
 }, {
 	"certified_sales": 72.8,
 	"vocab_len": 3959,
@@ -141,7 +149,8 @@ var vocab_data = [{
 	"rank_sales": 34,
 	"rank_vocab": 9,
 	"sales_x_offset": 0,
-	"learning_rate": 4.316746653195251
+	"learning_rate": 4.316746653195251,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/df35bff5c9135ec287a469866632703559c108d9"
 }, {
 	"certified_sales": 122,
 	"vocab_len": 3954,
@@ -157,7 +166,8 @@ var vocab_data = [{
 	"rank_sales": 12,
 	"rank_vocab": 10,
 	"sales_x_offset": 98,
-	"learning_rate": 10.616337885685383
+	"learning_rate": 10.616337885685383,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/f5496cdc984e2cdf3429249fa86b430c9633a138"
 }, {
 	"certified_sales": 61.9,
 	"vocab_len": 3906,
@@ -173,7 +183,8 @@ var vocab_data = [{
 	"rank_sales": 43,
 	"rank_vocab": 11,
 	"sales_x_offset": 0,
-	"learning_rate": 14.790322580645162
+	"learning_rate": 14.790322580645162,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/3322607df8a5e996486df174b257b1c1b8431872"
 }, {
 	"certified_sales": 52.3,
 	"vocab_len": 3636,
@@ -189,7 +200,8 @@ var vocab_data = [{
 	"rank_sales": 49,
 	"rank_vocab": 12,
 	"sales_x_offset": 0,
-	"learning_rate": 9.946644664466447
+	"learning_rate": 9.946644664466447,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/abb799838a0eb87a05eae5a3913b8ae95c34308f"
 }, {
 	"certified_sales": 39.5,
 	"vocab_len": 3497,
@@ -205,7 +217,8 @@ var vocab_data = [{
 	"rank_sales": 71,
 	"rank_vocab": 13,
 	"sales_x_offset": 0,
-	"learning_rate": 10.19502430654847
+	"learning_rate": 10.19502430654847,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/b249f6274afd979a3c1da89b51b38f4e349ad87f"
 }, {
 	"certified_sales": 35.4,
 	"vocab_len": 3419,
@@ -221,7 +234,8 @@ var vocab_data = [{
 	"rank_sales": 77,
 	"rank_vocab": 14,
 	"sales_x_offset": 0,
-	"learning_rate": 11.714828897338403
+	"learning_rate": 11.714828897338403,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/427a9d5bf564e62db0e412a28c219d62b2eac061"
 }, {
 	"certified_sales": 66,
 	"vocab_len": 3206,
@@ -237,7 +251,8 @@ var vocab_data = [{
 	"rank_sales": 41,
 	"rank_vocab": 15,
 	"sales_x_offset": 0,
-	"learning_rate": 16.857142857142858
+	"learning_rate": 16.857142857142858,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/d2b4141db025b4e8db53ba5f014007b8d94ed5c5"
 }, {
 	"certified_sales": 97.1,
 	"vocab_len": 3186,
@@ -253,7 +268,8 @@ var vocab_data = [{
 	"rank_sales": 21,
 	"rank_vocab": 16,
 	"sales_x_offset": 0,
-	"learning_rate": 10.654111738857502
+	"learning_rate": 10.654111738857502,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/8a17c4f89623641d2ac54eee756a7a82e60fd1d3"
 }, {
 	"certified_sales": 48.2,
 	"vocab_len": 3168,
@@ -269,7 +285,8 @@ var vocab_data = [{
 	"rank_sales": 55,
 	"rank_vocab": 17,
 	"sales_x_offset": 0,
-	"learning_rate": 11.066919191919192
+	"learning_rate": 11.066919191919192,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/699d8d7c0efe3ffb5acd74ee40a0d436a4755201"
 }, {
 	"certified_sales": 116.2,
 	"vocab_len": 3077,
@@ -285,7 +302,8 @@ var vocab_data = [{
 	"rank_sales": 13,
 	"rank_vocab": 18,
 	"sales_x_offset": -95,
-	"learning_rate": 5.726681832954176
+	"learning_rate": 5.726681832954176,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/cce05a03c838bbf7fee2b64b3698c229562ce580"
 }, {
 	"certified_sales": 99.2,
 	"vocab_len": 3061,
@@ -301,7 +319,8 @@ var vocab_data = [{
 	"rank_sales": 20,
 	"rank_vocab": 19,
 	"sales_x_offset": 0,
-	"learning_rate": 10.416857236197322
+	"learning_rate": 10.416857236197322,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/ded5694d43a39b57eb50d61e45c136be7aa67baa"
 }, {
 	"certified_sales": 129.1,
 	"vocab_len": 3059,
@@ -317,7 +336,8 @@ var vocab_data = [{
 	"rank_sales": 9,
 	"rank_vocab": 20,
 	"sales_x_offset": 65,
-	"learning_rate": 16.447531873161164
+	"learning_rate": 16.447531873161164,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/a8980491ba2c8c90be497f3771a93c15371a2dd2"
 }, {
 	"certified_sales": 41.6,
 	"vocab_len": 2974,
@@ -333,7 +353,8 @@ var vocab_data = [{
 	"rank_sales": 66,
 	"rank_vocab": 21,
 	"sales_x_offset": 0,
-	"learning_rate": 9.741089441829187
+	"learning_rate": 9.741089441829187,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/ab2b915b2ed590971395463a754bb13628681b52"
 }, {
 	"certified_sales": 83,
 	"vocab_len": 2958,
@@ -349,7 +370,8 @@ var vocab_data = [{
 	"rank_sales": 26,
 	"rank_vocab": 22,
 	"sales_x_offset": 0,
-	"learning_rate": 11.510480054090602
+	"learning_rate": 11.510480054090602,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/03fb5d51d1636c2269636d8cfd36530bb59dee75"
 }, {
 	"certified_sales": 32.5,
 	"vocab_len": 2927,
@@ -365,7 +387,8 @@ var vocab_data = [{
 	"rank_sales": 82,
 	"rank_vocab": 23,
 	"sales_x_offset": 0,
-	"learning_rate": 8.400751622822002
+	"learning_rate": 8.400751622822002,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/fb534c9e5b639530721d28c2b7a782cf1b9725ce"
 }, {
 	"certified_sales": 166.6,
 	"vocab_len": 2918,
@@ -381,7 +404,8 @@ var vocab_data = [{
 	"rank_sales": 4,
 	"rank_vocab": 24,
 	"sales_x_offset": 35,
-	"learning_rate": 16.09561343385881
+	"learning_rate": 16.09561343385881,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/e3f2c751d537788f5b0c5a43b0d0b4a5aa23ae26"
 }, {
 	"certified_sales": 24.3,
 	"vocab_len": 2891,
@@ -397,7 +421,8 @@ var vocab_data = [{
 	"rank_sales": 91,
 	"rank_vocab": 25,
 	"sales_x_offset": 0,
-	"learning_rate": 10.103078519543411
+	"learning_rate": 10.103078519543411,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/57535b898c3e3095e72d5774b375dc3c16401446"
 }, {
 	"certified_sales": 161.8,
 	"vocab_len": 2865,
@@ -413,7 +438,8 @@ var vocab_data = [{
 	"rank_sales": 5,
 	"rank_vocab": 26,
 	"sales_x_offset": 0,
-	"learning_rate": 12.222687609075043
+	"learning_rate": 12.222687609075043,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/af9c97f58938d0d746b17f12df6f9ac3d1de1a8a"
 }, {
 	"certified_sales": 142.8,
 	"vocab_len": 2829,
@@ -429,7 +455,8 @@ var vocab_data = [{
 	"rank_sales": 6,
 	"rank_vocab": 27,
 	"sales_x_offset": 0,
-	"learning_rate": 10.040650406504065
+	"learning_rate": 10.040650406504065,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/42ff8e1e9db133b549cb4faba8905d0553dad113"
 }, {
 	"certified_sales": 76.1,
 	"vocab_len": 2808,
@@ -445,7 +472,8 @@ var vocab_data = [{
 	"rank_sales": 30,
 	"rank_vocab": 28,
 	"sales_x_offset": 0,
-	"learning_rate": 12.624643874643874
+	"learning_rate": 12.624643874643874,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/ff63e9ecafdeeaaf10ca23f7522a60e6f026e4fa"
 }, {
 	"certified_sales": 90.2,
 	"vocab_len": 2797,
@@ -461,7 +489,8 @@ var vocab_data = [{
 	"rank_sales": 24,
 	"rank_vocab": 29,
 	"sales_x_offset": 0,
-	"learning_rate": 11.133714694315337
+	"learning_rate": 11.133714694315337,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/41113bb93fe7a245a752e23b695aa6f5b3eec559"
 }, {
 	"certified_sales": 94.7,
 	"vocab_len": 2794,
@@ -477,7 +506,8 @@ var vocab_data = [{
 	"rank_sales": 22,
 	"rank_vocab": 30,
 	"sales_x_offset": 0,
-	"learning_rate": 11.559413027916966
+	"learning_rate": 11.559413027916966,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/ad861c37005fdb42298e33725325ecca99edfd5e"
 }, {
 	"certified_sales": 61.2,
 	"vocab_len": 2755,
@@ -493,7 +523,8 @@ var vocab_data = [{
 	"rank_sales": 44,
 	"rank_vocab": 31,
 	"sales_x_offset": 0,
-	"learning_rate": 8.680943738656987
+	"learning_rate": 8.680943738656987,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/d58e4a07aaf8c366ab0f1735660533d4fc81fe3b"
 }, {
 	"certified_sales": 57.8,
 	"vocab_len": 2742,
@@ -509,7 +540,8 @@ var vocab_data = [{
 	"rank_sales": 47,
 	"rank_vocab": 32,
 	"sales_x_offset": 0,
-	"learning_rate": 10.966812545587162
+	"learning_rate": 10.966812545587162,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/8e68458fe7b76db4884e5bb680c0945005aab523"
 }, {
 	"certified_sales": 37.1,
 	"vocab_len": 2725,
@@ -525,7 +557,8 @@ var vocab_data = [{
 	"rank_sales": 74,
 	"rank_vocab": 33,
 	"sales_x_offset": 0,
-	"learning_rate": 8.748256880733946
+	"learning_rate": 8.748256880733946,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/681cabd79071e6653b32fd810ccc255fa550ba27"
 }, {
 	"certified_sales": 39.9,
 	"vocab_len": 2716,
@@ -541,7 +574,8 @@ var vocab_data = [{
 	"rank_sales": 70,
 	"rank_vocab": 34,
 	"sales_x_offset": 0,
-	"learning_rate": 16.123711340206185
+	"learning_rate": 16.123711340206185,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/aa11b4a19a809386ff6ade38771fadb52487ceff"
 }, {
 	"certified_sales": 102.6,
 	"vocab_len": 2708,
@@ -557,7 +591,8 @@ var vocab_data = [{
 	"rank_sales": 19,
 	"rank_vocab": 35,
 	"sales_x_offset": 0,
-	"learning_rate": 10.926883308714919
+	"learning_rate": 10.926883308714919,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/87ee273a8b249a5550da3345e112db48facc74cc"
 }, {
 	"certified_sales": 103.9,
 	"vocab_len": 2668,
@@ -573,7 +608,8 @@ var vocab_data = [{
 	"rank_sales": 18,
 	"rank_vocab": 36,
 	"sales_x_offset": 0,
-	"learning_rate": 10.896176911544227
+	"learning_rate": 10.896176911544227,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/7784471d58e99080e54aa88f30f9412d5204ef0b"
 }, {
 	"certified_sales": 46.3,
 	"vocab_len": 2535,
@@ -589,7 +625,8 @@ var vocab_data = [{
 	"rank_sales": 57,
 	"rank_vocab": 37,
 	"sales_x_offset": 0,
-	"learning_rate": 10.850887573964497
+	"learning_rate": 10.850887573964497,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/11f6cc57f1287ee01712d57fe43117594d4774ba"
 }, {
 	"certified_sales": 208.4,
 	"vocab_len": 2531,
@@ -605,7 +642,8 @@ var vocab_data = [{
 	"rank_sales": 2,
 	"rank_vocab": 38,
 	"sales_x_offset": 0,
-	"learning_rate": 11.255630185697353
+	"learning_rate": 11.255630185697353,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/fa7061f7112d69c2352ee904b5425f2d068153c6"
 }, {
 	"certified_sales": 63.8,
 	"vocab_len": 2530,
@@ -621,7 +659,8 @@ var vocab_data = [{
 	"rank_sales": 42,
 	"rank_vocab": 39,
 	"sales_x_offset": 0,
-	"learning_rate": 11.315415019762845
+	"learning_rate": 11.315415019762845,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/9063dc9785706f06677ddd900c702a59035a8cc5"
 }, {
 	"certified_sales": 130.4,
 	"vocab_len": 2524,
@@ -637,7 +676,8 @@ var vocab_data = [{
 	"rank_sales": 8,
 	"rank_vocab": 40,
 	"sales_x_offset": -37,
-	"learning_rate": 14.670364500792394
+	"learning_rate": 14.670364500792394,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/a57dce7e97a6b6a6caa55ad12b772bdc49ee3f8d"
 }, {
 	"certified_sales": 106.9,
 	"vocab_len": 2519,
@@ -653,7 +693,8 @@ var vocab_data = [{
 	"rank_sales": 17,
 	"rank_vocab": 41,
 	"sales_x_offset": 0,
-	"learning_rate": 10.908296943231441
+	"learning_rate": 10.908296943231441,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/b9fdd806b4baf950febbf4d49ce07b5fc64424da"
 }, {
 	"certified_sales": 175.4,
 	"vocab_len": 2503,
@@ -669,7 +710,8 @@ var vocab_data = [{
 	"rank_sales": 3,
 	"rank_vocab": 42,
 	"sales_x_offset": 0,
-	"learning_rate": 20.58210147822613
+	"learning_rate": 20.58210147822613,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/5371616374a56bb4620612fbbc08d89747a04f2a"
 }, {
 	"certified_sales": 74.4,
 	"vocab_len": 2498,
@@ -685,7 +727,8 @@ var vocab_data = [{
 	"rank_sales": 31,
 	"rank_vocab": 43,
 	"sales_x_offset": 0,
-	"learning_rate": 14.927141713370697
+	"learning_rate": 14.927141713370697,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/43ebe6bd3a103f24609d92e3dbbbe2f4dce5c527"
 }, {
 	"certified_sales": 51,
 	"vocab_len": 2483,
@@ -701,7 +744,8 @@ var vocab_data = [{
 	"rank_sales": 52,
 	"rank_vocab": 44,
 	"sales_x_offset": 0,
-	"learning_rate": 19.283527990334274
+	"learning_rate": 19.283527990334274,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/3bfd0b12dd3c9ecb6742a17ec7eb6950525ab17a"
 }, {
 	"certified_sales": 69.2,
 	"vocab_len": 2469,
@@ -717,7 +761,8 @@ var vocab_data = [{
 	"rank_sales": 38,
 	"rank_vocab": 45,
 	"sales_x_offset": 0,
-	"learning_rate": 12.087484811664641
+	"learning_rate": 12.087484811664641,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/85804bbc237e05ae7db9e90b9c0e09527e50d594"
 }, {
 	"certified_sales": 36.5,
 	"vocab_len": 2451,
@@ -733,7 +778,8 @@ var vocab_data = [{
 	"rank_sales": 75,
 	"rank_vocab": 46,
 	"sales_x_offset": 0,
-	"learning_rate": 12.24765401876785
+	"learning_rate": 12.24765401876785,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/49c60d4d23301e7ffa6f0eeead3ec5381c855b1b"
 }, {
 	"certified_sales": 58.8,
 	"vocab_len": 2433,
@@ -749,7 +795,8 @@ var vocab_data = [{
 	"rank_sales": 45,
 	"rank_vocab": 47,
 	"sales_x_offset": 0,
-	"learning_rate": 11.353062063296342
+	"learning_rate": 11.353062063296342,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/827e2ae9a59f4649bb977766230683bb81deeec8"
 }, {
 	"certified_sales": 47.5,
 	"vocab_len": 2432,
@@ -765,7 +812,8 @@ var vocab_data = [{
 	"rank_sales": 56,
 	"rank_vocab": 48,
 	"sales_x_offset": 0,
-	"learning_rate": 11.553865131578947
+	"learning_rate": 11.553865131578947,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/e56702042faef95fc3e20fafa2420c62c6a9cc63"
 }, {
 	"certified_sales": 126.1,
 	"vocab_len": 2400,
@@ -781,7 +829,8 @@ var vocab_data = [{
 	"rank_sales": 11,
 	"rank_vocab": 49,
 	"sales_x_offset": 0,
-	"learning_rate": 19.515
+	"learning_rate": 19.515,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/e56702042faef95fc3e20fafa2420c62c6a9cc63"
 }, {
 	"certified_sales": 27.6,
 	"vocab_len": 2343,
@@ -797,7 +846,8 @@ var vocab_data = [{
 	"rank_sales": 86,
 	"rank_vocab": 50,
 	"sales_x_offset": 0,
-	"learning_rate": 10.390951771233462
+	"learning_rate": 10.390951771233462,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/395fc03936dc7bafdb21934aa128e681aedb0f0b"
 }, {
 	"certified_sales": 80.5,
 	"vocab_len": 2318,
@@ -813,7 +863,8 @@ var vocab_data = [{
 	"rank_sales": 27,
 	"rank_vocab": 51,
 	"sales_x_offset": 0,
-	"learning_rate": 16.081104400345126
+	"learning_rate": 16.081104400345126,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/13d224df83ebc3d2ba66e1a16f965aabc18781d5"
 }, {
 	"certified_sales": 32.1,
 	"vocab_len": 2280,
@@ -829,7 +880,8 @@ var vocab_data = [{
 	"rank_sales": 83,
 	"rank_vocab": 52,
 	"sales_x_offset": 0,
-	"learning_rate": 11.444736842105263
+	"learning_rate": 11.444736842105263,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/d0fad9dce1b6eba7386ceb75fd9471c88573aea4"
 }, {
 	"certified_sales": 42.9,
 	"vocab_len": 2272,
@@ -845,7 +897,8 @@ var vocab_data = [{
 	"rank_sales": 64,
 	"rank_vocab": 53,
 	"sales_x_offset": 0,
-	"learning_rate": 9.595070422535212
+	"learning_rate": 9.595070422535212,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/629a998a25494f42c64ca7acadcc5b3a9d2221c1"
 }, {
 	"certified_sales": 72.8,
 	"vocab_len": 2250,
@@ -861,7 +914,8 @@ var vocab_data = [{
 	"rank_sales": 33,
 	"rank_vocab": 54,
 	"sales_x_offset": 0,
-	"learning_rate": 12.010222222222222
+	"learning_rate": 12.010222222222222,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/9ae2155e081bd7435e5ba305ef14960e154a56bc"
 }, {
 	"certified_sales": 127.9,
 	"vocab_len": 2201,
@@ -877,7 +931,8 @@ var vocab_data = [{
 	"rank_sales": 10,
 	"rank_vocab": 55,
 	"sales_x_offset": -72,
-	"learning_rate": 9.825079509313948
+	"learning_rate": 9.825079509313948,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/3b972bba57d54f2eebdfcce9bd85d8b6054ec0c3"
 }, {
 	"certified_sales": 67.1,
 	"vocab_len": 2193,
@@ -893,7 +948,8 @@ var vocab_data = [{
 	"rank_sales": 40,
 	"rank_vocab": 56,
 	"sales_x_offset": 0,
-	"learning_rate": 13.53625170998632
+	"learning_rate": 13.53625170998632,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/e146e5c77e4cce9615820c6b6606aa1c54985b58"
 }, {
 	"certified_sales": 42.2,
 	"vocab_len": 2178,
@@ -909,7 +965,8 @@ var vocab_data = [{
 	"rank_sales": 65,
 	"rank_vocab": 57,
 	"sales_x_offset": 0,
-	"learning_rate": 13.527089072543617
+	"learning_rate": 13.527089072543617,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/313ed12c5f6502e4dc1e6abe9976f059f0d08ae8"
 }, {
 	"certified_sales": 40.4,
 	"vocab_len": 2163,
@@ -925,7 +982,8 @@ var vocab_data = [{
 	"rank_sales": 68,
 	"rank_vocab": 58,
 	"sales_x_offset": 0,
-	"learning_rate": 14.162274618585299
+	"learning_rate": 14.162274618585299,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/df6603f1763e91893cbc7ecf0c1e2a4691166bad"
 }, {
 	"certified_sales": 77.1,
 	"vocab_len": 2141,
@@ -941,7 +999,8 @@ var vocab_data = [{
 	"rank_sales": 29,
 	"rank_vocab": 59,
 	"sales_x_offset": 0,
-	"learning_rate": 20.56422232601588
+	"learning_rate": 20.56422232601588,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/f4c3182b6dba991391d3d5d5ba712b3d340b0a92"
 }, {
 	"certified_sales": 34.9,
 	"vocab_len": 2114,
@@ -957,7 +1016,8 @@ var vocab_data = [{
 	"rank_sales": 78,
 	"rank_vocab": 60,
 	"sales_x_offset": 0,
-	"learning_rate": 14.494796594134343
+	"learning_rate": 14.494796594134343,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/2b8779cf6173d3617d7b1ff8215304c6a9530aaf"
 }, {
 	"certified_sales": 45.9,
 	"vocab_len": 2109,
@@ -973,7 +1033,8 @@ var vocab_data = [{
 	"rank_sales": 59,
 	"rank_vocab": 61,
 	"sales_x_offset": 0,
-	"learning_rate": 10.700806069227122
+	"learning_rate": 10.700806069227122,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/42a3acbf4eb1c22370ad3466679aa33dc2212a74"
 }, {
 	"certified_sales": 138.5,
 	"vocab_len": 2077,
@@ -989,7 +1050,8 @@ var vocab_data = [{
 	"rank_sales": 7,
 	"rank_vocab": 62,
 	"sales_x_offset": 35,
-	"learning_rate": 11.448724121328839
+	"learning_rate": 11.448724121328839,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/752da50bddc3a4352a6ad3548735dad34e3ebe63"
 }, {
 	"certified_sales": 43.1,
 	"vocab_len": 2055,
@@ -1005,7 +1067,8 @@ var vocab_data = [{
 	"rank_sales": 63,
 	"rank_vocab": 63,
 	"sales_x_offset": 0,
-	"learning_rate": 14.017518248175183
+	"learning_rate": 14.017518248175183,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/ca4663322a851f5a0dec23cedfc91b6d516b13f9"
 }, {
 	"certified_sales": 24.5,
 	"vocab_len": 2037,
@@ -1021,7 +1084,8 @@ var vocab_data = [{
 	"rank_sales": 90,
 	"rank_vocab": 64,
 	"sales_x_offset": 0,
-	"learning_rate": 16.114874815905743
+	"learning_rate": 16.114874815905743,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/a0a0a5d876c3d99ef20e9f182cb008313dfc5953"
 }, {
 	"certified_sales": 34.4,
 	"vocab_len": 2030,
@@ -1037,7 +1101,8 @@ var vocab_data = [{
 	"rank_sales": 80,
 	"rank_vocab": 65,
 	"sales_x_offset": 0,
-	"learning_rate": 12.13448275862069
+	"learning_rate": 12.13448275862069,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/da7dc422d21f7a706fad27b2420bb74802030618"
 }, {
 	"certified_sales": 34.7,
 	"vocab_len": 2015,
@@ -1053,7 +1118,8 @@ var vocab_data = [{
 	"rank_sales": 79,
 	"rank_vocab": 66,
 	"sales_x_offset": 0,
-	"learning_rate": 13.500248138957817
+	"learning_rate": 13.500248138957817,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/69dc71a09cd4b9e5e23a01cb144dd3512715c1f7"
 }, {
 	"certified_sales": 30.8,
 	"vocab_len": 1999,
@@ -1069,7 +1135,8 @@ var vocab_data = [{
 	"rank_sales": 84,
 	"rank_vocab": 67,
 	"sales_x_offset": 0,
-	"learning_rate": 15.467733866933466
+	"learning_rate": 15.467733866933466,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/332fb47e0f14333ce0f11539c8c81d03c6d81f10"
 }, {
 	"certified_sales": 43.5,
 	"vocab_len": 1975,
@@ -1085,7 +1152,8 @@ var vocab_data = [{
 	"rank_sales": 62,
 	"rank_vocab": 68,
 	"sales_x_offset": 0,
-	"learning_rate": 14.095189873417722
+	"learning_rate": 14.095189873417722,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/885021ec9b6ac110238a9463bdcc0dc6d4778cecs"
 }, {
 	"certified_sales": 18.9,
 	"vocab_len": 1954,
@@ -1101,7 +1169,8 @@ var vocab_data = [{
 	"rank_sales": 93,
 	"rank_vocab": 69,
 	"sales_x_offset": 0,
-	"learning_rate": 14.759467758444217
+	"learning_rate": 14.759467758444217,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/d9cf8857c53e4f3482517df14d11aacf45fe66f8"
 }, {
 	"certified_sales": 26.8,
 	"vocab_len": 1921,
@@ -1117,7 +1186,8 @@ var vocab_data = [{
 	"rank_sales": 87,
 	"rank_vocab": 70,
 	"sales_x_offset": 0,
-	"learning_rate": 16.706923477355545
+	"learning_rate": 16.706923477355545,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/7df55d8ca83351399071954210c4b69cb2199906"
 }, {
 	"certified_sales": 57.9,
 	"vocab_len": 1903,
@@ -1133,7 +1203,8 @@ var vocab_data = [{
 	"rank_sales": 46,
 	"rank_vocab": 71,
 	"sales_x_offset": 0,
-	"learning_rate": 12.733578560168155
+	"learning_rate": 12.733578560168155,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/ca0fa81b146e6af69a28175a2a358717830cff50"
 }, {
 	"certified_sales": 111.3,
 	"vocab_len": 1890,
@@ -1149,7 +1220,8 @@ var vocab_data = [{
 	"rank_sales": 16,
 	"rank_vocab": 72,
 	"sales_x_offset": 0,
-	"learning_rate": 19.21851851851852
+	"learning_rate": 19.21851851851852,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/8f7b6745580f5264b3ab679e2661ddfb8a333714"
 }, {
 	"certified_sales": 38.2,
 	"vocab_len": 1885,
@@ -1165,7 +1237,8 @@ var vocab_data = [{
 	"rank_sales": 72,
 	"rank_vocab": 73,
 	"sales_x_offset": 0,
-	"learning_rate": 13.300795755968169
+	"learning_rate": 13.300795755968169,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/e231d70090a2107419435c44bd725fa923c23090"
 }, {
 	"certified_sales": 26.3,
 	"vocab_len": 1884,
@@ -1181,7 +1254,8 @@ var vocab_data = [{
 	"rank_sales": 88,
 	"rank_vocab": 74,
 	"sales_x_offset": 0,
-	"learning_rate": 11.865180467091296
+	"learning_rate": 11.865180467091296,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/51a8374c507c56951d42de83805978e3e0565e1b"
 }, {
 	"certified_sales": 67.3,
 	"vocab_len": 1882,
@@ -1197,7 +1271,8 @@ var vocab_data = [{
 	"rank_sales": 39,
 	"rank_vocab": 75,
 	"sales_x_offset": 0,
-	"learning_rate": 18.863974495217853
+	"learning_rate": 18.863974495217853,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/48995c0af9fd239515b62047aeca0ce21cb03f17"
 }, {
 	"certified_sales": 264.9,
 	"vocab_len": 1872,
@@ -1213,7 +1288,8 @@ var vocab_data = [{
 	"rank_sales": 1,
 	"rank_vocab": 76,
 	"sales_x_offset": 0,
-	"learning_rate": 14.12232905982906
+	"learning_rate": 14.12232905982906,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/91dce87c97ece764c03e0d2cb7cc2b03efaf45c8"
 }, {
 	"certified_sales": 48.7,
 	"vocab_len": 1869,
@@ -1229,7 +1305,8 @@ var vocab_data = [{
 	"rank_sales": 54,
 	"rank_vocab": 77,
 	"sales_x_offset": 0,
-	"learning_rate": 7.154093097913322
+	"learning_rate": 7.154093097913322,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/4164aefbe2c3a06e0c341b3b00ef82724c293f49"
 }, {
 	"certified_sales": 36,
 	"vocab_len": 1867,
@@ -1245,7 +1322,8 @@ var vocab_data = [{
 	"rank_sales": 76,
 	"rank_vocab": 78,
 	"sales_x_offset": 0,
-	"learning_rate": 14.20728441349759
+	"learning_rate": 14.20728441349759,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/9e51018d1007e09b6acf83c5c02d5d1eae532e15"
 }, {
 	"certified_sales": 33.8,
 	"vocab_len": 1863,
@@ -1261,7 +1339,8 @@ var vocab_data = [{
 	"rank_sales": 81,
 	"rank_vocab": 79,
 	"sales_x_offset": 0,
-	"learning_rate": 10.143317230273752
+	"learning_rate": 10.143317230273752,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/3ea4a9423b7c90fade8d9822febb4cf954c65303"
 }, {
 	"certified_sales": 70.9,
 	"vocab_len": 1855,
@@ -1277,7 +1356,8 @@ var vocab_data = [{
 	"rank_sales": 37,
 	"rank_vocab": 80,
 	"sales_x_offset": 0,
-	"learning_rate": 21.097035040431265
+	"learning_rate": 21.097035040431265,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/8b8e07f6566d960cb853cc5de37777de677c20c5"
 }, {
 	"certified_sales": 73.7,
 	"vocab_len": 1850,
@@ -1293,7 +1373,8 @@ var vocab_data = [{
 	"rank_sales": 32,
 	"rank_vocab": 81,
 	"sales_x_offset": 0,
-	"learning_rate": 14.934594594594595
+	"learning_rate": 14.934594594594595,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/e5f2c9ba1c1f48d8f9db8e88ac88852bdb198d89"
 }, {
 	"certified_sales": 85.5,
 	"vocab_len": 1848,
@@ -1309,7 +1390,8 @@ var vocab_data = [{
 	"rank_sales": 25,
 	"rank_vocab": 82,
 	"sales_x_offset": 0,
-	"learning_rate": 16.786796536796537
+	"learning_rate": 16.786796536796537,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/3f7ab9e3b8fbe43fa4ff3f09a0ce9007f98ebe07"
 }, {
 	"certified_sales": 43.9,
 	"vocab_len": 1835,
@@ -1325,7 +1407,8 @@ var vocab_data = [{
 	"rank_sales": 60,
 	"rank_vocab": 83,
 	"sales_x_offset": 0,
-	"learning_rate": 11.588555858310627
+	"learning_rate": 11.588555858310627,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/772ffad6933bca2da0c8c7297c48b0be03398026"
 }, {
 	"certified_sales": 30.2,
 	"vocab_len": 1802,
@@ -1341,7 +1424,8 @@ var vocab_data = [{
 	"rank_sales": 85,
 	"rank_vocab": 84,
 	"sales_x_offset": 0,
-	"learning_rate": 15.326859045504994
+	"learning_rate": 15.326859045504994,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/83495e0c2902ef2ee10cafd7be997492561dfe1b"
 }, {
 	"certified_sales": 72.6,
 	"vocab_len": 1801,
@@ -1357,7 +1441,8 @@ var vocab_data = [{
 	"rank_sales": 35,
 	"rank_vocab": 85,
 	"sales_x_offset": 0,
-	"learning_rate": 12.672404219877846
+	"learning_rate": 12.672404219877846,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/bf3e8bc60fc2d627aef70aa8ef857b03fb525f9b"
 }, {
 	"certified_sales": 25.3,
 	"vocab_len": 1794,
@@ -1373,7 +1458,8 @@ var vocab_data = [{
 	"rank_sales": 89,
 	"rank_vocab": 86,
 	"sales_x_offset": 0,
-	"learning_rate": 9.933667781493869
+	"learning_rate": 9.933667781493869,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/d1aca9dad7602fd5a5feb6c30ad68d8796c08c87"
 }, {
 	"certified_sales": 111.5,
 	"vocab_len": 1788,
@@ -1389,7 +1475,8 @@ var vocab_data = [{
 	"rank_sales": 15,
 	"rank_vocab": 87,
 	"sales_x_offset": -62,
-	"learning_rate": 8.686241610738255
+	"learning_rate": 8.686241610738255,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/89aa5e4a040dd7f4e66fe707db7143e95f607b25"
 }, {
 	"certified_sales": 21.7,
 	"vocab_len": 1731,
@@ -1405,7 +1492,8 @@ var vocab_data = [{
 	"rank_sales": 92,
 	"rank_vocab": 88,
 	"sales_x_offset": 0,
-	"learning_rate": 13.447140381282496
+	"learning_rate": 13.447140381282496,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/659c8fd5bdcfa1866166569b0ba2586c0db84274"
 }, {
 	"certified_sales": 49.1,
 	"vocab_len": 1723,
@@ -1421,7 +1509,8 @@ var vocab_data = [{
 	"rank_sales": 53,
 	"rank_vocab": 89,
 	"sales_x_offset": 0,
-	"learning_rate": 17.18514219384794
+	"learning_rate": 17.18514219384794,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/c146ec133f62da2e361f475388cff6505f1c5f16"
 }, {
 	"certified_sales": 40,
 	"vocab_len": 1699,
@@ -1437,7 +1526,8 @@ var vocab_data = [{
 	"rank_sales": 69,
 	"rank_vocab": 90,
 	"sales_x_offset": 0,
-	"learning_rate": 19.273690406121247
+	"learning_rate": 19.273690406121247,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/aee83deecf56ab2c5d94301c9d975166e950ff11"
 }, {
 	"certified_sales": 41.1,
 	"vocab_len": 1497,
@@ -1453,7 +1543,8 @@ var vocab_data = [{
 	"rank_sales": 67,
 	"rank_vocab": 91,
 	"sales_x_offset": 0,
-	"learning_rate": 16.665998663994657
+	"learning_rate": 16.665998663994657,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/640b1a73f6bf6d3367a3c393b7dc3529837f34af"
 }, {
 	"certified_sales": 72.1,
 	"vocab_len": 1489,
@@ -1469,7 +1560,8 @@ var vocab_data = [{
 	"rank_sales": 36,
 	"rank_vocab": 92,
 	"sales_x_offset": 0,
-	"learning_rate": 12.505708529214237
+	"learning_rate": 12.505708529214237,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/a1cbeac22a19ef6e74b9b0bc3c893a4f9d1d3185"
 }, {
 	"certified_sales": 52,
 	"vocab_len": 809,
@@ -1485,5 +1577,6 @@ var vocab_data = [{
 	"rank_sales": 50,
 	"rank_vocab": 93,
 	"sales_x_offset": 0,
-	"learning_rate": 6.200247218788628
+	"learning_rate": 6.200247218788628,
+	"preview_mp3": "https://p.scdn.co/mp3-preview/ea1c9c30e81843a33dbfb5c0f89d9ae717a71dc0"
 }];

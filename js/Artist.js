@@ -20,7 +20,8 @@
 		this.$artist = $('#' + this.selector);
 
 		// Track preview url
-		this.previewUrl = densest_tracks_data[this.selector] || "none";
+		// this.previewUrl = densest_tracks_data[this.selector] || "none";
+		this.previewUrl = this.data.preview_mp3;
 
 
 		// Set the background of the artist circle
