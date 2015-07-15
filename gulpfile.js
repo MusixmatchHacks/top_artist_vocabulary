@@ -6,7 +6,7 @@ var uglifycss = require('gulp-uglifycss');
 var sass = require('gulp-ruby-sass');
 
 gulp.task('process-js', function() {
-    gulp.src('js/**/*.*')
+    gulp.src(['data/*.js', 'js/**/*.*'])
     	.pipe(concat('dist.js'))
     	.pipe(uglify())
     	.pipe(gulp.dest('public'));
