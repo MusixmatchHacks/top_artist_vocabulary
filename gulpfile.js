@@ -2,6 +2,7 @@ var gulp = require('gulp');
 
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var uglifycss = require('gulp-uglifycss');
 var sass = require('gulp-ruby-sass');
 
 gulp.task('process-js', function() {
@@ -13,11 +14,18 @@ gulp.task('process-js', function() {
 
 gulp.task('compile-sass', function() {
     return sass('sass/', {style: 'expanded'})
-	      .pipe(gulp.dest('public/'));
+	      .pipe(gulp.dest('css/'));
+});
+
+gulp.task('process-styles', function() {
+ 	gulp.src('css/**/*.*')
+ 	   .pipe(concat('styles.css')) 
+ 	   .pipe(uglifycss())
+ 	   .pipe(gulp.dest('public'));
 });
 
 gulp.task('watch', function() {
 	gulp.watch('./**/*.*', ['default']);
 });
 
-gulp.task('default', ['process-js', 'compile-sass']);
+gulp.task('default', ['process-js', 'compile-sass', 'process-styles']);

@@ -8,7 +8,8 @@
   min-width: 1100px;
   width: 100%;
   height: 100vh;
-  background-color: #D6C06D; }
+  background-color: #D6C06D;
+}
 
 #vocab_plot {
   position: relative;
@@ -18,12 +19,14 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 #vocab_plot_scale {
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 #vocabTitle {
   position: absolute;
@@ -31,33 +34,37 @@
   left: 78px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 #mxm_compact_vocab {
   position: absolute;
   top: 25px;
-  left: 25px; }
+  left: 25px;
+}
 
 #searchBox {
   position: absolute;
   top: 25px;
   right: 2%;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
-  #searchBox:after {
-    content: "";
-    display: block;
-    height: 40px;
-    width: 50px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #FFFFFF;
-    background-image: url(.././img/icons/icon_search.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    z-index: 10; }
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#searchBox:after {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 50px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  background-image: url(./img/icons/icon_search.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
 
 input#locateArtist {
   position: relative;
@@ -75,9 +82,11 @@ input#locateArtist {
   border-bottom-left-radius: 5px;
   color: black;
   z-index: 9;
-  padding: 0px 0px 2px 60px; }
-  input#locateArtist:focus {
-    outline: none; }
+  padding: 0px 0px 2px 60px;
+}
+input#locateArtist:focus {
+  outline: none;
+}
 
 .artistContainer, .dimArtist, .highlightedArtist, .normalArtist {
   position: absolute;
@@ -90,31 +99,38 @@ input#locateArtist {
   background-position: center center;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   opacity: 1;
-  border: 2px solid #766a3b; }
-  .artistContainer:hover, .dimArtist:hover, .highlightedArtist:hover, .normalArtist:hover {
-    border: 2px solid #ffffff;
-    transition: all 0.2s; }
+  border: 2px solid #766a3b;
+}
+.artistContainer:hover, .dimArtist:hover, .highlightedArtist:hover, .normalArtist:hover {
+  border: 2px solid #ffffff;
+  transition: all 0.2s;
+}
 
 .dimArtist {
   opacity: 0.25;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+}
 
 .highlightedArtist {
   opacity: 1;
   background-color: #FD4C38;
-  border: 2px solid #FFF; }
+  border: 2px solid #FFF;
+}
 
 .normalArtist {
-  transition: all 0.3s; }
+  transition: all 0.3s;
+}
 
 .tooltipTop:after {
   display: table;
   content: "";
-  clear: both; }
+  clear: both;
+}
 
 .extraInfo {
   text-align: left;
-  margin: 10px -5px 0px -5px; }
+  margin: 10px -5px 0px -5px;
+}
 
 .ttInfoSection {
   height: auto;
@@ -124,15 +140,18 @@ input#locateArtist {
   color: #303030;
   border-radius: 1px;
   margin-bottom: 5px;
-  border-top: 1px dotted #303030; }
+  border-top: 1px dotted #303030;
+}
 
 .ttInfoSection:last-child {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 .rankContainer {
   width: 30%;
   float: left;
-  text-align: right; }
+  text-align: right;
+}
 
 .detailContainer {
   width: 70%;
@@ -140,25 +159,30 @@ input#locateArtist {
   font-size: 16px;
   padding-left: 23px;
   text-align: left !important;
-  font-family: Karla, "sans-serif"; }
+  font-family: Karla, "sans-serif";
+}
 
 .rank {
   font-size: 28px;
-  font-family: "Oswald"; }
+  font-family: "Oswald";
+}
 
 .number {
   font-size: 0.5em;
-  font-family: Karla, "sans-serif"; }
+  font-family: Karla, "sans-serif";
+}
 
 .artistNameTooltip {
   font-family: "Helvetica Neue", "Source Sans Pro";
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
 
 #artistCircleContainer {
   position: relative;
   width: 1000px;
   height: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .playIconOverlay {
   position: absolute;
@@ -168,25 +192,29 @@ input#locateArtist {
   height: 35px;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 30% 27.7%; }
+  background-position: 30% 27.7%;
+}
 
 #allArtists {
   position: relative;
   width: 960px;
   height: auto;
   margin: 0 auto 30px auto;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 .letterSection {
   width: auto;
   height: auto;
-  padding: 10px 0px 5px 20px; }
+  padding: 10px 0px 5px 20px;
+}
 
 #allArtistsContainer {
   width: 100%;
   overflow: hidden;
   height: 700px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .alphaHolder {
   background-color: transparent;
@@ -198,20 +226,24 @@ input#locateArtist {
   height: 45px;
   line-height: 45px;
   margin: 0 0 5px 0;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .letterArtistImage {
   display: inline-block;
   width: 80px;
   height: 80px;
-  margin-right: -4px; }
+  margin-right: -4px;
+}
 
 .letterArtistImage:hover img {
   -webkit-transform: scale(1.08);
-  transform: scale(1.08); }
+  transform: scale(1.08);
+}
 
 .expanded {
-  height: auto !important; }
+  height: auto !important;
+}
 
 .overlay {
   position: absolute;
@@ -220,7 +252,8 @@ input#locateArtist {
   height: 30%;
   width: 100%;
   z-index: 10;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, white 100%); }
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, white 100%);
+}
 
 #btn_expandList {
   position: absolute;
@@ -234,34 +267,42 @@ input#locateArtist {
   cursor: pointer;
   border: 1px solid #877944;
   color: white;
-  border-radius: 2px; }
-  #btn_expandList:hover {
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.45); }
-  #btn_expandList:focus {
-    outline: none; }
+  border-radius: 2px;
+}
+#btn_expandList:hover {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.45);
+}
+#btn_expandList:focus {
+  outline: none;
+}
 
 .attachedToBottom {
   position: fixed !important;
   z-index: 50000;
-  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+}
 
 .buttonFixedScroll {
   position: fixed !important;
-  left: 70px; }
+  left: 70px;
+}
 
 #main_list_title {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 #genrePlot {
   width: 920px;
   height: auto;
   margin: 35px auto 30px auto;
   padding: 0px 10px 0px 0px;
-  border: 1px solid #BABABA; }
-  #genrePlot:after {
-    display: table;
-    content: "";
-    clear: both; }
+  border: 1px solid #BABABA;
+}
+#genrePlot:after {
+  display: table;
+  content: "";
+  clear: both;
+}
 
 #genreLegend {
   position: absolute;
@@ -269,18 +310,21 @@ input#locateArtist {
   height: 30px;
   float: right;
   background-color: transparent;
-  margin-top: -30px; }
+  margin-top: -30px;
+}
 
 #genrePlotScale {
   width: 65%;
   height: 100%;
-  float: right; }
+  float: right;
+}
 
 #genreNames {
   width: 35%;
   height: 100%;
   float: left;
-  margin-top: 0px; }
+  margin-top: 0px;
+}
 
 .genreName {
   width: 100%;
@@ -289,10 +333,12 @@ input#locateArtist {
   font-size: 1.2em;
   line-height: 55px;
   border-bottom: 1px solid #BABABA;
-  text-align: left; }
+  text-align: left;
+}
 
 .genreName:last-child {
-  border-bottom: none; }
+  border-bottom: none;
+}
 
 .genre_rank {
   display: inline-block;
@@ -304,50 +350,58 @@ input#locateArtist {
   font-weight: bold;
   text-align: center;
   margin-right: 10px;
-  border-bottom: 0.5px solid #BABABA; }
+  border-bottom: 0.5px solid #BABABA;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Karla, "sans-serif"; }
+  font-family: Karla, "sans-serif";
+}
 
 body {
   background-color: transparent;
   width: 100%;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+}
 
 #header {
   position: relative;
   width: 100%;
   height: 300px;
-  background-image: url(../img/header_bg.png);
-  background-size: cover; }
-  #header .header_inner {
-    width: 960px;
-    margin: 0 auto;
-    height: 100%;
-    padding: 0 20px 0 20px; }
-    #header .header_inner h1 {
-      position: relative;
-      font-family: Karla, "sans-serif";
-      font-weight: bolder;
-      font-size: 48px;
-      color: #FFFFFF;
-      z-index: 10;
-      text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4); }
-    #header .header_inner .sub {
-      position: relative;
-      font-family: Karla, "sans-serif";
-      font-size: 18px;
-      color: #ffffff;
-      line-height: 23px;
-      z-index: 10; }
-    #header .header_inner #main_logo {
-      position: relative;
-      margin-top: 140px;
-      z-index: 10; }
+  background-image: url(./img/header_bg.png);
+  background-size: cover;
+}
+#header .header_inner {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px 0 20px;
+}
+#header .header_inner h1 {
+  position: relative;
+  font-family: Karla, "sans-serif";
+  font-weight: bolder;
+  font-size: 48px;
+  color: #FFFFFF;
+  z-index: 10;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+#header .header_inner .sub {
+  position: relative;
+  font-family: Karla, "sans-serif";
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 23px;
+  z-index: 10;
+}
+#header .header_inner #main_logo {
+  position: relative;
+  margin-top: 140px;
+  z-index: 10;
+}
 
 #headerBgOverlay {
   position: absolute;
@@ -357,18 +411,21 @@ body {
   width: 100%;
   z-index: 9;
   background: rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(-180deg, transparent 40%, rgba(0, 0, 0, 0.41) 100%); }
+  background-image: linear-gradient(-180deg, transparent 40%, rgba(0, 0, 0, 0.41) 100%);
+}
 
 #container {
   position: relative;
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-color: white; }
+  background-color: white;
+}
 
 .note {
   font-size: 0.8em;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 .article {
   width: 960px;
@@ -380,88 +437,105 @@ body {
   line-height: 25px;
   font-size: 1.2em;
   text-align: justify;
-  margin-bottom: 20px; }
-  .article a {
-    color: #FD4C38;
-    text-decoration: none; }
-  .article .sectionHeading {
-    position: relative;
-    width: auto;
-    font-family: "Karla", sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    color: #303030;
-    line-height: 49px;
-    width: 100%;
-    text-align: center; }
-    .article .sectionHeading:after {
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: 110%;
-      content: "";
-      width: 90%;
-      height: 2px;
-      background-color: #303030; }
-    .article .sectionHeading:before {
-      display: block;
-      position: absolute;
-      bottom: 50%;
-      left: 110%;
-      content: "";
-      width: 90%;
-      height: 2px;
-      background-color: #303030; }
+  margin-bottom: 20px;
+}
+.article a {
+  color: #FD4C38;
+  text-decoration: none;
+}
+.article .sectionHeading {
+  position: relative;
+  width: auto;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #303030;
+  line-height: 49px;
+  width: 100%;
+  text-align: center;
+}
+.article .sectionHeading:after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 110%;
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: #303030;
+}
+.article .sectionHeading:before {
+  display: block;
+  position: absolute;
+  bottom: 50%;
+  left: 110%;
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: #303030;
+}
 
 #kiss:after {
-  width: 60%; }
+  width: 60%;
+}
 #kiss:before {
-  width: 60%; }
+  width: 60%;
+}
 
 #genreHeading:after {
-  width: 50%; }
+  width: 50%;
+}
 #genreHeading:before {
-  width: 50%; }
+  width: 50%;
+}
 
 .innerSection {
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 .genreChartExp {
   display: block;
   text-align: center;
   margin-top: 25px;
   font-family: Karla, "sans-serif";
-  font-style: italic; }
+  font-style: italic;
+}
 
 #topBottomArtists {
   display: block;
-  margin: 50px auto -5px auto; }
+  margin: 50px auto -5px auto;
+}
 
 .expImages {
   display: block;
-  margin: 30px auto; }
+  margin: 30px auto;
+}
 
 #polyglotImages {
   position: relative;
   width: 720px;
   height: auto;
-  margin: 30px auto 20px auto; }
+  margin: 30px auto 20px auto;
+}
 
 .polyglotImage {
   display: inline-block;
   margin: 0 auto;
   margin-top: 10px;
-  margin-left: 15px; }
+  margin-left: 15px;
+}
 
 .polyglotImage:last-child {
-  margin-top: 35px; }
+  margin-top: 35px;
+}
 
 #polyglotLanguages {
   position: absolute;
   top: 10px;
   width: 135px;
   height: 50px;
-  margin-left: -260px; }
+  margin-left: -260px;
+}
 
 .polyglotLanguage {
   width: 145px;
@@ -473,18 +547,21 @@ body {
   border: 1px solid #A99755;
   text-align: center;
   margin-bottom: 5px;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+}
 
 .languageHighlight {
   color: #FFFFFF;
   background-color: #A99755;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+}
 
 .defHighlight {
   margin-right: 5px;
   text-decoration: italic;
   background-color: #C1B153;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
 #finalQuote {
   width: 100%;
@@ -494,41 +571,49 @@ body {
   font-weight: 700;
   font-size: 1.4em;
   margin-top: 30px;
-  color: #FD4C38; }
-  #finalQuote a {
-    font-size: 0.9em !important;
-    display: block;
-    text-align: right;
-    margin: 12px 70px 0px 0px;
-    font-weight: 400; }
+  color: #FD4C38;
+}
+#finalQuote a {
+  font-size: 0.9em !important;
+  display: block;
+  text-align: right;
+  margin: 12px 70px 0px 0px;
+  font-weight: 400;
+}
 
 .titles {
   width: 100%;
   text-align: center;
   padding-top: 15px;
   color: #8b8b8b;
-  font-style: italic; }
+  font-style: italic;
+}
 
 #vocabVariation {
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 #topBottomArtistTitle {
   margin-top: 30px;
-  margin-bottom: -20px; }
+  margin-bottom: -20px;
+}
 
 #mainVizTitle {
   padding: 0;
-  margin-top: 15px; }
+  margin-top: 15px;
+}
 
 #disqusBox {
   width: 960px;
   margin: 0 auto;
-  padding: 20px; }
+  padding: 20px;
+}
 
 #share_fb {
   display: inline-flex !important;
-  position: relative; }
+  position: relative;
+}
 
 #tempTitle {
   position: absolute;
@@ -536,6 +621,5 @@ body {
   left: 20px;
   color: #303030;
   font-weight: bold;
-  font-size: 2em; }
-
-/*# sourceMappingURL=styles.css.map */
+  font-size: 2em;
+}
