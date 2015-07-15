@@ -19,6 +19,8 @@
 		// Font family for the text that is show on on the graph
 		this.fontFamily = 'Oswald';
 
+		this.$nothingFoundMessage = $('#nothingFoundMessage');
+
 		this.width = this.$plot.width();
 		this.height = this.$plot.height();
 
@@ -111,9 +113,21 @@
 		// Highlights the artists whose names are supplied in the artistNames(argument) array
 		highlightArtists: function(artistNames) {
 			var that = this; // VocabPlot
+
+			if(artistNames.length === 0) this.showNothingFoundMessage();
+			else this.hideNothingFoundMessage();
+			
 			artistNames.forEach(function(artistName) {
 				that.artists[artistName].highlight();
 			});
+		},
+
+		showNothingFoundMessage: function() {
+			this.$nothingFoundMessage.css('display', 'block');
+		},
+
+		hideNothingFoundMessage: function() {
+			this.$nothingFoundMessage.css('display', 'none');
 		}
 
 	};
@@ -129,7 +143,7 @@
 
 			this.searchField.autocomplete({
 				source: [this.artistNames],
-				highlight: false,
+				highlight: true,
 				limit: 8
 			});
 
@@ -146,6 +160,7 @@
 			this.searchField.blur(function() {
 				plot.undimAllArtists();
 				$(this).val('');
+				plot.hideNothingFoundMessage();
 			});
 
 			var that = this; // search oject

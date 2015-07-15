@@ -397,7 +397,6 @@
 
 	function renderData( data,query ){
 		var  source, i, $div, $divs = [];
-		
 		for (source = 0;source < data.length;source += 1) {
 			for (i = 0;i < data[source].length;i += 1) {
 				if( $divs.length>=this.limit )
@@ -416,7 +415,6 @@
 				$divs.push($div);
 			}
 		}
-		
 		return $divs;
 	};
 
@@ -1004,6 +1002,7 @@
 				var out = renderData.call(options,dataset,$input.val()),
 					hght = 10;
 				
+
 				if (out.length) {
 					$input.trigger('open.xdsoft');
 				} else {

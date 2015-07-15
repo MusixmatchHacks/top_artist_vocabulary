@@ -24,6 +24,11 @@ gulp.task('process-styles', function() {
  	   .pipe(gulp.dest('public'));
 });
 
+gulp.task('copy', function() {
+    gulp.src('public/**/*.*')
+    .pipe(gulp.dest('../../Vocabulary_dist/'));
+});
+
 gulp.task('watch', function() {
 	gulp.watch('./**/*.*', ['default']);
 });
