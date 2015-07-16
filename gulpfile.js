@@ -8,7 +8,7 @@ var sass = require('gulp-ruby-sass');
 gulp.task('process-js', function() {
     gulp.src(['data/*.js', 'js/**/*.*'])
     	.pipe(concat('dist.js'))
-    	// .pipe(uglify())
+    	.pipe(uglify())
     	.pipe(gulp.dest('public'));
 });
 
@@ -20,7 +20,7 @@ gulp.task('compile-sass', function() {
 gulp.task('process-styles', function() {
  	gulp.src('css/**/*.*')
  	   .pipe(concat('styles.css')) 
- 	   // .pipe(uglifycss())
+ 	   .pipe(uglifycss())
  	   .pipe(gulp.dest('public'));
 });
 
