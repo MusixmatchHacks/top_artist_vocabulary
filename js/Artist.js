@@ -97,19 +97,50 @@
 
 	// Event handler on artist object
 	Artist.prototype.events = {
+
 		click: function() {
 			var that = this;
+			// This is a quick and dirty fix 
+			// Stores in a global variable whether any kind of music is playing or not 
+			window.someMusicPlaying = false; 
 			this.$artist.on('click', function() {
-				var musicAlreadyPlaying = $(this).children('#embed_player').length >= 1;
-				// Start playing the music if it isn't already playing otherwise get rid of it 
-				if(musicAlreadyPlaying){ // stop the music
-					$(this).children('#embed_player').remove();
-					$(this).children('.playIconOverlay').children('.audio_control_icon').toggle();
-				}else{
-					$(this).append('<embed id="embed_player" src="' + that.previewUrl + '" autostart="true" hidden="true"></embed>');				
-					$(this).children('.playIconOverlay').children('.audio_control_icon').toggle();
+				if(window.someMusicPlaying) { // if there is no music playing already
+					var musicAlreadyPlaying = $(this).children('#embed_player').length >= 1;
+					Artist.prototype.events.stopAllMusic();
+					// Start playing the music if it isn't already playing otherwise get rid of it 
+					if(musicAlreadyPlaying){ // stop the music
+						$(this).children('#embed_player').remove();
+						if($(this).children('playIconOverlay').length === 0)
+							$(this).append('<div class = "playIconOverlay"><span class="audio_control_icon"><img src="img/icons/icon_play.png" alt="Play" /> </span> <span class="audio_control_icon" style="display: none;"> <img src="img/icons/icon_stop.png" alt="Stop" /> </span> </div> ');
+						window.someMusicPlaying = false;
+					}else{
+						$(this).append('<embed id="embed_player" src="' + that.previewUrl + '" autostart="true" hidden="true"></embed>');				
+						if($(this).children('playIconOverlay').length === 0)
+							$(this).append('<div class = "playIconOverlay"><span class="audio_control_icon"><img src="img/icons/icon_play.png" alt="Play" /> </span> <span class="audio_control_icon" style="display: none;"> <img src="img/icons/icon_stop.png" alt="Stop" /> </span> </div> ');
+						$(this).children('.playIconOverlay').children('.audio_control_icon').toggle();
+						window.someMusicPlaying = true;
+					}
+				} else {  // Some other artist is already playing some sort of music 
+					var musicAlreadyPlaying = $(this).children('#embed_player').length >= 1;
+					// Start playing the music if it isn't already playing otherwise get rid of it 
+					if(musicAlreadyPlaying){ // stop the music
+						$(this).children('#embed_player').remove();
+						$(this).children('.playIconOverlay').children('.audio_control_icon').toggle();
+						window.someMusicPlaying = false;
+					}else{
+						$(this).append('<embed id="embed_player" src="' + that.previewUrl + '" autostart="true" hidden="true"></embed>');				
+						$(this).children('.playIconOverlay').children('.audio_control_icon').toggle();
+						window.someMusicPlaying = true;
+					}
 				}
 			});
+		},
+
+		// Helper methods for the click function 
+		stopAllMusic: function() {
+			$('#embed_player').remove();
+			$('.playIconOverlay').remove();
+			window.someMusicPlaying = false;
 		},
 
 		// Show a tooltip on hover
@@ -127,11 +158,18 @@
 
 			// We will add a play button as an overlay over the artist image on hover 
 			this.$artist.on('mouseenter', function() {
-				$(this).append('<div class = "playIconOverlay"><span class="audio_control_icon"><img src="img/icons/icon_play.png" alt="Play" /> </span> <span class="audio_control_icon" style="display: none;"> <img src="img/icons/icon_stop.png" alt="Stop" /> </span> </div> ');
+				var isSinging = $(this).children('#embed_player').length >= 1;
+				if(!isSinging) {
+					$(this).append('<div class = "playIconOverlay"><span class="audio_control_icon"><img src="img/icons/icon_play.png" alt="Play" /> </span> <span class="audio_control_icon" style="display: none;"> <img src="img/icons/icon_stop.png" alt="Stop" /> </span> </div> ');
+				}
 			});
 
 			this.$artist.on('mouseleave', function() {
-				$(this).children().remove();
+				// If the current artist is singing something then don't remove the icon 
+				var isSinging = $(this).children('#embed_player').length >= 1;
+				if(!isSinging) {
+					$(this).children('.playIconOverlay').remove();
+				}
 			});
 		}
 
