@@ -1,7 +1,7 @@
 @import url(tipsy.css);
 @import url(jquery.autocomplete.css);
 #vocab_plot_wrapper {
-  min-height: 850px;
+  min-height: 800px;
   max-height: 1000px;
   min-width: 1100px;
   width: 100%;
@@ -182,7 +182,7 @@ input#locateArtist:focus {
   position: relative;
   width: 1000px;
   margin: 0 auto;
-  min-height: 850px;
+  min-height: 800px;
   max-height: 1000px;
 }
 
