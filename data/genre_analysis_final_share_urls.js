@@ -1,6 +1,6 @@
 var genre_data = [{
     "genre_name": "Alternative Rock",
-    "share_urls": ["https://www.musixmatch.com/artist/Rem-5"],
+    "share_urls": ["https://www.musixmatch.com/artist/Rem"],
     "total_vocab_len": 2974,
     "avg_vocab": 2974.0,
     "artists": ["REM"],
