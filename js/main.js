@@ -21,6 +21,10 @@
         return (value.toUpperCase());
     });
 
+    Handlebars.registerHelper('index_of', function(context,ndx) {
+        return context[ndx];
+    });
+
     // Not Handlebar helpers, everything else 
 
     vocab_data.forEach(function(artist, index) {

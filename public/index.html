@@ -57,9 +57,11 @@
 						</div>
 						<div class="letterArtists">
 							{{#each artists}}
+							<a href = "{{index_of ../share_urls @index}}" target = "blank">
 							<div class='letterArtistImage' id="{{this}}">
 								<img src='img/artist_images_small/{{undy this}}.jpg' height="80px" width="80px" />
 							</div>
+							</a>
 							{{/each}}
 						</div>
 					</div>
